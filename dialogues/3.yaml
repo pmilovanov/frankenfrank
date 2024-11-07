@@ -4,7 +4,7 @@
    c: 你看，这是我自己种的菜！
    p: Nǐ kàn, zhè shì wǒ zìjǐ zhòng de cài!
    t: Look, these are vegetables I grew myself!
-   d: [+] 种 (zhòng) "to grow/plant" extends from core 做 (zuò)
+   d:  种 (zhòng) "to grow/plant" extends from core 做 (zuò)
  - s: B
    c: 真好！你是怎么学会的？
    p: Zhēn hǎo! Nǐ shì zěnme xuéhuì de?
@@ -24,7 +24,7 @@
    c: 这个菜看起来很新鲜。
    p: Zhège cài kàn qǐlái hěn xīnxiān.
    t: These vegetables look very fresh.
-   d: [+] 新鲜 (xīnxiān) "fresh" - common food descriptor
+   d:  新鲜 (xīnxiān) "fresh" - common food descriptor
  - s: B
    c: 对，刚来的。你要买多少？
    p: Duì, gāng lái de. Nǐ yào mǎi duōshao?
@@ -48,7 +48,7 @@
    c: 对，我喜欢早上在这里运动。
    p: Duì, wǒ xǐhuan zǎoshang zài zhèlǐ yùndòng.
    t: Yes, I like exercising here in the morning.
-   d: [+] 运动 (yùndòng) "exercise" - extends from core 走 (zǒu)
+   d:  运动 (yùndòng) "exercise" - extends from core 走 (zǒu)
  - s: A
    c: 你已经做了多久了？
    p: Nǐ yǐjīng zuò le duōjiǔ le?
@@ -64,12 +64,12 @@
    c: 今天天气真好，不冷不热。
    p: Jīntiān tiānqì zhēn hǎo, bù lěng bù rè.
    t: The weather is really nice today, not cold not hot.
-   d: [+] 冷/热 (lěng/rè) "cold/hot" - basic weather words
+   d:  冷/热 (lěng/rè) "cold/hot" - basic weather words
  - s: B
    c: 对，很适合出去走走。
    p: Duì, hěn shìhé chūqù zǒu zou.
    t: Yes, very suitable for going out for a walk.
-   d: [+] 适合 (shìhé) "suitable" - useful descriptive word
+   d:  适合 (shìhé) "suitable" - useful descriptive word
  - s: A
    c: 你想去公园看看吗？
    p: Nǐ xiǎng qù gōngyuán kànkan ma?
@@ -85,7 +85,7 @@
   c: 你是不是刚搬来的？我经常看见你。
   p: Nǐ shì bú shì gāng bānlái de? Wǒ jīngcháng kànjiàn nǐ.
   t: Did you just move here? I often see you.
-  d: [+] 搬来 (bānlái) "move in" - common residential term
+  d:  搬来 (bānlái) "move in" - common residential term
 - s: B
   c: 对，上个月搬来的。你在这住很久了吗？
   p: Duì, shàng ge yuè bānlái de. Nǐ zài zhè zhù hěn jiǔ le ma?
@@ -98,7 +98,7 @@
   c: 是啊，觉得大家都很热情。
   p: Shì a, juédé dàjiā dōu hěn rèqíng.
   t: Yes, everyone seems very warm and friendly.
-  d: [+] 热情 (rèqíng) "warm/friendly" - useful for describing people
+  d:  热情 (rèqíng) "warm/friendly" - useful for describing people
 
 # Introduces minimal school-related vocabulary
 6 - Homework help:
@@ -106,7 +106,7 @@
   c: 这个题我不太会做，你能帮我看看吗？
   p: Zhège tí wǒ bù tài huì zuò, nǐ néng bāng wǒ kànkan ma?
   t: I'm not sure how to do this problem, can you help me look at it?
-  d: [+] 题 (tí) "problem/question" - basic academic word
+  d:  题 (tí) "problem/question" - basic academic word
 - s: B
   c: 好啊。你已经做了多少了？
   p: Hǎo a. Nǐ yǐjīng zuò le duōshao le?
@@ -126,7 +126,7 @@
   c: 你做的饭真好吃！是自己学的吗？
   p: Nǐ zuò de fàn zhēn hǎochī! Shì zìjǐ xué de ma?
   t: The food you cook is really delicious! Did you learn by yourself?
-  d: [+] 好吃 (hǎochī) "delicious" - essential food word
+  d:  好吃 (hǎochī) "delicious" - essential food word
 - s: B
   c: 是跟我妈学的。她教了我很多。
   p: Shì gēn wǒ mā xué de. Tā jiāo le wǒ hěn duō.
@@ -146,7 +146,7 @@
   c: 听说你喜欢画画，画得好吗？
   p: Tīngshuō nǐ xǐhuan huàhuà, huà de hǎo ma?
   t: Heard you like to draw, are you good at it?
-  d: [+] 画画 (huàhuà) "to draw/paint" - common hobby
+  d:  画画 (huàhuà) "to draw/paint" - common hobby
 - s: B
   c: 还可以。你要看看我的画吗？
   p: Hái kěyǐ. Nǐ yào kànkan wǒ de huà ma?
@@ -159,7 +159,7 @@
   c: 我最喜欢画风景。你也想学吗？
   p: Wǒ zuì xǐhuan huà fēngjǐng. Nǐ yě xiǣng xué ma?
   t: I like drawing landscapes the most. Want to learn too?
-  d: [+] 风景 (fēngjǐng) "landscape/scenery" - art-related term
+  d:  风景 (fēngjǐng) "landscape/scenery" - art-related term
 
 # Daily life situation with minimal new vocabulary
 11 - Bus stop chat:
@@ -167,7 +167,7 @@
   c: 等了多久了？公交车还没来。
   p: Děng le duōjiǔ le? Gōngjiāo chē hái méi lái.
   t: How long have you been waiting? Bus hasn't come yet.
-  d: [+] 公交车 (gōngjiāo chē) "bus" - essential transport word
+  d:  公交车 (gōngjiāo chē) "bus" - essential transport word
 - s: B
   c: 已经二十分钟了。你也去市中心吗？
   p: Yǐjīng èrshí fēnzhōng le. Nǐ yě qù shìzhōngxīn ma?
@@ -187,7 +187,7 @@
   c: 这个苹果多少钱一斤？
   p: Zhège píngguǒ duōshao qián yì jīn?
   t: How much is this apple per jin?
-  d: [+] 苹果 (píngguǒ) "apple", [+] 斤 (jīn) weight measure
+  d:  苹果 (píngguǒ) "apple",  斤 (jīn) weight measure
 - s: B
   c: 三块。你要多少？
   p: Sān kuài. Nǐ yào duōshao?
@@ -207,7 +207,7 @@
   c: 这是你小时候的照片吗？
   p: Zhè shì nǐ xiǎoshíhou de zhàopiàn ma?
   t: Is this your childhood photo?
-  d: [+] 照片 (zhàopiàn) "photo" - common noun
+  d:  照片 (zhàopiàn) "photo" - common noun
 - s: B
   c: 对，那时候才五岁。
   p: Duì, nà shíhou cái wǔ suì.
@@ -227,7 +227,7 @@
   c: 你能教我用这个新手机吗？
   p: Nǐ néng jiāo wǒ yòng zhège xīn shǒujī ma?
   t: Can you teach me how to use this new phone?
-  d: [+] 手机 (shǒujī) "mobile phone"
+  d:  手机 (shǒujī) "mobile phone"
 - s: B
   c: 好啊，很简单的。你想学什么？
   p: Hǎo a, hěn jiǎndān de. Nǐ xiǎng xué shénme?
@@ -247,7 +247,7 @@
   c: 你每天都这么早起来啊？
   p: Nǐ měitiān dōu zhème zǎo qǐlái a?
   t: Do you get up this early every day?
-  d: [+] 起来 (qǐlái) "get up"
+  d:  起来 (qǐlái) "get up"
 - s: B
   c: 对，喜欢早上安安静静的。
   p: Duì, xǐhuan zǎoshang ān'ānjìngjìng de.
@@ -267,7 +267,7 @@
   c: 饭好了吗？闻起来很香。
   p: Fàn hǎo le ma? Wén qǐlái hěn xiāng.
   t: Is the food ready? Smells good.
-  d: [+] 香 (xiāng) "fragrant/delicious smell"
+  d:  香 (xiāng) "fragrant/delicious smell"
 - s: B
   c: 快好了，再等五分钟。
   p: Kuài hǎo le, zài děng wǔ fēnzhōng.
@@ -287,7 +287,7 @@
   c: 这个工作做完了吗？
   p: Zhège gōngzuò zuò wán le ma?
   t: Is this work finished?
-  d: [+] 完 (wán) "finished/complete"
+  d:  完 (wán) "finished/complete"
 - s: B
   c: 还没，但是快了。
   p: Hái méi, dànshì kuài le.
@@ -307,7 +307,7 @@
   c: 你最近看起来很有精神。
   p: Nǐ zuìjìn kàn qǐlái hěn yǒu jīngshén.
   t: You look very energetic lately.
-  d: [+] 精神 (jīngshén) "energy/spirit"
+  d:  精神 (jīngshén) "energy/spirit"
 - s: B
   c: 是吗？可能因为我开始运动了。
   p: Shì ma? Kěnéng yīnwèi wǒ kāishǐ yùndòng le.
@@ -327,7 +327,7 @@
   c: 你看天上的云，好像要下雨。
   p: Nǐ kàn tiānshàng de yún, hǎoxiàng yào xià yǔ.
   t: Look at the clouds in the sky, looks like it might rain.
-  d: [+] 云 (yún) "cloud"
+  d:  云 (yún) "cloud"
 - s: B
   c: 是啊，我们快点走吧。
   p: Shì a, wǒmen kuài diǎn zǒu ba.
@@ -347,7 +347,7 @@
   c: 这是不是你的钥匙？在门前找到的。
   p: Zhè shì bú shì nǐ de yàoshi? Zài ménqián zhǎo dào de.
   t: Is this your key? Found it in front of the door.
-  d: [+] 钥匙 (yàoshi) "key"
+  d:  钥匙 (yàoshi) "key"
 - s: B
   c: 是我的！我刚才一直在找。
   p: Shì wǒ de! Wǒ gāngcái yìzhí zài zhǎo.
@@ -366,12 +366,12 @@
   c: 我感觉不太舒服，头很疼。
   p: Wǒ gǎnjué bù tài shūfu, tóu hěn téng.
   t: I don't feel well, my head hurts.
-  d: [+] 舒服 (shūfu) "comfortable", [+] 疼 (téng) "hurt/pain"
+  d:  舒服 (shūfu) "comfortable",  疼 (téng) "hurt/pain"
 - s: B
   c: 去医院了吗？要不要买药？
   p: Qù yīyuān le ma? Yào bú yào mǎi yào?
   t: Have you been to hospital? Want to buy medicine?
-  d: [+] 药 (yào) "medicine"
+  d:  药 (yào) "medicine"
 - s: A
   c: 我不知道买什么药好。
   p: Wǒ bù zhīdào mǎi shénme yào hǎo.
@@ -386,7 +386,7 @@
   c: 你的头发看起来很好看。
   p: Nǐ de tóufa kàn qǐlái hěn hǎokàn.
   t: Your hair looks very nice.
-  d: [+] 头发 (tóufa) "hair"
+  d:  头发 (tóufa) "hair"
 - s: B
   c: 谢谢，是昨天刚剪的。
   p: Xièxie, shì zuótiān gāng jiǎn de.
@@ -409,7 +409,7 @@
   c: 这里的咖啡很好喝。
   p: Zhèlǐ de kāfēi hěn hǎohē.
   t: The coffee here is very good.
-  d: [+] 咖啡 (kāfēi) "coffee"
+  d:  咖啡 (kāfēi) "coffee"
 - s: A
   c: 是吗？你常来这里吗？
   p: Shì ma? Nǐ cháng lái zhèlǐ ma?
@@ -424,12 +424,12 @@
   c: 这本书看完了吗？
   p: Zhè běn shū kàn wán le ma?
   t: Have you finished this book?
-  d: [+] 本 (běn) measure word for books
+  d:  本 (běn) measure word for books
 - s: B
   c: 看完了，很有意思。
   p: Kàn wán le, hěn yǒu yìsi.
   t: Finished it, it's very interesting.
-  d: [+] 意思 (yìsi) "interesting/meaning"
+  d:  意思 (yìsi) "interesting/meaning"
 - s: A
   c: 可以借给我看吗？
   p: Kěyǐ jiè gěi wǒ kàn ma?
@@ -452,7 +452,7 @@
   c: 你教我看怎么挑菜吧。
   p: Nǐ jiāo wǒ kàn zěnme tiāo cài ba.
   t: Teach me how to pick vegetables.
-  d: [+] 挑 (tiāo) "to select/pick"
+  d:  挑 (tiāo) "to select/pick"
 - s: B
   c: 好，跟我来，我告诉你。
   p: Hǎo, gēn wǒ lái, wǒ gàosu nǐ.
@@ -463,7 +463,7 @@
   c: 小朋友，你怎么自己在这里？
   p: Xiǎopéngyou, nǐ zěnme zìjǐ zài zhèlǐ?
   t: Child, why are you here alone?
-  d: [+] 小朋友 (xiǎopéngyou) "child"
+  d:  小朋友 (xiǎopéngyou) "child"
 - s: B
   c: 我找不到妈妈了。
   p: Wǒ zhǎo bú dào māma le.
@@ -482,12 +482,12 @@
   c: 你好，有一个包裹。
   p: Nǐ hǎo, yǒu yí ge bāoguǒ.
   t: Hello, there's a package.
-  d: [+] 包裹 (bāoguǒ) "package"
+  d:  包裹 (bāoguǒ) "package"
 - s: B
   c: 是给谁的？在哪里签字？
   p: Shì gěi shéi de? Zài nǎlǐ qiānzì?
   t: Who is it for? Where do I sign?
-  d: [+] 签字 (qiānzì) "to sign"
+  d:  签字 (qiānzì) "to sign"
 - s: A
   c: 在这里签，写上日期。
   p: Zài zhèlǐ qiān, xiě shàng rìqī.
@@ -502,7 +502,7 @@
   c: 你家的花真漂亮，怎么养的？
   p: Nǐ jiā de huā zhēn piàoliang, zěnme yǎng de?
   t: Your flowers are beautiful, how do you grow them?
-  d: [+] 养 (yǎng) "to grow/raise"
+  d:  养 (yǎng) "to grow/raise"
 - s: B
   c: 很简单，每天浇水就好。
   p: Hěn jiǎndān, měitiān jiāoshuǐ jiù hǎo.
@@ -521,7 +521,7 @@
   c: 听说你最近在跑步？
   p: Tīngshuō nǐ zuìjìn zài pǎobù?
   t: Heard you've been running recently?
-  d: [+] 跑步 (pǎobù) "to run/jog"
+  d:  跑步 (pǎobù) "to run/jog"
 - s: B
   c: 对，想身体好一点。
   p: Duì, xiǎng shēntǐ hǎo yìdiǎn.
@@ -540,12 +540,12 @@
   c: 你在学什么乐器？
   p: Nǐ zài xué shénme yuèqì?
   t: What instrument are you learning?
-  d: [+] 乐器 (yuèqì) "musical instrument"
+  d:  乐器 (yuèqì) "musical instrument"
 - s: B
   c: 我在学钢琴，但不太会。
   p: Wǒ zài xué gāngqín, dàn bù tài huì.
   t: I'm learning piano, but not very good.
-  d: [+] 钢琴 (gāngqín) "piano"
+  d:  钢琴 (gāngqín) "piano"
 - s: A
   c: 要多练习就会好的。
   p: Yào duō liànxí jiù huì hǎo de.
@@ -560,7 +560,7 @@
   c: 到吃午饭的时间了。
   p: Dào chī wǔfàn de shíjiān le.
   t: It's lunch time.
-  d: [+] 午饭 (wǔfàn) "lunch"
+  d:  午饭 (wǔfàn) "lunch"
 - s: B
   c: 你带饭了吗？还是要出去吃？
   p: Nǐ dài fàn le ma? Háishi yào chūqù chī?
@@ -573,14 +573,14 @@
   c: 那一起出去吃吧，我请你。
   p: Nà yìqǐ chūqù chī ba, wǒ qǐng nǐ.
   t: Then let's eat out, my treat.
-  d: [+] 请 (qǐng) here means "to treat someone"
+  d:  请 (qǐng) here means "to treat someone"
 
 32 - Plant care:
 - s: A
   c: 这盆花看起来不太好。
   p: Zhè pén huā kàn qǐlái bù tài hǎo.
   t: This potted plant doesn't look good.
-  d: [+] 盆 (pén) measure word for potted plants
+  d:  盆 (pén) measure word for potted plants
 - s: B
   c: 可能水给多了。
   p: Kěnéng shuǐ gěi duō le.
@@ -593,14 +593,14 @@
   c: 别担心，让它晒晒太阳就好了。
   p: Bié dānxīn, ràng tā shài shài tàiyáng jiù hǎo le.
   t: Don't worry, just let it get some sun.
-  d: [+] 晒 (shài) "to be exposed to sun"
+  d:  晒 (shài) "to be exposed to sun"
 
 33 - Winter clothes:
 - s: A
   c: 天气越来越冷了。
   p: Tiānqì yuè lái yuè lěng le.
   t: The weather is getting colder and colder.
-  d: [+] 越来越 (yuè lái yuè) "more and more"
+  d:  越来越 (yuè lái yuè) "more and more"
 - s: B
   c: 是啊，你买冬天的衣服了吗？
   p: Shì a, nǐ mǎi dōngtiān de yīfu le ma?
@@ -619,7 +619,7 @@
   c: 你看见我的眼镜了吗？
   p: Nǐ kànjiàn wǒ de yǎnjìng le ma?
   t: Have you seen my glasses?
-  d: [+] 眼镜 (yǎnjìng) "glasses"
+  d:  眼镜 (yǎnjìng) "glasses"
 - s: B
   c: 不是在你头上吗？
   p: Bùshì zài nǐ tóushang ma?
@@ -638,7 +638,7 @@
   c: 听说你要去旅游？
   p: Tīngshuō nǐ yào qù lǚyóu?
   t: Heard you're going traveling?
-  d: [+] 旅游 (lǚyóu) "to travel"
+  d:  旅游 (lǚyóu) "to travel"
 - s: B
   c: 对，下个月去北京。
   p: Duì, xià ge yuè qù Běijīng.
@@ -657,7 +657,7 @@
   c: 这是去图书馆的车站吗？
   p: Zhè shì qù túshūguǎn de chēzhàn ma?
   t: Is this the bus stop for the library?
-  d: [+] 车站 (chēzhàn) "bus/train stop"
+  d:  车站 (chēzhàn) "bus/train stop"
 - s: B
   c: 不是，图书馆的在前面。
   p: Bùshì, túshūguǎn de zài qiánmiàn.
@@ -676,7 +676,7 @@
   c: 老人家，我帮您拿东西吧。
   p: Lǎorénjiā, wǒ bāng nín ná dōngxi ba.
   t: Let me help you carry your things, elderly.
-  d: [+] 老人家 (lǎorénjiā) respectful term for elderly
+  d:  老人家 (lǎorénjiā) respectful term for elderly
 - s: B
   c: 谢谢你，这么重，我一个人拿不动。
   p: Xièxie nǐ, zhème zhòng, wǒ yí ge rén ná bú dòng.
@@ -699,7 +699,7 @@
   c: 对，明天有考试。
   p: Duì, míngtiān yǒu kǎoshì.
   t: Yes, have an exam tomorrow.
-  d: [+] 考试 (kǎoshì) "exam"
+  d:  考试 (kǎoshì) "exam"
 - s: A
   c: 要不要喝点咖啡？
   p: Yào bú yào hē diǎn kāfēi?
@@ -708,7 +708,7 @@
   c: 好啊，我快睡着了。
   p: Hǎo a, wǒ kuài shuìzháo le.
   t: Yes please, I'm about to fall asleep.
-  d: [+] 睡着 (shuìzháo) "fall asleep"
+  d:  睡着 (shuìzháo) "fall asleep"
 
 39 - Phone repair:
 - s: A
@@ -719,7 +719,7 @@
   c: 不能了，屏幕坏了。
   p: Bù néng le, píngmù huài le.
   t: No, the screen is broken.
-  d: [+] 屏幕 (píngmù) "screen"
+  d:  屏幕 (píngmù) "screen"
 - s: A
   c: 我知道一个修手机的地方。
   p: Wǒ zhīdào yí ge xiū shǒujī de dìfang.
@@ -734,7 +734,7 @@
   c: 你会打篮球吗？
   p: Nǐ huì dǎ lánqiú ma?
   t: Do you know how to play basketball?
-  d: [+] 篮球 (lánqiú) "basketball"
+  d:  篮球 (lánqiú) "basketball"
 - s: B
   c: 会一点，但打得不太好。
   p: Huì yìdiǎn, dàn dǎ de bù tài hǎo.
@@ -753,7 +753,7 @@
   c: 外面下大雨了，你有多余的伞吗？
   p: Wàimiàn xià dà yǔ le, nǐ yǒu duōyú de sǎn ma?
   t: It's raining heavily outside, do you have an extra umbrella?
-  d: [+] 多余 (duōyú) "extra/spare"
+  d:  多余 (duōyú) "extra/spare"
 - s: B
   c: 有，给你。明天带来还我就行。
   p: Yǒu, gěi nǐ. Míngtiān dài lái huán wǒ jiù xíng.
@@ -772,7 +772,7 @@
   c: 你最近瘦了很多啊！
   p: Nǐ zuìjìn shòu le hěn duō a!
   t: You've lost a lot of weight recently!
-  d: [+] 瘦 (shòu) "thin/to lose weight"
+  d:  瘦 (shòu) "thin/to lose weight"
 - s: B
   c: 是吗？我现在每天都运动。
   p: Shì ma? Wǒ xiànzài měitiān dōu yùndòng.
@@ -791,12 +791,12 @@
   c: 听说你们楼上搬来新邻居了？
   p: Tīngshuō nǐmen lóushàng bān lái xīn línjū le?
   t: Heard there's a new neighbor upstairs?
-  d: [+] 邻居 (línjū) "neighbor"
+  d:  邻居 (línjū) "neighbor"
 - s: B
   c: 对，是一家三口。
   p: Duì, shì yì jiā sān kǒu.
   t: Yes, a family of three.
-  d: [+] 一家 (yì jiā) "whole family"
+  d:  一家 (yì jiā) "whole family"
 - s: A
   c: 孩子多大了？
   p: Háizi duō dà le?
@@ -811,7 +811,7 @@
   c: 这把椅子坏了，不能坐。
   p: Zhè bǎ yǐzi huài le, bù néng zuò.
   t: This chair is broken, can't sit on it.
-  d: [+] 椅子 (yǐzi) "chair"
+  d:  椅子 (yǐzi) "chair"
 - s: B
   c: 要不要我帮你修？
   p: Yào bú yào wǒ bāng nǐ xiū?
@@ -830,7 +830,7 @@
   c: 今天早上起来觉得头晕。
   p: Jīntiān zǎoshang qǐlái juéde tóuyūn.
   t: Felt dizzy when I got up this morning.
-  d: [+] 头晕 (tóuyūn) "dizzy"
+  d:  头晕 (tóuyūn) "dizzy"
 - s: B
   c: 昨天晚上睡得好吗？
   p: Zuótiān wǎnshang shuì de hǎo ma?
@@ -849,7 +849,7 @@
   c: 这家的煎饼真好吃！
   p: Zhè jiā de jiānbing zhēn hǎochī!
   t: This shop's pancakes are really delicious!
-  d: [+] 煎饼 (jiānbing) "Chinese pancake"
+  d:  煎饼 (jiānbing) "Chinese pancake"
 - s: B
   c: 是吧？我每天早上都来买。
   p: Shì ba? Wǒ měitiān zǎoshang dōu lái mǎi.
@@ -868,12 +868,12 @@
   c: 你的自行车怎么了？
   p: Nǐ de zìxíngchē zěnme le?
   t: What's wrong with your bicycle?
-  d: [+] 自行车 (zìxíngchē) "bicycle"
+  d:  自行车 (zìxíngchē) "bicycle"
 - s: B
   c: 车胎没气了。
   p: Chētāi méi qì le.
   t: The tire is flat.
-  d: [+] 车胎 (chētāi) "tire"
+  d:  车胎 (chētāi) "tire"
 - s: A
   c: 前面有个修车的地方。
   p: Qiánmiàn yǒu ge xiū chē de dìfang.
@@ -892,7 +892,7 @@
   c: 等下个月打折的时候再来看看吧。
   p: Děng xià ge yuè dǎzhé de shíhou zài lái kànkan ba.
   t: Let's come back when there's a sale next month.
-  d: [+] 打折 (dǎzhé) "discount/sale"
+  d:  打折 (dǎzhé) "discount/sale"
 - s: A
   c: 好主意，现在只能看看。
   p: Hǎo zhǔyi, xiànzài zhǐ néng kànkan.
@@ -907,7 +907,7 @@
   c: 你种的花开了！
   p: Nǐ zhòng de huā kāi le!
   t: The flowers you planted have bloomed!
-  d: [+] 开 (kāi) when used with flowers means "bloom"
+  d:  开 (kāi) when used with flowers means "bloom"
 - s: B
   c: 是啊，等了好久终于开了。
   p: Shì a, děng le hǎojiǔ zhōngyú kāi le.
@@ -926,7 +926,7 @@
   c: 明天早上你能叫我起床吗？
   p: Míngtiān zǎoshang nǐ néng jiào wǒ qǐchuáng ma?
   t: Can you wake me up tomorrow morning?
-  d: [+] 起床 (qǐchuáng) "to get up from bed"
+  d:  起床 (qǐchuáng) "to get up from bed"
 - s: B
   c: 几点？你要去哪里？
   p: Jǐ diǎn? Nǐ yào qù nǎlǐ?
@@ -945,7 +945,7 @@
   c: 这里的网速快不快？
   p: Zhèlǐ de wǎngsù kuài bu kuài?
   t: Is the internet speed fast here?
-  d: [+] 网速 (wǎngsù) "internet speed"
+  d:  网速 (wǎngsù) "internet speed"
 - s: B
   c: 很快，你要上网吗？
   p: Hěn kuài, nǐ yào shàngwǎng ma?
@@ -964,7 +964,7 @@
   c: 糟糕，我的钱包不见了！
   p: Zāogāo, wǒ de qiánbāo bú jiàn le!
   t: Oh no, my wallet is missing!
-  d: [+] 钱包 (qiánbāo) "wallet", [+] 糟糕 (zāogāo) "terrible"
+  d:  钱包 (qiánbāo) "wallet",  糟糕 (zāogāo) "terrible"
 - s: B
   c: 你最后在哪里用过？
   p: Nǐ zuìhòu zài nǎlǐ yòng guò?
@@ -983,7 +983,7 @@
   c: 这双鞋子漂亮吗？
   p: Zhè shuāng xiézi piàoliang ma?
   t: Are these shoes pretty?
-  d: [+] 鞋子 (xiézi) "shoes"
+  d:  鞋子 (xiézi) "shoes"
 - s: B
   c: 很好看，但是看起来有点小。
   p: Hěn hǎokàn, dànshì kàn qǐlái yǒudiǎn xiǎo.
@@ -992,7 +992,7 @@
   c: 能试穿一下吗？
   p: Néng shì chuān yíxià ma?
   t: Can I try them on?
-  d: [+] 试穿 (shì chuān) "try on clothes"
+  d:  试穿 (shì chuān) "try on clothes"
 - s: B
   c: 当然可以，要大一号的吗？
   p: Dāngrán kěyǐ, yào dà yì hào de ma?
@@ -1003,7 +1003,7 @@
   c: 天气这么热，我想吃冰淇淋。
   p: Tiānqì zhème rè, wǒ xiǎng chī bīngqílín.
   t: Weather is so hot, I want ice cream.
-  d: [+] 冰淇淋 (bīngqílín) "ice cream"
+  d:  冰淇淋 (bīngqílín) "ice cream"
 - s: B
   c: 前面有一家很有名的店。
   p: Qiánmiàn yǒu yì jiā hěn yǒumíng de diàn.
@@ -1022,7 +1022,7 @@
   c: 下周是妈妈生日，你准备好礼物了吗？
   p: Xià zhōu shì māma shēngrì, nǐ zhǔnbèi hǎo lǐwù le ma?
   t: Next week is mom's birthday, have you prepared a gift?
-  d: [+] 礼物 (lǐwù) "gift"
+  d:  礼物 (lǐwù) "gift"
 - s: B
   c: 还没有，你有什么好主意吗？
   p: Hái méiyǒu, nǐ yǒu shénme hǎo zhǔyi ma?
@@ -1041,12 +1041,12 @@
   c: 我牙疼，吃什么都疼。
   p: Wǒ yá téng, chī shénme dōu téng.
   t: My tooth hurts, hurts when eating anything.
-  d: [+] 牙 (yá) "tooth"
+  d:  牙 (yá) "tooth"
 - s: B
   c: 去看牙医了吗？
   p: Qù kàn yáyī le ma?
   t: Have you seen a dentist?
-  d: [+] 牙医 (yáyī) "dentist"
+  d:  牙医 (yáyī) "dentist"
 - s: A
   c: 还没，你知道哪里有好的牙医吗？
   p: Hái méi, nǐ zhīdao nǎlǐ yǒu hǎo de yáyī ma?
@@ -1069,7 +1069,7 @@
   c: 在沙发底下，我帮你拿出来。
   p: Zài shāfā dǐxia, wǒ bāng nǐ ná chūlái.
   t: Under the sofa, I'll help you get them.
-  d: [+] 底下 (dǐxia) "underneath"
+  d:  底下 (dǐxia) "underneath"
 - s: B
   c: 太谢谢了，我没有它们就看不清。
   p: Tài xièxie le, wǒ méiyǒu tāmen jiù kàn bù qīng.
@@ -1098,7 +1098,7 @@
   c: 阿嚏！对不起，我可能感冒了。
   p: Ātì! Duìbuqǐ, wǒ kěnéng gǎnmào le.
   t: Achoo! Sorry, I might have a cold.
-  d: [+] 阿嚏 (ātì) "achoo", [+] 感冒 (gǎnmào) "have a cold"
+  d:  阿嚏 (ātì) "achoo",  感冒 (gǎnmào) "have a cold"
 - s: B
   c: 要不要喝点热水？
   p: Yào bú yào hē diǎn rèshuǐ?
@@ -1117,7 +1117,7 @@
   c: 你见到我的小猫了吗？它跑出去了。
   p: Nǐ jiàndào wǒ de xiǎomāo le ma? Tā pǎo chūqù le.
   t: Have you seen my kitten? It ran out.
-  d: [+] 小猫 (xiǎomāo) "kitten"
+  d:  小猫 (xiǎomāo) "kitten"
 - s: B
   c: 什么时候的事？什么样子的？
   p: Shénme shíhou de shì? Shénme yàngzi de?
@@ -1136,7 +1136,7 @@
   c: 这个菜很辣，你吃得了吗？
   p: Zhège cài hěn là, nǐ chī de liǎo ma?
   t: This dish is very spicy, can you handle it?
-  d: [+] 辣 (là) "spicy"
+  d:  辣 (là) "spicy"
 - s: B
   c: 我不太能吃辣，有不辣的吗？
   p: Wǒ bù tài néng chī là, yǒu bù là de ma?
@@ -1155,7 +1155,7 @@
   c: 笑一笑，我给你拍张照片。
   p: Xiào yī xiào, wǒ gěi nǐ pāi zhāng zhàopiàn.
   t: Smile, I'll take a photo for you.
-  d: [+] 笑 (xiào) "to smile"
+  d:  笑 (xiào) "to smile"
 - s: B
   c: 等一下，我还没准备好。
   p: Děng yíxià, wǒ hái méi zhǔnbèi hǎo.
@@ -1174,12 +1174,12 @@
   c: 对不起，我好像迷路了。
   p: Duìbuqǐ, wǒ hǎoxiàng mílù le.
   t: Sorry, I think I'm lost.
-  d: [+] 迷路 (mílù) "to get lost"
+  d:  迷路 (mílù) "to get lost"
 - s: B
   c: 你要去哪里？我可以帮你看地图。
   p: Nǐ yào qù nǎlǐ? Wǒ kěyǐ bāng nǐ kàn dìtú.
   t: Where are you going? I can help you check the map.
-  d: [+] 地图 (dìtú) "map"
+  d:  地图 (dìtú) "map"
 - s: A
   c: 我找不到火车站。
   p: Wǒ zhǎo bú dào huǒchēzhàn.
@@ -1194,7 +1194,7 @@
   c: 你的小葱长得真快！
   p: Nǐ de xiǎocōng zhǎng de zhēn kuài!
   t: Your green onions are growing so fast!
-  d: [+] 小葱 (xiǎocōng) "green onion"
+  d:  小葱 (xiǎocōng) "green onion"
 - s: B
   c: 是啊，每天都浇水。
   p: Shì a, měitiān dōu jiāoshuǐ.
@@ -1213,7 +1213,7 @@
   c: 这副眼镜好看吗？
   p: Zhè fù yǎnjìng hǎokàn ma?
   t: Do these glasses look good?
-  d: [+] 副 (fù) measure word for glasses/pairs
+  d:  副 (fù) measure word for glasses/pairs
 - s: B
   c: 很适合你，看起来很精神。
   p: Hěn shìhé nǐ, kàn qǐlái hěn jīngshén.
@@ -1222,7 +1222,7 @@
   c: 价格有点贵，但是质量很好。
   p: Jiàgé yǒudiǎn guì, dànshì zhìliàng hěn hǎo.
   t: Price is a bit high, but quality is good.
-  d: [+] 质量 (zhìliàng) "quality"
+  d:  质量 (zhìliàng) "quality"
 - s: B
   c: 眼镜要买好的，不能省钱。
   p: Yǎnjìng yào mǎi hǎo de, bù néng shěng qián.
@@ -1233,7 +1233,7 @@
   c: 你会包饺子吗？
   p: Nǐ huì bāo jiǎozi ma?
   t: Do you know how to make dumplings?
-  d: [+] 饺子 (jiǎozi) "dumplings", [+] 包 (bāo) "to wrap"
+  d:  饺子 (jiǎozi) "dumplings",  包 (bāo) "to wrap"
 - s: B
   c: 会一点，但包得不太好看。
   p: Huì yìdiǎn, dàn bāo de bù tài hǎokàn.
@@ -1252,12 +1252,12 @@
   c: 你家总是这么干净。
   p: Nǐ jiā zǒng shì zhème gānjìng.
   t: Your home is always so clean.
-  d: [+] 干净 (gānjìng) "clean"
+  d:  干净 (gānjìng) "clean"
 - s: B
   c: 我每天都打扫一下。
   p: Wǒ měitiān dōu dǎsǎo yíxià.
   t: I clean a bit every day.
-  d: [+] 打扫 (dǎsǎo) "to clean"
+  d:  打扫 (dǎsǎo) "to clean"
 - s: A
   c: 我都没时间打扫。
   p: Wǒ dōu méi shíjiān dǎsǎo.
@@ -1272,12 +1272,12 @@
   c: 这些水果都很新鲜。
   p: Zhèxiē shuǐguǒ dōu hěn xīnxiān.
   t: All these fruits are very fresh.
-  d: [+] 水果 (shuǐguǒ) "fruit"
+  d:  水果 (shuǐguǒ) "fruit"
 - s: B
   c: 对，刚到的。要尝尝吗？
   p: Duì, gāng dào de. Yào chángchang ma?
   t: Yes, just arrived. Want to try some?
-  d: [+] 尝 (cháng) "to taste"
+  d:  尝 (cháng) "to taste"
 - s: A
   c: 好啊，这个甜不甜？
   p: Hǎo a, zhège tián bu tián?
@@ -1310,7 +1310,7 @@
   c: 要喝点茶吗？刚泡的。
   p: Yào hē diǎn chá ma? Gāng pào de.
   t: Want some tea? Just made it.
-  d: [+] 泡 (pào) "to brew/steep"
+  d:  泡 (pào) "to brew/steep"
 - s: B
   c: 好啊，什么茶？
   p: Hǎo a, shénme chá?
@@ -1319,7 +1319,7 @@
   c: 绿茶，不太浓。
   p: Lǜchá, bù tài nóng.
   t: Green tea, not too strong.
-  d: [+] 浓 (nóng) "strong (of tea)"
+  d:  浓 (nóng) "strong (of tea)"
 - s: B
   c: 那太好了，我就喜欢淡一点的。
   p: Nà tài hǎo le, wǒ jiù xǐhuan dàn yìdiǎn de.
@@ -1330,12 +1330,12 @@
   c: 这附近有停车的地方吗？
   p: Zhè fùjìn yǒu tíngchē de dìfang ma?
   t: Is there parking nearby?
-  d: [+] 停车 (tíngchē) "to park", [+] 附近 (fùjìn) "nearby"
+  d:  停车 (tíngchē) "to park",  附近 (fùjìn) "nearby"
 - s: B
   c: 有，但是要收费。
   p: Yǒu, dànshì yào shōufèi.
   t: Yes, but there's a fee.
-  d: [+] 收费 (shōufèi) "to charge a fee"
+  d:  收费 (shōufèi) "to charge a fee"
 - s: A
   c: 一小时多少钱？
   p: Yì xiǎoshí duōshao qián?
@@ -1350,12 +1350,12 @@
   c: 你的手机有电吗？
   p: Nǐ de shǒujī yǒu diàn ma?
   t: Does your phone have battery?
-  d: [+] 电 (diàn) "electricity/battery"
+  d:  电 (diàn) "electricity/battery"
 - s: B
   c: 快没电了，能借充电器吗？
   p: Kuài méi diàn le, néng jiè chōngdiànqì ma?
   t: Almost out, can I borrow a charger?
-  d: [+] 充电器 (chōngdiànqì) "charger"
+  d:  充电器 (chōngdiànqì) "charger"
 - s: A
   c: 给你，要充多久？
   p: Gěi nǐ, yào chōng duōjiǔ?
@@ -1370,7 +1370,7 @@
   c: 我想买两张演唱会的票。
   p: Wǒ xiǎng mǎi liǎng zhāng yǎnchànghuì de piào.
   t: I want to buy two concert tickets.
-  d: [+] 演唱会 (yǎnchànghuì) "concert"
+  d:  演唱会 (yǎnchànghuì) "concert"
 - s: B
   c: 对不起，好位置都卖完了。
   p: Duìbuqǐ, hǎo wèizhi dōu mài wán le.
@@ -1389,7 +1389,7 @@
   c: 你的快递到了。
   p: Nǐ de kuàidì dào le.
   t: Your express delivery is here.
-  d: [+] 快递 (kuàidì) "express delivery"
+  d:  快递 (kuàidì) "express delivery"
 - s: B
   c: 在哪里？我下去拿。
   p: Zài nǎlǐ? Wǒ xiàqù ná.
@@ -1398,7 +1398,7 @@
   c: 在门口，要签名。
   p: Zài ménkǒu, yào qiānmíng.
   t: At the entrance, need to sign.
-  d: [+] 签名 (qiānmíng) "signature"
+  d:  签名 (qiānmíng) "signature"
 - s: B
   c: 好的，我马上去。
   p: Hǎo de, wǒ mǎshàng qù.
@@ -1409,7 +1409,7 @@
   c: 请小声说话，这是图书馆。
   p: Qǐng xiǎoshēng shuōhuà, zhè shì túshūguǎn.
   t: Please speak quietly, this is a library.
-  d: [+] 小声 (xiǎoshēng) "quiet voice"
+  d:  小声 (xiǎoshēng) "quiet voice"
 - s: B
   c: 对不起，我不知道。
   p: Duìbuqǐ, wǒ bù zhīdao.
@@ -1428,12 +1428,12 @@
   c: 水龙头坏了，一直在滴水。
   p: Shuǐlóngtóu huài le, yìzhí zài dī shuǐ.
   t: The faucet is broken, keeps dripping.
-  d: [+] 水龙头 (shuǐlóngtóu) "faucet", [+] 滴水 (dī shuǐ) "to drip"
+  d:  水龙头 (shuǐlóngtóu) "faucet",  滴水 (dī shuǐ) "to drip"
 - s: B
   c: 要叫修理工来看看。
   p: Yào jiào xiūlǐgōng lái kànkan.
   t: Need to call a repairman to check.
-  d: [+] 修理工 (xiūlǐgōng) "repairman"
+  d:  修理工 (xiūlǐgōng) "repairman"
 - s: A
   c: 你认识好的修理工吗？
   p: Nǐ rènshi hǎo de xiūlǐgōng ma?
@@ -1456,7 +1456,7 @@
   c: 难怪你今天看起来这么累。
   p: Nánguài nǐ jīntiān kàn qǐlái zhème lèi.
   t: No wonder you look so tired today.
-  d: [+] 难怪 (nánguài) "no wonder"
+  d:  难怪 (nánguài) "no wonder"
 - s: B
   c: 是啊，今天晚上要早点睡。
   p: Shì a, jīntiān wǎnshang yào zǎo diǎn shuì.
@@ -1471,7 +1471,7 @@
   c: 让我查一下库存。
   p: Ràng wǒ chá yíxià kùcún.
   t: Let me check the inventory.
-  d: [+] 库存 (kùcún) "inventory"
+  d:  库存 (kùcún) "inventory"
 - s: A
   c: 谢谢，我等一下。
   p: Xièxie, wǒ děng yíxià.
@@ -1486,7 +1486,7 @@
   c: 想吃火锅吗？我知道一家很好的。
   p: Xiǎng chī huǒguō ma? Wǒ zhīdao yì jiā hěn hǎo de.
   t: Want to eat hot pot? I know a good place.
-  d: [+] 火锅 (huǒguō) "hot pot"
+  d:  火锅 (huǒguō) "hot pot"
 - s: B
   c: 好啊，是不是很辣？
   p: Hǎo a, shì bú shì hěn là?
@@ -1495,7 +1495,7 @@
   c: 可以选不辣的汤底。
   p: Kěyǐ xuǎn bù là de tāngdǐ.
   t: You can choose non-spicy soup base.
-  d: [+] 汤底 (tāngdǐ) "soup base"
+  d:  汤底 (tāngdǐ) "soup base"
 - s: B
   c: 那太好了，我们什么时候去？
   p: Nà tài hǎo le, wǒmen shénme shíhou qù?
@@ -1506,12 +1506,12 @@
   c: 你每天都这么早起来锻炼啊？
   p: Nǐ měitiān dōu zhème zǎo qǐlái duànliàn a?
   t: You get up this early to exercise every day?
-  d: [+] 锻炼 (duànliàn) "to exercise"
+  d:  锻炼 (duànliàn) "to exercise"
 - s: B
   c: 对，已经坚持了三个月了。
   p: Duì, yǐjīng jiānchí le sān ge yuè le.
   t: Yes, been keeping at it for three months.
-  d: [+] 坚持 (jiānchí) "to persist/keep at"
+  d:  坚持 (jiānchí) "to persist/keep at"
 - s: A
   c: 好厉害，我都坚持不下来。
   p: Hǎo lìhai, wǒ dōu jiānchí bù xiàlái.
@@ -1526,12 +1526,12 @@
   c: 这个煎饼闻起来真香！
   p: Zhège jiānbing wén qǐlái zhēn xiāng!
   t: This crepe smells so good!
-  d: [+] 闻 (wén) "to smell"
+  d:  闻 (wén) "to smell"
 - s: B
   c: 要加鸡蛋吗？
   p: Yào jiā jīdàn ma?
   t: Want to add an egg?
-  d: [+] 鸡蛋 (jīdàn) "egg"
+  d:  鸡蛋 (jīdàn) "egg"
 - s: A
   c: 要，都加上，不要太辣。
   p: Yào, dōu jiā shàng, bú yào tài là.
@@ -1546,12 +1546,12 @@
   c: 空调怎么不凉快？
   p: Kōngtiáo zěnme bù liángkuai?
   t: Why isn't the AC cooling?
-  d: [+] 空调 (kōngtiáo) "air conditioner"
+  d:  空调 (kōngtiáo) "air conditioner"
 - s: B
   c: 可能需要加制冷剂了。
   p: Kěnéng xūyào jiā zhìlěngjì le.
   t: Might need to add refrigerant.
-  d: [+] 制冷剂 (zhìlěngjì) "refrigerant"
+  d:  制冷剂 (zhìlěngjì) "refrigerant"
 - s: A
   c: 很贵吗？要等多久？
   p: Hěn guì ma? Yào děng duōjiǔ?
@@ -1566,7 +1566,7 @@
   c: 这个菜叶子有点黄。
   p: Zhège cài yèzi yǒudiǎn huáng.
   t: These vegetable leaves are a bit yellow.
-  d: [+] 叶子 (yèzi) "leaves"
+  d:  叶子 (yèzi) "leaves"
 - s: B
   c: 给你换一个新鲜的。
   p: Gěi nǐ huàn yí ge xīnxiān de.
@@ -1579,19 +1579,19 @@
   c: 要不要称一下？
   p: Yào bú yào chēng yíxià?
   t: Want me to weigh it?
-  d: [+] 称 (chēng) "to weigh"
+  d:  称 (chēng) "to weigh"
 
 84 - Noisy neighbors:
 - s: A
   c: 楼上最近总是很吵。
   p: Lóushàng zuìjìn zǒngshì hěn chǎo.
   t: Upstairs has been very noisy lately.
-  d: [+] 吵 (chǎo) "noisy"
+  d:  吵 (chǎo) "noisy"
 - s: B
   c: 是啊，好像在装修。
   p: Shì a, hǎoxiàng zài zhuāngxiū.
   t: Yes, seems they're renovating.
-  d: [+] 装修 (zhuāngxiū) "to renovate"
+  d:  装修 (zhuāngxiū) "to renovate"
 - s: A
   c: 知道要装修多久吗？
   p: Zhīdao yào zhuāngxiū duōjiǔ ma?
@@ -1606,7 +1606,7 @@
   c: 突然下雨了，你带伞了吗？
   p: Túrán xià yǔ le, nǐ dài sǎn le ma?
   t: It's suddenly raining, did you bring an umbrella?
-  d: [+] 突然 (túrán) "suddenly"
+  d:  突然 (túrán) "suddenly"
 - s: B
   c: 带了，我们一起打伞吧。
   p: Dài le, wǒmen yìqǐ dǎ sǎn ba.
@@ -1615,7 +1615,7 @@
   c: 不会太挤吗？
   p: Bú huì tài jǐ ma?
   t: Won't it be too crowded?
-  d: [+] 挤 (jǐ) "crowded"
+  d:  挤 (jǐ) "crowded"
 - s: B
   c: 没事，这把伞够大。
   p: Méishì, zhè bǎ sǎn gòu dà.
@@ -1626,7 +1626,7 @@
   c: 我明天要出差，能帮我照顾花吗？
   p: Wǒ míngtiān yào chūchāi, néng bāng wǒ zhàogu huā ma?
   t: I'm going on a business trip tomorrow, can you help take care of my plants?
-  d: [+] 出差 (chūchāi) "business trip"
+  d:  出差 (chūchāi) "business trip"
 - s: B
   c: 没问题，要浇几次水？
   p: Méi wèntí, yào jiāo jǐ cì shuǐ?
@@ -1653,7 +1653,7 @@
   c: 要不要剪刘海？
   p: Yào bú yào jiǎn liúhái?
   t: Want to cut the bangs?
-  d: [+] 刘海 (liúhái) "bangs"
+  d:  刘海 (liúhái) "bangs"
 - s: B
   c: 好，但不要太短。
   p: Hǎo, dàn bú yào tài duǎn.
@@ -1668,7 +1668,7 @@
   c: 找到了，在沙发缝里。
   p: Zhǎodào le, zài shāfā fèng lǐ.
   t: Yes, it was in the gap of the sofa.
-  d: [+] 缝 (fèng) "gap/crack"
+  d:  缝 (fèng) "gap/crack"
 - s: A
   c: 太好了，我帮你找了好久。
   p: Tài hǎo le, wǒ bāng nǐ zhǎo le hǎojiǔ.
@@ -1683,7 +1683,7 @@
   c: 今天超市有特价。
   p: Jīntiān chāoshì yǒu tèjià.
   t: The supermarket has special offers today.
-  d: [+] 特价 (tèjià) "special price"
+  d:  特价 (tèjià) "special price"
 - s: B
   c: 什么东西便宜？
   p: Shénme dōngxi piányí?
@@ -1692,7 +1692,7 @@
   c: 水果和蔬菜都很便宜。
   p: Shuǐguǒ hé shūcài dōu hěn piányí.
   t: Fruits and vegetables are all cheap.
-  d: [+] 蔬菜 (shūcài) "vegetables"
+  d:  蔬菜 (shūcài) "vegetables"
 - s: B
   c: 那我们多买一点吧。
   p: Nà wǒmen duō mǎi yìdiǎn ba.
@@ -1703,7 +1703,7 @@
   c: 周末要不要去郊游？
   p: Zhōumò yào bú yào qù jiāoyóu?
   t: Want to go for an outing this weekend?
-  d: [+] 郊游 (jiāoyóu) "outing/excursion"
+  d:  郊游 (jiāoyóu) "outing/excursion"
 - s: B
   c: 好啊，去哪里玩？
   p: Hǎo a, qù nǎlǐ wán?
@@ -1722,12 +1722,12 @@
   c: 你会游泳吗？水深不深？
   p: Nǐ huì yóuyǒng ma? Shuǐ shēn bu shēn?
   t: Can you swim? Is the water deep?
-  d: [+] 游泳 (yóuyǒng) "to swim", [+] 深 (shēn) "deep"
+  d:  游泳 (yóuyǒng) "to swim",  深 (shēn) "deep"
 - s: B
   c: 这边不深，适合初学者。
   p: Zhè biān bù shēn, shìhé chūxuézhě.
   t: It's not deep here, suitable for beginners.
-  d: [+] 初学者 (chūxuézhě) "beginner"
+  d:  初学者 (chūxuézhě) "beginner"
 - s: A
   c: 那太好了，我想学游泳。
   p: Nà tài hǎo le, wǒ xiǎng xué yóuyǒng.
@@ -1742,17 +1742,17 @@
   c: 我好像把钱包落在出租车上了。
   p: Wǒ hǎoxiàng bǎ qiánbāo luò zài chūzūchē shàng le.
   t: I think I left my wallet in the taxi.
-  d: [+] 出租车 (chūzūchē) "taxi"
+  d:  出租车 (chūzūchē) "taxi"
 - s: B
   c: 记得车牌号码吗？
   p: Jìde chēpái hàomǎ ma?
   t: Do you remember the license plate number?
-  d: [+] 车牌号码 (chēpái hàomǎ) "license plate number"
+  d:  车牌号码 (chēpái hàomǎ) "license plate number"
 - s: A
   c: 忘了，但我有发票。
   p: Wàng le, dàn wǒ yǒu fāpiào.
   t: Forgot, but I have the receipt.
-  d: [+] 发票 (fāpiào) "receipt"
+  d:  发票 (fāpiào) "receipt"
 - s: B
   c: 那好，我帮你打电话问问。
   p: Nà hǎo, wǒ bāng nǐ dǎ diànhuà wènwen.
@@ -1763,7 +1763,7 @@
   c: 这家的面条很有名。
   p: Zhè jiā de miàntiáo hěn yǒumíng.
   t: This place's noodles are famous.
-  d: [+] 面条 (miàntiáo) "noodles"
+  d:  面条 (miàntiáo) "noodles"
 - s: B
   c: 汤看起来很浓。
   p: Tāng kàn qǐlái hěn nóng.
@@ -1772,7 +1772,7 @@
   c: 要加个卤蛋吗？
   p: Yào jiā ge lǔdàn ma?
   t: Want to add a marinated egg?
-  d: [+] 卤蛋 (lǔdàn) "marinated egg"
+  d:  卤蛋 (lǔdàn) "marinated egg"
 - s: B
   c: 好，再加点青菜。
   p: Hǎo, zài jiā diǎn qīngcài.
@@ -1783,7 +1783,7 @@
   c: 要订什么口味的蛋糕？
   p: Yào dìng shénme kǒuwèi de dàngāo?
   t: What flavor cake should we order?
-  d: [+] 蛋糕 (dàngāo) "cake", [+] 口味 (kǒuwèi) "flavor"
+  d:  蛋糕 (dàngāo) "cake",  口味 (kǒuwèi) "flavor"
 - s: B
   c: 巧克力吧，大家都喜欢。
   p: Qiǎokèlì ba, dàjiā dōu xǐhuan.
@@ -1795,14 +1795,14 @@
 - s: B
   c: 生日快乐就可以了。
   p: Shēngrì kuàilè jiù kěyǐ le.
-  t: "Happy Birthday" is fine.
+  t: \"Happy Birthday\" is fine.
 
 95 - Street directions:
 - s: A
   c: 银行在十字路口哪边？
   p: Yínháng zài shízìlùkǒu nǎ biān?
   t: Which side of the intersection is the bank on?
-  d: [+] 十字路口 (shízìlùkǒu) "intersection"
+  d:  十字路口 (shízìlùkǒu) "intersection"
 - s: B
   c: 在右转第二个路口。
   p: Zài yòu zhuǎn dì èr ge lùkǒu.
@@ -1821,7 +1821,7 @@
   c: 早市的菜最新鲜。
   p: Zǎoshì de cài zuì xīnxiān.
   t: The morning market vegetables are freshest.
-  d: [+] 早市 (zǎoshì) "morning market"
+  d:  早市 (zǎoshì) "morning market"
 - s: B
   c: 是啊，但要早点来。
   p: Shì a, dàn yào zǎo diǎn lái.
@@ -1834,7 +1834,7 @@
   c: 天亮就开始了。
   p: Tiān liàng jiù kāishǐ le.
   t: They start at dawn.
-  d: [+] 天亮 (tiān liàng) "dawn"
+  d:  天亮 (tiān liàng) "dawn"
 
 97 - Pet store:
 - s: A
@@ -1845,29 +1845,29 @@
   c: 两个月，已经打过疫苗了。
   p: Liǎng ge yuè, yǐjīng dǎ guò yìmiáo le.
   t: Two months, already vaccinated.
-  d: [+] 疫苗 (yìmiáo) "vaccine"
+  d:  疫苗 (yìmiáo) "vaccine"
 - s: A
   c: 会咬人吗？
   p: Huì yǎo rén ma?
   t: Does it bite?
-  d: [+] 咬 (yǎo) "to bite"
+  d:  咬 (yǎo) "to bite"
 - s: B
   c: 不会，很温顺的。
   p: Bú huì, hěn wēnshùn de.
   t: No, it's very gentle.
-  d: [+] 温顺 (wēnshùn) "gentle"
+  d:  温顺 (wēnshùn) "gentle"
 
 98 - Power outage:
 - s: A
   c: 怎么突然停电了？
   p: Zěnme túrán tíngdiàn le?
   t: Why is there suddenly a power outage?
-  d: [+] 停电 (tíngdiàn) "power outage"
+  d:  停电 (tíngdiàn) "power outage"
 - s: B
   c: 可能是在修电路。
   p: Kěnéng shì zài xiū diànlù.
   t: Maybe they're repairing the power lines.
-  d: [+] 电路 (diànlù) "power lines"
+  d:  电路 (diànlù) "power lines"
 - s: A
   c: 知道要多久吗？
   p: Zhīdao yào duōjiǔ ma?
@@ -1882,7 +1882,7 @@
   c: 这双鞋太紧了。
   p: Zhè shuāng xié tài jǐn le.
   t: These shoes are too tight.
-  d: [+] 紧 (jǐn) "tight"
+  d:  紧 (jǐn) "tight"
 - s: B
   c: 要不要试大半号的？
   p: Yào bú yào shì dà bàn hào de?
@@ -1901,12 +1901,12 @@
   c: 需要我帮忙切菜吗？
   p: Xūyào wǒ bāngmáng qiē cài ma?
   t: Need help cutting vegetables?
-  d: [+] 切 (qiē) "to cut"
+  d:  切 (qiē) "to cut"
 - s: B
   c: 好啊，这些胡萝卜要切块。
   p: Hǎo a, zhèxiē húluóbo yào qiē kuài.
   t: Sure, these carrots need to be cubed.
-  d: [+] 胡萝卜 (húluóbo) "carrot", [+] 块 (kuài) "chunk"
+  d:  胡萝卜 (húluóbo) "carrot",  块 (kuài) "chunk"
 - s: A
   c: 切大块还是小块？
   p: Qiē dà kuài háishi xiǎo kuài?
@@ -1921,7 +1921,7 @@
   c: 这个面包是刚烤的吗？
   p: Zhège miànbāo shì gāng kǎo de ma?
   t: Is this bread freshly baked?
-  d: [+] 烤 (kǎo) "to bake"
+  d:  烤 (kǎo) "to bake"
 - s: B
   c: 是的，还是热的，要尝尝吗？
   p: Shì de, hái shì rè de, yào cháng chang ma?
@@ -1930,7 +1930,7 @@
   c: 好啊，闻起来好香。有全麦的吗？
   p: Hǎo a, wén qǐlái hǎo xiāng. Yǒu quánmài de ma?
   t: Sure, smells great. Do you have whole wheat?
-  d: [+] 全麦 (quánmài) "whole wheat"
+  d:  全麦 (quánmài) "whole wheat"
 - s: B
   c: 有，但要等十分钟，正在烤。
   p: Yǒu, dàn yào děng shí fēnzhōng, zhèngzài kǎo.
@@ -1941,12 +1941,12 @@
   c: 这个充电器支持快充吗？
   p: Zhège chōngdiànqì zhīchí kuàichōng ma?
   t: Does this charger support fast charging?
-  d: [+] 快充 (kuàichōng) "fast charging"
+  d:  快充 (kuàichōng) "fast charging"
 - s: B
   c: 支持，但要配合相应的手机。
   p: Zhīchí, dàn yào pèihé xiāngyìng de shǒujī.
   t: Yes, but needs a compatible phone.
-  d: [+] 配合 (pèihé) "to match/be compatible"
+  d:  配合 (pèihé) "to match/be compatible"
 - s: A
   c: 我的手机是新款的，应该可以吧？
   p: Wǒ de shǒujī shì xīnkuǎn de, yīnggāi kěyǐ ba?
@@ -1955,19 +1955,19 @@
   c: 让我查查兼容型号。
   p: Ràng wǒ chá cha jiānróng xínghào.
   t: Let me check compatible models.
-  d: [+] 兼容 (jiānróng) "compatible"
+  d:  兼容 (jiānróng) "compatible"
 
 103 - Rainy morning:
 - s: A
   c: 今天雨好大，地铁会晚点吗？
   p: Jīntiān yǔ hǎo dà, dìtiě huì wǎndiǎn ma?
   t: Heavy rain today, will the subway be delayed?
-  d: [+] 地铁 (dìtiě) "subway", [+] 晚点 (wǎndiǎn) "to be delayed"
+  d:  地铁 (dìtiě) "subway",  晚点 (wǎndiǎn) "to be delayed"
 - s: B
   c: 应该不会，但地下可能积水。
   p: Yīnggāi bú huì, dàn dìxià kěnéng jīshuǐ.
   t: Probably not, but might be water pooling underground.
-  d: [+] 积水 (jīshuǐ) "water accumulation"
+  d:  积水 (jīshuǐ) "water accumulation"
 - s: A
   c: 那我们提前出门吧。
   p: Nà wǒmen tíqián chūmén ba.
@@ -1982,12 +1982,12 @@
   c: 您好，我预订了一间房。
   p: Nínhǎo, wǒ yùdìng le yì jiān fáng.
   t: Hello, I have a room reservation.
-  d: [+] 预订 (yùdìng) "to reserve"
+  d:  预订 (yùdìng) "to reserve"
 - s: B
   c: 请出示您的身份证。
   p: Qǐng chūshì nín de shēnfènzhèng.
   t: Please show your ID card.
-  d: [+] 出示 (chūshì) "to show/present", [+] 身份证 (shēnfènzhèng) "ID card"
+  d:  出示 (chūshì) "to show/present",  身份证 (shēnfènzhèng) "ID card"
 - s: A
   c: 我要一间安静的房间。
   p: Wǒ yào yì jiān ānjìng de fángjiān.
@@ -1996,41 +1996,41 @@
   c: 好的，给您安排高层的。
   p: Hǎo de, gěi nín ānpái gāocéng de.
   t: Okay, I'll arrange one on a higher floor.
-  d: [+] 高层 (gāocéng) "high floor"
+  d:  高层 (gāocéng) "high floor"
 
 105 - Washing machine repair:
 - s: A
   c: 洗衣机一直在响，很奇怪。
   p: Xǐyījī yìzhí zài xiǎng, hěn qíguài.
   t: The washing machine keeps making noise, very strange.
-  d: [+] 洗衣机 (xǐyījī) "washing machine"
+  d:  洗衣机 (xǐyījī) "washing machine"
 - s: B
   c: 可能是里面有硬币。
   p: Kěnéng shì lǐmiàn yǒu yìngbì.
   t: Might be coins inside.
-  d: [+] 硬币 (yìngbì) "coin"
+  d:  硬币 (yìngbì) "coin"
 - s: A
   c: 要拆开看看吗？
   p: Yào chāikāi kànkan ma?
   t: Should we open it up and look?
-  d: [+] 拆开 (chāikāi) "to take apart"
+  d:  拆开 (chāikāi) "to take apart"
 - s: B
   c: 先检查滤网吧。
   p: Xiān jiǎnchá lǜwǎng ba.
   t: Let's check the filter first.
-  d: [+] 滤网 (lǜwǎng) "filter"
+  d:  滤网 (lǜwǎng) "filter"
 
 106 - Pharmacy visit:
 - s: A
   c: 请问感冒药在哪个货架？
   p: Qǐngwèn gǎnmào yào zài nǎ ge huòjià?
   t: Excuse me, which shelf has cold medicine?
-  d: [+] 货架 (huòjià) "shelf"
+  d:  货架 (huòjià) "shelf"
 - s: B
   c: 需要处方药还是非处方的？
   p: Xūyào chǔfāng yào háishi fēi chǔfāng de?
   t: Need prescription or over-the-counter medicine?
-  d: [+] 处方药 (chǔfāng yào) "prescription medicine"
+  d:  处方药 (chǔfāng yào) "prescription medicine"
 - s: A
   c: 就要普通的感冒药。
   p: Jiù yào pǔtōng de gǎnmào yào.
@@ -2039,14 +2039,14 @@
   c: 在那边，要带退烧的吗？
   p: Zài nàbiān, yào dài tuìshāo de ma?
   t: Over there, want fever reducer too?
-  d: [+] 退烧 (tuìshāo) "reduce fever"
+  d:  退烧 (tuìshāo) "reduce fever"
 
 107 - Coffee shop work:
 - s: A
   c: 这里有插座可以用吗？
   p: Zhèlǐ yǒu chāzuò kěyǐ yòng ma?
   t: Is there a power outlet I can use here?
-  d: [+] 插座 (chāzuò) "power outlet"
+  d:  插座 (chāzuò) "power outlet"
 - s: B
   c: 有，靠窗的位置都有。
   p: Yǒu, kào chuāng de wèizhi dōu yǒu.
@@ -2055,19 +2055,19 @@
   c: 网络密码是多少？
   p: Wǎngluò mìmǎ shì duōshao?
   t: What's the WiFi password?
-  d: [+] 密码 (mìmǎ) "password"
+  d:  密码 (mìmǎ) "password"
 - s: B
   c: 在收据底部，请查看。
   p: Zài shōujù dǐbù, qǐng chákan.
   t: It's at the bottom of the receipt, please check.
-  d: [+] 收据 (shōujù) "receipt"
+  d:  收据 (shōujù) "receipt"
 
 108 - Moving day:
 - s: A
   c: 这个纸箱要不要扔掉？
   p: Zhège zhǐxiāng yào bú yào rēng diào?
   t: Should we throw away this cardboard box?
-  d: [+] 纸箱 (zhǐxiāng) "cardboard box"
+  d:  纸箱 (zhǐxiāng) "cardboard box"
 - s: B
   c: 先别扔，可能还要用。
   p: Xiān bié rēng, kěnéng hái yào yòng.
@@ -2080,24 +2080,24 @@
   c: 小心别淋湿了。
   p: Xiǎoxīn bié lín shī le.
   t: Be careful not to let it get wet.
-  d: [+] 淋湿 (lín shī) "get wet from rain"
+  d:  淋湿 (lín shī) "get wet from rain"
 
 109 - Train station:
 - s: A
   c: 下一班列车几点发车？
   p: Xià yī bān lièchē jǐ diǎn fāchē?
   t: What time is the next train?
-  d: [+] 列车 (lièchē) "train", [+] 发车 (fāchē) "departure"
+  d:  列车 (lièchē) "train",  发车 (fāchē) "departure"
 - s: B
   c: 还有二十分钟，要验票了。
   p: Hái yǒu èrshí fēnzhōng, yào yàn piào le.
   t: Twenty minutes, need to check tickets now.
-  d: [+] 验票 (yàn piào) "check tickets"
+  d:  验票 (yàn piào) "check tickets"
 - s: A
   c: 在哪个站台？
   p: Zài nǎ ge zhàntái?
   t: Which platform?
-  d: [+] 站台 (zhàntái) "platform"
+  d:  站台 (zhàntái) "platform"
 - s: B
   c: 三号站台，我带你去。
   p: Sān hào zhàntái, wǒ dài nǐ qù.
@@ -2108,7 +2108,7 @@
   c: 这个芒果熟了吗？
   p: Zhège mángguǒ shú le ma?
   t: Is this mango ripe?
-  d: [+] 芒果 (mángguǒ) "mango", [+] 熟 (shú) "ripe"
+  d:  芒果 (mángguǒ) "mango",  熟 (shú) "ripe"
 - s: B
   c: 还要等两天才能吃。
   p: Hái yào děng liǎng tiān cái néng chī.
@@ -2117,7 +2117,7 @@
   c: 那给我挑几个软一点的。
   p: Nà gěi wǒ tiāo jǐ ge ruǎn yìdiǎn de.
   t: Then pick me some softer ones.
-  d: [+] 挑 (tiāo) "to select/pick"
+  d:  挑 (tiāo) "to select/pick"
 - s: B
   c: 这些都是熟透的，可以直接吃。
   p: Zhèxiē dōu shì shú tòu de, kěyǐ zhí jiē chī.
@@ -2128,17 +2128,17 @@
   c: 办健身卡有什么优惠吗？
   p: Bàn jiànshēn kǎ yǒu shénme yōuhuì ma?
   t: Are there any discounts for gym membership?
-  d: [+] 健身卡 (jiànshēn kǎ) "gym membership card"
+  d:  健身卡 (jiànshēn kǎ) "gym membership card"
 - s: B
   c: 年卡现在打八折。
   p: Niánkǎ xiànzài dǎ bā zhé.
   t: Annual membership is 20% off now.
-  d: [+] 打折 (dǎzhé) "discount"
+  d:  打折 (dǎzhé) "discount"
 - s: A
   c: 包括私教课程吗？
   p: Bāokuò sījiāo kèchéng ma?
   t: Does it include personal training?
-  d: [+] 私教 (sījiāo) "personal trainer"
+  d:  私教 (sījiāo) "personal trainer"
 - s: B
   c: 那要另外收费。
   p: Nà yào lìngwài shōufèi.
@@ -2149,66 +2149,66 @@
   c: 我的鼠标不能用了。
   p: Wǒ de shǔbiāo bù néng yòng le.
   t: My mouse stopped working.
-  d: [+] 鼠标 (shǔbiāo) "computer mouse"
+  d:  鼠标 (shǔbiāo) "computer mouse"
 - s: B
   c: 换过电池了吗？
   p: Huàn guò diànchí le ma?
   t: Have you changed the batteries?
-  d: [+] 电池 (diànchí) "battery"
+  d:  电池 (diànchí) "battery"
 - s: A
   c: 换过了，还是没反应。
   p: Huàn guò le, hái shì méi fǎnyìng.
   t: Yes, still no response.
-  d: [+] 反应 (fǎnyìng) "response"
+  d:  反应 (fǎnyìng) "response"
 - s: B
   c: 可能是驱动程序的问题。
   p: Kěnéng shì qūdòng chéngxù de wèntí.
   t: Might be a driver issue.
-  d: [+] 驱动程序 (qūdòng chéngxù) "driver"
+  d:  驱动程序 (qūdòng chéngxù) "driver"
 
 113 - Restaurant reservation:
 - s: A
   c: 想订个包间，六个人。
   p: Xiǎng dìng ge bāojiān, liù ge rén.
   t: Want to book a private room for six people.
-  d: [+] 包间 (bāojiān) "private room"
+  d:  包间 (bāojiān) "private room"
 - s: B
   c: 午餐还是晚餐？
   p: Wǔcān háishi wǎncān?
   t: Lunch or dinner?
-  d: [+] 午餐 (wǔcān) "lunch", [+] 晚餐 (wǎncān) "dinner"
+  d:  午餐 (wǔcān) "lunch",  晚餐 (wǎncān) "dinner"
 - s: A
   c: 晚餐，最好有榻榻米。
   p: Wǎncān, zuì hǎo yǒu tàtami.
   t: Dinner, preferably with tatami.
-  d: [+] 榻榻米 (tàtami) "tatami"
+  d:  榻榻米 (tàtami) "tatami"
 - s: B
   c: 好的，需要预付定金吗？
   p: Hǎo de, xūyào yùfù dìnjīn ma?
   t: Okay, need to pay a deposit?
-  d: [+] 定金 (dìnjīn) "deposit"
+  d:  定金 (dìnjīn) "deposit"
 
 114 - Getting a haircut:
 - s: A
   c: 想把刘海剪短一点。
   p: Xiǎng bǎ liúhái jiǎn duǎn yìdiǎn.
   t: Want to cut my bangs shorter.
-  d: [+] 刘海 (liúhái) "bangs"
+  d:  刘海 (liúhái) "bangs"
 - s: B
   c: 要斜刘海还是直的？
   p: Yào xié liúhái háishi zhí de?
   t: Want diagonal or straight bangs?
-  d: [+] 斜 (xié) "diagonal/slanted"
+  d:  斜 (xié) "diagonal/slanted"
 - s: A
   c: 直的，但不要太齐。
   p: Zhí de, dàn bú yào tài qí.
   t: Straight, but not too even.
-  d: [+] 齐 (qí) "even/uniform"
+  d:  齐 (qí) "even/uniform"
 - s: B
   c: 好，先喷点水。
   p: Hǎo, xiān pēn diǎn shuǐ.
   t: Okay, let me spray some water first.
-  d: [+] 喷 (pēn) "to spray"
+  d:  喷 (pēn) "to spray"
 
 115 - Lost glasses:
 - s: A
@@ -2219,7 +2219,7 @@
   c: 刚才好像在茶几上。
   p: Gāngcái hǎoxiàng zài chájī shàng.
   t: Seemed to be on the coffee table earlier.
-  d: [+] 茶几 (chájī) "coffee table"
+  d:  茶几 (chájī) "coffee table"
 - s: A
   c: 找到了，在书底下。
   p: Zhǎodào le, zài shū dǐxia.
@@ -2228,4 +2228,4 @@
   c: 下次记得放眼镜盒里。
   p: Xià cì jìde fàng yǎnjìng hé lǐ.
   t: Remember to put them in the case next time.
-  d: [+] 眼镜盒 (yǎnjìng hé) "glasses case"
+  d:  眼镜盒 (yǎnjìng hé) "glasses case"
