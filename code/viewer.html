@@ -9,6 +9,7 @@
         :root {
             --primary-color: #4CAF50;
             --secondary-color: #2196F3;
+            --accent-color: #FF9800;  /* New color for Dialogues button */
             --bg-color: #f5f5f5;
             --panel-bg: white;
             --text-color: #333;
@@ -44,9 +45,25 @@
             position: sticky;
             top: 0;
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
         }
 
-        .main-panel {
+        .controls-wrapper {
+            position: sticky;
+            top: 0;
+            background: var(--panel-bg);
+            padding-bottom: 15px;
+            margin-bottom: 5px;
+            z-index: 1;
+        }
+
+        .scrollable-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+		.main-panel {
             flex-grow: 1;
             padding: var(--panel-padding);
             max-width: 800px;
@@ -203,8 +220,17 @@
             height: 34px;
         }
 
-        .dialogues-btn {
+		.dialogues-btn {
             display: none;  /* Hidden by default, shown in mobile */
+            background-color: var(--accent-color) !important;
+        }
+
+        .dialogues-btn:hover {
+            background-color: #fb8c00 !important;
+        }
+
+        .dialogues-btn.active {
+            background-color: #f57c00 !important;
         }
 
         @media (max-width: 768px) {
@@ -212,8 +238,9 @@
                 display: none;
             }
 
-            .mobile-controls {
+		    .mobile-controls {
                 display: block;
+                background-color: var(--panel-bg);
             }
 
             .dialogues-btn {
@@ -242,8 +269,16 @@
             }
 
             .main-panel {
-                margin-top: calc(var(--mobile-header-height) + 10px);
-                padding: 10px;
+                padding-top: calc(var(--mobile-header-height) + 20px);
+                margin-top: 0;
+            }
+
+            .main-panel #dialogueContent {
+                padding-top: 10px;
+            }
+
+            .dialogue-line:first-child {
+                margin-top: 10px;
             }
         }
     </style>
@@ -260,28 +295,31 @@
         </div>
 
         <aside class="side-panel" id="sidePanel">
-            <div class="controls">
-                <button onclick="toggleElement('pinyin')" id="pinyinBtn2">Pinyin</button>
-                <button onclick="toggleElement('translation')" id="translationBtn2">Translation</button>
-                <button onclick="toggleElement('commentary')" id="commentaryBtn2">Commentary</button>
+            <div class="controls-wrapper">
+                <div class="controls">
+                    <button onclick="toggleElement('pinyin')" id="pinyinBtn2">Pinyin</button>
+                    <button onclick="toggleElement('translation')" id="translationBtn2">Translation</button>
+                    <button onclick="toggleElement('commentary')" id="commentaryBtn2">Commentary</button>
+                </div>
             </div>
 
-            <div class="file-control">
-                <input type="file" id="fileInput" accept=".yaml,.yml">
-                <button onclick="document.getElementById('fileInput').click()">Load Dialogues</button>
-            </div>
+            <div class="scrollable-content">
+                <div class="file-control">
+                    <input type="file" id="fileInput" accept=".yaml,.yml">
+                    <button onclick="document.getElementById('fileInput').click()">Load Dialogues</button>
+                </div>
 
-            <ul class="dialogue-list" id="dialogueList">
-                <li class="dialogue-item">Select a dialogue...</li>
-            </ul>
+                <ul class="dialogue-list" id="dialogueList">
+                    <li class="dialogue-item">Select a dialogue...</li>
+                </ul>
+            </div>
         </aside>
 
         <main class="main-panel">
             <div id="dialogueContent"></div>
         </main>
-    </div>
-
-
+  </div>
+  
     <script>
         let dialogues = {};
         let displayState = {
