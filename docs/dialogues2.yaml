@@ -1,0 +1,1729 @@
+1 - Late for work:
+ - s: A
+   c: 你现在在哪里？已经很晚了！
+   p: Nǐ xiànzài zài nǎlǐ? Yǐjīng hěn wǎn le!
+   t: Where are you now? It's already very late!
+   d: 已经...了 (yǐjīng...le) is a common pattern indicating something has already happened
+ - s: B
+   c: 对不起，我在路上。
+   p: Duìbuqǐ, wǒ zài lùshang.
+   t: Sorry, I'm on the way.
+   d: 在路上 (zài lùshang) is a very common phrase meaning "on the way"
+ - s: A
+   c: 老王在等你。
+   p: Lǎo Wáng zài děng nǐ.
+   t: Lao Wang is waiting for you.
+   d: 老 (lǎo) before surnames is a familiar way to refer to colleagues/friends
+ - s: B
+   c: 我知道。五分钟就到。
+   p: Wǒ zhīdào. Wǔ fēnzhōng jiù dào.
+   t: I know. I'll be there in five minutes.
+   d: 就 (jiù) here indicates immediacy - "will arrive very soon"
+
+2 - At home:
+ - s: A
+   c: 你看，这是我的小狗！
+   p: Nǐ kàn, zhè shì wǒ de xiǎo gǒu!
+   t: Look, this is my puppy!
+   d: 小 (xiǎo) before animals often shows endearment, not just size
+ - s: B
+   c: 好可爱啊！叫什么名字？
+   p: Hǎo kě'ài a! Jiào shénme míngzi?
+   t: So cute! What's its name?
+   d: 好 (hǎo) at the start of an adjective works like "so" in English
+ - s: A
+   c: 它叫小白。
+   p: Tā jiào Xiǎo Bái.
+   t: It's called Xiao Bai.
+   d: 它 (tā) is used for animals and objects, different from 他/她 for people
+
+3 - In the classroom:
+ - s: A
+   c: 老师，我不知道怎么做这个。
+   p: Lǎoshī, wǒ bù zhīdào zěnme zuò zhège.
+   t: Teacher, I don't know how to do this.
+   d: 怎么做 (zěnme zuò) is a very useful pattern meaning "how to do"
+ - s: B
+   c: 你看这里，这样做就对了。
+   p: Nǐ kàn zhèlǐ, zhèyàng zuò jiù duì le.
+   t: Look here, do it this way and it'll be right.
+   d: 这样 (zhèyàng) + verb is a pattern meaning "do it this way"
+ - s: A
+   c: 哦，现在我明白了。
+   p: Ó, xiànzài wǒ míngbái le.
+   t: Oh, now I understand.
+   d: 了 (le) here indicates change of state - from not understanding to understanding
+ - s: B
+   c: 你自己再做一次。
+   p: Nǐ zìjǐ zài zuò yícì.
+   t: Try doing it once by yourself.
+   d: 自己 (zìjǐ) emphasizes doing something independently, very commonly used
+
+4 - Shopping:
+ - s: A
+   c: 这个多少钱？
+   p: Zhège duōshao qián?
+   t: How much is this?
+   d: 多少 (duōshao) can be used for both "how many" and "how much"
+ - s: B
+   c: 一百。你要买吗？
+   p: Yì bǎi. Nǐ yào mǎi ma?
+   t: One hundred. Do you want to buy it?
+ - s: A
+   c: 太贵了。可以便宜一点吗？
+   p: Tài guì le. Kěyǐ piányí yìdiǎn ma?
+   t: Too expensive. Can it be cheaper?
+   d: 一点 (yìdiǎn) after adjectives means "a bit/little" - very useful pattern
+ - s: B
+   c: 八十，不能再少了。
+   p: Bāshí, bù néng zài shǎo le.
+   t: Eighty, can't go any lower.
+   d: 再 (zài) + adj means "more" (in this case "lower") - common in negotiations
+
+
+5 - Looking for directions:
+ - s: A
+   c: 请问，图书馆在哪里？
+   p: Qǐngwèn, túshūguǎn zài nǎlǐ?
+   t: Excuse me, where's the library?
+   d: 请问 (qǐngwèn) is a polite way to start asking strangers for help
+ - s: B
+   c: 你往前走，在右边。
+   p: Nǐ wǎng qián zǒu, zài yòubiān.
+   t: Go straight ahead, it's on the right.
+   d: 往前走 (wǎng qián zǒu) is essential for directions - "go forward"
+ - s: A
+   c: 远不远？
+   p: Yuǎn bu yuǎn?
+   t: Is it far?
+   d: adj + 不 + adj is a common pattern for asking yes/no questions about qualities
+ - s: B
+   c: 不远，走五分钟就到了。
+   p: Bù yuǎn, zǒu wǔ fēnzhōng jiù dào le.
+   t: Not far, about five minutes' walk.
+   d: 走...分钟 (zǒu...fēnzhōng) is the standard way to describe walking distances
+
+
+# This dialogue combines:
+# - urgency and waiting patterns from dialogue 1 ("already X time", "waiting for you")
+# - location asking from dialogue 5 (library, directions)
+# - distance patterns from dialogue 5 ("is it far?")
+6 - Late for an appointment:
+ - s: A
+   c: 小李，你在哪里？已经八点了！
+   p: Xiǎo Lǐ, nǐ zài nǎlǐ? Yǐjīng bā diǎn le!
+   t: Xiao Li, where are you? It's already 8 o'clock!
+ - s: B
+   c: 对不起，我在找图书馆。
+   p: Duìbuqǐ, wǒ zài zhǎo túshūguǎn.
+   t: Sorry, I'm looking for the library.
+ - s: A
+   c: 图书馆？你往右边走就到了。
+   p: Túshūguǎn? Nǐ wǎng yòubiān zǒu jiù dào le.
+   t: The library? Just walk towards the right and you'll be there.
+   d: 就到了 (jiù dào le) is a very common way to indicate something is easily reached
+ - s: B
+   c: 远不远？老师在等我。
+   p: Yuǎn bu yuǎn? Lǎoshī zài děng wǒ.
+   t: Is it far? The teacher is waiting.
+
+# This dialogue combines:
+# - pet introduction pattern from dialogue 2 ("look at this puppy")
+# - price negotiation from dialogue 4 (asking price, saying too expensive)
+# - cuteness expressions from dialogue 2
+7 - Shopping for a pet:
+ - s: A
+   c: 你看这个小狗，好可爱啊！
+   p: Nǐ kàn zhège xiǎo gǒu, hǎo kě'ài a!
+   t: Look at this puppy, so cute!
+ - s: B
+   c: 多少钱？
+   p: Duōshao qián?
+   t: How much is it?
+ - s: A
+   c: 一百五。
+   p: Yībǎi wǔ.
+   t: One hundred and fifty.
+   d: Numbers are often shortened in speech - 一百五 instead of 一百五十
+ - s: B
+   c: 太贵了！能便宜一点吗？
+   p: Tài guì le! Néng piányí yìdiǎn ma?
+   t: Too expensive! Can it be cheaper?
+
+# This dialogue combines:
+# - classroom help pattern from dialogue 3 ("I don't know how")
+# - direction vocabulary from dialogue 5
+# - practice concept from dialogue 3 ("try it yourself")
+8 - Learning directions:
+ - s: A
+   c: 老师，我不知道怎么走。
+   p: Lǎoshī, wǒ bù zhīdào zěnme zǒu.
+   t: Teacher, I don't know how to get there.
+ - s: B
+   c: 你看这里，这样走就对了。
+   p: Nǐ kàn zhèlǐ, zhèyàng zǒu jiù duì le.
+   t: Look here, walk this way and it'll be right.
+   d: 这样 + verb is a very useful pattern meaning "do it this way"
+ - s: A
+   c: 哦，明白了。走五分钟就到吗？
+   p: Ó, míngbái le. Zǒu wǔ fēnzhōng jiù dào ma?
+   t: Oh, I understand. It takes five minutes to get there?
+ - s: B
+   c: 对，你自己试一次吧。
+   p: Duì, nǐ zìjǐ shì yí cì ba.
+   t: Yes, try it once by yourself.
+
+# This dialogue combines:
+# - pet introduction from dialogue 2 (showing pet, naming)
+# - price discussion from dialogue 4
+# - cuteness expressions from dialogue 2
+9 - Pet at school:
+ - s: A
+   c: 这是我新买的小狗，叫小黑。
+   p: Zhè shì wǒ xīn mǎi de xiǎo gǒu, jiào Xiǎo Hēi.
+   t: This is my newly bought puppy, called Xiao Hei.
+   d: 新 + verb + 的 is a useful pattern meaning "newly (verb)"
+ - s: B
+   c: 你在哪里买的？多少钱？
+   p: Nǐ zài nǎlǐ mǎi de? Duōshao qián?
+   t: Where did you buy it? How much was it?
+ - s: A
+   c: 不贵，八十就买到了。
+   p: Bù guì, bāshí jiù mǎi dào le.
+   t: Not expensive, got it for just eighty.
+   d: 就 here emphasizes getting a good deal
+ - s: B
+   c: 真的吗？太可爱了！
+   p: Zhēn de ma? Tài kě'ài le!
+   t: Really? So cute!
+
+# This dialogue combines:
+# - lateness and waiting from dialogue 1
+# - "don't know how" pattern from dialogue 3
+# - locations and directions from dialogue 5
+10 - Late and lost:
+ - s: A
+   c: 你还没到吗？老李在等你。
+   p: Nǐ hái méi dào ma? Lǎo Lǐ zài děng nǐ.
+   t: You're still not here? Lao Li is waiting.
+   d: 还没 (hái méi) emphasizes something still hasn't happened
+ - s: B
+   c: 对不起，我不知道怎么走。
+   p: Duìbuqǐ, wǒ bù zhīdào zěnme zǒu.
+   t: Sorry, I don't know how to get there.
+ - s: A
+   c: 你在哪里？我教你怎么走。
+   p: Nǐ zài nǎlǐ? Wǒ jiāo nǐ zěnme zǒu.
+   t: Where are you? I'll teach you how to get here.
+ - s: B
+   c: 我在右边的图书馆。
+   p: Wǒ zài yòubiān de túshūguǎn.
+   t: I'm at the library on the right.
+   
+# ---
+
+11 - At the doctor's:
+ - s: A
+   c: 医生，我今天不太好。
+   p: Yīshēng, wǒ jīntiān bù tài hǎo.
+   t: Doctor, I'm not feeling well today.
+   d: 不太好 (bù tài hǎo) is a gentler way of saying "not well" compared to 不好
+ - s: B
+   c: 哪里不舒服？
+   p: Nǎlǐ bù shūfu?
+   t: Where are you feeling unwell?
+   d: 不舒服 (bù shūfu) is the standard way to express feeling unwell physically
+ - s: A
+   c: 从昨天开始的。
+   p: Cóng zuótiān kāishǐ de.
+   t: Since yesterday.
+   d: 从...开始 (cóng...kāishǐ) is a key pattern meaning "since/from...start"
+
+12 - Making dinner plans:
+ - s: A
+   c: 今天晚上去我家吃饭吧？
+   p: Jīntiān wǎnshang qù wǒ jiā chīfàn ba?
+   t: Want to come to my place for dinner tonight?
+   d: Adding 吧 (ba) at the end makes the invitation sound gentle and persuasive
+ - s: B
+   c: 你会做什么？
+   p: Nǐ huì zuò shénme?
+   t: What will you cook?
+   d: 会 (huì) here indicates ability rather than future tense
+ - s: A
+   c: 我做鱼，很好吃的。
+   p: Wǒ zuò yú, hěn hǎochī de.
+   t: I'll cook fish, it's very tasty.
+   d: Adding 的 (de) at the end adds emphasis and conviction about the statement
+
+13 - Meeting a friend:
+ - s: A
+   c: 小李！好久不见！
+   p: Xiǎo Lǐ! Hǎojiǔ bùjiàn!
+   t: Xiao Li! Long time no see!
+   d: 好久不见 (hǎojiǔ bùjiàn) is a set phrase you'll hear constantly
+ - s: B
+   c: 是啊，你现在在做什么工作？
+   p: Shì a, nǐ xiànzài zài zuò shénme gōngzuò?
+   t: Yeah, what work are you doing now?
+   d: 在做 (zài zuò) indicates current ongoing work - present continuous
+ - s: A
+   c: 真好，我们找个时候一起吃饭。
+   p: Zhēn hǎo, wǒmen zhǎo ge shíhou yìqǐ chīfàn.
+   t: Great, let's find time to have a meal together.
+   d: 找个时候 (zhǎo ge shíhou) is a polite way to suggest future plans without committing
+
+14 - At the coffee shop:
+ - s: A
+   c: 这个咖啡太热了。
+   p: Zhège kāfēi tài rè le.
+   t: This coffee is too hot.
+   d: 太...了 (tài...le) is the standard pattern for "too much" of something
+ - s: B
+   c: 等一下再喝吧。
+   p: Děng yíxià zài hē ba.
+   t: Wait a bit before drinking.
+   d: 等一下 (děng yíxià) + 再 (zài) + verb means "wait a bit before doing something"
+ - s: A
+   c: 你的看起来很好喝。
+   p: Nǐ de kàn qǐlái hěn hǎo hē.
+   t: Yours looks very good to drink.
+   d: 看起来 (kàn qǐlái) is essential for describing appearances/impressions
+
+15 - Weather talk:
+ - s: A
+   c: 今天天气真好。
+   p: Jīntiān tiānqì zhēn hǎo.
+   t: The weather is really nice today.
+   d: 真 (zhēn) before adjectives emphasizes genuine feeling about something
+ - s: B
+   c: 对，不冷不热。
+   p: Duì, bù lěng bù rè.
+   t: Yes, not cold and not hot.
+   d: 不A不B structure describes "neither A nor B" - very useful pattern
+ - s: A
+   c: 趁现在天气好。
+   p: Chèn xiànzài tiānqì hǎo.
+   t: While the weather is nice.
+   d: 趁 (chèn) means "to take advantage of (a situation)" - very common in daily speech
+
+# REVIEW!
+
+# This dialogue combines:
+# - lateness patterns from dialogues 1 and 10
+# - weather elements from dialogue 15
+# - walking/direction patterns from dialogue 5
+16 - Late because of weather:
+ - s: A
+   c: 你在哪里？已经九点了！
+   p: Nǐ zài nǎlǐ? Yǐjīng jiǔ diǎn le!
+   t: Where are you? It's already nine!
+ - s: B
+   c: 对不起，今天天气不好，走得很慢。
+   p: Duìbuqǐ, jīntiān tiānqì bù hǎo, zǒu de hěn màn.
+   t: Sorry, the weather is bad today, walking very slowly.
+   d: 走得 (zǒu de) + adj describes how an action is performed
+ - s: A
+   c: 你现在在图书馆吗？
+   p: Nǐ xiànzài zài túshūguǎn ma?
+   t: Are you at the library now?
+ - s: B
+   c: 不是，我在咖啡店等一下。
+   p: Bùshì, wǒ zài kāfēi diàn děng yíxià.
+   t: No, I'm waiting at the coffee shop for a bit.
+   
+# This dialogue combines:
+# - pet introductions from dialogue 2
+# - food evaluation from dialogue 12
+# - time patterns from dialogue 3
+17 - Feeding a pet:
+ - s: A
+   c: 你看，这是小白的饭！
+   p: Nǐ kàn, zhè shì Xiǎo Bái de fàn!
+   t: Look, this is Xiao Bai's food!
+ - s: B
+   c: 好吃吗？它喜欢吗？
+   p: Hǎochī ma? Tā xǐhuan ma?
+   t: Is it good? Does it like it?
+ - s: A
+   c: 太热了，要等一下再给它。
+   p: Tài rè le, yào děng yíxià zài gěi tā.
+   t: Too hot, need to wait a bit before giving it to him.
+   d: 再 (zài) indicates doing something later, after waiting
+
+# This dialogue combines:
+# - classroom help pattern from dialogue 3
+# - meeting friend pattern from dialogue 13 
+# - price elements from dialogue 4
+18 - Old classmate at shop:
+ - s: A
+   c: 小王！好久不见！
+   p: Xiǎo Wáng! Hǎojiǔ bùjiàn!
+   t: Xiao Wang! Long time no see!
+ - s: B
+   c: 是老师！你现在在这里工作吗？
+   p: Shì lǎoshī! Nǐ xiànzài zài zhèlǐ gōngzuò ma?
+   t: Teacher! Do you work here now?
+ - s: A
+   c: 对，我教你怎么买便宜的。
+   p: Duì, wǒ jiāo nǐ zěnme mǎi piányí de.
+   t: Yes, I'll teach you how to buy the cheap ones.
+   d: Using 怎么 (zěnme) to ask/explain how to do something
+ - s: B
+   c: 太好了！这个多少钱？
+   p: Tài hǎo le! Zhège duōshao qián?
+   t: Great! How much is this?
+
+# This dialogue combines:
+# - direction asking from dialogue 5
+# - coffee shop setting from dialogue 14
+# - timing patterns from dialogue 1
+19 - Finding a cafe:
+ - s: A
+   c: 请问，咖啡店在哪里？
+   p: Qǐngwèn, kāfēi diàn zài nǎlǐ?
+   t: Excuse me, where is the coffee shop?
+ - s: B
+   c: 往前走，在图书馆的右边。
+   p: Wǎng qián zǒu, zài túshūguǎn de yòubiān.
+   t: Go forward, it's on the right of the library.
+ - s: A
+   c: 远不远？我跟朋友说好五分钟就到。
+   p: Yuǎn bu yuǎn? Wǒ gēn péngyou shuō hǎo wǔ fēnzhōng jiù dào.
+   t: Is it far? I told my friend I'd be there in five minutes.
+ - s: B
+   c: 不远，但是现在咖啡店很多人。
+   p: Bù yuǎn, dànshì xiànzài kāfēi diàn hěn duō rén.
+   t: Not far, but the coffee shop is very crowded now.
+
+# This dialogue combines:
+# - not feeling well from dialogue 11
+# - weather from dialogue 15
+# - dinner invitation from dialogue 12
+20 - Changing dinner plans:
+ - s: A
+   c: 今天晚上还去你家吃饭吗？
+   p: Jīntiān wǎnshang hái qù nǐ jiā chīfàn ma?
+   t: Are we still going to your place for dinner tonight?
+ - s: B
+   c: 对不起，我今天不太好。
+   p: Duìbuqǐ, wǒ jīntiān bù tài hǎo.
+   t: Sorry, I'm not feeling well today.
+ - s: A
+   c: 从什么时候开始的？
+   p: Cóng shénme shíhou kāishǐ de?
+   t: When did it start?
+   d: 从...开始 (cóng...kāishǐ) pattern asking when something began
+ - s: B
+   c: 从昨天。可能因为天气不好。
+   p: Cóng zuótiān. Kěnéng yīnwèi tiānqì bù hǎo.
+   t: Since yesterday. Maybe because of the bad weather.
+   
+# ---- 
+   
+21 - Taking a taxi:
+ - s: A
+   c: 师傅，我要去火车站。
+   p: Shīfu, wǒ yào qù huǒchēzhàn.
+   t: Driver, I want to go to the train station.
+   d: 师傅 (shīfu) is the polite way to address taxi drivers
+ - s: B
+   c: 好的。你几点的火车？
+   p: Hǎo de. Nǐ jǐ diǎn de huǒchē?
+   t: Okay. What time is your train?
+ - s: A
+   c: 三点的。现在堵车吗？
+   p: Sān diǎn de. Xiànzài dǔchē ma?
+   t: At three. Is there traffic now?
+   d: Adding 的 after time makes it "the one at [time]"
+ - s: B
+   c: 有一点堵。我走那边快一点。
+   p: Yǒu yìdiǎn dǔ. Wǒ zǒu nàbiān kuài yìdiǎn.
+   t: It's a bit congested. I'll go that way, it's faster.
+   d: 一点 (yìdiǎn) after adjectives means "a bit/somewhat"
+ - s: A
+   c: 好的，麻烦你快一点。
+   p: Hǎo de, máfan nǐ kuài yìdiǎn.
+   t: Okay, please go a bit faster.
+   d: 麻烦你 (máfan nǐ) is a polite way to make requests
+
+22 - At the gym:
+ - s: A
+   c: 你每天都来这里运动吗？
+   p: Nǐ měitiān dōu lái zhèlǐ yùndòng ma?
+   t: Do you come here to exercise every day?
+   d: 每天都 (měitiān dōu) emphasizes "every single day"
+ - s: B
+   c: 对，我已经来了三个月了。
+   p: Duì, wǒ yǐjīng lái le sān ge yuè le.
+   t: Yes, I've been coming for three months already.
+   d: 已经...了 (yǐjīng...le) indicates duration up to present
+ - s: A
+   c: 看得出来，你现在很有力气。
+   p: Kàn de chūlái, nǐ xiànzài hěn yǒu lìqi.
+   t: I can tell, you look very strong now.
+   d: 看得出来 (kàn de chūlái) means "can tell/see" from observation
+ - s: B
+   c: 哪里哪里。你要不要一起？
+   p: Nǎlǐ nǎlǐ. Nǐ yào bú yào yìqǐ?
+   t: Oh no, not really. Want to join me?
+   d: 哪里哪里 (nǎlǐ nǎlǐ) is a modest response to compliments
+ - s: A
+   c: 好啊，你可以教我一下。
+   p: Hǎo a, nǐ kěyǐ jiāo wǒ yíxià.
+   t: Sure, you can teach me a bit.
+   d: 一下 (yíxià) softens requests, making them sound less demanding
+
+23 - Making weekend plans:
+ - s: A
+   c: 这个周末有什么打算？
+   p: Zhège zhōumò yǒu shénme dǎsuàn?
+   t: What are your plans for this weekend?
+ - s: B
+   c: 我想去看电影，听说最近有一个很好看的。
+   p: Wǒ xiǎng qù kàn diànyǐng, tīngshuō zuìjìn yǒu yí ge hěn hǎokàn de.
+   t: I want to watch a movie, I heard there's a good one recently.
+   d: 听说 (tīngshuō) is how you introduce something you've heard about
+ - s: A
+   c: 是那个新的王老师演的吗？
+   p: Shì nàge xīn de Wáng lǎoshī yǎn de ma?
+   t: Is it the new one with Teacher Wang?
+ - s: B
+   c: 对对对，你要不要一起去？
+   p: Duì duì duì, nǐ yào bú yào yìqǐ qù?
+   t: Yes yes yes, want to go together?
+   d: Repeating 对 three times shows enthusiasm/stronger agreement
+ - s: A
+   c: 好啊，几点的票比较好？
+   p: Hǎo a, jǐ diǎn de piào bǐjiào hǎo?
+   t: Sure, what time would be better?
+   d: 比较 (bǐjiào) before adjectives means "relatively/comparatively"
+
+24 - At a friend's house:
+ - s: A
+   c: 你家真漂亮！
+   p: Nǐ jiā zhēn piàoliang!
+   t: Your home is really beautiful!
+ - s: B
+   c: 谢谢，我们刚搬来不久。
+   p: Xièxie, wǒmen gāng bān lái bùjiǔ.
+   t: Thanks, we just moved in not long ago.
+   d: 刚 (gāng) + verb indicates something happened very recently
+ - s: A
+   c: 这个沙发看起来很舒服。
+   p: Zhège shāfā kàn qǐlái hěn shūfu.
+   t: This sofa looks very comfortable.
+ - s: B
+   c: 是啊，你坐坐看。
+   p: Shì a, nǐ zuò zuòkan.
+   t: Yes, try sitting on it.
+   d: Verb + 看 (kàn) means "try doing something to see how it is"
+ - s: A
+   c: 真的很舒服！在哪里买的？
+   p: Zhēnde hěn shūfu! Zài nǎlǐ mǎi de?
+   t: Really comfortable! Where did you buy it?
+
+25 - Ordering delivery:
+ - s: A
+   c: 你好，我要点外卖。
+   p: Nǐ hǎo, wǒ yào diǎn wàimài.
+   t: Hello, I'd like to order delivery.
+ - s: B
+   c: 好的，你要什么？
+   p: Hǎo de, nǐ yào shénme?
+   t: Okay, what would you like?
+ - s: A
+   c: 我要一个汤，两个菜。可以快一点吗？
+   p: Wǒ yào yí ge tāng, liǎng ge cài. Kěyǐ kuài yìdiǎn ma?
+   t: I want one soup and two dishes. Can it be a bit faster?
+ - s: B
+   c: 现在很多人点，要等四十分钟。
+   p: Xiànzài hěn duō rén diǎn, yào děng sìshí fēnzhōng.
+   t: Many people are ordering now, need to wait 40 minutes.
+   d: Time duration comes directly after 等 (děng) - no measure word needed
+ - s: A
+   c: 那算了，太久了。
+   p: Nà suàn le, tài jiǔ le.
+   t: Then forget it, that's too long.
+   d: 算了 (suàn le) is a common way to say "forget it/never mind"
+
+# REVIEW!
+
+# This dialogue combines:
+# - time urgency from dialogue 1
+# - delivery timing from dialogue 25
+# - taxi route selection from dialogue 21
+26 - Urgent delivery:
+ - s: A
+   c: 你好，外卖到了吗？已经等很久了。
+   p: Nǐ hǎo, wàimài dào le ma? Yǐjīng děng hěn jiǔ le.
+   t: Hello, is the delivery here? I've been waiting a long time.
+ - s: B
+   c: 对不起，现在有点堵车。
+   p: Duìbuqǐ, xiànzài yǒu diǎn dǔchē.
+   t: Sorry, there's some traffic now.
+   d: 有点 (yǒu diǎn) softens descriptions - "a bit/somewhat"
+ - s: A
+   c: 还要多久？老王在等着吃呢。
+   p: Hái yào duōjiǔ? Lǎo Wáng zài děng zhe chī ne.
+   t: How much longer? Lao Wang is waiting to eat.
+ - s: B
+   c: 我走别的路，五分钟就到。
+   p: Wǒ zǒu biéde lù, wǔ fēnzhōng jiù dào.
+   t: I'll take another route, will be there in five minutes.
+
+# This dialogue combines:
+# - friend's house visit from dialogue 24
+# - exercise topic from dialogue 22
+# - weekend plans from dialogue 23
+27 - New home gym:
+ - s: A
+   c: 哇，你家不但漂亮，还有运动的地方！
+   p: Wa, nǐ jiā bùdàn piàoliang, hái yǒu yùndòng de dìfang!
+   t: Wow, your home is not only beautiful, but also has an exercise area!
+   d: 不但...还... (bùdàn...hái...) means "not only...but also..."
+ - s: B
+   c: 对，我每天都在这里运动。
+   p: Duì, wǒ měitiān dōu zài zhèlǐ yùndòng.
+   t: Yes, I exercise here every day.
+ - s: A
+   c: 看得出来！这个周末我可以来试试吗？
+   p: Kàn de chūlái! Zhège zhōumò wǒ kěyǐ lái shìshi ma?
+   t: I can tell! Can I come try it this weekend?
+ - s: B
+   c: 当然可以，我教你怎么用。
+   p: Dāngrán kěyǐ, wǒ jiāo nǐ zěnme yòng.
+   t: Of course, I'll teach you how to use it.
+
+# This dialogue combines:
+# - location asking from dialogue 5
+# - movie plans from dialogue 23
+# - timing concerns from dialogue 21
+28 - Finding the cinema:
+ - s: A
+   c: 请问，电影院在哪里？
+   p: Qǐngwèn, diànyǐngyuàn zài nǎlǐ?
+   t: Excuse me, where's the cinema?
+ - s: B
+   c: 往前走，在图书馆的右边。现在堵车吗？
+   p: Wǎng qián zǒu, zài túshūguǎn de yòubiān. Xiànzài dǔchē ma?
+   t: Go forward, it's on the right of the library. Is there traffic now?
+ - s: A
+   c: 有一点。我们三点的票，来得及吗？
+   p: Yǒu yìdiǎn. Wǒmen sān diǎn de piào, lái de jí ma?
+   t: A little. We have tickets for 3 o'clock, will we make it?
+   d: 来得及 (lái de jí) means "to have enough time"
+ - s: B
+   c: 不远，走五分钟就到了。
+   p: Bù yuǎn, zǒu wǔ fēnzhōng jiù dào le.
+   t: Not far, just five minutes' walk.
+
+# This dialogue combines:
+# - shopping from dialogue 4
+# - furniture from dialogue 24
+# - exercise equipment from dialogue 22
+29 - Shopping for exercise equipment:
+ - s: A
+   c: 这个跑步机看起来很好。
+   p: Zhège pǎobùjī kàn qǐlái hěn hǎo.
+   t: This treadmill looks very good.
+ - s: B
+   c: 是的，你坐坐看。
+   p: Shì de, nǐ zuò zuòkàn.
+   t: Yes, try sitting on it.
+ - s: A
+   c: 多少钱？
+   p: Duōshao qián?
+   t: How much is it?
+ - s: B
+   c: 八百。已经很便宜了。
+   p: Bā bǎi. Yǐjīng hěn piányí le.
+   t: Eight hundred. It's already very cheap.
+   d: 已经 (yǐjīng) emphasizes something is "already" at a certain state
+
+# This dialogue combines:
+# - teaching pattern from dialogue 3
+# - delivery ordering from dialogue 25
+# - weekend planning from dialogue 23
+30 - Teaching how to order:
+ - s: A
+   c: 老师，我不知道怎么点外卖。
+   p: Lǎoshī, wǒ bù zhīdào zěnme diǎn wàimài.
+   t: Teacher, I don't know how to order delivery.
+ - s: B
+   c: 你看这里，这样点就对了。
+   p: Nǐ kàn zhèlǐ, zhèyàng diǎn jiù duì le.
+   t: Look here, order like this and it'll be right.
+ - s: A
+   c: 哦，明白了。周末我自己试试。
+   p: Ó, míngbái le. Zhōumò wǒ zìjǐ shìshi.
+   t: Oh, I understand. I'll try it myself on the weekend.
+   d: 试试 (shìshi) is a softer way to say "try" than just 试
+ - s: B
+   c: 对，但是要记住，现在点要等很久。
+   p: Duì, dànshì yào jìzhu, xiànzài diǎn yào děng hěn jiǔ.
+   t: Right, but remember, ordering now means waiting a long time.
+
+# New material
+   
+31 - At a job interview:
+- s: A
+  c: 请坐。你对这个工作了解多少？
+  p: Qǐng zuò. Nǐ duì zhège gōngzuò liǎojiě duōshao?
+  t: Please sit. How much do you know about this job?
+  d: 对...了解 (duì...liǎojiě) is the pattern for "understanding of something"
+- s: B
+  c: 我知道要做销售，每天要见很多人。
+  p: Wǒ zhīdào yào zuò xiāoshòu, měitiān yào jiàn hěn duō rén.
+  t: I know it's sales, need to meet many people daily.
+- s: A
+  c: 对。你有这样的工作经验吗？
+  p: Duì. Nǐ yǒu zhèyàng de gōngzuò jīngyàn ma?
+  t: Right. Do you have this kind of work experience?
+  d: 这样的 (zhèyàng de) means "this kind of" - very useful pattern
+- s: B
+  c: 有，我以前做过两年销售。
+  p: Yǒu, wǒ yǐqián zuò guò liǎng nián xiāoshòu.
+  t: Yes, I did sales for two years before.
+  d: 过 (guò) indicates past experience
+- s: A
+  c: 那很好。你觉得自己最大的优点是什么？
+  p: Nà hěn hǎo. Nǐ juéde zìjǐ zuì dà de yōudiǎn shì shénme?
+  t: That's good. What do you think is your biggest strength?
+
+32 - Discussing a movie:
+- s: A
+  c: 昨天的电影怎么样？
+  p: Zuótiān de diànyǐng zěnmeyàng?
+  t: How was yesterday's movie?
+- s: B
+  c: 说实话，我觉得不太好看。
+  p: Shuō shíhuà, wǒ juéde bù tài hǎokàn.
+  t: To be honest, I don't think it was very good.
+  d: 说实话 (shuō shíhuà) is a common way to introduce honest opinions
+- s: A
+  c: 真的吗？为什么？大家都说很好。
+  p: Zhēn de ma? Wèishéme? Dàjiā dōu shuō hěn hǎo.
+  t: Really? Why? Everyone says it's good.
+  d: 大家 (dàjiā) means "everyone" - very common word
+- s: B
+  c: 故事太慢了，结束也不太好。
+  p: Gùshi tài màn le, jiéshù yě bù tài hǎo.
+  t: The story was too slow, and the ending wasn't good either.
+- s: A
+  c: 我明白了。那下次我们看别的。
+  p: Wǒ míngbái le. Nà xià cì wǒmen kàn biéde.
+  t: I understand. Then let's watch something else next time.
+  d: 别的 (biéde) means "something else" - very useful in suggestions
+
+33 - Making a complaint:
+- s: A
+  c: 你好，我昨天在这里买的东西有问题。
+  p: Nǐ hǎo, wǒ zuótiān zài zhèlǐ mǎi de dōngxi yǒu wèntí.
+  t: Hello, there's a problem with what I bought here yesterday.
+- s: B
+  c: 对不起，是什么问题？给我看看。
+  p: Duìbuqǐ, shì shénme wèntí? Gěi wǒ kànkan.
+  t: Sorry, what's the problem? Let me take a look.
+  d: Repeating verbs (看看) softens the request
+- s: A
+  c: 这里坏了，但是我才用了一次。
+  p: Zhèlǐ huài le, dànshì wǒ cái yòng le yí cì.
+  t: This part is broken, but I've only used it once.
+  d: 才 (cái) emphasizes "only/just" - shows the situation is unreasonable
+- s: B
+  c: 我明白了。你想换一个还是要钱？
+  p: Wǒ míngbái le. Nǐ xiǎng huàn yí ge háishi yào qián?
+  t: I understand. Do you want to exchange it or get a refund?
+  d: A还是B (háishi) is the pattern for offering choices
+- s: A
+  c: 我想换一个新的，可以吗？
+  p: Wǒ xiǎng huàn yí ge xīn de, kěyǐ ma?
+  t: I'd like to exchange it for a new one, is that okay?
+
+34 - Planning a birthday:
+- s: A
+  c: 下个星期是小李的生日，我们要不要准备什么？
+  p: Xià ge xīngqī shì Xiǎo Lǐ de shēngrì, wǒmen yào bú yào zhǔnbèi shénme?
+  t: Next week is Xiao Li's birthday, should we prepare something?
+- s: B
+  c: 对啊，让我们给他一个惊喜吧！
+  p: Duì a, ràng wǒmen gěi tā yí ge jīngxǐ ba!
+  t: Yes, let's give him a surprise!
+  d: 惊喜 (jīngxǐ) literally means "surprise-happiness"
+- s: A
+  c: 好主意！我们可以在他家做饭。
+  p: Hǎo zhǔyi! Wǒmen kěyǐ zài tā jiā zuò fàn.
+  t: Good idea! We can cook at his place.
+- s: B
+  c: 那谁去买东西？我们需要什么？
+  p: Nà shéi qù mǎi dōngxi? Wǒmen xūyào shénme?
+  t: Then who will buy things? What do we need?
+- s: A
+  c: 我们一起去吧，这样比较好。
+  p: Wǒmen yìqǐ qù ba, zhèyàng bǐjiào hǎo.
+  t: Let's go together, that would be better.
+  d: 这样 (zhèyàng) refers back to the previous suggestion
+
+35 - At a computer store:
+- s: A
+  c: 请问，你们有便宜一点的电脑吗？
+  p: Qǐngwèn, nǐmen yǒu piányí yìdiǎn de diànnǎo ma?
+  t: Excuse me, do you have any cheaper computers?
+- s: B
+  c: 有，这个怎么样？是新来的。
+  p: Yǒu, zhège zěnmeyàng? Shì xīn lái de.
+  t: Yes, how about this one? It just arrived.
+  d: 新来的 (xīn lái de) means newly arrived/new stock
+- s: A
+  c: 可以用来看电影和上网吗？
+  p: Kěyǐ yòng lái kàn diànyǐng hé shàngwǎng ma?
+  t: Can it be used for watching movies and internet browsing?
+  d: 用来 (yòng lái) means "use for" - very useful pattern
+- s: B
+  c: 当然可以，这些都没问题。
+  p: Dāngrán kěyǐ, zhèxiē dōu méi wèntí.
+  t: Of course, no problem with any of those.
+- s: A
+  c: 好，那给我介绍一下具体的情况。
+  p: Hǎo, nà gěi wǒ jièshào yíxià jùtǐ de qíngkuàng.
+  t: Okay, then tell me more specific details about it.
+  d: 具体的情况 (jùtǐ de qíngkuàng) is a formal way to ask for details
+
+# REVIEW!
+
+# This dialogue combines:
+# - job interview formality from dialogue 31
+# - computer inquiry from dialogue 35
+# - experience patterns from dialogue 31
+36 - Tech job interview:
+ - s: A
+   c: 请坐。你对电脑了解多少？
+   p: Qǐng zuò. Nǐ duì diànnǎo liǎojiě duōshao?
+   t: Please sit. How much do you know about computers?
+   d: 了解 (liǎojiě) + topic is a formal way to ask about knowledge
+ - s: B
+   c: 我以前做过三年电脑销售。
+   p: Wǒ yǐqián zuò guò sān nián diànnǎo xiāoshòu.
+   t: I've done computer sales for three years before.
+ - s: A
+   c: 那很好。你会教别人用电脑吗？
+   p: Nà hěn hǎo. Nǐ huì jiāo biérén yòng diànnǎo ma?
+   t: That's good. Can you teach others to use computers?
+ - s: B
+   c: 这是我最大的优点，我很喜欢教别人。
+   p: Zhè shì wǒ zuì dà de yōudiǎn, wǒ hěn xǐhuan jiāo biérén.
+   t: This is my biggest strength, I really like teaching others.
+
+# This dialogue combines:
+# - complaint from dialogue 33
+# - movie discussion from dialogue 32
+# - computer usage from dialogue 35
+37 - Movie streaming problems:
+ - s: A
+   c: 你好，我昨天买的电影看不了。
+   p: Nǐ hǎo, wǒ zuótiān mǎi de diànyǐng kàn bù liǎo.
+   t: Hello, I can't watch the movie I bought yesterday.
+   d: 看不了 (kàn bù liǎo) indicates inability - "cannot watch"
+ - s: B
+   c: 对不起，是什么问题？给我看看。
+   p: Duìbuqǐ, shì shénme wèntí? Gěi wǒ kànkan.
+   t: Sorry, what's the problem? Let me take a look.
+ - s: A
+   c: 说实话，这个电脑可能有问题。
+   p: Shuō shíhuà, zhège diànnǎo kěnéng yǒu wèntí.
+   t: To be honest, this computer might have a problem.
+ - s: B
+   c: 我明白了，我们换一个新的电脑给你。
+   p: Wǒ míngbái le, wǒmen huàn yí ge xīn de diànnǎo gěi nǐ.
+   t: I understand, we'll exchange it for a new computer for you.
+
+# This dialogue combines:
+# - birthday planning from dialogue 34
+# - computer shopping from dialogue 35
+# - price negotiation from earlier dialogues
+38 - Birthday computer gift:
+ - s: A
+   c: 下个星期是小王的生日，我们买电脑怎么样？
+   p: Xià ge xīngqī shì Xiǎo Wáng de shēngrì, wǒmen mǎi diànnǎo zěnmeyàng?
+   t: Next week is Xiao Wang's birthday, how about buying a computer?
+ - s: B
+   c: 好主意！有便宜一点的吗？
+   p: Hǎo zhǔyi! Yǒu piányí yìdiǎn de ma?
+   t: Good idea! Are there any cheaper ones?
+ - s: A
+   c: 这个新的怎么样？可以看电影。
+   p: Zhège xīn de zěnmeyàng? Kěyǐ kàn diànyǐng.
+   t: How about this new one? Can watch movies on it.
+ - s: B
+   c: 但是会不会太贵？我们一起买吧。
+   p: Dànshì huì bú huì tài guì? Wǒmen yìqǐ mǎi ba.
+   t: But won't it be too expensive? Let's buy it together.
+   d: 会不会 (huì bú huì) asks about possibility or concern
+
+# This dialogue combines:
+# - experience description from dialogue 31
+# - complaint handling from dialogue 33
+# - customer service patterns
+39 - Customer service experience:
+ - s: A
+   c: 你做过这样的工作吗？
+   p: Nǐ zuò guò zhèyàng de gōngzuò ma?
+   t: Have you done this kind of work before?
+ - s: B
+   c: 对，我以前做过两年。我很会帮人解决问题。
+   p: Duì, wǒ yǐqián zuò guò liǎng nián. Wǒ hěn huì bāng rén jiějué wèntí.
+   t: Yes, I did it for two years before. I'm good at helping people solve problems.
+ - s: A
+   c: 那如果东西坏了，你怎么办？
+   p: Nà rúguǒ dōngxi huài le, nǐ zěnme bàn?
+   t: Then if something breaks, what would you do?
+   d: 怎么办 (zěnme bàn) is a common way to ask "what would you do"
+ - s: B
+   c: 我会先听他们说，然后给他们换新的。
+   p: Wǒ huì xiān tīng tāmen shuō, ránhòu gěi tāmen huàn xīn de.
+   t: I would first listen to them, then give them a replacement.
+
+# This dialogue combines:
+# - movie review from dialogue 32
+# - birthday planning from dialogue 34
+# - group coordination patterns
+40 - Movie birthday plan:
+ - s: A
+   c: 下个星期小李生日，要不要一起看电影？
+   p: Xià ge xīngqī Xiǎo Lǐ shēngrì, yào bu yào yìqǐ kàn diànyǐng?
+   t: It's Xiao Li's birthday next week, want to watch a movie together?
+ - s: B
+   c: 大家都说新的很好看。
+   p: Dàjiā dōu shuō xīn de hěn hǎokàn.
+   t: Everyone says the new one is good.
+ - s: A
+   c: 那谁去买票？需要准备什么？
+   p: Nà shéi qù mǎi piào? Xūyào zhǔnbèi shénme?
+   t: Then who will buy tickets? What do we need to prepare?
+ - s: B
+   c: 我们一起去吧，可以给他一个惊喜。
+   p: Wǒmen yìqǐ qù ba, kěyǐ gěi tā yí ge jīngxǐ.
+   t: Let's go together, we can give him a surprise.
+
+# This dialogue combines:
+# - pet introduction from dialogue 2 ("Look at my dog!")
+# - work schedule from dialogue 22 ("every day")
+# - complaint pattern from dialogue 33
+# - taxi timing from dialogue 21
+41 - Dog walker problem:
+ - s: A
+   c: 你看，我的小狗最近不太好。
+   p: Nǐ kàn, wǒ de xiǎo gǒu zuìjìn bù tài hǎo.
+   t: Look, my puppy hasn't been well recently.
+ - s: B
+   c: 为什么？不是每天都有人带它走吗？
+   p: Wèishéme? Bùshì měitiān dōu yǒu rén dài tā zǒu ma?
+   t: Why? Doesn't someone walk it every day?
+ - s: A
+   c: 对，但是那个人总是来得很晚。
+   p: Duì, dànshì nàge rén zǒngshì lái de hěn wǎn.
+   t: Yes, but that person always comes very late.
+   d: 来得 + adj (lái de) describes how something is done
+ - s: B
+   c: 那换一个人吧。我认识一个很好的。
+   p: Nà huàn yí ge rén ba. Wǒ rènshi yí ge hěn hǎo de.
+   t: Then let's change to someone else. I know someone good.
+
+# This dialogue combines:
+# - classroom help from dialogue 3
+# - coffee shop setting from dialogue 14
+# - sales experience from dialogue 31
+# - movie commentary from dialogue 32
+42 - Training new staff:
+ - s: A
+   c: 老师，我不知道怎么做咖啡。
+   p: Lǎoshī, wǒ bù zhīdào zěnme zuò kāfēi.
+   t: Teacher, I don't know how to make coffee.
+ - s: B
+   c: 你以前做过这样的工作吗？
+   p: Nǐ yǐqián zuò guò zhèyàng de gōngzuò ma?
+   t: Have you done this kind of work before?
+ - s: A
+   c: 没有，这是第一次。
+   p: Méiyǒu, zhè shì dì yī cì.
+   t: No, this is my first time.
+ - s: B
+   c: 你看，这样做就对了。要等一下才能喝。
+   p: Nǐ kàn, zhèyàng zuò jiù duì le. Yào děng yíxià cái néng hē.
+   t: Look, do it this way and it'll be right. Need to wait a bit before drinking.
+   d: 才能 (cái néng) indicates a prerequisite - "only then can"
+
+# This dialogue combines:
+# - directions from dialogue 5
+# - gym habits from dialogue 22
+# - weather talk from dialogue 15
+# - planning patterns from dialogue 34
+43 - Finding a new gym:
+ - s: A
+   c: 请问，新的健身房在哪里？
+   p: Qǐngwèn, xīn de jiànshēnfáng zài nǎlǐ?
+   t: Excuse me, where's the new gym?
+ - s: B
+   c: 往前走，在图书馆右边。天气这么好，走过去很舒服。
+   p: Wǎng qián zǒu, zài túshūguǎn yòubiān. Tiānqì zhème hǎo, zǒu guòqù hěn shūfu.
+   t: Go forward, on the right of the library. The weather's so nice, it's pleasant to walk there.
+ - s: A
+   c: 远不远？我想每天都去。
+   p: Yuǎn bu yuǎn? Wǒ xiǎng měitiān dōu qù.
+   t: Is it far? I want to go every day.
+ - s: B
+   c: 不远，走五分钟就到了。你要不要现在去看看？
+   p: Bù yuǎn, zǒu wǔ fēnzhōng jiù dào le. Nǐ yào bú yào xiànzài qù kànkan?
+   t: Not far, five minutes' walk. Want to go take a look now?
+
+# This dialogue combines:
+# - shopping from dialogue 4
+# - computer store from dialogue 35
+# - complaint pattern from dialogue 33
+# - interview-style questions from dialogue 31
+44 - Tech shopping advice:
+ - s: A
+   c: 这个电脑多少钱？
+   p: Zhège diànnǎo duōshao qián?
+   t: How much is this computer?
+ - s: B
+   c: 八千。你对电脑了解多少？
+   p: Bā qiān. Nǐ duì diànnǎo liǎojiě duōshao?
+   t: Eight thousand. How much do you know about computers?
+ - s: A
+   c: 说实话，不太了解。但是听说这个很好。
+   p: Shuō shíhuà, bù tài liǎojiě. Dànshì tīngshuō zhège hěn hǎo.
+   t: To be honest, not much. But I heard this one is good.
+   d: 说实话 (shuō shíhuà) is a common way to give honest opinions
+ - s: B
+   c: 对，很多人买了都说好。要不要先试试？
+   p: Duì, hěn duō rén mǎi le dōu shuō hǎo. Yào bú yào xiān shìshi?
+   t: Yes, many buyers say it's good. Want to try it first?
+
+# This dialogue combines:
+# - delivery from dialogue 25
+# - birthday planning from dialogue 34
+# - timing pressure from dialogue 1
+# - taxi urgency from dialogue 21
+45 - Birthday delivery rush:
+ - s: A
+   c: 你好，我要点外卖。是小李的生日。
+   p: Nǐ hǎo, wǒ yào diǎn wàimài. Shì Xiǎo Lǐ de shēngrì.
+   t: Hello, I want to order delivery. It's Xiao Li's birthday.
+ - s: B
+   c: 现在堵车，可能要等四十分钟。
+   p: Xiànzài dǔchē, kěnéng yào děng sìshí fēnzhōng.
+   t: There's traffic now, might need to wait forty minutes.
+ - s: A
+   c: 那太晚了！有没有快一点的路？
+   p: Nà tài wǎn le! Yǒu méiyǒu kuài yìdiǎn de lù?
+   t: That's too late! Is there a faster route?
+ - s: B
+   c: 我们走别的路，二十分钟就可以。
+   p: Wǒmen zǒu biéde lù, èrshí fēnzhōng jiù kěyǐ.
+   t: We can take another route, just twenty minutes then.
+   d: 别的 (biéde) meaning "another/different" is very useful
+
+# This dialogue combines:
+# - classroom help from dialogue 3
+# - exercise instruction from dialogue 22
+# - interview evaluation from dialogue 31
+# - computer skills from dialogue 35
+46 - Teaching tech skills:
+- s: A
+  c: 老师，我不知道怎么用这个新系统。
+  p: Lǎoshī, wǒ bù zhīdào zěnme yòng zhège xīn xìtǒng.
+  t: Teacher, I don't know how to use this new system.
+- s: B
+  c: 你以前用过电脑吗？
+  p: Nǐ yǐqián yòng guò diànnǎo ma?
+  t: Have you used computers before?
+- s: A
+  c: 用过，但这个看起来很难。
+  p: Yòng guò, dàn zhège kàn qǐlái hěn nán.
+  t: Yes, but this looks very difficult.
+  d: 看起来 (kàn qǐlái) describes how something appears
+- s: B
+  c: 没关系，我教你。你自己试一次。
+  p: Méiguānxi, wǒ jiāo nǐ. Nǐ zìjǐ shì yí cì.
+  t: No worries, I'll teach you. Try it yourself once.
+
+# This dialogue combines:
+# - lateness from dialogue 1
+# - movie discussion from dialogue 32
+# - birthday plans from dialogue 34
+# - weather elements from dialogue 15
+47 - Birthday movie timing:
+- s: A
+  c: 你在哪里？电影已经开始了！
+  p: Nǐ zài nǎlǐ? Diànyǐng yǐjīng kāishǐ le!
+  t: Where are you? The movie has already started!
+- s: B
+  c: 对不起，下雨了，路上很堵。
+  p: Duìbuqǐ, xià yǔ le, lùshang hěn dǔ.
+  t: Sorry, it's raining, traffic is bad.
+- s: A
+  c: 那小李的生日惊喜怎么办？
+  p: Nà Xiǎo Lǐ de shēngrì jīngxǐ zěnme bàn?
+  t: Then what about Xiao Li's birthday surprise?
+  d: 怎么办 (zěnme bàn) is used when seeking solutions
+- s: B
+  c: 我们换别的电影吧，下一场。
+  p: Wǒmen huàn biéde diànyǐng ba, xià yī chǎng.
+  t: Let's change to another movie, the next showing.
+
+# This dialogue combines:
+# - shopping complaint from dialogue 33
+# - coffee shop setting from dialogue 14
+# - price negotiation from dialogue 4
+# - work experience from dialogue 31
+48 - Coffee machine problem:
+- s: A
+  c: 你好，我昨天买的咖啡机有问题。
+  p: Nǐ hǎo, wǒ zuótiān mǎi de kāfēijī yǒu wèntí.
+  t: Hello, there's a problem with the coffee machine I bought yesterday.
+- s: B
+  c: 是什么问题？咖啡太热吗？
+  p: Shì shénme wèntí? Kāfēi tài rè ma?
+  t: What's the problem? Is the coffee too hot?
+- s: A
+  c: 不是，根本不能用。可以换一个吗？
+  p: Bùshì, gēnběn bù néng yòng. Kěyǐ huàn yí ge ma?
+  t: No, it doesn't work at all. Can I exchange it?
+  d: 根本 (gēnběn) emphasizes "completely/at all"
+- s: B
+  c: 当然可以。我用过这个，我教你怎么用新的。
+  p: Dāngrán kěyǐ. Wǒ yòng guò zhège, wǒ jiāo nǐ zěnme yòng xīn de.
+  t: Of course. I've used this before, I'll teach you how to use the new one.
+
+# This dialogue combines:
+# - work discussion from dialogue 31
+# - delivery service from dialogue 25
+# - time pressure from dialogue 21
+# - customer service patterns
+49 - Delivery job interview:
+- s: A
+  c: 请坐。你做过外卖员吗？
+  p: Qǐng zuò. Nǐ zuò guò wàimàiyuán ma?
+  t: Please sit. Have you worked as a delivery person before?
+- s: B
+  c: 做过两年。我很会找快的路。
+  p: Zuò guò liǎng nián. Wǒ hěn huì zhǎo kuài de lù.
+  t: Did it for two years. I'm good at finding fast routes.
+- s: A
+  c: 那如果堵车怎么办？
+  p: Nà rúguǒ dǔchē zěnme bàn?
+  t: Then what if there's traffic?
+- s: B
+  c: 我知道很多别的路，都试过了。
+  p: Wǒ zhīdào hěn duō biéde lù, dōu shì guò le.
+  t: I know many alternative routes, tried them all.
+
+# This dialogue combines:
+# - gym patterns from dialogue 22
+# - friend's house from dialogue 24
+# - computer discussion from dialogue 35
+# - scheduling patterns
+50 - Home office setup:
+- s: A
+  c: 你家真漂亮！又有健身房又有办公室！
+  p: Nǐ jiā zhēn piàoliang! Yòu yǒu jiànshēnfáng yòu yǒu bàngōngshì!
+  t: Your home is beautiful! Has both a gym and an office!
+  d: 又...又... (yòu...yòu...) means "both...and..."
+- s: B
+  c: 是啊，每天都在家工作，需要运动。
+  p: Shì a, měitiān dōu zài jiā gōngzuò, xūyào yùndòng.
+  t: Yes, work from home every day, need to exercise.
+- s: A
+  c: 电脑看起来也很新。在哪里买的？
+  p: Diànnǎo kàn qǐlái yě hěn xīn. Zài nǎlǐ mǎi de?
+  t: The computer looks very new too. Where did you buy it?
+- s: B
+  c: 刚买的，便宜一点的。要不要试试？
+  p: Gāng mǎi de, piányí yìdiǎn de. Yào bú yào shìshi?
+  t: Just bought it, a cheaper one. Want to try it?
+   
+# NEW MATERIAL
+  
+51 - Getting a haircut:
+- s: A
+  c: 你好，我想剪头发。
+  p: Nǐ hǎo, wǒ xiǎng jiǎn tóufa.
+  t: Hello, I'd like to get a haircut.
+- s: B
+  c: 好的，你想剪成什么样子？
+  p: Hǎo de, nǐ xiǎng jiǎn chéng shénme yàngzi?
+  t: Okay, how would you like it cut?
+  d: 成 (chéng) indicates transformation - "into what style"
+- s: A
+  c: 我想剪短一点，但不要太短。
+  p: Wǒ xiǎng jiǎn duǎn yìdiǎn, dàn bú yào tài duǎn.
+  t: I want it a bit shorter, but not too short.
+- s: B
+  c: 这样可以吗？给你看看。
+  p: Zhèyàng kěyǐ ma? Gěi nǐ kànkan.
+  t: How about this? Let me show you.
+  d: 给你 + verb often means "let me do something for you"
+- s: A
+  c: 对，就是这样的。要多长时间？
+  p: Duì, jiùshì zhèyàng de. Yào duō cháng shíjiān?
+  t: Yes, exactly like that. How long will it take?
+  d: 就是 (jiùshì) emphasizes "exactly/precisely this"
+
+52 - Weather affecting plans:
+- s: A
+  c: 外面下雨了，我们还去吗？
+  p: Wàimiàn xià yǔ le, wǒmen hái qù ma?
+  t: It's raining outside, are we still going?
+  d: 还 (hái) here means "still" - asks if plans remain unchanged
+- s: B
+  c: 天气预报说要下一天。
+  p: Tiānqì yùbào shuō yào xià yì tiān.
+  t: The weather forecast says it will rain all day.
+- s: A
+  c: 那我们改天吧？下周可以吗？
+  p: Nà wǒmen gǎitiān ba? Xià zhōu kěyǐ ma?
+  t: Shall we change to another day? Is next week okay?
+  d: 改天 (gǎitiān) specifically means "change to another day"
+- s: B
+  c: 好，但是先告诉其他人。
+  p: Hǎo, dànshì xiān gàosu qítā rén.
+  t: Okay, but let's tell the others first.
+- s: A
+  c: 我现在就发消息给他们。
+  p: Wǒ xiànzài jiù fā xiāoxi gěi tāmen.
+  t: I'll message them right now.
+  d: 就 (jiù) emphasizes immediate action
+
+53 - Setting up a meeting:
+- s: A
+  c: 王经理，您明天有时间开会吗？
+  p: Wáng jīnglǐ, nín míngtiān yǒu shíjiān kāihuì ma?
+  t: Manager Wang, do you have time for a meeting tomorrow?
+  d: 您 (nín) is the polite form of "you", used in formal situations
+- s: B
+  c: 要看什么时候，上午我都有事。
+  p: Yào kàn shénme shíhou, shàngwǔ wǒ dōu yǒu shì.
+  t: Depends on when, I'm busy all morning.
+  d: 都 (dōu) emphasizes "all" of the morning is occupied
+- s: A
+  c: 下午三点怎么样？很重要的事。
+  p: Xiàwǔ sān diǎn zěnmeyàng? Hěn zhòngyào de shì.
+  t: How about 3pm? It's something important.
+- s: B
+  c: 三点可以，要开多久？
+  p: Sān diǎn kěyǐ, yào kāi duōjiǔ?
+  t: 3pm works, how long will it take?
+- s: A
+  c: 大概半个小时就够了。
+  p: Dàgài bàn ge xiǎoshí jiù gòu le.
+  t: About half an hour should be enough.
+  d: 就够了 (jiù gòu le) means "should be enough/sufficient"
+
+54 - At a clothing store:
+- s: A
+  c: 这件衣服有别的颜色吗？
+  p: Zhè jiàn yīfu yǒu biéde yánsè ma?
+  t: Does this clothing item come in other colors?
+  d: 件 (jiàn) is the measure word for clothes and items
+- s: B
+  c: 有蓝色和红色，要我拿给你看吗？
+  p: Yǒu lánsè hé hóngsè, yào wǒ ná gěi nǐ kàn ma?
+  t: We have blue and red, want me to get them for you to see?
+- s: A
+  c: 好的。这个size合适吗？
+  p: Hǎo de. Zhège size héshì ma?
+  t: Yes please. Is this size suitable?
+- s: B
+  c: 看起来太大了，要小一号的。
+  p: Kàn qǐlái tài dà le, yào xiǎo yì hào de.
+  t: Looks too big, you need one size smaller.
+  d: 号 (hào) is used for talking about sizes
+- s: A
+  c: 那请帮我拿小一号的蓝色。
+  p: Nà qǐng bāng wǒ ná xiǎo yì hào de lánsè.
+  t: Then please get me the blue one in a smaller size.
+
+55 - Lost item:
+- s: A
+  c: 不好意思，我的手机可能掉在这里了。
+  p: Bù hǎo yìsi, wǒ de shǒujī kěnéng diào zài zhèlǐ le.
+  t: Excuse me, I might have dropped my phone here.
+  d: 可能 (kěnéng) expresses possibility - "might have"
+- s: B
+  c: 是什么样子的？什么颜色？
+  p: Shì shénme yàngzi de? Shénme yánsè?
+  t: What does it look like? What color?
+- s: A
+  c: 黑色的，后面有一个红色的壳。
+  p: Hēisè de, hòumiàn yǒu yí ge hóngsè de ké.
+  t: Black, with a red case on the back.
+- s: B
+  c: 啊，有人刚才找到了一个。
+  p: A, yǒu rén gāngcái zhǎodào le yí ge.
+  t: Ah, someone just found one.
+  d: 刚才 (gāngcái) means "just now" - very common
+- s: A
+  c: 真的吗？在哪里？太好了！
+  p: Zhēn de ma? Zài nǎlǐ? Tài hǎo le!
+  t: Really? Where is it? That's great!
+
+# This dialogue combines:
+# - clothing store patterns from dialogue 54
+# - timing elements from dialogue 53
+# - lost item description from dialogue 55
+# - complaint patterns seen earlier
+56 - Wrong size delivery:
+ - s: A
+   c: 不好意思，我的衣服送错了。
+   p: Bù hǎo yìsi, wǒ de yīfu sòng cuò le.
+   t: Excuse me, my clothes were delivered wrong.
+ - s: B
+   c: 是什么样子的？什么颜色？
+   p: Shì shénme yàngzi de? Shénme yánsè?
+   t: What does it look like? What color?
+ - s: A
+   c: 蓝色的，但是size太大了。
+   p: Lánsè de, dànshì size tài dà le.
+   t: Blue, but the size is too big.
+   d: Size issues are very common in clothing shopping dialogue
+ - s: B
+   c: 您要小一号的是吗？大概半个小时能送到。
+   p: Nín yào xiǎo yì hào de shì ma? Dàgài bàn ge xiǎoshí néng sòng dào.
+   t: You want one size smaller, right? Can deliver in about half an hour.
+
+# This dialogue combines:
+# - haircut request from dialogue 51
+# - meeting timing from dialogue 53
+# - weather elements from dialogue 52
+57 - Rushed haircut:
+ - s: A
+   c: 你好，我想剪头发，但我三点要开会。
+   p: Nǐ hǎo, wǒ xiǎng jiǎn tóufa, dàn wǒ sān diǎn yào kāihuì.
+   t: Hi, I want a haircut, but I have a meeting at three.
+ - s: B
+   c: 要剪成什么样子？
+   p: Yào jiǎn chéng shénme yàngzi?
+   t: How would you like it cut?
+ - s: A
+   c: 短一点就可以，外面要下雨了。
+   p: Duǎn yìdiǎn jiù kěyǐ, wàimiàn yào xià yǔ le.
+   t: Just a bit shorter, it's going to rain outside.
+   d: 就可以 (jiù kěyǐ) indicates "that's enough/that will do"
+ - s: B
+   c: 好的，半个小时就够了。
+   p: Hǎo de, bàn ge xiǎoshí jiù gòu le.
+   t: Okay, half an hour will be enough.
+
+# This dialogue combines:
+# - lost item pattern from dialogue 55
+# - meeting arrangement from dialogue 53
+# - weather impact from dialogue 52
+58 - Lost meeting materials:
+ - s: A
+   c: 王经理，我的文件可能掉在会议室了。
+   p: Wáng jīnglǐ, wǒ de wénjiàn kěnéng diào zài huìyìshì le.
+   t: Manager Wang, I might have dropped my documents in the meeting room.
+ - s: B
+   c: 是什么样子的？
+   p: Shì shénme yàngzi de?
+   t: What does it look like?
+ - s: A
+   c: 蓝色的文件夹，很重要的事。
+   p: Lánsè de wénjiàn jiā, hěn zhòngyào de shì.
+   t: A blue folder, it's important.
+ - s: B
+   c: 啊，刚才看到了。我们现在去拿吧，外面要下雨了。
+   p: A, gāngcái kàn dào le. Wǒmen xiànzài qù ná ba, wàimiàn yào xià yǔ le.
+   t: Ah, just saw it. Let's go get it now, it's going to rain.
+
+# This dialogue combines:
+# - clothing colors from dialogue 54
+# - time management from dialogue 53
+# - weather checking from dialogue 52
+# - meeting patterns
+59 - Work outfit planning:
+ - s: A
+   c: 明天开会穿什么颜色好？
+   p: Míngtiān kāihuì chuān shénme yánsè hǎo?
+   t: What color should I wear for tomorrow's meeting?
+ - s: B
+   c: 蓝色和红色都可以，但要看天气。
+   p: Lánsè hé hóngsè dōu kěyǐ, dàn yào kàn tiānqì.
+   t: Blue and red are both fine, but check the weather.
+ - s: A
+   c: 天气预报说要下雨，那穿深色的吧。
+   p: Tiānqì yùbào shuō yào xià yǔ, nà chuān shēnsè de ba.
+   t: Weather forecast says it'll rain, let's go with dark colors then.
+   d: 深色 (shēnsè) means dark colors - useful for clothing
+ - s: B
+   c: 对，这样比较好。记得带伞。
+   p: Duì, zhèyàng bǐjiào hǎo. Jìde dài sǎn.
+   t: Right, that's better. Remember to bring an umbrella.
+
+# This dialogue combines:
+# - timing patterns from dialogue 53
+# - lost item scenario from dialogue 55
+# - haircut elements from dialogue 51
+60 - Finding lost time:
+ - s: A
+   c: 王经理，下午三点的会还开吗？
+   p: Wáng jīnglǐ, xiàwǔ sān diǎn de huì hái kāi ma?
+   t: Manager Wang, are we still having the 3pm meeting?
+ - s: B
+   c: 怎么了？有事吗？
+   p: Zěnme le? Yǒu shì ma?
+   t: What's wrong? Something came up?
+ - s: A
+   c: 我要去找我的手机，刚才掉了。
+   p: Wǒ yào qù zhǎo wǒ de shǒujī, gāngcái diào le.
+   t: I need to go find my phone, just lost it.
+   d: 刚才 (gāngcái) specifically refers to something that just happened
+ - s: B
+   c: 那我们改到四点吧，够时间吗？
+   p: Nà wǒmen gǎi dào sì diǎn ba, gòu shíjiān ma?
+   t: Then let's change it to 4pm, is that enough time?
+
+# ---
+  
+61 - Getting directions inside a building:
+- s: A
+  c: 请问，会议室在哪层？
+  p: Qǐngwèn, huìyìshì zài nǎ céng?
+  t: Excuse me, which floor is the meeting room on?
+  d: 层 (céng) is used for floors of a building
+- s: B
+  c: 在五层，但是要先刷卡才能上去。
+  p: Zài wǔ céng, dànshì yào xiān shuā kǎ cái néng shàngqù.
+  t: On the 5th floor, but you need to swipe your card first to go up.
+  d: 才能 (cái néng) indicates a prerequisite - "only then can"
+- s: A
+  c: 我没有卡，是来见王总的。
+  p: Wǒ méiyǒu kǎ, shì lái jiàn Wáng zǒng de.
+  t: I don't have a card, I'm here to see Director Wang.
+- s: B
+  c: 那我帮你开门吧。你跟我来。
+  p: Nà wǒ bāng nǐ kāimén ba. Nǐ gēn wǒ lái.
+  t: Then I'll help you open the door. Follow me.
+- s: A
+  c: 太谢谢你了。我是第一次来。
+  p: Tài xièxie nǐ le. Wǒ shì dì yī cì lái.
+  t: Thank you so much. It's my first time here.
+  d: 第一次 (dì yī cì) means "first time" - useful pattern
+
+62 - Discussing weekend activities:
+- s: A
+  c: 听说你周末去爬山了？怎么样？
+  p: Tīngshuō nǐ zhōumò qù páshān le? Zěnmeyàng?
+  t: I heard you went hiking on the weekend? How was it?
+- s: B
+  c: 累死了！走了三个小时才到山顶。
+  p: Lèi sǐ le! Zǒu le sān ge xiǎoshí cái dào shāndǐng.
+  t: Exhausted! It took three hours to reach the top.
+  d: 死了 (sǐ le) after adjectives means "extremely" (colloquial)
+- s: A
+  c: 那风景一定很美吧？
+  p: Nà fēngjǐng yídìng hěn měi ba?
+  t: Then the view must have been beautiful, right?
+  d: 一定 (yídìng) expresses certainty - "must be"
+- s: B
+  c: 是啊，我给你看照片。你下次要不要一起去？
+  p: Shì a, wǒ gěi nǐ kàn zhàopiàn. Nǐ xià cì yào bú yào yìqǐ qù?
+  t: Yes, let me show you the photos. Want to join next time?
+- s: A
+  c: 好啊，但要等天气凉快一点。
+  p: Hǎo a, dàn yào děng tiānqì liángkuai yìdiǎn.
+  t: Sure, but let's wait until the weather is cooler.
+
+63 - Late delivery:
+- s: A
+  c: 你好，我的东西怎么还没到？
+  p: Nǐ hǎo, wǒ de dōngxi zěnme hái méi dào?
+  t: Hello, why hasn't my stuff arrived yet?
+- s: B
+  c: 请问您的订单号是多少？
+  p: Qǐngwèn nín de dìngdān hào shì duōshao?
+  t: May I have your order number?
+  d: 订单号 (dìngdān hào) is very useful for online shopping
+- s: A
+  c: 是一二三四五。已经过了两天了。
+  p: Shì yī èr sān sì wǔ. Yǐjīng guò le liǎng tiān le.
+  t: It's 12345. It's already been two days.
+- s: B
+  c: 对不起，因为下雨所以慢了。今天一定能到。
+  p: Duìbuqǐ, yīnwèi xià yǔ suǒyǐ màn le. Jīntiān yídìng néng dào.
+  t: Sorry, it's delayed because of rain. It will definitely arrive today.
+  d: 因为...所以... (yīnwèi...suǒyǐ...) explains cause and effect
+- s: A
+  c: 好吧，那我再等等。
+  p: Hǎo ba, nà wǒ zài děng děng.
+  t: Okay then, I'll wait a bit longer.
+  d: Repeating 等 softens the tone, shows patience
+
+64 - Computer problem:
+- s: A
+  c: 小李，我的电脑打不开了。
+  p: Xiǎo Lǐ, wǒ de diànnǎo dǎ bù kāi le.
+  t: Xiao Li, my computer won't turn on.
+  d: 打不开 (dǎ bù kāi) - 不 between verb parts shows inability
+- s: B
+  c: 让我看看。你试过重新启动吗？
+  p: Ràng wǒ kànkan. Nǐ shìguò chóngxīn qǐdòng ma?
+  t: Let me take a look. Have you tried restarting it?
+- s: A
+  c: 试过了，还是不行。里面有很重要的文件。
+  p: Shìguò le, háishi bù xíng. Lǐmiàn yǒu hěn zhòngyào de wénjiàn.
+  t: Yes, still doesn't work. There are important files inside.
+  d: 还是 (háishi) indicates a situation remains unchanged
+- s: B
+  c: 别担心，我们可以把文件先保存下来。
+  p: Bié dānxīn, wǒmen kěyǐ bǎ wénjiàn xiān bǎocún xiàlái.
+  t: Don't worry, we can save the files first.
+- s: A
+  c: 真的可以吗？太感谢了。
+  p: Zhēn de kěyǐ ma? Tài gǎnxiè le.
+  t: Really? Thank you so much.
+
+65 - Restaurant reservation:
+- s: A
+  c: 你们今天晚上有位子吗？
+  p: Nǐmen jīntiān wǎnshang yǒu wèizi ma?
+  t: Do you have seats available tonight?
+  d: 位子 (wèizi) specifically refers to seating in restaurants
+- s: B
+  c: 几个人？什么时候来？
+  p: Jǐ ge rén? Shénme shíhou lái?
+  t: How many people? What time are you coming?
+- s: A
+  c: 六个人，大概七点。可以靠窗吗？
+  p: Liù ge rén, dàgài qī diǎn. Kěyǐ kào chuāng ma?
+  t: Six people, around seven. Can we sit by the window?
+  d: 靠 (kào) means "next to" - very useful for seating preferences
+- s: B
+  c: 七点的靠窗位子已经有人订了。
+  p: Qī diǎn de kào chuāng wèizi yǐjīng yǒu rén dìng le.
+  t: The window seats at seven are already reserved.
+- s: A
+  c: 那八点呢？我们可以晚一点。
+  p: Nà bā diǎn ne? Wǒmen kěyǐ wǎn yìdiǎn.
+  t: How about eight? We can come later.
+
+# This dialogue combines:
+# - building navigation from dialogue 61
+# - computer problems from dialogue 64
+# - reservation timing from dialogue 65
+# - urgent delivery patterns from dialogue 63
+66 - IT Support Visit:
+ - s: A
+   c: 请问，IT部门在哪层？我的电脑打不开了。
+   p: Qǐngwèn, IT bùmén zài nǎ céng? Wǒ de diànnǎo dǎ bù kāi le.
+   t: Excuse me, which floor is the IT department? My computer won't turn on.
+ - s: B
+   c: 在八层，但要刷卡。您有预约吗？
+   p: Zài bā céng, dàn yào shuā kǎ. Nín yǒu yùyuē ma?
+   t: On the 8th floor, but you need to swipe a card. Do you have an appointment?
+   d: 预约 (yùyuē) is commonly used for appointments/reservations
+ - s: A
+   c: 没有，但是里面有很重要的文件。
+   p: Méiyǒu, dànshì lǐmiàn yǒu hěn zhòngyào de wénjiàn.
+   t: No, but I have important files inside.
+ - s: B
+   c: 那我带你上去吧。我是第一次见这样的问题。
+   p: Nà wǒ dài nǐ shàngqù ba. Wǒ shì dì yī cì jiàn zhèyàng de wèntí.
+   t: Then I'll take you up. This is the first time I've seen this kind of problem.
+
+# This dialogue combines:
+# - weekend activities from dialogue 62
+# - reservation patterns from dialogue 65
+# - weather impact from earlier dialogues
+# - hiking experience
+67 - Restaurant after hiking:
+ - s: A
+   c: 听说你们去爬山了？累了吧？
+   p: Tīngshuō nǐmen qù páshān le? Lèi le ba?
+   t: Heard you went hiking? Must be tired?
+ - s: B
+   c: 累死了！我们想找个餐厅，有位子吗？
+   p: Lèi sǐ le! Wǒmen xiǎng zhǎo ge cāntīng, yǒu wèizi ma?
+   t: Exhausted! We want to find a restaurant, do you have seats?
+ - s: A
+   c: 几个人？都是爬山的朋友吗？
+   p: Jǐ ge rén? Dōu shì páshān de péngyou ma?
+   t: How many people? All friends from hiking?
+ - s: B
+   c: 六个人，走了三个小时，想靠窗坐。
+   p: Liù ge rén, zǒu le sān ge xiǎoshí, xiǎng kào chuāng zuò.
+   t: Six people, walked for three hours, want to sit by the window.
+   d: When making requests, adding detail can help get what you want
+
+# This dialogue combines:
+# - computer issues from dialogue 64
+# - late delivery from dialogue 63
+# - building access from dialogue 61
+68 - Tech delivery problem:
+ - s: A
+   c: 你好，我的新电脑怎么还没到？
+   p: Nǐ hǎo, wǒ de xīn diànnǎo zěnme hái méi dào?
+   t: Hello, why hasn't my new computer arrived yet?
+ - s: B
+   c: 请问您的订单号是多少？
+   p: Qǐngwèn nín de dìngdān hào shì duōshao?
+   t: May I have your order number?
+ - s: A
+   c: 一二三四五。我在五层等了很久了。
+   p: Yī èr sān sì wǔ. Wǒ zài wǔ céng děng le hěn jiǔ le.
+   t: 12345. I've been waiting on the fifth floor for a long time.
+ - s: B
+   c: 对不起，送货员没有卡，不能上去。您能下来拿吗？
+   p: Duìbuqǐ, sònghuòyuán méiyǒu kǎ, bù néng shàngqù. Nín néng xiàlái ná ma?
+   t: Sorry, the delivery person has no card and can't go up. Can you come down to get it?
+
+# This dialogue combines:
+# - weekend activities from dialogue 62
+# - computer problems from dialogue 64
+# - building navigation from dialogue 61
+69 - Weekend office visit:
+ - s: A
+   c: 听说你周末来公司修电脑了？
+   p: Tīngshuō nǐ zhōumò lái gōngsī xiū diànnǎo le?
+   t: Heard you came to the office to fix your computer on weekend?
+ - s: B
+   c: 对，花了三个小时才修好。
+   p: Duì, huā le sān ge xiǎoshí cái xiū hǎo.
+   t: Yes, took three hours to fix it.
+   d: 花了 (huā le) is commonly used to describe time spent
+ - s: A
+   c: 那文件保存下来了吗？
+   p: Nà wénjiàn bǎocún xiàlái le ma?
+   t: Did you save the files?
+ - s: B
+   c: 保存了，现在在五层的新电脑上。
+   p: Bǎocún le, xiànzài zài wǔ céng de xīn diànnǎo shàng.
+   t: Yes, they're now on the new computer on the fifth floor.
+
+# This dialogue combines:
+# - restaurant booking from dialogue 65
+# - weather discussion from earlier dialogues
+# - delivery timing from dialogue 63
+# - building navigation patterns
+70 - Special dinner arrangements:
+ - s: A
+   c: 你们今天晚上的包间还有吗？
+   p: Nǐmen jīntiān wǎnshang de bāojiān hái yǒu ma?
+   t: Do you still have private rooms available tonight?
+ - s: B
+   c: 请问您的订单号是多少？
+   p: Qǐngwèn nín de dìngdān hào shì duōshao?
+   t: What's your reservation number?
+ - s: A
+   c: 一二三四五。在五层对吗？
+   p: Yī èr sān sì wǔ. Zài wǔ céng duì ma?
+   t: 12345. It's on the fifth floor, right?
+   d: Numbers are often used in sequence (一二三) for examples
+ - s: B
+   c: 对，但因为下雨，很多人要靠窗的位子。
+   p: Duì, dàn yīnwèi xià yǔ, hěn duō rén yào kào chuāng de wèizi.
+   t: Yes, but because of the rain, many people want window seats.
+
+
+# This dialogue combines:
+# - building access patterns from earlier dialogues
+# - [NEW] printer/copying scenario
+# - [NEW] document preparation vocabulary
+71 - Copy room troubles:
+ - s: A
+   c: 请问，复印室在哪层？要复印会议材料。
+   p: Qǐngwèn, fùyìn shì zài nǎ céng? Yào fùyìn huìyì cáiliào.
+   t: Excuse me, which floor is the copy room? Need to copy meeting materials.
+   d: 复印 (fùyìn) means "to photocopy" - essential office vocabulary
+ - s: B
+   c: 在三层，但是打印机坏了。
+   p: Zài sān céng, dànshì dǎyìnjī huài le.
+   t: On the third floor, but the printer is broken.
+   d: 打印机 (dǎyìnjī) means "printer" - different from copier
+ - s: A
+   c: 那麻烦了，下午开会要用。
+   p: Nà máfan le, xiàwǔ kāihuì yào yòng.
+   t: That's troublesome, need it for the afternoon meeting.
+ - s: B
+   c: 我们可以用扫描发邮件，这样快一点。
+   p: Wǒmen kěyǐ yòng sǎomiáo fā yóujiàn, zhèyàng kuài yìdiǎn.
+   t: We can scan and email it, that'll be faster.
+   d: 扫描 (sǎomiáo) means "to scan" - modern office alternative
+
+# This dialogue combines:
+# - restaurant elements from earlier
+# - [NEW] dietary restrictions and food allergies
+# - [NEW] menu customization
+72 - Special meal request:
+ - s: A
+   c: 请问，你们的菜可以不放花生吗？
+   p: Qǐngwèn, nǐmen de cài kěyǐ bù fàng huāshēng ma?
+   t: Excuse me, can your dishes be made without peanuts?
+   d: Asking about food allergies is increasingly common
+ - s: B
+   c: 可以的。您对什么过敏？
+   p: Kěyǐ de. Nín duì shénme guòmǐn?
+   t: Yes, we can. What are you allergic to?
+   d: 过敏 (guòmǐn) means "allergic to"
+ - s: A
+   c: 对坚果都过敏。能做清淡一点吗？
+   p: Duì jiānguǒ dōu guòmǐn. Néng zuò qīngdàn yìdiǎn ma?
+   t: Allergic to all nuts. Can it be made lighter?
+   d: 清淡 (qīngdàn) means "light/less seasoned" - useful for dietary requests
+ - s: B
+   c: 没问题，我告诉厨房特别注意。
+   p: Méi wèntí, wǒ gàosu chúfáng tèbié zhùyì.
+   t: No problem, I'll tell the kitchen to pay special attention.
+
+# This dialogue combines:
+# - technology elements
+# - [NEW] mobile app usage
+# - [NEW] digital payment issues
+73 - Payment app problem:
+ - s: A
+   c: 您好，我的支付宝刷不出来。
+   p: Nínhǎo, wǒ de zhīfùbǎo shuā bù chūlái.
+   t: Hello, my Alipay isn't working.
+   d: 支付宝 (zhīfùbǎo) is a major payment app in China
+ - s: B
+   c: 需要更新软件，现在很多人遇到这个问题。
+   p: Xūyào gēngxīn ruǎnjiàn, xiànzài hěn duō rén yùdào zhège wèntí.
+   t: Need to update the software, many people are having this issue.
+   d: 更新 (gēngxīn) means "to update" - common tech vocabulary
+ - s: A
+   c: 那现在怎么付钱？我没带现金。
+   p: Nà xiànzài zěnme fù qián? Wǒ méi dài xiànjīn.
+   t: Then how do I pay now? I didn't bring cash.
+ - s: B
+   c: 可以扫描这个二维码，用微信支付。
+   p: Kěyǐ sǎomiáo zhège èrwéimǎ, yòng wēixìn zhīfù.
+   t: You can scan this QR code, use WeChat Pay.
+   d: 二维码 (èrwéimǎ) means "QR code" - essential in modern China
+
+# This dialogue combines:
+# - weather patterns from earlier
+# - [NEW] plant care vocabulary
+# - [NEW] indoor/outdoor activity planning
+74 - Plant care concerns:
+ - s: A
+   c: 这些花要搬进去，明天有暴雨。
+   p: Zhèxiē huā yào bān jìnqù, míngtiān yǒu bàoyǔ.
+   t: These flowers need to be moved inside, there's a storm tomorrow.
+   d: 暴雨 (bàoyǔ) means "rainstorm" - stronger than regular 下雨
+ - s: B
+   c: 放在阳台可以吗？需要浇水吗？
+   p: Fàng zài yángtái kěyǐ ma? Xūyào jiāoshuǐ ma?
+   t: Can we put them on the balcony? Do they need watering?
+   d: 浇水 (jiāoshuǐ) means "to water plants"
+ - s: A
+   c: 最近浇得太多了，先让土干一点。
+   p: Zuìjìn jiāo de tài duō le, xiān ràng tǔ gān yìdiǎn.
+   t: Watered too much recently, let the soil dry a bit first.
+   d: 土 (tǔ) means "soil" - basic gardening term
+ - s: B
+   c: 好，我帮你把大的盆栽搬进去。
+   p: Hǎo, wǒ bāng nǐ bǎ dà de pénzāi bān jìnqù.
+   t: Okay, I'll help you move the big potted plants inside.
+   d: 盆栽 (pénzāi) means "potted plant"
