@@ -1,82 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Previous head section remains the same -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Dialogue Viewer</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <style>
-        /* All previous styles remain exactly the same */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #2196F3;
+            --bg-color: #f5f5f5;
+            --panel-bg: white;
+            --text-color: #333;
+            --border-radius: 8px;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --side-panel-width: 300px;
+            --panel-padding: 20px;
+            --mobile-threshold: 768px;
+            --mobile-header-height: 50px;
         }
 
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .side-panel {
+            background: var(--panel-bg);
+            padding: var(--panel-padding);
+            width: var(--side-panel-width);
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+        }
+
+        .main-panel {
+            flex-grow: 1;
+            padding: var(--panel-padding);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .controls {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
-        }
-
-        .dialogue-select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .display-controls {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 20px;
         }
 
-        button {
-            padding: 8px 16px;
-            background-color: #4CAF50;
+        .controls button {
+            flex: 1;
+            padding: 8px;
+            font-size: 0.9em;
+            background-color: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .controls button:hover {
+            background-color: #45a049;
+        }
+
+        .file-control {
+            margin: 16px 0;
+        }
+
+        .file-control button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
             cursor: pointer;
         }
 
-        button:hover {
-            background-color: #45a049;
+        .dialogue-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dialogue-item {
+            padding: 10px;
+            margin: 4px 0;
+            background: var(--bg-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .dialogue-item:hover {
+            background: #e8e8e8;
+        }
+
+        .dialogue-item.active {
+            background: var(--primary-color);
+            color: white;
         }
 
         .dialogue-line {
             margin-bottom: 20px;
             padding: 15px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #4CAF50;
-            border-radius: 4px;
+            background-color: white;
+            border-left: 4px solid var(--primary-color);
+            border-radius: var(--border-radius);
             position: relative;
+            box-shadow: var(--shadow);
         }
 
         .speaker {
             position: absolute;
             top: -10px;
             left: -10px;
-            background-color: #4CAF50;
+            background-color: var(--primary-color);
             color: white;
             padding: 4px 8px;
             border-radius: 12px;
             font-size: 0.9em;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow);
         }
 
         .chinese {
@@ -103,6 +159,19 @@
             margin-top: 10px;
         }
 
+        .dialogue-line[data-speaker="B"] {
+            border-left-color: var(--secondary-color);
+        }
+
+        .dialogue-line[data-speaker="B"] .speaker {
+            background-color: var(--secondary-color);
+        }
+
+        button.active:before {
+            content: "✓";
+            margin-right: 5px;
+        }
+
         #fileInput {
             display: none;
         }
@@ -111,41 +180,107 @@
             display: none;
         }
 
-        .active {
-            background-color: #45a049;
+		 .mobile-controls {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--mobile-header-height);
+            background: var(--panel-bg);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            padding: 8px;
         }
 
-        /* Alternate speaker colors */
-        .dialogue-line[data-speaker="B"] {
-            border-left-color: #2196F3;
+        .mobile-controls .controls {
+            margin: 0;
+            height: 100%;
+            align-items: center;
         }
 
-        .dialogue-line[data-speaker="B"] .speaker {
-            background-color: #2196F3;
+        .mobile-controls button {
+            height: 34px;
         }
 
-        button.active:before {
-            content: "✓";
-            margin-right: 5px;
+        .dialogues-btn {
+            display: none;  /* Hidden by default, shown in mobile */
+        }
+
+        @media (max-width: 768px) {
+            .side-panel .controls {
+                display: none;
+            }
+
+            .mobile-controls {
+                display: block;
+            }
+
+            .dialogues-btn {
+                display: block;  /* Show in mobile */
+            }
+
+            .app-container {
+                flex-direction: column;
+            }
+
+            .side-panel {
+                position: fixed;
+                top: var(--mobile-header-height);
+                left: 0;
+                width: 100%;
+                height: auto;
+                max-height: calc(100vh - var(--mobile-header-height));
+                z-index: 100;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
+                padding: 15px;
+            }
+
+            .side-panel.open {
+                transform: translateY(0);
+            }
+
+            .main-panel {
+                margin-top: calc(var(--mobile-header-height) + 10px);
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="controls">
-            <input type="file" id="fileInput" accept=".yaml,.yml">
-            <button onclick="document.getElementById('fileInput').click()">Load YAML File</button>
-            <select id="dialogueSelect" class="dialogue-select">
-                <option value="">Select a dialogue...</option>
-            </select>
-            <div class="display-controls">
+  <div class="app-container">
+        <div class="mobile-controls">
+            <div class="controls">
                 <button onclick="toggleElement('pinyin')" id="pinyinBtn">Pinyin</button>
                 <button onclick="toggleElement('translation')" id="translationBtn">Translation</button>
                 <button onclick="toggleElement('commentary')" id="commentaryBtn">Commentary</button>
+                <button onclick="toggleMobilePanel()" class="dialogues-btn">Dialogues</button>
             </div>
         </div>
-        <div id="dialogueContent"></div>
+
+        <aside class="side-panel" id="sidePanel">
+            <div class="controls">
+                <button onclick="toggleElement('pinyin')" id="pinyinBtn2">Pinyin</button>
+                <button onclick="toggleElement('translation')" id="translationBtn2">Translation</button>
+                <button onclick="toggleElement('commentary')" id="commentaryBtn2">Commentary</button>
+            </div>
+
+            <div class="file-control">
+                <input type="file" id="fileInput" accept=".yaml,.yml">
+                <button onclick="document.getElementById('fileInput').click()">Load Dialogues</button>
+            </div>
+
+            <ul class="dialogue-list" id="dialogueList">
+                <li class="dialogue-item">Select a dialogue...</li>
+            </ul>
+        </aside>
+
+        <main class="main-panel">
+            <div id="dialogueContent"></div>
+        </main>
     </div>
+
 
     <script>
         let dialogues = {};
@@ -154,6 +289,23 @@
             translation: false,
             commentary: false
         };
+
+        function toggleMobilePanel() {
+            const panel = document.getElementById('sidePanel');
+            panel.classList.toggle('open');
+        }
+
+        function toggleElement(elementClass) {
+            displayState[elementClass] = !displayState[elementClass];
+            
+            // Toggle visibility of elements
+            document.querySelectorAll(`.${elementClass}`).forEach(el => 
+                el.classList.toggle('hidden', !displayState[elementClass]));
+            
+            // Toggle button active state for both desktop and mobile buttons
+            document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
+            document.getElementById(`${elementClass}Btn2`).classList.toggle('active', displayState[elementClass]);
+        }
 
         async function loadDefaultDialogues() {
             try {
@@ -168,22 +320,30 @@
         function processYamlContent(content) {
             try {
                 dialogues = jsyaml.load(content);
-                updateDialogueSelect();
+                updateDialogueList();
             } catch (error) {
                 console.error('Error parsing YAML:', error);
                 alert('Error parsing YAML file');
             }
         }
 
-        function updateDialogueSelect() {
-            const select = document.getElementById('dialogueSelect');
-            select.innerHTML = '<option value="">Select a dialogue...</option>';
+        function updateDialogueList() {
+            const list = document.getElementById('dialogueList');
+            list.innerHTML = '';
             
             for (const dialogueId in dialogues) {
-                const option = document.createElement('option');
-                option.value = dialogueId;
-                option.textContent = dialogueId;
-                select.appendChild(option);
+                const item = document.createElement('li');
+                item.className = 'dialogue-item';
+                item.textContent = dialogueId;
+                item.onclick = () => {
+                    document.querySelectorAll('.dialogue-item').forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    displayDialogue(dialogueId);
+                    if (window.innerWidth <= 768) {
+                        toggleMobilePanel();
+                    }
+                };
+                list.appendChild(item);
             }
         }
 
@@ -201,7 +361,7 @@
 
                 const speaker = document.createElement('div');
                 speaker.className = 'speaker';
-                speaker.textContent = line.s;  // Changed this line to show just the letter
+                speaker.textContent = line.s;
                 lineDiv.appendChild(speaker);
 
                 const chinese = document.createElement('div');
@@ -229,26 +389,14 @@
                 content.appendChild(lineDiv);
             });
 
-            // Restore current display state
             Object.entries(displayState).forEach(([key, value]) => {
                 document.querySelectorAll(`.${key}`).forEach(el => 
                     el.classList.toggle('hidden', !value));
                 document.getElementById(`${key}Btn`).classList.toggle('active', value);
+                document.getElementById(`${key}Btn2`).classList.toggle('active', value);
             });
         }
 
-        function toggleElement(elementClass) {
-            displayState[elementClass] = !displayState[elementClass];
-            
-            // Toggle visibility of elements
-            document.querySelectorAll(`.${elementClass}`).forEach(el => 
-                el.classList.toggle('hidden', !displayState[elementClass]));
-            
-            // Toggle button active state
-            document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
-        }
-
-        // Event Listeners
         document.getElementById('fileInput').addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (file) {
@@ -258,13 +406,7 @@
             }
         });
 
-        document.getElementById('dialogueSelect').addEventListener('change', (event) => {
-            displayDialogue(event.target.value);
-        });
-
-        // Load default dialogues on page load
         loadDefaultDialogues();
     </script>
 </body>
 </html>
-
