@@ -1,0 +1,54 @@
+dialogue_6:
+- c: 你最近在做什么？
+  d: 最近 (zuìjìn) is a very common time word meaning "recently, lately". The 在 indicates
+    ongoing action.
+  p: Nǐ zuìjìn zài zuò shénme?
+  s: A
+  t: What have you been doing lately?
+- c: 我在学习。你呢？
+  d: 呢 (ne) is a common particle used to ask "how about you/what about...?"
+  p: Wǒ zài xuéxí. Nǐ ne?
+  s: B
+  t: I'm studying. How about you?
+- c: 我也在学习，太难了。
+  d: 太...了 (tài...le) is a common pattern meaning "too/excessively"
+  p: Wǒ yě zài xuéxí, tài nán le.
+  s: A
+  t: I'm studying too, it's too difficult.
+- c: 我们一起学习吧？
+  d: 吧 (ba) here makes the statement into a gentle suggestion/proposal
+  p: Wǒmen yīqǐ xuéxí ba?
+  s: B
+  t: Shall we study together?
+- c: 好啊，你来我这里吧。
+  d: 啊 (a) is a particle that makes the agreement sound more natural and friendly
+  p: Hǎo a, nǐ lái wǒ zhèli ba.
+  s: A
+  t: Sure, come to my place.
+dialogue_7:
+- c: 你看见我的书了吗？
+  d: 看见 (kànjiàn) specifically means "to see" as in "to spot/notice", different from
+    just 看 (kàn)
+  p: Nǐ kànjiàn wǒ de shū le ma?
+  s: A
+  t: Have you seen my book?
+- c: 什么书？
+  p: Shénme shū?
+  s: B
+  t: What book?
+- c: 就是那个很好看的。
+  d: 就是 (jiùshì) means "exactly/precisely that one". 的 (de) at the end nominalizes
+    the description
+  p: Jiù shì nà ge hěn hǎokàn de.
+  s: A
+  t: The one that's really good.
+- c: 在这里，我看到了。
+  d: 看到 (kàndào) indicates successful completion of seeing/finding something
+  p: Zài zhèli, wǒ kàndào le.
+  s: B
+  t: It's here, I found it.
+- c: 谢谢你。我找了很久。
+  d: 很久 (hěn jiǔ) literally "very long time" is a common phrase for expressing duration
+  p: Xièxie nǐ. Wǒ zhǎo le hěn jiǔ.
+  s: A
+  t: Thank you. I've been looking for a long time.

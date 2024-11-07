@@ -1,3 +1,118 @@
+dialogue_1:
+ - s: A
+   c: 你好！
+   p: Nǐ hǎo!
+   t: Hello!
+
+ - s: B
+   c: 你好。你是谁？
+   p: Nǐ hǎo. Nǐ shì shéi?
+   t: Hello. Who are you?
+   d: 谁 (shéi) is the question word for "who"
+
+ - s: A
+   c: 我是小李。
+   p: Wǒ shì Xiǎo Lǐ.
+   t: I am Xiao Li.
+   d: 小 (xiǎo) before surnames is a common informal way to address younger people
+
+ - s: B
+   c: 很高兴认识你。
+   p: Hěn gāoxìng rènshi nǐ.
+   t: Very happy to meet you.
+
+ - s: A
+   c: 我也是。
+   p: Wǒ yě shì.
+   t: Me too.
+   d: 也 (yě) means "also/too" and is very commonly used for agreeing
+
+dialogue_2:
+ - s: A
+   c: 你在做什么？
+   p: Nǐ zài zuò shénme?
+   t: What are you doing?
+   d: 在 (zài) indicates an action in progress
+
+ - s: B
+   c: 我在看书。
+   p: Wǒ zài kàn shū.
+   t: I'm reading a book.
+
+ - s: A
+   c: 这本书很好看吗？
+   p: Zhè běn shū hěn hǎokàn ma?
+   t: Is this book good to read?
+   d: 好看 (hǎokàn) literally "good to look at" is commonly used for "interesting/enjoyable"
+
+ - s: B
+   c: 对，真的很好看。
+   p: Duì, zhēn de hěn hǎokàn.
+   t: Yes, it's really good.
+   d: 真的 (zhēn de) emphasizes the statement - "really/truly"
+
+dialogue_3:
+ - s: A
+   c: 你知道他在哪里吗？
+   p: Nǐ zhīdào tā zài nǎlǐ ma?
+   t: Do you know where he is?
+   d: 哪里 (nǎlǐ) is the question word for "where"
+
+ - s: B
+   c: 不知道，我们去找他吧。
+   p: Bù zhīdào, wǒmen qù zhǎo tā ba.
+   t: Don't know, let's go find him.
+
+ - s: A
+   c: 好，快点走。
+   p: Hǎo, kuài diǎn zǒu.
+   t: Okay, let's hurry.
+   d: 点 (diǎn) after adjectives like 快 (kuài) adds a degree of emphasis
+
+dialogue_4:
+ - s: A
+   c: 你想吃什么？
+   p: Nǐ xiǎng chī shénme?
+   t: What do you want to eat?
+   d: 想 (xiǎng) before a verb indicates desire/want to do something
+
+ - s: B
+   c: 我没有想好。你呢？
+   p: Wǒ méiyǒu xiǎng hǎo. Nǐ ne?
+   t: I haven't decided. How about you?
+   d: 没有 (méiyǒu) is the negative form for past actions or states
+
+ - s: A
+   c: 我也不知道。
+   p: Wǒ yě bù zhīdào.
+   t: I don't know either.
+   d: 不 (bù) is used for negative present states, different from 没有
+
+ - s: B
+   c: 那我们一起去看看吧。
+   p: Nà wǒmen yīqǐ qù kànkan ba.
+   t: Then let's go take a look together.
+   d: 一起 (yīqǐ) means "together" and is very commonly used
+
+dialogue_5:
+ - s: A
+   c: 为什么你现在才来？
+   p: Wèishéme nǐ xiànzài cái lái?
+   t: Why are you only coming now?
+   d: 才 (cái) indicates that something happened later than expected
+
+ - s: B
+   c: 对不起，我在路上被堵住了。
+   p: Duìbùqǐ, wǒ zài lùshang bèi dǔzhù le.
+   t: Sorry, I got stuck in traffic.
+   d: 被 (bèi) indicates passive voice - something happened to the speaker
+
+ - s: A
+   c: 没事，我们现在就走吧。
+   p: Méishì, wǒmen xiànzài jiù zǒu ba.
+   t: It's okay, let's go now.
+   d: 没事 (méishì) is a common way to say "it's okay/no problem"
+
 dialogue_6:
  - s: A
    c: 你最近在做什么？
@@ -58,3 +173,93 @@ dialogue_7:
    p: Xièxie nǐ. Wǒ zhǎo le hěn jiǔ.
    t: Thank you. I've been looking for a long time.
    d: 很久 (hěn jiǔ) literally "very long time" is a common phrase for expressing duration
+
+dialogue_8:
+ - s: A
+   c: 你知道现在几点了吗？
+   p: Nǐ zhīdào xiànzài jǐ diǎn le ma?
+   t: Do you know what time it is now?
+   d: 几点 (jǐ diǎn) literally means "how many points" and is the standard way to ask for the time
+
+ - s: B
+   c: 不知道，让我看看。
+   p: Bù zhīdào, ràng wǒ kànkan.
+   t: Don't know, let me check.
+   d: Verb reduplication (看看) indicates a brief or casual action
+
+ - s: A
+   c: 已经太晚了。
+   p: Yǐjīng tài wǎn le.
+   t: It's already too late.
+   d: 已经 (yǐjīng) "already" often pairs with 了 (le) to emphasize a completed state
+
+ - s: B
+   c: 对不起，我们现在就走。
+   p: Duìbùqǐ, wǒmen xiànzài jiù zǒu.
+   t: Sorry, let's go now.
+   d: 就 (jiù) here emphasizes immediacy - "right now"
+
+ - s: A
+   c: 好，快一点。
+   p: Hǎo, kuài yī diǎn.
+   t: Okay, hurry up.
+   d: 一点 (yī diǎn) after an adjective means "a bit/slightly" - here making the command softer
+
+dialogue_9:
+ - s: A
+   c: 你觉得这个怎么样？
+   p: Nǐ juéde zhège zěnmeyàng?
+   t: What do you think of this?
+   d: 觉得 (juéde) "to think/feel" is very commonly used for opinions
+
+ - s: B
+   c: 我觉得很好。
+   p: Wǒ juéde hěn hǎo.
+   t: I think it's very good.
+
+ - s: A
+   c: 真的吗？我不太喜欢。
+   p: Zhēn de ma? Wǒ bù tài xǐhuan.
+   t: Really? I don't like it very much.
+   d: 不太 (bù tài) is a softer negative than just 不, meaning "not very/not too"
+
+ - s: B
+   c: 那你想要什么样的？
+   p: Nà nǐ xiǎng yào shénme yàng de?
+   t: Then what kind do you want?
+   d: 什么样的 (shénme yàng de) means "what kind of"
+
+ - s: A
+   c: 我再看看别的吧。
+   p: Wǒ zài kànkan bié de ba.
+   t: Let me look at others.
+   d: 别的 (bié de) means "other things/alternatives"
+
+dialogue_10:
+ - s: A
+   c: 你今天看起来很高兴。
+   p: Nǐ jīntiān kàn qǐlái hěn gāoxìng.
+   t: You look very happy today.
+   d: 看起来 (kàn qǐlái) means "looks like/appears to be"
+
+ - s: B
+   c: 对啊，因为我有好消息。
+   p: Duì a, yīnwèi wǒ yǒu hǎo xiāoxi.
+   t: Yes, because I have good news.
+
+ - s: A
+   c: 是什么好消息？
+   p: Shì shénme hǎo xiāoxi?
+   t: What's the good news?
+
+ - s: B
+   c: 我找到新工作了。
+   p: Wǒ zhǎodào xīn gōngzuò le.
+   t: I found a new job.
+   d: 了 (le) here indicates a change of state - the job has been found
+
+ - s: A
+   c: 太好了，恭喜你！
+   p: Tài hǎo le, gōngxǐ nǐ!
+   t: That's great, congratulations!
+   d: 恭喜 (gōngxǐ) is the standard congratulatory expression
