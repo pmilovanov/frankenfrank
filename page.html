@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Previous head section remains the same -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Dialogue Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        /* All previous styles remain exactly the same */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+
+        .dialogue-select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .display-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .dialogue-line {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .speaker {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .chinese {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .pinyin {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .translation {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .commentary {
+            color: #666;
+            font-style: italic;
+            padding-left: 10px;
+            border-left: 2px solid #ddd;
+            margin-top: 10px;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .active {
+            background-color: #45a049;
+        }
+
+        /* Alternate speaker colors */
+        .dialogue-line[data-speaker="B"] {
+            border-left-color: #2196F3;
+        }
+
+        .dialogue-line[data-speaker="B"] .speaker {
+            background-color: #2196F3;
+        }
+
+        button.active:before {
+            content: "✓";
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <input type="file" id="fileInput" accept=".yaml,.yml">
+            <button onclick="document.getElementById('fileInput').click()">Load YAML File</button>
+            <select id="dialogueSelect" class="dialogue-select">
+                <option value="">Select a dialogue...</option>
+            </select>
+            <div class="display-controls">
+                <button onclick="toggleElement('pinyin')" id="pinyinBtn">Pinyin</button>
+                <button onclick="toggleElement('translation')" id="translationBtn">Translation</button>
+                <button onclick="toggleElement('commentary')" id="commentaryBtn">Commentary</button>
+            </div>
+        </div>
+        <div id="dialogueContent"></div>
+    </div>
+
+    <script>
+        let dialogues = {};
+        let displayState = {
+            pinyin: false,
+            translation: false,
+            commentary: false
+        };
+
+        async function loadDefaultDialogues() {
+            try {
+                const response = await fetch('dialogues.yaml');
+                const text = await response.text();
+                processYamlContent(text);
+            } catch (error) {
+                console.error('Error loading default dialogues:', error);
+            }
+        }
+
+        function processYamlContent(content) {
+            try {
+                dialogues = jsyaml.load(content);
+                updateDialogueSelect();
+            } catch (error) {
+                console.error('Error parsing YAML:', error);
+                alert('Error parsing YAML file');
+            }
+        }
+
+        function updateDialogueSelect() {
+            const select = document.getElementById('dialogueSelect');
+            select.innerHTML = '<option value="">Select a dialogue...</option>';
+            
+            for (const dialogueId in dialogues) {
+                const option = document.createElement('option');
+                option.value = dialogueId;
+                option.textContent = dialogueId;
+                select.appendChild(option);
+            }
+        }
+
+        function displayDialogue(dialogueId) {
+            const dialogue = dialogues[dialogueId];
+            if (!dialogue) return;
+
+            const content = document.getElementById('dialogueContent');
+            content.innerHTML = '';
+
+            dialogue.forEach(line => {
+                const lineDiv = document.createElement('div');
+                lineDiv.className = 'dialogue-line';
+                lineDiv.setAttribute('data-speaker', line.s);
+
+                const speaker = document.createElement('div');
+                speaker.className = 'speaker';
+                speaker.textContent = line.s;  // Changed this line to show just the letter
+                lineDiv.appendChild(speaker);
+
+                const chinese = document.createElement('div');
+                chinese.className = 'chinese';
+                chinese.textContent = line.c;
+                lineDiv.appendChild(chinese);
+
+                const pinyin = document.createElement('div');
+                pinyin.className = 'pinyin hidden';
+                pinyin.textContent = line.p;
+                lineDiv.appendChild(pinyin);
+
+                const translation = document.createElement('div');
+                translation.className = 'translation hidden';
+                translation.textContent = line.t;
+                lineDiv.appendChild(translation);
+
+                if (line.d) {
+                    const commentary = document.createElement('div');
+                    commentary.className = 'commentary hidden';
+                    commentary.textContent = line.d;
+                    lineDiv.appendChild(commentary);
+                }
+
+                content.appendChild(lineDiv);
+            });
+
+            // Restore current display state
+            Object.entries(displayState).forEach(([key, value]) => {
+                document.querySelectorAll(`.${key}`).forEach(el => 
+                    el.classList.toggle('hidden', !value));
+                document.getElementById(`${key}Btn`).classList.toggle('active', value);
+            });
+        }
+
+        function toggleElement(elementClass) {
+            displayState[elementClass] = !displayState[elementClass];
+            
+            // Toggle visibility of elements
+            document.querySelectorAll(`.${elementClass}`).forEach(el => 
+                el.classList.toggle('hidden', !displayState[elementClass]));
+            
+            // Toggle button active state
+            document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
+        }
+
+        // Event Listeners
+        document.getElementById('fileInput').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => processYamlContent(e.target.result);
+                reader.readAsText(file);
+            }
+        });
+
+        document.getElementById('dialogueSelect').addEventListener('change', (event) => {
+            displayDialogue(event.target.value);
+        });
+
+        // Load default dialogues on page load
+        loadDefaultDialogues();
+    </script>
+</body>
+</html>
+
