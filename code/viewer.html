@@ -232,7 +232,20 @@
             background-color: #f57c00 !important;
         }
 
+		.dialogue-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--text-color);
+        }
+
         @media (max-width: 768px) {
+            .dialogue-title {
+                margin-top: 10px;
+            }
+		
             .side-panel .controls {
                 display: none;
             }
@@ -368,7 +381,10 @@
             const list = document.getElementById('dialogueList');
             list.innerHTML = '';
             
+            let firstDialogueId = null;
             for (const dialogueId in dialogues) {
+                if (!firstDialogueId) firstDialogueId = dialogueId;
+                
                 const item = document.createElement('li');
                 item.className = 'dialogue-item';
                 item.textContent = dialogueId;
@@ -382,6 +398,13 @@
                 };
                 list.appendChild(item);
             }
+
+            // Auto-select first dialogue
+            if (firstDialogueId) {
+                const firstItem = list.firstElementChild;
+                firstItem.classList.add('active');
+                displayDialogue(firstDialogueId);
+            }
         }
 
         function displayDialogue(dialogueId) {
@@ -390,6 +413,12 @@
 
             const content = document.getElementById('dialogueContent');
             content.innerHTML = '';
+
+            // Add title
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'dialogue-title';
+            titleDiv.textContent = dialogueId;
+            content.appendChild(titleDiv);
 
             dialogue.forEach(line => {
                 const lineDiv = document.createElement('div');
@@ -433,7 +462,7 @@
                 document.getElementById(`${key}Btn2`).classList.toggle('active', value);
             });
         }
-
+	  
         document.getElementById('fileInput').addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (file) {
