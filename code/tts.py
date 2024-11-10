@@ -8,6 +8,7 @@ import os
 from typing import List, Dict, Any, Optional
 import logging
 import argparse
+import shutil
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -34,7 +35,7 @@ class DialogueTTSGenerator:
         self.output_dir.mkdir(exist_ok=True, parents=True)
         self.batch_size = batch_size
         
-        # Define different voices for different speakers
+        # Define different voices for different speakers using Wavenet
         self.speaker_voices = {
             'A': texttospeech_v1beta1.VoiceSelectionParams(
                 language_code='cmn-CN',
@@ -139,9 +140,11 @@ async def main(args: argparse.Namespace):
         # Convert paths to Path objects
         input_path = Path(args.input_yaml)
         output_dir = Path(args.audio_output_dir)
+        backup_path = input_path.with_suffix('.bak.yaml')
         
-        # Determine output YAML path (in the audio output directory)
-        output_yaml = output_dir / f"{input_path.stem}_with_audio.yaml"
+        # Create backup of original file
+        logger.info(f"Creating backup of original YAML at {backup_path}")
+        shutil.copy2(input_path, backup_path)
         
         # Initialize the generator
         generator = DialogueTTSGenerator(
@@ -155,16 +158,17 @@ async def main(args: argparse.Namespace):
         
         logger.info(f"Starting audio generation from {input_path}")
         logger.info(f"Audio files will be saved to {output_dir}")
-        logger.info(f"Updated YAML will be saved to {output_yaml}")
         
         # Process dialogues
         updated_data = await generator.process_dialogues(yaml_content)
         
-        # Write updated YAML
-        with open(output_yaml, 'w', encoding='utf-8') as f:
+        # Update the original YAML file in-place
+        with open(input_path, 'w', encoding='utf-8') as f:
             yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
         
-        logger.info(f"Successfully generated audio files and updated YAML at {output_yaml}")
+        logger.info(f"Successfully generated audio files")
+        logger.info(f"Original YAML backed up to: {backup_path}")
+        logger.info(f"Updated YAML saved in-place at: {input_path}")
         
     except DefaultCredentialsError as e:
         logger.error(f"Authentication error: {e}")
@@ -179,13 +183,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         '-i', '--input-yaml',
         required=True,
-        help='Input YAML file containing dialogues'
+        help='Input YAML file containing dialogues (will be updated in-place)'
     )
     
     parser.add_argument(
         '-d', '--audio-output-dir',
         default='generated_audio',
-        help='Directory to output audio files and updated YAML (default: generated_audio)'
+        help='Directory to output audio files (default: generated_audio)'
     )
     
     parser.add_argument(
