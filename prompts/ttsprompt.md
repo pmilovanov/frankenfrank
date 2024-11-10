@@ -24,8 +24,22 @@ dialogue_7:
 
 I want to generate high-quality speech audio for the individual dialogue lines.
 
-Help me write a python script that uses the huggingface TTS inference API to generate speech-to-text.
+Help me write a python script that uses the google cloud text to speech service to generate speech-to-text.
 
 Given a yaml with dialogues like this, generate audio for each line of chinese text and save it as an audio file. To decide the file name, hash the chinese text string for content addressing. Output an updated yaml with `a: generated_audio_filename.extension` attributes added for individual dialogue lines.
 
-For bonus points, use different voices for different speakers.
+Use different voices for different speakers.
+
+Let's use TextToSpeechAsyncClient from google's google-cloud-texttospeech python library.
+
+let's take advantage of the asynchrony to do batching
+
+let's use google application default credentials if available.
+
+let's take the following as flags:
+* -i, --input-yaml: input yaml file
+* -d, --audio-output-dir: dir to output audio to
+* -b, --batch_size
+by default, output the with_audio yaml to the audio-output-dir
+
+
