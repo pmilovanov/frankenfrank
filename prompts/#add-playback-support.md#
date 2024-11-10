@@ -1,3 +1,42 @@
+I have some dialogues in the following yaml format:
+
+```
+dialogue_id:
+# list of lines of the dialogue
+- s: speaker (identifies who the line belongs to)
+  c: chinese text
+  p: pinyin
+  t: english translation
+  d: commentary on anything that might be of particular interest to a learner
+```
+
+example:
+
+```
+dialogue_6:
+ - s: A
+   c: 你最近在做什么？
+   p: Nǐ zuìjìn zài zuò shénme?
+   t: What have you been doing lately?
+   d: 最近 (zuìjìn) is a very common time word meaning "recently, lately". The 在 indicates ongoing action.
+ 
+ - s: B
+   c: 我在学习。你呢？
+   p: Wǒ zài xuéxí. Nǐ ne?
+   t: I'm studying. How about you?
+   d: 呢 (ne) is a common particle used to ask "how about you/what about...?"
+
+dialogue_7:
+ - s: A
+   c: 你看见我的书了吗？
+   p: Nǐ kànjiàn wǒ de shū le ma?
+   t: Have you seen my book?
+   d: 看见 (kànjiàn) specifically means "to see" as in "to spot/notice", different from just 看 (kàn)
+```
+
+I've written the following html/javascript viewer for yaml files like this:
+
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +48,7 @@
         :root {
             --primary-color: #4CAF50;
             --secondary-color: #2196F3;
-            --accent-color: #FF9800;
+            --accent-color: #FF9800;  /* New color for Dialogues button */
             --bg-color: #f5f5f5;
             --panel-bg: white;
             --text-color: #333;
@@ -62,7 +101,7 @@
             overflow-y: auto;
         }
 
-        .main-panel {
+		.main-panel {
             flex-grow: 1;
             padding: var(--panel-padding);
             max-width: 800px;
@@ -155,8 +194,6 @@
             font-size: 1.2em;
             margin-bottom: 5px;
             margin-top: 10px;
-            display: flex;
-            align-items: center;
         }
 
         .pinyin {
@@ -198,7 +235,7 @@
             display: none;
         }
 
-        .mobile-controls {
+		 .mobile-controls {
             display: none;
             position: fixed;
             top: 0;
@@ -221,8 +258,8 @@
             height: 34px;
         }
 
-        .dialogues-btn {
-            display: none;
+		.dialogues-btn {
+            display: none;  /* Hidden by default, shown in mobile */
             background-color: var(--accent-color) !important;
         }
 
@@ -234,81 +271,31 @@
             background-color: #f57c00 !important;
         }
 
-        .dialogue-title-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+		.dialogue-title {
+            font-size: 1.5em;
+            font-weight: 600;
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid var(--primary-color);
-        }
-
-        .dialogue-title {
-            font-size: 1.5em;
-            font-weight: 600;
             color: var(--text-color);
-            margin: 0;
-        }
-
-        .play-all-btn {
-            background: none;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .play-all-btn:hover {
-            opacity: 0.8;
-        }
-
-        .play-all-btn img {
-            width: 32px;
-            height: 32px;
-        }
-
-        .audio-btn {
-            background: none;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        .audio-btn:hover {
-            opacity: 0.8;
-        }
-
-        .audio-btn img {
-            width: 24px;
-            height: 24px;
-        }
-
-		.dialogue-line.playing {
-           background-color: #e8f5e9;
-           border-left-color: #2e7d32; 
         }
 
         @media (max-width: 768px) {
             .dialogue-title {
                 margin-top: 10px;
             }
-        
+		
             .side-panel .controls {
                 display: none;
             }
 
-            .mobile-controls {
+		    .mobile-controls {
                 display: block;
                 background-color: var(--panel-bg);
             }
 
             .dialogues-btn {
-                display: block;
+                display: block;  /* Show in mobile */
             }
 
             .app-container {
@@ -348,7 +335,7 @@
     </style>
 </head>
 <body>
-    <div class="app-container">
+  <div class="app-container">
         <div class="mobile-controls">
             <div class="controls">
                 <button onclick="toggleElement('pinyin')" id="pinyinBtn">Pinyin</button>
@@ -382,8 +369,8 @@
         <main class="main-panel">
             <div id="dialogueContent"></div>
         </main>
-    </div>
-
+  </div>
+  
     <script>
         let dialogues = {};
         let displayState = {
@@ -391,8 +378,6 @@
             translation: false,
             commentary: false
         };
-        let currentDialogue = null;
-        let isPlaying = false;
 
         function toggleMobilePanel() {
             const panel = document.getElementById('sidePanel');
@@ -402,9 +387,11 @@
         function toggleElement(elementClass) {
             displayState[elementClass] = !displayState[elementClass];
             
+            // Toggle visibility of elements
             document.querySelectorAll(`.${elementClass}`).forEach(el => 
                 el.classList.toggle('hidden', !displayState[elementClass]));
             
+            // Toggle button active state for both desktop and mobile buttons
             document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
             document.getElementById(`${elementClass}Btn2`).classList.toggle('active', displayState[elementClass]);
         }
@@ -451,6 +438,7 @@
                 list.appendChild(item);
             }
 
+            // Auto-select first dialogue
             if (firstDialogueId) {
                 const firstItem = list.firstElementChild;
                 firstItem.classList.add('active');
@@ -458,67 +446,18 @@
             }
         }
 
-		async function playAudio(audioFile, lineElement = null) {
-			if (lineElement) {
-				lineElement.classList.add('playing');
-			}
-			const audio = new Audio(`audio/${audioFile}`);
-			await audio.play();
-			return new Promise(resolve => {
-				audio.onended = () => {
-					if (lineElement) {
-						lineElement.classList.remove('playing');
-					}
-					resolve();
-				};
-			});
-		}
-
-	  async function playAllAudio(dialogueId) {
-		  if (isPlaying) return;
-		  isPlaying = true;
-
-		  const dialogue = dialogues[dialogueId];
-		  const lines = document.querySelectorAll('.dialogue-line');
-		  
-		  for (let i = 0; i < dialogue.length; i++) {
-			  const line = dialogue[i];
-			  if (line.a) {
-				  await playAudio(line.a, lines[i]);
-				  await new Promise(resolve => setTimeout(resolve, 300));
-			  }
-		  }
-
-		  isPlaying = false;
-	  }
-		  
         function displayDialogue(dialogueId) {
-            currentDialogue = dialogueId;
             const dialogue = dialogues[dialogueId];
             if (!dialogue) return;
 
             const content = document.getElementById('dialogueContent');
             content.innerHTML = '';
 
-            const titleContainer = document.createElement('div');
-            titleContainer.className = 'dialogue-title-container';
-
+            // Add title
             const titleDiv = document.createElement('div');
             titleDiv.className = 'dialogue-title';
             titleDiv.textContent = dialogueId;
-
-            const playAllBtn = document.createElement('button');
-            playAllBtn.className = 'play-all-btn';
-            playAllBtn.onclick = () => playAllAudio(dialogueId);
-            
-            const playAllImg = document.createElement('img');
-            playAllImg.src = 'assets/play32.png';
-            playAllImg.alt = 'Play all';
-            
-            playAllBtn.appendChild(playAllImg);
-            titleContainer.appendChild(titleDiv);
-            titleContainer.appendChild(playAllBtn);
-            content.appendChild(titleContainer);
+            content.appendChild(titleDiv);
 
             dialogue.forEach(line => {
                 const lineDiv = document.createElement('div');
@@ -533,20 +472,6 @@
                 const chinese = document.createElement('div');
                 chinese.className = 'chinese';
                 chinese.textContent = line.c;
-                
-                if (line.a) {
-                    const audioBtn = document.createElement('button');
-		            audioBtn.className = 'audio-btn';
-                    audioBtn.onclick = () => playAudio(line.a);
-                    
-                    const audioImg = document.createElement('img');
-                    audioImg.src = 'assets/speaker32.png';
-                    audioImg.alt = 'Play audio';
-                    
-                    audioBtn.appendChild(audioImg);
-                    chinese.appendChild(audioBtn);
-                }
-                
                 lineDiv.appendChild(chinese);
 
                 const pinyin = document.createElement('div');
@@ -576,7 +501,7 @@
                 document.getElementById(`${key}Btn2`).classList.toggle('active', value);
             });
         }
-
+	  
         document.getElementById('fileInput').addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (file) {
@@ -590,3 +515,26 @@
     </script>
 </body>
 </html>
+```
+
+Now I want to add an ability to play mp3 files of pronunciation of individual dialogue lines and the whole dialogue.
+
+For that, in the yaml, I'm adding the attribute `a` for each line that contains the name of the mp3 file of the pronunciation of that line:
+
+```
+- s: A
+  c: 就是那个很好看的。
+  p: Jiù shì nà ge hěn hǎokàn de.
+  t: The one that's really good.
+  d: 就是 (jiùshì) means "exactly/precisely that one". 的 (de) at the end nominalizes
+    the description
+  a: 199aee6135081109689847f69eb730a417c226e9724201358d4182a392618b56.mp3
+```
+
+Let's add the following functionality:
+
+- If an mp3 file is specified for a dialogue line in the yaml, in the UI, display the icon `assets/speaker32.png` for that line. It can be clicked on to play the pronunciation for that line.
+
+- On top of the dialogue, display the icon `assets/play32.png`. It can be clicked on to play all lines sequentially. There's a 0.3 second pause between the lines.
+
+- All audio files are found at the path `audio` relative to the page.

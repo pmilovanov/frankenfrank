@@ -54,7 +54,7 @@ class DialogueTTSGenerator:
 
     def get_file_hash(self, text: str) -> str:
         """Generate a hash for the Chinese text to use as filename"""
-        return hashlib.sha256(text.encode('utf-8')).hexdigest()[:12]
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
     async def generate_audio_for_line(self, text: str, speaker: str) -> tuple[str, bytes]:
         """Generate audio for a single line of dialogue"""

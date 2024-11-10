@@ -1,0 +1,64 @@
+dialogue_6:
+- s: A
+  c: 你最近在做什么？
+  p: Nǐ zuìjìn zài zuò shénme?
+  t: What have you been doing lately?
+  d: 最近 (zuìjìn) is a very common time word meaning "recently, lately". The 在 indicates
+    ongoing action.
+  a: a82bf2e916760476963d9ffe4114c153d714f0237ce09a389f6895d4cb125c0e.mp3
+- s: B
+  c: 我在学习。你呢？
+  p: Wǒ zài xuéxí. Nǐ ne?
+  t: I'm studying. How about you?
+  d: 呢 (ne) is a common particle used to ask "how about you/what about...?"
+  a: dc967ad9cc75bc6048dc3b2e25a411343bc6a32f6d3cf08a4a23a2781ee8a660.mp3
+- s: A
+  c: 我也在学习，太难了。
+  p: Wǒ yě zài xuéxí, tài nán le.
+  t: I'm studying too, it's too difficult.
+  d: 太...了 (tài...le) is a common pattern meaning "too/excessively"
+  a: 98eba6d8651af678e0a553248b590a80440e2862780b2455b98583540c7f5549.mp3
+- s: B
+  c: 我们一起学习吧？
+  p: Wǒmen yīqǐ xuéxí ba?
+  t: Shall we study together?
+  d: 吧 (ba) here makes the statement into a gentle suggestion/proposal
+  a: 380e5954acebe2d2f888bcc9f448d2f48731daa239b54629e424a44eba326583.mp3
+- s: A
+  c: 好啊，你来我这里吧。
+  p: Hǎo a, nǐ lái wǒ zhèli ba.
+  t: Sure, come to my place.
+  d: 啊 (a) is a particle that makes the agreement sound more natural and friendly
+  a: 11b3a9e790611d4b6135a69416b6959b09bd3beb9583bb54926030dee4eba80c.mp3
+dialogue_7:
+- s: A
+  c: 你看见我的书了吗？
+  p: Nǐ kànjiàn wǒ de shū le ma?
+  t: Have you seen my book?
+  d: 看见 (kànjiàn) specifically means "to see" as in "to spot/notice", different from
+    just 看 (kàn)
+  a: 1da3c8f6854a1c80f3366753434d884d135a4539fdecfd14c69cc0273ca32973.mp3
+- s: B
+  c: 什么书？
+  p: Shénme shū?
+  t: What book?
+  a: 3dcbffc14c54f37f004c966913bf8e9b8f855ef04823d5b9e38c562a743edcf7.mp3
+- s: A
+  c: 就是那个很好看的。
+  p: Jiù shì nà ge hěn hǎokàn de.
+  t: The one that's really good.
+  d: 就是 (jiùshì) means "exactly/precisely that one". 的 (de) at the end nominalizes
+    the description
+  a: 199aee6135081109689847f69eb730a417c226e9724201358d4182a392618b56.mp3
+- s: B
+  c: 在这里，我看到了。
+  p: Zài zhèli, wǒ kàndào le.
+  t: It's here, I found it.
+  d: 看到 (kàndào) indicates successful completion of seeing/finding something
+  a: d831bbcf50874a3566dd937df2e90b4d094ae5bd69580ceb9261c272783eb379.mp3
+- s: A
+  c: 谢谢你。我找了很久。
+  p: Xièxie nǐ. Wǒ zhǎo le hěn jiǔ.
+  t: Thank you. I've been looking for a long time.
+  d: 很久 (hěn jiǔ) literally "very long time" is a common phrase for expressing duration
+  a: 8e3565d7bcee6dd52feda71ae40e31a3032f6c32a4801aedbdf19aa248d04f33.mp3
