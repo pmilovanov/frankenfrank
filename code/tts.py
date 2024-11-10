@@ -38,11 +38,11 @@ class DialogueTTSGenerator:
         self.speaker_voices = {
             'A': texttospeech_v1beta1.VoiceSelectionParams(
                 language_code='cmn-CN',
-                name='cmn-CN-Standard-A',
+                name='cmn-CN-Wavenet-A',
             ),
             'B': texttospeech_v1beta1.VoiceSelectionParams(
                 language_code='cmn-CN',
-                name='cmn-CN-Standard-B',
+                name='cmn-CN-Wavenet-B',
             ),
         }
         
