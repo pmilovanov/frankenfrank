@@ -458,39 +458,39 @@
             }
         }
 
-		async function playAudio(audioFile, lineElement = null) {
-			if (lineElement) {
-				lineElement.classList.add('playing');
-			}
-			const audio = new Audio(`audio/${audioFile}`);
-			await audio.play();
-			return new Promise(resolve => {
-				audio.onended = () => {
-					if (lineElement) {
-						lineElement.classList.remove('playing');
-					}
-					resolve();
-				};
-			});
-		}
+async function playAudio(audioFile, lineElement = null) {
+    if (lineElement) {
+        lineElement.classList.add('playing');
+    }
+    const audio = new Audio(`audio/${audioFile}`);
+    await audio.play();
+    return new Promise(resolve => {
+        audio.onended = () => {
+            if (lineElement) {
+                lineElement.classList.remove('playing');
+            }
+            resolve();
+        };
+    });
+}
 
-	  async function playAllAudio(dialogueId) {
-		  if (isPlaying) return;
-		  isPlaying = true;
+async function playAllAudio(dialogueId) {
+    if (isPlaying) return;
+    isPlaying = true;
 
-		  const dialogue = dialogues[dialogueId];
-		  const lines = document.querySelectorAll('.dialogue-line');
-		  
-		  for (let i = 0; i < dialogue.length; i++) {
-			  const line = dialogue[i];
-			  if (line.a) {
-				  await playAudio(line.a, lines[i]);
-				  await new Promise(resolve => setTimeout(resolve, 300));
-			  }
-		  }
+    const dialogue = dialogues[dialogueId];
+    const lines = document.querySelectorAll('.dialogue-line');
+    
+    for (let i = 0; i < dialogue.length; i++) {
+        const line = dialogue[i];
+        if (line.a) {
+            await playAudio(line.a, lines[i]);
+            await new Promise(resolve => setTimeout(resolve, 300));
+        }
+    }
 
-		  isPlaying = false;
-	  }
+    isPlaying = false;
+}
 		  
         function displayDialogue(dialogueId) {
             currentDialogue = dialogueId;
@@ -537,7 +537,7 @@
                 if (line.a) {
                     const audioBtn = document.createElement('button');
 		            audioBtn.className = 'audio-btn';
-                    audioBtn.onclick = () => playAudio(line.a);
+   				    audioBtn.onclick = () => playAudio(line.a, lineDiv); 
                     
                     const audioImg = document.createElement('img');
                     audioImg.src = 'assets/speaker32.png';
