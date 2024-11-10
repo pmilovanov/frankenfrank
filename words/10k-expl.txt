@@ -1,0 +1,200 @@
+的,de,of/possessive particle
+我,wo,I/me
+你,ni,you (singular)
+是,shi,to be/is/are
+了,le,completion particle
+不,bu,no/not
+在,zai,at/in/present progressive
+他,ta,he
+我们,women,we/us
+好,hao,good
+有,you,to have/there is
+这,zhe,this
+就,jiu,then/just
+会,hui,will/can/able to
+吗,ma,question particle
+要,yao,want/going to
+什么,shenme,what
+说,shuo,to say/speak
+她,ta,she
+想,xiang,to think/want
+一,yi,one
+很,hen,very
+知道,zhidao,to know
+人,ren,person/people
+吧,ba,suggestion particle
+那,na,that
+来,lai,to come
+都,dou,all/both
+个,ge,measure word
+能,neng,can/able to
+去,qu,to go
+没,mei,not have
+和,he,and
+他们,tamen,they
+到,dao,to arrive/to
+对,dui,correct/towards
+也,ye,also
+啊,a,ah (exclamation)
+还,hai,still/yet
+把,ba,to handle/hold
+让,rang,to let/make
+做,zuo,to do/make
+给,gei,to give/for
+一个,yige,one (with measure word)
+上,shang,up/above
+你们,nimen,you (plural)
+过,guo,to pass/experience
+没有,meiyou,don't have/there isn't
+得,de,auxiliary word
+看,kan,to look/see
+真,zhen,really/true
+着,zhe,aspect particle
+事,shi,matter/thing
+这个,zhege,this one
+怎么,zenme,how/why
+现在,xianzai,now
+可以,keyi,can/may
+点,dian,point/bit
+呢,ne,question particle
+如果,ruguo,if
+只,zhi,only
+别,bie,don't
+哦,o,oh (exclamation)
+但,dan,but
+被,bei,passive marker
+走,zou,to walk/leave
+太,tai,too/extremely
+这样,zheyang,this way/like this
+里,li,inside
+跟,gen,with
+告诉,gaosu,to tell
+因为,yinwei,because
+自己,ziji,oneself/self
+再,zai,again
+听,ting,to listen
+这里,zheli,here
+快,kuai,fast/quick
+谁,shei,who
+但是,danshi,but/however
+多,duo,many/much
+用,yong,to use
+时候,shihou,time/moment
+下,xia,down/below
+已经,yijing,already
+谢谢,xiexie,thank you
+为什么,weishenme,why
+觉得,juede,to feel/think
+天,tian,day/sky
+像,xiang,like/similar to
+这么,zheme,so/such
+它,ta,it
+从,cong,from
+先生,xiansheng,Mr./sir
+找,zhao,to look for
+最,zui,most
+喜欢,xihuan,to like
+可,ke,can/possible
+为,wei,for/to
+大,da,big/large
+可能,keneng,maybe/possible
+需要,xuyao,to need
+是的,shide,yes/correct
+死,si,to die/death
+次,ci,time (frequency)
+出,chu,to go out
+那么,name,so/then
+干,gan,to do
+那个,nage,that one
+嘿,hei,hey
+们,men,plural marker
+话,hua,words/speech
+而,er,and/but
+么,me,particle
+东西,dongxi,thing/stuff
+应该,yinggai,should
+孩子,haizi,child/kid
+起来,qilai,to get up/start
+所以,suoyi,so/therefore
+这些,zhexie,these
+才,cai,only then
+两,liang,two
+错,cuo,wrong/mistake
+还有,haiyou,also/in addition
+又,you,again/also
+小,xiao,small/little
+中,zhong,middle/in
+叫,jiao,to call/name
+嗯,en,um/yes
+该,gai,should
+等,deng,to wait/etc.
+问题,wenti,problem/question
+一起,yiqi,together
+拿,na,to take/hold
+更,geng,more
+开始,kaishi,to begin/start
+帮,bang,to help
+打,da,to hit/make
+爱,ai,to love/love
+带,dai,to bring/carry
+时间,shijian,time
+年,nian,year
+请,qing,please
+回,hui,to return
+工作,gongzuo,work/job
+然后,ranhou,then/afterwards
+当,dang,when/during
+见,jian,to see/meet
+钱,qian,money
+噢,o,oh
+一样,yiyang,same/alike
+事情,shiqing,matter/affair
+就是,jiushi,exactly/precisely
+吃,chi,to eat
+所有,suoyou,all/every
+开,kai,to open/start
+一下,yixia,a bit/once
+家,jia,home/family
+非常,feichang,very/extremely
+看到,kandao,to see
+希望,xiwang,to hope/hope
+那些,naxie,those
+哪,na,which/where
+当然,dangran,of course
+也许,yexu,perhaps/maybe
+行,xing,okay/to be alright
+朋友,pengyou,friend
+妈妈,mama,mom/mother
+相信,xiangxin,to believe
+前,qian,front/before
+嗨,hai,hi
+认为,renwei,to think/believe
+将,jiang,will/shall
+这儿,zher,here
+今天,jintian,today
+明白,mingbai,to understand
+一直,yizhi,always/continuously
+看看,kankan,to take a look
+车,che,car/vehicle
+时,shi,time/when
+杀,sha,to kill
+地方,difang,place/location
+不过,buguo,however/but
+呃,e,uh
+发生,fasheng,to happen
+几,ji,several/how many
+回来,huilai,to come back
+准备,zhunbei,to prepare
+找到,zhaodao,to find
+后,hou,after/behind
+爸爸,baba,dad/father
+一切,yiqie,everything
+抱歉,baoqian,sorry
+比,bi,to compare/than
+感觉,ganjue,to feel/feeling
+些,xie,some
+只是,zhishi,just/merely
+怎么样,zenmeyang,how about/how
+出来,chulai,to come out
+不要,buyao,don't
+对不起,duibuqi,sorry

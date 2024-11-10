@@ -1,0 +1,2967 @@
+1 - First Meeting:
+- s: A
+  c: 你好！
+  p: Nǐ hǎo!
+  t: Hello!
+  a: ecde115cdca96a1a181db6b9e88c1e1f6e208ca77916627cc8a9fa02b39d0692.mp3
+- s: B
+  c: 你好！你是谁？
+  p: Nǐ hǎo! Nǐ shì shéi?
+  t: Hello! Who are you?
+  d: 谁 (shéi) is the question word for "who"
+  a: 5b6302bd33d54e227d16fc420a8b268710bcbef51be2df26ff1266a2df4824d0.mp3
+- s: A
+  c: 我是小王。你呢？
+  p: Wǒ shì Xiǎo Wáng. Nǐ ne?
+  t: I am Xiao Wang. And you?
+  d: 呢 (ne) is a common particle used to ask "what about you?"
+  a: ecfdf31aaf55b71dfa30698ab612eb4d50afa7df1ae45e41b5f182875f9cac88.mp3
+- s: B
+  c: 我是李明。很高兴认识你。
+  p: Wǒ shì Lǐ Míng. Hěn gāoxìng rènshi nǐ.
+  t: I am Li Ming. Very happy to meet you.
+  a: cf0d7fb202c35a640bcd54ea5057526754b52a3df62c0f0215061c1a969ad841.mp3
+2 - Asking About Something:
+- s: A
+  c: 这是什么？
+  p: Zhè shì shénme?
+  t: What is this?
+  a: a9e51f28b7ac3b67b5fa0dece797dcc605957f37f42ca5ce827dc8aaae8d4223.mp3
+- s: B
+  c: 这个是书。
+  p: Zhège shì shū.
+  t: This is a book.
+  d: 这个 (zhège) is more specific than just 这 (zhè), similar to "this one"
+  a: e61a4e9f46016388cb08f9f2d097498b344930d0413148636c35f764866d8614.mp3
+- s: A
+  c: 你的书很好。
+  p: Nǐ de shū hěn hǎo.
+  t: Your book is very good.
+  d: 的 (de) is used here as a possessive particle
+  a: 9c7e246e3acb94f77d929c8842cccc693572e2adc5b89e882990d6769e0da95b.mp3
+- s: B
+  c: 谢谢你！
+  p: Xièxie nǐ!
+  t: Thank you!
+  a: 8305d9410edc7183b5b49a96dd4d5cb452b1659f4fcf82d8eeae2d0ca35923ef.mp3
+3 - Making Plans:
+- s: A
+  c: 你现在要去哪里？
+  p: Nǐ xiànzài yào qù nǎlǐ?
+  t: Where are you going now?
+  d: 要 (yào) indicates intention or plan to do something
+  a: 39bf820e484dc9cb91200582b4fa170d8a2bacb0828bea705f205777e92a9dcb.mp3
+- s: B
+  c: 我要去工作。你呢？
+  p: Wǒ yào qù gōngzuò. Nǐ ne?
+  t: I'm going to work. And you?
+  a: 34aae65cd328164be82ea174416676d9c03348e67c0b4dbe77677e4e13c5c246.mp3
+- s: A
+  c: 我不工作，我要去看朋友。
+  p: Wǒ bù gōngzuò, wǒ yào qù kàn péngyou.
+  t: I'm not working, I'm going to see friends.
+  a: 256500d28536c369da6ecf5d8245da4d2d55df1acaa0c47e2a059c5daf3bc223.mp3
+- s: B
+  c: 那太好了！
+  p: Nà tài hǎo le!
+  t: That's great!
+  d: 了 (le) here indicates a change in situation or realization
+  a: 042e9abf3644ccadb19a71f285c9891d8b290e0268115602420d56d38c31ce5e.mp3
+4 - At a Restaurant:
+- s: A
+  c: 你想吃什么？
+  p: Nǐ xiǎng chī shénme?
+  t: What do you want to eat?
+  a: a6e210abc45a42e921e8765ad37b46bd0c5c6d6da69de93cd61750f3abe7af2c.mp3
+- s: B
+  c: 我不知道。这里的东西都很好吃。
+  p: Wǒ bù zhīdào. Zhèlǐ de dōngxi dōu hěn hǎo chī.
+  t: I don't know. Everything here is delicious.
+  d: 都 (dōu) means "all" or "both" - here emphasizing everything is good
+  a: c9eef72352ebd5307061423571eb628f7e53fd7fec642ab9f978dd6112fe3b97.mp3
+- s: A
+  c: 要不要喝点什么？
+  p: Yào bú yào hē diǎn shénme?
+  t: Do you want something to drink?
+  d: 要不要 (yào bú yào) is a common pattern for yes/no questions
+  a: 09e9075dbcf1e23957193b336f64bf43c70db292d7f9b8edf75a5c228193b976.mp3
+- s: B
+  c: 好，我要一杯水。
+  p: Hǎo, wǒ yào yī bēi shuǐ.
+  t: Okay, I want a glass of water.
+  a: e7995cc3932b42449fa46c06c09ce80744a9b8aeaf7f487ac59b05dde0ac18cf.mp3
+- s: A
+  c: 我也要一杯水。
+  p: Wǒ yě yào yī bēi shuǐ.
+  t: I also want a glass of water.
+  a: bc6e68caf3606ac0838affa142a5d7b186864db8f82f42a54c23d4c77a89ace4.mp3
+5 - Finding the Way:
+- s: A
+  c: 对不起，请问一下。
+  p: Duìbùqǐ, qǐng wèn yíxià.
+  t: Excuse me, may I ask something?
+  d: 一下 (yíxià) softens requests, making them more polite
+  a: ae9a30d4fdc1a6522aa8e61665d27221396df19e7fb5e5be866e2c5a1a03da03.mp3
+- s: B
+  c: 没问题，你要找什么地方？
+  p: Méi wèntí, nǐ yào zhǎo shénme dìfāng?
+  t: No problem, what place are you looking for?
+  a: 69158163652a191f3fe3cf43cefcc29e12ecd4f43a9e9cb1e776f1e9d932ac47.mp3
+- s: A
+  c: 我要找医生的办公室。
+  p: Wǒ yào zhǎo yīshēng de bàngōngshì.
+  t: I'm looking for the doctor's office.
+  a: 92ce848be9c4781aafba760e77ef09b9977b18be7e90df12bec492555c97d19c.mp3
+- s: B
+  c: 在那边。你看，从这里走，往右转。
+  p: Zài nàbiān. Nǐ kàn, cóng zhèlǐ zǒu, wǎng yòu zhuǎn.
+  t: It's over there. Look, from here walk and turn right.
+  a: 422a0d8469757cfbff09087de0b1937b92e7203334eb0812ee9625dc23fa8a1e.mp3
+6 - Making a Phone Call:
+- s: A
+  c: 喂，请问是王先生吗？
+  p: Wèi, qǐng wèn shì Wáng xiānsheng ma?
+  t: Hello, may I ask if this is Mr. Wang?
+  d: 喂 (wèi) is specifically used when answering phones
+  a: 465411a902da3ab014736d2ee0a4f64764e1fda74a35bff86d502b0bea1c0c35.mp3
+- s: B
+  c: 是的，我是。你是谁？
+  p: Shì de, wǒ shì. Nǐ shì shéi?
+  t: Yes, I am. Who are you?
+  a: 0bfaf497009e6c989920de05a981ae8e209a54427a6cabd697fd4c245a637ab1.mp3
+- s: A
+  c: 我是小李。关于明天的会议...
+  p: Wǒ shì Xiǎo Lǐ. Guānyú míngtiān de huìyì...
+  t: I am Xiao Li. About tomorrow's meeting...
+  a: 38628b535c42d5133367757698476277dbd5fead2ff726ca77d9c7632f9b2b92.mp3
+- s: B
+  c: 啊，对！会议时间改变了。
+  p: A, duì! Huìyì shíjiān gǎibiàn le.
+  t: Ah, right! The meeting time has changed.
+  d: 了 (le) here indicates a change has occurred
+  a: 4d46d15f348d5bd1b98c58b96dfabd06f3759d3f791f1c99dc994f11e19dd6bc.mp3
+7 - At Home:
+- s: A
+  c: 妈妈，我回来了！
+  p: Māma, wǒ huílái le!
+  t: Mom, I'm back!
+  a: 310adcfb4f9e14d95473a2239fa9458600f26c38a0bea6bfc530f63629603d65.mp3
+- s: B
+  c: 你今天回来得很晚。
+  p: Nǐ jīntiān huílái de hěn wǎn.
+  t: You came back very late today.
+  d: 得 (de) here is used to link verb and descriptive phrase
+  a: 4b0b69c2fa3db6a8593ea23054bd9db9b96e27ef176ed0c3d842e8cff81de1dd.mp3
+- s: A
+  c: 对不起，因为工作太忙了。
+  p: Duìbùqǐ, yīnwèi gōngzuò tài máng le.
+  t: Sorry, because work was too busy.
+  a: 1d89ef3a3dc4de025b351cc04348c0eeca37922c6e07efbfbd239d1e6054ad8c.mp3
+- s: B
+  c: 没关系，你吃饭了吗？
+  p: Méi guānxi, nǐ chī fàn le ma?
+  t: It's okay, have you eaten?
+  d: 吃饭了吗 is a very common greeting in Chinese culture
+  a: f4f47c1dc4e32c972a276f104f379fb8cfe692600caaa0215c25c2aa694fbbb5.mp3
+8 - Making Weekend Plans:
+- s: A
+  c: 这个周末你有什么计划吗？
+  p: Zhège zhōumò nǐ yǒu shénme jìhuà ma?
+  t: Do you have any plans this weekend?
+  a: c7e450aa914377e3a00d05cfc16a146793890c63725ba1baa42d424ee61a6056.mp3
+- s: B
+  c: 我想去看电影，你要一起来吗？
+  p: Wǒ xiǎng qù kàn diànyǐng, nǐ yào yìqǐ lái ma?
+  t: I want to go watch a movie, want to come together?
+  a: e5e1a57de253b324b7705d4a1c7f98ff5d7c46c908a19511418465955279006d.mp3
+- s: A
+  c: 好啊！几点开始？
+  p: Hǎo a! Jǐ diǎn kāishǐ?
+  t: Sure! What time does it start?
+  a: 6fcd6f69b003852d2e5a999da97cb31676dad161666e8b74c0fc2cf4a0b71b31.mp3
+- s: B
+  c: 晚上七点。我们可以先吃饭。
+  p: Wǎnshang qī diǎn. Wǒmen kěyǐ xiān chī fàn.
+  t: 7 in the evening. We can eat first.
+  d: 先 (xiān) indicates doing something first before another action
+  a: 23644c8884c6ddd97e6a74a1c1cde2572c824cc988eedca369e6bfe790e7aea0.mp3
+9 - At Work:
+- s: A
+  c: 这个问题很重要，我们需要讨论一下。
+  p: Zhège wèntí hěn zhòngyào, wǒmen xūyào tǎolùn yíxià.
+  t: This problem is very important, we need to discuss it.
+  a: ae8b732639fddf0677e96f2c748c4457361465035bd6d38e68c1df581db11954.mp3
+- s: B
+  c: 好的，但是现在我有点忙。
+  p: Hǎo de, dànshì xiànzài wǒ yǒudiǎn máng.
+  t: Okay, but I'm a bit busy right now.
+  a: e7cdb88710fe711e7b2f4ad9882a19f49c8119563a74a26df3b5ad9ebe9ed82d.mp3
+- s: A
+  c: 那我们什么时候可以谈？
+  p: Nà wǒmen shénme shíhou kěyǐ tán?
+  t: Then when can we talk?
+  a: b6278c36480bb8650126884435053fc1effecd64b9bd45c66b21638d9e2b48c8.mp3
+- s: B
+  c: 等我做完这个，大概一个小时后。
+  p: Děng wǒ zuòwán zhège, dàgài yí ge xiǎoshí hòu.
+  t: Wait until I finish this, about one hour later.
+  d: 做完 (zuòwán) indicates completion of an action
+  a: 108714dedfd6eed98053b8b11106c0f303bef9c08ab4d83405d54e600a49874c.mp3
+10 - Shopping:
+- s: A
+  c: 这件衣服多少钱？
+  p: Zhè jiàn yīfu duōshao qián?
+  t: How much is this piece of clothing?
+  d: 件 (jiàn) is a measure word used for clothing and items
+  a: e99cbfc8250c95bfad4cbdee6ff4641805c0458fde29d7da5c59718b4ed3a6fb.mp3
+- s: B
+  c: 三百块。很漂亮，是不是？
+  p: Sānbǎi kuài. Hěn piàoliang, shì bú shì?
+  t: 300 yuan. Very pretty, isn't it?
+  a: dc2014ac03c59d5dad5d4b37efd1055af3bcc6922df87c3656afc93d1265344a.mp3
+- s: A
+  c: 是的，但是太贵了。
+  p: Shì de, dànshì tài guì le.
+  t: Yes, but it's too expensive.
+  a: 3ddbbce55388508f24006bad52246f8a02f1d53af08fe71a621daec383baad89.mp3
+- s: B
+  c: 这是新的，质量很好。
+  p: Zhè shì xīn de, zhìliàng hěn hǎo.
+  t: This is new, the quality is very good.
+  a: bfcdb317ae30567ba914e860f2932c85b4d2129ab532700a938d2540cb974f7a.mp3
+11 - At School:
+- s: A
+  c: 老师，我有一个问题。
+  p: Lǎoshī, wǒ yǒu yí ge wèntí.
+  t: Teacher, I have a question.
+  a: 48e655259328ee55a4380fbe102fd96d393c799b736445033a4741902a00bca4.mp3
+- s: B
+  c: 请说，什么问题？
+  p: Qǐng shuō, shénme wèntí?
+  t: Please speak, what question?
+  a: 9b1cacda13275f1c787984b490702ba7acecc6b5597ab9f7df5723f5e9e1e1fe.mp3
+- s: A
+  c: 这个字怎么写？
+  p: Zhège zì zěnme xiě?
+  t: How do you write this character?
+  a: 60643874647e30e31626bb48619ffeaef3207de3262afdf761840af358e8b2e2.mp3
+- s: B
+  c: 我给你写一下，你看。
+  p: Wǒ gěi nǐ xiě yíxià, nǐ kàn.
+  t: I'll write it for you, look.
+  d: 给 (gěi) here indicates doing something for someone's benefit
+  a: 68d2e27ccb1b2a67703ac1e4da82df96ab15978b56f6aa26148981f18df5daba.mp3
+12 - Weather Talk:
+- s: A
+  c: 今天天气真不错！
+  p: Jīntiān tiānqì zhēn bùcuò!
+  t: Today's weather is really nice!
+  a: c81a6fd567652810cdd75e2a6c3bd6e2641c1db85f61b0602dd0a3c11ac769d6.mp3
+- s: B
+  c: 是啊，比昨天好多了。
+  p: Shì a, bǐ zuótiān hǎo duō le.
+  t: Yes, much better than yesterday.
+  d: 比 (bǐ) is used for comparisons
+  a: b7b97a613f15f150041cfb495a6556664182f47623038bcffe89bb0198c2d619.mp3
+- s: A
+  c: 明天可能会下雨。
+  p: Míngtiān kěnéng huì xià yǔ.
+  t: It might rain tomorrow.
+  a: 0b8377aa0a4a96cb01e36c2bf2545fa25dcc838f8c4aaa249f2601b61998870e.mp3
+- s: B
+  c: 真的吗？那我要带伞。
+  p: Zhēn de ma? Nà wǒ yào dài sǎn.
+  t: Really? Then I'll bring an umbrella.
+  a: d1a92cd9020ec6818e70def048c016df299fb99e44297977e051fa3f8745c780.mp3
+13 - Restaurant Order:
+- s: A
+  c: 服务员，请问可以点菜了吗？
+  p: Fúwùyuán, qǐngwèn kěyǐ diǎn cài le ma?
+  t: Waiter, may I order now?
+  a: d79da14c1c69607d6c0d6072260ef3ef26a348a0f460075b11f8612820caec6f.mp3
+- s: B
+  c: 可以，你们要吃什么？
+  p: Kěyǐ, nǐmen yào chī shénme?
+  t: Yes, what would you like to eat?
+  a: 73ce3075f5ab5820a64172d60e277fee29be13b3aa69f7796d200cd5297f0470.mp3
+- s: A
+  c: 这个菜怎么样？好吃吗？
+  p: Zhège cài zěnmeyàng? Hǎochī ma?
+  t: How is this dish? Is it tasty?
+  a: 5146bcf95864d4e66e2f4e0341c35942ecb358c04da367297126317d60dac7e8.mp3
+- s: B
+  c: 很好吃，是我们这里最受欢迎的。
+  p: Hěn hǎochī, shì wǒmen zhèlǐ zuì shòu huānyíng de.
+  t: Very delicious, it's our most popular dish here.
+  d: 最 (zuì) indicates superlative - "the most"
+  a: 1266a8b05bc08a85aa91ed79d0d1d30e1fa5e0837e1ac4cb281065455a600ed8.mp3
+14 - Lost Item:
+- s: A
+  c: 对不起，你看见我的手机了吗？
+  p: Duìbùqǐ, nǐ kànjiàn wǒ de shǒujī le ma?
+  t: Excuse me, have you seen my phone?
+  a: adae9f68ddbdca815fc08e026a1112f70e4f52664ddf97f839c0b6f238df3d5c.mp3
+- s: B
+  c: 是不是在那张桌子上？
+  p: Shì bú shì zài nà zhāng zhuōzi shang?
+  t: Isn't it on that table?
+  d: 张 (zhāng) is a measure word used for flat objects and tables
+  a: d8148f30c3689bcc60b7cb7d73918a7317a1572bee311edd16d58d7e3fa5aa43.mp3
+- s: A
+  c: 啊，找到了！谢谢你！
+  p: A, zhǎodào le! Xièxie nǐ!
+  t: Ah, found it! Thank you!
+  a: 54ce8c81dce76ab0391594f4f29cce1be8d5ab9db328902fa0aaf7ec18c20a0b.mp3
+- s: B
+  c: 不用谢，下次小心一点。
+  p: Bú yòng xiè, xià cì xiǎoxīn yìdiǎn.
+  t: You're welcome, be more careful next time.
+  a: 303c1841eda3396de6d4b428e652ff449fc44da8b7468b15d27ae490efa6ed6e.mp3
+15 - Meeting a Friend's Friend:
+- s: A
+  c: 李明，好久不见！
+  p: Lǐ Míng, hǎojiǔ bùjiàn!
+  t: Li Ming, long time no see!
+  a: f903cd15506c1aa35b3b7ac9b476baf5c258d2610a905e41e849ff0bab12536a.mp3
+- s: B
+  c: 小王！这是我的朋友小张。
+  p: Xiǎo Wáng! Zhè shì wǒ de péngyou Xiǎo Zhāng.
+  t: Xiao Wang! This is my friend Xiao Zhang.
+  a: 5e33689724174e34a3b9fcce9ca383a28a7df2854153e80bf2181fc443a5f6ec.mp3
+- s: A
+  c: 你好，小张。很高兴认识你。
+  p: Nǐ hǎo, Xiǎo Zhāng. Hěn gāoxìng rènshi nǐ.
+  t: Hello, Xiao Zhang. Very happy to meet you.
+  a: 02cb20b6d0b90678eb3a2449c91ec9159e66c6f1b7e0e041476c715eab48affe.mp3
+- s: C
+  c: 我也很高兴认识你。
+  p: Wǒ yě hěn gāoxìng rènshi nǐ.
+  t: I'm also very happy to meet you.
+  a: f84a9d298090495f0cd30618fbcbbc1b86b70596517f1671ae62f62056a679b0.mp3
+16 - Making Weekend Plans Again:
+- s: A
+  c: 这个周末你要做什么？
+  p: Zhège zhōumò nǐ yào zuò shénme?
+  t: What are you going to do this weekend?
+  a: d6a183b439c42d43d0c3941cede87cef25f474df5325d1dce617dcc5b1255d36.mp3
+- s: B
+  c: 我想去看电影，但是现在很忙。
+  p: Wǒ xiǎng qù kàn diànyǐng, dànshì xiànzài hěn máng.
+  t: I want to go watch a movie, but I'm very busy now.
+  a: 4f5d4010e1efc7f01d411bc85be626e71cb16345713f7b074023ab1076e52827.mp3
+- s: A
+  c: 那我们明天晚上去，可以吗？
+  p: Nà wǒmen míngtiān wǎnshang qù, kěyǐ ma?
+  t: Then shall we go tomorrow evening, is that okay?
+  a: dc7e4f8197af3cc5421f9640a197dd29d65226774266095f06862632f97ebb4b.mp3
+- s: B
+  c: 好啊。我们先吃饭，再去看电影。
+  p: Hǎo a. Wǒmen xiān chī fàn, zài qù kàn diànyǐng.
+  t: Sure. Let's eat first, then go watch the movie.
+  a: edb2c1304930b0ba748cdc56d7faccd22cbf48bd994463a5a5d4d50a207db301.mp3
+17 - Looking for a Restaurant:
+- s: A
+  c: 对不起，请问这附近有好吃的餐厅吗？
+  p: Duìbùqǐ, qǐngwèn zhè fùjìn yǒu hǎochī de cāntīng ma?
+  t: Excuse me, are there any good restaurants nearby?
+  a: 6fdb2b108cabd1ae28e029c50674d9b4b68c0c8431ce24e5ed14c1889338ec87.mp3
+- s: B
+  c: 有，在那边有一个很好的餐厅。
+  p: Yǒu, zài nàbiān yǒu yí ge hěn hǎo de cāntīng.
+  t: Yes, there's a very good restaurant over there.
+  a: 0e7def43ad0bf6904a0fee9c8b19e42555a19b7508a1e67d05b8e2a5ea968e2d.mp3
+- s: A
+  c: 要怎么走？
+  p: Yào zěnme zǒu?
+  t: How do I get there?
+  a: e15b667aea1a6a5cf8d5b434a308573e69a8c239bb6fc83975a2e719251e4e15.mp3
+- s: B
+  c: 从这里往右走，就可以看到。
+  p: Cóng zhèlǐ wǎng yòu zǒu, jiù kěyǐ kàndào.
+  t: Walk right from here, and you'll see it.
+  a: 8c18c1618dac4e53662202c23fc3c1fb74cbc901f5ca3db5f0acc258f79d206d.mp3
+18 - Calling a Friend:
+- s: A
+  c: 喂，你现在忙吗？
+  p: Wèi, nǐ xiànzài máng ma?
+  t: Hello, are you busy now?
+  a: 23352bb827e963f018b356165ee73556f468c897a1949a05181e333578cf99ff.mp3
+- s: B
+  c: 不忙，有什么事吗？
+  p: Bù máng, yǒu shénme shì ma?
+  t: Not busy, what's up?
+  a: c11d1bc6b8f038ee20ade9ccecd52693ec5e3440094e0957fb1c27b6d1107271.mp3
+- s: A
+  c: 我想问你一个问题。
+  p: Wǒ xiǎng wèn nǐ yí ge wèntí.
+  t: I want to ask you a question.
+  a: 5ca4620916fd51e87fc89840424dc255f6f5dbc7800dbc97e2e7359854059e4d.mp3
+- s: B
+  c: 好，请说。
+  p: Hǎo, qǐng shuō.
+  t: Okay, please speak.
+  a: 8a2e998f5030473bade4c4fb0c6dd153ef41faadb40167c079c32da60660dc42.mp3
+19 - Shopping Again:
+- s: A
+  c: 这件衣服很漂亮，是新的吗？
+  p: Zhè jiàn yīfu hěn piàoliang, shì xīn de ma?
+  t: This piece of clothing is very pretty, is it new?
+  a: 058a54fce726795b2ae158716d8032efc1b0ad72d25dc362e482eb1e7329f7bf.mp3
+- s: B
+  c: 是的，但是有点贵。
+  p: Shì de, dànshì yǒudiǎn guì.
+  t: Yes, but it's a bit expensive.
+  a: a433305a1a2ccec992ccdd9622b90ebb04cae5024ec4a56b04f8fdcffe06372c.mp3
+- s: A
+  c: 多少钱？
+  p: Duōshao qián?
+  t: How much?
+  a: 4eb241c847dc1625313b373beeff8102805499aeb0ad8898e855f205e40efc1f.mp3
+- s: B
+  c: 两百块。
+  p: Liǎngbǎi kuài.
+  t: 200 yuan.
+  a: 5abc93abe736d27fe5d8dbae12ecad2bf0611d19d90792cfbd52981eb263ea13.mp3
+- s: A
+  c: 不太贵。质量很好。
+  p: Bù tài guì. Zhìliàng hěn hǎo.
+  t: Not too expensive. The quality is very good.
+  a: e97e584ebe2bf2df9c64e592f3e5850e10d7c70d48a74068d13ade6b195e56dc.mp3
+20 - At Home Again:
+- s: A
+  c: 妈妈，我回来了！你在做什么？
+  p: Māma, wǒ huílái le! Nǐ zài zuò shénme?
+  t: Mom, I'm back! What are you doing?
+  a: 562fa5c216fd082e1f71c041d72522175d255dd211e5afe7a9d74fb72ea79518.mp3
+- s: B
+  c: 我在看电视。你吃饭了吗？
+  p: Wǒ zài kàn diànshì. Nǐ chī fàn le ma?
+  t: I'm watching TV. Have you eaten?
+  a: 9ea739616bd69e275fed56741a1b421a2a42c3ceb0406a8f575d63826db68298.mp3
+- s: A
+  c: 还没有。我们一起吃吧？
+  p: Hái méiyǒu. Wǒmen yìqǐ chī ba?
+  t: Not yet. Shall we eat together?
+  a: 0e7c1a32c2e3f71436df2a0e5beb1a22580480cf08180457934531382f1ccecb.mp3
+- s: B
+  c: 好啊，我已经做好了。
+  p: Hǎo a, wǒ yǐjīng zuò hǎo le.
+  t: Sure, I've already prepared it.
+  a: 713dba04fb4a4fff518aea5b932d1a3c00a2335e2fa6955934809b9911bb6cbd.mp3
+21 - At a Job Interview:
+- s: A
+  c: 请问您为什么想来我们公司工作？
+  p: Qǐngwèn nín wèishéme xiǎng lái wǒmen gōngsī gōngzuò?
+  t: May I ask why you want to work at our company?
+  d: 您 (nín) is the polite form of 你, commonly used in formal situations
+  a: 3c1abfaf561c1e79e7d4826b40237e867f4e6f926f2e87f961d8761a4b6c899f.mp3
+- s: B
+  c: 因为我觉得这是一个很好的机会。
+  p: Yīnwèi wǒ juéde zhè shì yí ge hěn hǎo de jīhuì.
+  t: Because I feel this is a very good opportunity.
+  a: 1eca9a9ef9c8633fa8d8edd3453d0e193eb1577a5b4559e3baf2d5df571b278a.mp3
+- s: A
+  c: 你有什么特别的经验吗？
+  p: Nǐ yǒu shénme tèbié de jīngyàn ma?
+  t: Do you have any special experience?
+  a: d389cf858ad9a5155b399a498ab0124cf36a279a68f093f5588bfcf4f6964804.mp3
+- s: B
+  c: 我以前在美国工作过三年。
+  p: Wǒ yǐqián zài Měiguó gōngzuò guò sān nián.
+  t: I previously worked in America for three years.
+  d: 过 (guò) indicates past experience
+  a: b461b5e7d601888e4e6e34508143f2cd5be8a2312be49ff74661c1c55042ed2c.mp3
+22 - Problem at Work:
+- s: A
+  c: 这个问题需要马上解决。
+  p: Zhège wèntí xūyào mǎshàng jiějué.
+  t: This problem needs to be solved immediately.
+  a: 3a2b1a8fd73d606a8a24738752b574bf69d72b7a88dd32cc5f853f72069ab09b.mp3
+- s: B
+  c: 是的，但是我们需要更多时间。
+  p: Shì de, dànshì wǒmen xūyào gèng duō shíjiān.
+  t: Yes, but we need more time.
+  a: 629b7090d6f084e04982838b4d6673179033fe5af659448aa34d6b91f16641c6.mp3
+- s: A
+  c: 那你觉得什么时候可以完成？
+  p: Nà nǐ juéde shénme shíhou kěyǐ wánchéng?
+  t: Then when do you think it can be completed?
+  a: 221c9b550a3d592fdb790f8786c7b9dc38274c4a83e35cc6eb39fe2e9100a51b.mp3
+- s: B
+  c: 可能需要三天的时间。
+  p: Kěnéng xūyào sān tiān de shíjiān.
+  t: Probably needs three days' time.
+  a: 14d3aa5a49aa946575f3275faf596f39006a712dcc453f7114f40df6f4e0c070.mp3
+23 - Making Changes:
+- s: A
+  c: 生活变得越来越忙。
+  p: Shēnghuó biàn de yuè lái yuè máng.
+  t: Life is getting busier and busier.
+  a: f1a84e29bae63797f00a814f41dfe4ec02c39bb728a5fe463ed9378df7c2f089.mp3
+- s: B
+  c: 是的，所以我决定换工作。
+  p: Shì de, suǒyǐ wǒ juédìng huàn gōngzuò.
+  t: Yes, so I decided to change jobs.
+  a: 646363b3fa33db7da2249bdc452b65befeb8d0f92c73196a7964e239100f382c.mp3
+- s: A
+  c: 真的吗？你已经找到新工作了吗？
+  p: Zhēn de ma? Nǐ yǐjīng zhǎodào xīn gōngzuò le ma?
+  t: Really? Have you already found a new job?
+  a: 20e1129e78552f121c90c6e163d85cac27c57ff715418ce074adf7a37421758b.mp3
+- s: B
+  c: 还没有，但是我正在找。
+  p: Hái méiyǒu, dànshì wǒ zhèngzài zhǎo.
+  t: Not yet, but I'm currently looking.
+  d: 正在 (zhèngzài) indicates an action in progress
+  a: 7e04ff87658865615c6d62eae8b797da652896e6e44e01033222ee2fa657a723.mp3
+24 - Family Discussion:
+- s: A
+  c: 孩子们的问题你觉得怎么办？
+  p: Háizi men de wèntí nǐ juéde zěnme bàn?
+  t: What do you think we should do about the children's problem?
+  a: 22a7015684e22423f62c56bb8b4b9cbc54a07b7be39acb5cba5df8f9f115c20f.mp3
+- s: B
+  c: 我觉得应该让他们自己决定。
+  p: Wǒ juéde yīnggāi ràng tāmen zìjǐ juédìng.
+  t: I think we should let them decide for themselves.
+  d: 应该 (yīnggāi) expresses "should"
+  a: 54f92635b52b9e1ff2c257b3275b8bc5f0317728057ca680694a9e7a1320d9f1.mp3
+- s: A
+  c: 他们还太小，不能自己决定。
+  p: Tāmen hái tài xiǎo, bù néng zìjǐ juédìng.
+  t: They're still too young, they can't decide by themselves.
+  a: 4a08a8c40934ff80a8894fd1f9f03c1ca9d4bf0207fbaebdc65057eb05908bd7.mp3
+- s: B
+  c: 那我们先跟他们谈谈看。
+  p: Nà wǒmen xiān gēn tāmen tántán kàn.
+  t: Then let's talk with them first and see.
+  d: 谈谈 (tántán) repetition indicates casual or brief action
+  a: abcd3f860f6ae5113112946cd34acb1a5aac3b24e1d1b44274c5c3984db8a7fa.mp3
+25 - Future Plans:
+- s: A
+  c: 你相信我们的计划会成功吗？
+  p: Nǐ xiāngxìn wǒmen de jìhuà huì chénggōng ma?
+  t: Do you believe our plan will succeed?
+  a: 6bd29b4a18bc40ceae4acc7b65418e1e49f813e08bdf34086de93182fa5cc42e.mp3
+- s: B
+  c: 如果我们努力工作，一定会成功。
+  p: Rúguǒ wǒmen nǔlì gōngzuò, yídìng huì chénggōng.
+  t: If we work hard, we'll definitely succeed.
+  a: 6557da77a286e9b91fe3e7c244b9e64de5150065b85d08102ee74752f17b5cb5.mp3
+- s: A
+  c: 希望一切都顺利。
+  p: Xīwàng yíqiè dōu shùnlì.
+  t: Hope everything goes smoothly.
+  a: 84ea3b1861f20d335cf3da54b9a92032671fb7e10e524128f327fb7eee587ac1.mp3
+- s: B
+  c: 是的，我们已经准备得很好了。
+  p: Shì de, wǒmen yǐjīng zhǔnbèi de hěn hǎo le.
+  t: Yes, we've already prepared very well.
+  a: c5c7e75825a14fbc06a27cbe86b5cfde2b2bc44d05618a1e8ec89843581f7a07.mp3
+26 - At the Police Station:
+- s: A
+  c: 警察先生，我需要您的帮助。
+  p: Jǐngchá xiānsheng, wǒ xūyào nín de bāngzhù.
+  t: Officer, I need your help.
+  a: c32c399c76153575aedd995ac1ab417018cf41c474ea2dfa921f491e28d7cc2c.mp3
+- s: B
+  c: 发生什么事了？
+  p: Fāshēng shénme shì le?
+  t: What happened?
+  a: a81a3737f5b098b4d451cfde09b9cf7e13e89e35591af826e33ddc7009ef4d5a.mp3
+- s: A
+  c: 我的车不见了。
+  p: Wǒ de chē bùjiàn le.
+  t: My car is missing.
+  a: 38148fde739e16130b67f77b7ddba538e72b121f17d8ed7f282d39e5aa11b9a7.mp3
+- s: B
+  c: 在哪里停的？什么时候发现的？
+  p: Zài nǎlǐ tíng de? Shénme shíhou fāxiàn de?
+  t: Where was it parked? When did you discover this?
+  a: 964ab2165cc716dfe08bde39a8e226600f90721c6d093b87d9feeddd15f97f7f.mp3
+27 - Parent-Teacher Meeting:
+- s: A
+  c: 老师，我儿子在学校表现怎么样？
+  p: Lǎoshī, wǒ érzi zài xuéxiào biǎoxiàn zěnmeyàng?
+  t: Teacher, how is my son performing at school?
+  a: 5c6f732baaa4e7704ab65bdf28f936649144efb3f771f63c179d39500d1d9aa3.mp3
+- s: B
+  c: 他很聪明，但是需要更认真一点。
+  p: Tā hěn cōngming, dànshì xūyào gèng rènzhēn yìdiǎn.
+  t: He's very smart, but needs to be more serious.
+  a: 4a38f1da029581fbe6d7c92ace825ffb46da90fb73ece008ea2a4b6c53d31c81.mp3
+- s: A
+  c: 他在家也是这样。
+  p: Tā zài jiā yě shì zhèyàng.
+  t: He's the same way at home.
+  a: 90e2fcb87f8393435902a21b0349628a2deb816d01bfb4294dedb769883a719c.mp3
+- s: B
+  c: 我们一起帮助他，好吗？
+  p: Wǒmen yìqǐ bāngzhù tā, hǎo ma?
+  t: Shall we help him together?
+  a: e28faed15cbb3ee76fae6d8546a00d2e14a13f6b6bdaa9a1194aa7417cb1f206.mp3
+28 - Getting Ready to Travel:
+- s: A
+  c: 你准备好行李了吗？
+  p: Nǐ zhǔnbèi hǎo xíngli le ma?
+  t: Have you prepared your luggage?
+  a: 53b85e5a611a4dd4212b82c41e9549d7c45a7a94bcbcb4acf091b95dfb0d4fb9.mp3
+- s: B
+  c: 差不多了，还需要带些什么？
+  p: Chàbuduō le, hái xūyào dài xiē shénme?
+  t: Almost, what else do I need to bring?
+  a: 4a4a801507f079f852fde4e03d84ea727d3170cb4c63a036ba85b13ee22378b4.mp3
+- s: A
+  c: 别忘了带护照。
+  p: Bié wàng le dài hùzhào.
+  t: Don't forget to bring your passport.
+  a: 139c69e312d1a56a2c1efc4f1a11222fb1965f5b17d1a9dcd744a7ca6db454cb.mp3
+- s: B
+  c: 对，我现在就去拿。
+  p: Duì, wǒ xiànzài jiù qù ná.
+  t: Right, I'll go get it now.
+  d: 就 (jiù) here emphasizes immediate action
+  a: bbd319704da22abd94ab6c285579f831d89332862874b6dca3701902d51d2715.mp3
+29 - At the Office:
+- s: A
+  c: 你看到经理了吗？
+  p: Nǐ kàndào jīnglǐ le ma?
+  t: Have you seen the manager?
+  a: 1922424f77d787129efce569ad8f69c651a2a3a20b38851b67f427b50bf4e316.mp3
+- s: B
+  c: 他刚才在开会。
+  p: Tā gāngcái zài kāihuì.
+  t: He was in a meeting just now.
+  a: 5687d0fc83586ef9391e3aefa90ad50c07fb1fbebe3c999523acab358b2ce88a.mp3
+- s: A
+  c: 那我等他一会儿。
+  p: Nà wǒ děng tā yíhuìr.
+  t: Then I'll wait for him a while.
+  a: 314e1a0f3b00d3ca3a6fa9c8fa5d562aff3afd7c44d6ecbc1e1c8adfda3fe85a.mp3
+- s: B
+  c: 要我帮你告诉他吗？
+  p: Yào wǒ bāng nǐ gàosu tā ma?
+  t: Would you like me to tell him for you?
+  a: aa3ccbe9a4a9a802f287488c9b196a3ac21a6e39caedef1b9c6438665d9cd09f.mp3
+30 - Making a Decision:
+- s: A
+  c: 这件事你考虑得怎么样了？
+  p: Zhè jiàn shì nǐ kǎolǜ de zěnmeyàng le?
+  t: How have you thought about this matter?
+  a: fb2089d658456df9c6e0567a5de756c9e11509b8b376f44f12d677d837597deb.mp3
+- s: B
+  c: 我还没有做最后的决定。
+  p: Wǒ hái méiyǒu zuò zuìhòu de juédìng.
+  t: I haven't made the final decision yet.
+  a: 553077bd23d72b982c2770c131ac12379b74d935fc37dbfedc2025d3d36f8ef4.mp3
+- s: A
+  c: 需要我帮你分析一下吗？
+  p: Xūyào wǒ bāng nǐ fēnxī yíxià ma?
+  t: Do you need me to help analyze it?
+  a: f8f5c4ba99be30ce43efbda32d2ebe02451dae64a4beadd6b648298a4d261ab0.mp3
+- s: B
+  c: 好啊，你觉得应该怎么办？
+  p: Hǎo a, nǐ juéde yīnggāi zěnme bàn?
+  t: Sure, what do you think should be done?
+  a: 78c9c990d1ca2615a5447bda7f16f49c4bc12a01cabe1b307ef71e816c8a1686.mp3
+31 - House Hunting:
+- s: A
+  c: 这个房子怎么样？
+  p: Zhège fángzi zěnmeyàng?
+  t: How's this house?
+  a: dcc9a3160bd9f07e082b145210424c93bc24bf41becc4902885e0f2d161ba5ed.mp3
+- s: B
+  c: 位置很好，但是有点小。
+  p: Wèizhi hěn hǎo, dànshì yǒudiǎn xiǎo.
+  t: The location is good, but it's a bit small.
+  a: dd445c7af7f5626c5f0abca9855edd15fadb9d2978112b94c41fc4dc065b9558.mp3
+- s: A
+  c: 价钱合适吗？
+  p: Jiàqian héshì ma?
+  t: Is the price suitable?
+  a: 36ab23af0ed8dc7527f9a5319b53cfa354208f2d27ebf0fcc4685c8468a04df2.mp3
+- s: B
+  c: 比我想的贵一点。
+  p: Bǐ wǒ xiǎng de guì yìdiǎn.
+  t: It's a bit more expensive than I thought.
+  a: 1273f48215fec9b57280b22d7779b0e3f53b4aa6888930ca04923c9b2396cd4d.mp3
+32 - Lost in the City:
+- s: A
+  c: 对不起，我好像迷路了。
+  p: Duìbùqǐ, wǒ hǎoxiàng mílù le.
+  t: Sorry, I seem to be lost.
+  a: 013a1794bd1561c6d30d645d36b1504c7c337d3f6c647f05d57b24f3d1de8b1e.mp3
+- s: B
+  c: 你要去哪里？我可以帮你看地图。
+  p: Nǐ yào qù nǎlǐ? Wǒ kěyǐ bāng nǐ kàn dìtú.
+  t: Where do you want to go? I can help you look at the map.
+  a: b77fcb00684036c5ba5f3777920597602b9f40bbd3086794d6aabfe593359a49.mp3
+- s: A
+  c: 我要去火车站。远吗？
+  p: Wǒ yào qù huǒchēzhàn. Yuǎn ma?
+  t: I want to go to the train station. Is it far?
+  a: 0d2eadbc16095472cf7bb850b02c5bb19c226b8f967b17df381b037ee5e4ec2a.mp3
+- s: B
+  c: 不远，我带你去吧。
+  p: Bù yuǎn, wǒ dài nǐ qù ba.
+  t: Not far, let me take you there.
+  a: f65b5f2c36e8ff1f2ccd7f62580c5a22e0e522f08704d81d0291ca94150de702.mp3
+33 - Health Concern:
+- s: A
+  c: 你最近感觉怎么样？
+  p: Nǐ zuìjìn gǎnjué zěnmeyàng?
+  t: How have you been feeling lately?
+  a: ab6a04f330655055fce562f67293cd8618ff19c9c2e69f5766c4c4b96ac3dc66.mp3
+- s: B
+  c: 不太好，可能需要去看医生。
+  p: Bù tài hǎo, kěnéng xūyào qù kàn yīshēng.
+  t: Not too good, might need to see a doctor.
+  a: 494701c5eb8edf021df78b6b4f0783f2ca81c9ec1c45f001a8ce3e1e2f160e7c.mp3
+- s: A
+  c: 要我陪你去吗？
+  p: Yào wǒ péi nǐ qù ma?
+  t: Would you like me to go with you?
+  a: ab699c786da3177975dbd1431030f86b949aa12237cff2453a15b728f6e21d49.mp3
+- s: B
+  c: 好啊，谢谢你的关心。
+  p: Hǎo a, xièxie nǐ de guānxīn.
+  t: Sure, thanks for your concern.
+  a: 1b672e6b72ef09cea2f8832c5672a712b36d6fa0acd3a08efe2123439605d914.mp3
+34 - Birthday Planning:
+- s: A
+  c: 下个月是妈妈的生日。
+  p: Xià ge yuè shì māma de shēngrì.
+  t: Next month is mom's birthday.
+  a: 80f1b7f3f8ac8d1ddaf2b6b07bd34032c34fd7ad315c43d677c68fd3692a7188.mp3
+- s: B
+  c: 我们要给她一个惊喜。
+  p: Wǒmen yào gěi tā yí ge jīngxǐ.
+  t: Let's give her a surprise.
+  a: 7978486920830c59d50b33e3dfe8da4b297ac267515c1dc128e0f42cd07143f9.mp3
+- s: A
+  c: 你有什么好主意吗？
+  p: Nǐ yǒu shénme hǎo zhǔyi ma?
+  t: Do you have any good ideas?
+  a: 88561ff507f850a5b02447c72d2e96ec9a3be208046cf4ffa0a2a4f5e69af91e.mp3
+- s: B
+  c: 我们可以办一个小派对。
+  p: Wǒmen kěyǐ bàn yí ge xiǎo pàiduì.
+  t: We can organize a small party.
+  a: 4f340e75c680c45e65642dc0e1856a8aabb272d7076cead0ba8529c522eee794.mp3
+35 - Career Change:
+- s: A
+  c: 听说你要换工作？
+  p: Tīngshuō nǐ yào huàn gōngzuò?
+  t: I heard you're changing jobs?
+  a: 54f9a4b251179bd0a55105260ffa8de2b36ba2137a1f7cd32d3dbfe02fc9f71a.mp3
+- s: B
+  c: 是的，我想尝试新的机会。
+  p: Shì de, wǒ xiǎng chángshì xīn de jīhuì.
+  t: Yes, I want to try new opportunities.
+  a: dff6fa98c3fb3a6155f6b758a28d1a584f8bf539aa3f0924a1758596fa3e3244.mp3
+- s: A
+  c: 已经找到了吗？
+  p: Yǐjīng zhǎodào le ma?
+  t: Have you found one already?
+  a: aad4daf01bfe1ec83af4dd9b56bd51f4ad97c04807a0ca41db3003fb2fbe1058.mp3
+- s: B
+  c: 有几个选择，还在考虑。
+  p: Yǒu jǐ ge xuǎnzé, hái zài kǎolǜ.
+  t: Have several choices, still considering.
+  a: 843f36dcc0bdf83b9da4e111ec128350c9eee939aec96aa5bb8e2dd447aa1346.mp3
+36 - Time Management:
+- s: A
+  c: 你每天都这么忙吗？
+  p: Nǐ měitiān dōu zhème máng ma?
+  t: Are you this busy every day?
+  a: 6325564a4b1fbeba347e1ee80d7ea5cfd1261f6a745d31a0f147781e9ab09c11.mp3
+- s: B
+  c: 最近工作特别多。
+  p: Zuìjìn gōngzuò tèbié duō.
+  t: Recently there's been especially a lot of work.
+  a: 012ccfd5ccf5b603c346475a61aebcb6ed622dac8f016f4fbd48648a0cc6e1e0.mp3
+- s: A
+  c: 要不要我帮你分担一些？
+  p: Yào bú yào wǒ bāng nǐ fēndān yìxiē?
+  t: Would you like me to share some of the workload?
+  a: bc28b88bb4a59ca545dd9b52f0ac3a5e5f5396ea5c381651382a900f0ec94be5.mp3
+- s: B
+  c: 太感谢了，但是我自己能行。
+  p: Tài gǎnxiè le, dànshì wǒ zìjǐ néng xíng.
+  t: Thanks so much, but I can manage myself.
+  d: 能行 (néng xíng) is a common way to say "can manage/handle it"
+  a: 555323b889cf7b87e80fa0cf8210f9f47d9f6b9ef0ca3a36c3b8e9980c6ca4e7.mp3
+37 - Family Visit:
+- s: A
+  c: 爸爸妈妈要来看我们。
+  p: Bàba māma yào lái kàn wǒmen.
+  t: Mom and dad are coming to visit us.
+  a: 815bd603766a55184ac43736d59248c8205641963845619a307eb31a6d869101.mp3
+- s: B
+  c: 什么时候来？住多久？
+  p: Shénme shíhou lái? Zhù duōjiǔ?
+  t: When are they coming? How long will they stay?
+  a: 749e277e36dca1a661b338b602ea5f874cbf12792bde1b82d27d203b0dd80101.mp3
+- s: A
+  c: 下周来，可能住一个月。
+  p: Xià zhōu lái, kěnéng zhù yí ge yuè.
+  t: Coming next week, might stay for a month.
+  a: cf7a3d1161299fbc73f6a98484f430fe95933d98e47e17a46484809662b9e76f.mp3
+- s: B
+  c: 那我们要好好准备一下。
+  p: Nà wǒmen yào hǎohao zhǔnbèi yíxià.
+  t: Then we need to prepare well.
+  d: 好好 (hǎohao) repetition emphasizes doing something properly
+  a: a83065a45896dcbcf00d54e7ec3e2ec559dc6caaed74a1f6f411a59b4b88fc5e.mp3
+38 - Weather Problem:
+- s: A
+  c: 今天下雨，我们还去吗？
+  p: Jīntiān xià yǔ, wǒmen hái qù ma?
+  t: It's raining today, are we still going?
+  a: ee446f8f35b67e6234660fc3a89fdc60af7325e6640852bab33a044d634e51ac.mp3
+- s: B
+  c: 天气预报说下午会好一点。
+  p: Tiānqì yùbào shuō xiàwǔ huì hǎo yìdiǎn.
+  t: The weather forecast says it'll be better in the afternoon.
+  a: dfe92519f5570da52502a3b709996621df2ed5905b64a746d37d2d907ba84653.mp3
+- s: A
+  c: 那我们等等看吧。
+  p: Nà wǒmen děngdeng kàn ba.
+  t: Then let's wait and see.
+  a: 09443de1d7a877c9b12b6ebe205491e3718ab418f02c8b6196fc528a53986d03.mp3
+- s: B
+  c: 好，我们保持联系。
+  p: Hǎo, wǒmen bǎochí liánxì.
+  t: Okay, let's keep in touch.
+  a: 9e7828f650da7efce67afe3b1c0d1de6444708e997bd4da59e054d2632eaf542.mp3
+39 - Lost Item Search:
+- s: A
+  c: 我的钥匙找不到了。
+  p: Wǒ de yàoshi zhǎo bù dào le.
+  t: I can't find my keys.
+  a: d442f3c45ef3093806c8d0bd7aa73c83db3aee1f5e2256a95ac8f48c14d1499c.mp3
+- s: B
+  c: 你最后一次在哪里用的？
+  p: Nǐ zuìhòu yí cì zài nǎlǐ yòng de?
+  t: Where did you last use them?
+  a: 0ee77f921856943323e59aaac13928b9e03c5e795109a683f758b2105bb746f8.mp3
+- s: A
+  c: 我记得放在桌子上了。
+  p: Wǒ jìde fàng zài zhuōzi shàng le.
+  t: I remember putting them on the table.
+  a: 4b5a9cab9da1bd8dfb07d879596b6201a847bbbfafa40426f2ff21fa35dc1716.mp3
+- s: B
+  c: 我帮你找找看。
+  p: Wǒ bāng nǐ zhǎozhao kàn.
+  t: I'll help you look for them.
+  d: Verb reduplication (找找) suggests trying or doing briefly
+  a: 00e42dde1f996d6fb42161bfae8349b9910a49f29de31f12e5a7d4ff61fedb5d.mp3
+40 - Project Discussion:
+- s: A
+  c: 这个项目的结果怎么样？
+  p: Zhège xiàngmù de jiéguǒ zěnmeyàng?
+  t: How are the results of this project?
+  a: 3e47e6dd7e76fa41640ccbbd4e73f263319b519aa8c97e6812c9b615ea10df9a.mp3
+- s: B
+  c: 比我们想象的要好。
+  p: Bǐ wǒmen xiǎngxiàng de yào hǎo.
+  t: Better than we imagined.
+  a: a0614c288ae8f7fdda31ec9595daf8bc334b25e9d1c7272222f4e68f1c7f67a0.mp3
+- s: A
+  c: 客户满意吗？
+  p: Kèhù mǎnyì ma?
+  t: Is the client satisfied?
+  a: 9868bb269bdf07215a1e3bb6cc45e0356585bc33b1771805110030d64e4d3ca8.mp3
+- s: B
+  c: 是的，他们很喜欢。
+  p: Shì de, tāmen hěn xǐhuan.
+  t: Yes, they really like it.
+  a: 05dd42e5b10cb94bdcc952bf8e865ee4265429f7213d941b8ec16222108753ee.mp3
+41 - Late for Meeting:
+- s: A
+  c: 对不起，我来晚了。
+  p: Duìbùqǐ, wǒ lái wǎn le.
+  t: Sorry, I'm late.
+  a: 6f1438f83a6d5433e1834b9e9bc2d6dc1958e8b38da080723a8995e8dcc96b3b.mp3
+- s: B
+  c: 没关系，会议还没开始。
+  p: Méi guānxi, huìyì hái méi kāishǐ.
+  t: It's okay, the meeting hasn't started yet.
+  a: e334d7e78f90eef9618dcec7118e333a71d95d1e471f84ea8ba80976a77a0ede.mp3
+- s: A
+  c: 路上太堵了。
+  p: Lùshang tài dǔ le.
+  t: There was too much traffic.
+  a: 18c83a173d6c695f8260f49d3bdc4fb2859edfa369c8293de6f28e0c6da202e4.mp3
+- s: B
+  c: 我们都理解。请坐。
+  p: Wǒmen dōu lǐjiě. Qǐng zuò.
+  t: We all understand. Please sit.
+  a: 27cf432f57e319874e20be4b8b0c3ba4b8beafd33012195e185a4ab69e1e66ac.mp3
+42 - Weekend Activity:
+- s: A
+  c: 这个周末有什么好玩的？
+  p: Zhège zhōumò yǒu shénme hǎowán de?
+  t: What fun things are there this weekend?
+  a: fd57733c2f62539ce66470d694af842b9cf84a5c1eb0d1b3136a8faf73980356.mp3
+- s: B
+  c: 听说公园有音乐表演。
+  p: Tīngshuō gōngyuán yǒu yīnyuè biǎoyǎn.
+  t: I heard there's a music performance at the park.
+  a: 6f4765801b1d41801cdaf91ed9754f8ff817be4c151b3b4a023f42644d731bce.mp3
+- s: A
+  c: 真的？要不要一起去看？
+  p: Zhēn de? Yào bú yào yìqǐ qù kàn?
+  t: Really? Want to go watch together?
+  a: 1d8c8980b701689cb83b931b4302b5f3be52efe525649345de4ef8ce9fe505c6.mp3
+- s: B
+  c: 好啊，我很感兴趣。
+  p: Hǎo a, wǒ hěn gǎn xìngqù.
+  t: Sure, I'm very interested.
+  a: 7b791d42d22197c630474b052ce7e68d29d0c2749cc3ed95fc3763ff28f27771.mp3
+43 - Computer Problem:
+- s: A
+  c: 我的电脑出问题了。
+  p: Wǒ de diànnǎo chū wèntí le.
+  t: My computer has a problem.
+  a: 07f85be016617eababcec969b78504a2b092e13c2a9ec9cfc1d48922abbc86d5.mp3
+- s: B
+  c: 什么问题？让我看看。
+  p: Shénme wèntí? Ràng wǒ kànkan.
+  t: What problem? Let me take a look.
+  a: ef9849f7c313c89ad3e0c71cf6dcfb324dfb85f00426f31dfea59f6bd57201ba.mp3
+- s: A
+  c: 打不开了。
+  p: Dǎ bù kāi le.
+  t: Won't turn on.
+  a: f6e211cf369ab022c0d13f26b2ca8bfd33c8943cfef19d7846a0ac3d22c6de40.mp3
+- s: B
+  c: 我试试帮你修一下。
+  p: Wǒ shìshi bāng nǐ xiū yíxià.
+  t: I'll try to fix it for you.
+  a: 0c0c97e638b539439d20e28b458b779f18e87e595ce60431e84b0435789dedd3.mp3
+44 - Restaurant Choice:
+- s: A
+  c: 你想吃什么样的菜？
+  p: Nǐ xiǎng chī shénme yàng de cài?
+  t: What kind of food do you want to eat?
+  a: 73c940c6027225556ffd242ee6d8019cf1fafdca95de7c360a8db1f241060a2e.mp3
+- s: B
+  c: 随便，你来决定吧。
+  p: Suíbiàn, nǐ lái juédìng ba.
+  t: Whatever, you decide.
+  a: 2f5e9ab21187fab9185a60f1b2ecbe21ea851d2b5ed70f1615625d3fdb89a2cf.mp3
+- s: A
+  c: 那去吃中餐怎么样？
+  p: Nà qù chī zhōngcān zěnmeyàng?
+  t: How about going for Chinese food?
+  a: da6913af006f94e87b98483aa3c60d1ac662bc271b2d2707841217e1c36d6434.mp3
+- s: B
+  c: 好主意，我知道一家不错的。
+  p: Hǎo zhǔyi, wǒ zhīdào yì jiā bùcuò de.
+  t: Good idea, I know a nice place.
+  a: 5535c2a66e640429cd30df7782d98648dba63eff31bd729d404a1e46c0f98703.mp3
+45 - Moving Day:
+- s: A
+  c: 这是最后一个箱子了吗？
+  p: Zhè shì zuìhòu yí ge xiāngzi le ma?
+  t: Is this the last box?
+  a: f5cf533eec6be530db003b65c1e1a7bebeb5167a34734a59be537e7b2ec88a7b.mp3
+- s: B
+  c: 是的，终于都搬完了。
+  p: Shì de, zhōngyú dōu bān wán le.
+  t: Yes, finally finished moving everything.
+  a: d14d7e4d964bdd1c6c26ff0c6f66dfebfb1532161f745abbfa2e522c4b3a5621.mp3
+- s: A
+  c: 新家看起来不错。
+  p: Xīn jiā kàn qǐlái bùcuò.
+  t: The new place looks nice.
+  a: 433e015bac838a2b5cace4e6a8e4c7f38df97f3095234e0f400e9b16e587107b.mp3
+- s: B
+  c: 是啊，就是还需要收拾一下。
+  p: Shì a, jiùshì hái xūyào shōushi yíxià.
+  t: Yes, just needs a bit of tidying up.
+  a: f533c13a9a189da308adccb200851d83109d41a37c1cbc3499c1e2d463567802.mp3
+46 - School Reunion:
+- s: A
+  c: 你看见了吗？老王现在变得好不一样。
+  p: Nǐ kànjiàn le ma? Lǎo Wáng xiànzài biàn de hǎo bù yíyàng.
+  t: Did you see? Old Wang looks so different now.
+  a: b2f2b329e74c7dda7ff3528e6a2d20efbd97eb9eb3116d6e834882cc1132ab1c.mp3
+- s: B
+  c: 是啊，都认不出来了。他现在是做什么工作的？
+  p: Shì a, dōu rèn bù chū lái le. Tā xiànzài shì zuò shénme gōngzuò de?
+  t: Yeah, barely recognizable. What does he do for work now?
+  a: e5d790a0eec27d623ed0736b4c8dc2aff5571cffa872349d294d5d87e8bcb7b3.mp3
+- s: A
+  c: 听说在美国一家大公司做经理。
+  p: Tīngshuō zài Měiguó yì jiā dà gōngsī zuò jīnglǐ.
+  t: I heard he's a manager at a big company in America.
+  a: 078490db5b90f143e8d1e78a382c5ccef91927d1bf09811a3b2ceb280e0ebff3.mp3
+- s: B
+  c: 真的吗？那他一定很忙吧。
+  p: Zhēn de ma? Nà tā yídìng hěn máng ba.
+  t: Really? He must be very busy then.
+  a: e743a35429b8c645df6b9168c7fdfe2fd30607263653a503851039bb561df706.mp3
+- s: A
+  c: 对，所以这次难得他回来，我们应该好好聚一聚。
+  p: Duì, suǒyǐ zhè cì nándé tā huílái, wǒmen yīnggāi hǎohao jù yì jù.
+  t: Right, since it's rare for him to come back this time, we should have a proper
+    gathering.
+  a: 83c6d6a0714bc73f107e4ce909a7a9868c314935ec7961b95d5620a882a8f373.mp3
+- s: B
+  c: 好主意！我们找个时间，把大家都叫上。
+  p: Hǎo zhǔyi! Wǒmen zhǎo ge shíjiān, bǎ dàjiā dōu jiào shàng.
+  t: Good idea! Let's find a time and invite everyone.
+  a: 7b91abb238015a503e5f748dc0871f4313d641d52beb481394fd666f5a1a3b72.mp3
+47 - Moving to a New City:
+- s: A
+  c: 听说你要搬到北京去工作？
+  p: Tīngshuō nǐ yào bān dào Běijīng qù gōngzuò?
+  t: I heard you're moving to Beijing for work?
+  a: f11333bfc10f1d1104b531762f2be6b5c6208f8e91ecea76c2207f452c91acae.mp3
+- s: B
+  c: 对，下个月就走。说实话，我有点担心。
+  p: Duì, xià ge yuè jiù zǒu. Shuō shíhuà, wǒ yǒudiǎn dānxīn.
+  t: Yes, leaving next month. To be honest, I'm a bit worried.
+  a: 972e2a9fb2c2466a98ee4e11ff85bc1f85cf7e2a973b8ed46c3394e3928ff82e.mp3
+- s: A
+  c: 为什么担心？是工作的问题吗？
+  p: Wèishéme dānxīn? Shì gōngzuò de wèntí ma?
+  t: Why worried? Is it about the work?
+  a: 4fc047410f548fd53b4c6350397440c0b850f45656c3a84bc88b146af2688088.mp3
+- s: B
+  c: 不是，主要是不太习惯一个人生活。
+  p: Bùshì, zhǔyào shì bù tài xíguàn yí ge rén shēnghuó.
+  t: No, mainly I'm not used to living alone.
+  a: fdf7c459ff36586b0ff4b9fcd364c57589fccdb0bef4621548de859e0c459930.mp3
+- s: A
+  c: 我在北京有很多朋友，我介绍给你认识。
+  p: Wǒ zài Běijīng yǒu hěn duō péngyou, wǒ jièshào gěi nǐ rènshi.
+  t: I have many friends in Beijing, I'll introduce them to you.
+  a: 341ba63df825d30e55bf861db763b6707cd376f18d34a3540a811332a517b249.mp3
+- s: B
+  c: 真的吗？太好了！这样我就放心多了。
+  p: Zhēn de ma? Tài hǎo le! Zhèyàng wǒ jiù fàngxīn duō le.
+  t: Really? That's great! This makes me feel much more at ease.
+  a: 32778bf81eac787c589849e537d8e40b2e02fe12bdaebe402b8b7956c2bb1970.mp3
+- s: A
+  c: 而且北京的机会很多，你一定会喜欢那里的。
+  p: Érqiě Běijīng de jīhuì hěn duō, nǐ yídìng huì xǐhuan nàli de.
+  t: Plus Beijing has many opportunities, you'll definitely like it there.
+  a: bb7d6603534d58408bd21ce114fc57685e91ce86859c0a7ee4423b8ce66dee3c.mp3
+48 - Planning a Birthday Party:
+- s: A
+  c: 妈妈六十岁生日，我们要不要办个派对？
+  p: Māma liùshí suì shēngrì, wǒmen yào bú yào bàn ge pàiduì?
+  t: For Mom's 60th birthday, should we organize a party?
+  a: ff46a37236e774aea16d44712ce4d004ecc29bb2fbb659d59cd1da1961b3431a.mp3
+- s: B
+  c: 好主意！但是不要告诉她，给她一个惊喜。
+  p: Hǎo zhǔyi! Dànshì bú yào gàosu tā, gěi tā yí ge jīngxǐ.
+  t: Good idea! But don't tell her, let's give her a surprise.
+  a: 3d0f3a8b453112a6fe858b2128f755a45b4a92433041b7df02d7314c7fe4ce99.mp3
+- s: A
+  c: 那我们需要准备什么？
+  p: Nà wǒmen xūyào zhǔnbèi shénme?
+  t: Then what do we need to prepare?
+  a: ef5584625317f56edf974a61356ddfd8e95f64faf064171d722290d04f256f09.mp3
+- s: B
+  c: 首先要定个地方，然后准备礼物和蛋糕。
+  p: Shǒuxiān yào dìng ge dìfang, ránhòu zhǔnbèi lǐwù hé dàngāo.
+  t: First we need to book a place, then prepare gifts and cake.
+  a: e0a3d13bb16826af79de09510351c87970201b3cb90aea80dd35d56f7e2aca7c.mp3
+- s: A
+  c: 对了，还要把亲戚朋友都请来。
+  p: Duì le, hái yào bǎ qīnqi péngyou dōu qǐng lái.
+  t: Right, and we need to invite all relatives and friends.
+  a: 78532cfd5eb1d8711154fdadc35d2bb05819d57b877c829be8a480b75115aa8d.mp3
+- s: B
+  c: 我来负责联系人，你来安排地点吧。
+  p: Wǒ lái fùzé liánxì rén, nǐ lái ānpái dìdiǎn ba.
+  t: I'll be responsible for contacting people, you arrange the venue.
+  a: c7a7030d6f05bec101723e1b449f0a11f7b02d0434ffa8cfb08d74ac090579f4.mp3
+- s: A
+  c: 好，我们要快点，时间不多了。
+  p: Hǎo, wǒmen yào kuài diǎn, shíjiān bù duō le.
+  t: Okay, we need to hurry, there's not much time left.
+  a: 7785633a382befdca3d6a79d42e0022e24a8774b35ca108304e0c3ca9e485cf2.mp3
+49 - Office Problem:
+- s: A
+  c: 小李，最近工作怎么样？看你好像很累。
+  p: Xiǎo Lǐ, zuìjìn gōngzuò zěnmeyàng? Kàn nǐ hǎoxiàng hěn lèi.
+  t: Xiao Li, how's work lately? You look very tired.
+  a: 962f872b5caf8452743d8ec2c2023cf5c971dc4937fc919a55932e48aafb8956.mp3
+- s: B
+  c: 老师，说实话，我遇到了一些问题。
+  p: Lǎoshī, shuō shíhuà, wǒ yùdào le yìxiē wèntí.
+  t: Boss, to be honest, I've encountered some problems.
+  a: 9d22790d77c2c1966184ef4f7008f88c6bd50a0283519259062df67e5b9e33e8.mp3
+- s: A
+  c: 什么问题？跟我说说看。
+  p: Shénme wèntí? Gēn wǒ shuōshuo kàn.
+  t: What problems? Tell me about it.
+  a: 96452e84a21e6ac5432278ca719d23b9835a412de41efbb88a62c4e659e3fdc4.mp3
+- s: B
+  c: 这个项目太难了，我觉得自己能力不够。
+  p: Zhège xiàngmù tài nán le, wǒ juéde zìjǐ nénglì bù gòu.
+  t: This project is too difficult, I feel my abilities aren't sufficient.
+  a: 1afa7ffa1d41e980039c36617d780f544aa20c6e9b0b9d08474f05c599434f08.mp3
+- s: A
+  c: 不要这么想，你是我们最好的员工之一。
+  p: Bú yào zhème xiǎng, nǐ shì wǒmen zuì hǎo de yuángōng zhī yī.
+  t: Don't think like that, you're one of our best employees.
+  a: 19df6939c48988417d31586341506b452ebde273b4795454b56b828750db32a7.mp3
+- s: B
+  c: 谢谢您的信任，但是我真的需要帮助。
+  p: Xièxie nín de xìnrèn, dànshì wǒ zhēn de xūyào bāngzhù.
+  t: Thank you for your trust, but I really need help.
+  a: cdf0971178113d3d523d3db941a1d2345bd49555309e5f8d6ab151bba2df1f2d.mp3
+- s: A
+  c: 这样吧，我让小王来帮你，你们一起做。
+  p: Zhèyàng ba, wǒ ràng Xiǎo Wáng lái bāng nǐ, nǐmen yìqǐ zuò.
+  t: How about this, I'll have Xiao Wang help you, you can work together.
+  a: a7e33a1f95140ac2f064d8df9a8e2ede48d8e84f185b5fa045ffc435fae0f824.mp3
+- s: B
+  c: 真的可以吗？那太好了。
+  p: Zhēn de kěyǐ ma? Nà tài hǎo le.
+  t: Really? That's great.
+  a: 4b79542261d42bb634e6270e30be043b0b992d86709575e459885ba3e726f3e9.mp3
+50 - Family Decision:
+- s: A
+  c: 孩子说想去美国读书，你觉得怎么样？
+  p: Háizi shuō xiǎng qù Měiguó dú shū, nǐ juéde zěnmeyàng?
+  t: The child wants to study in America, what do you think?
+  a: b558e6fc58ee7ce105509d8589a15a3a1b6d7b632a6c6c09ebec065ffa9837fe.mp3
+- s: B
+  c: 这是个很重要的决定，我们要好好考虑。
+  p: Zhè shì ge hěn zhòngyào de juédìng, wǒmen yào hǎohao kǎolǜ.
+  t: This is a very important decision, we need to think it through carefully.
+  a: eb9a99fc1bcc13c34f88d3716ebd35989437b853cd2838e0020a7d329ff321d7.mp3
+- s: A
+  c: 是啊，一方面机会很好，但是花费太大了。
+  p: Shì a, yì fāngmiàn jīhuì hěn hǎo, dànshì huāfèi tài dà le.
+  t: Yes, on one hand it's a good opportunity, but the cost is too high.
+  a: 166d8ff2a277cb559d9bf440d084a39917ca61896d112af11b0cbac0c7aeb8e8.mp3
+- s: B
+  c: 而且孩子还这么小，一个人在外面我很担心。
+  p: Érqiě háizi hái zhème xiǎo, yí ge rén zài wàimiàn wǒ hěn dānxīn.
+  t: And the child is still so young, I'm worried about them being alone abroad.
+  a: 560d26b88b14d4fa633287a1a3f8b0846bf7f98a2945f24a55885d51485cca40.mp3
+- s: A
+  c: 但是如果不让他去，他可能会很失望。
+  p: Dànshì rúguǒ bù ràng tā qù, tā kěnéng huì hěn shīwàng.
+  t: But if we don't let them go, they might be very disappointed.
+  a: 26f4e2ea0b03e1fee47ac0f541fd6b360dbc81385af2d7c605a02d5db58242a8.mp3
+- s: B
+  c: 要不我们先和他好好谈谈，了解他的想法？
+  p: Yàobu wǒmen xiān hé tā hǎohao tántán, liǎojiě tā de xiǎngfǎ?
+  t: How about we have a good talk with them first, understand their thoughts?
+  a: 3762f83ea2b6e31bb732dbd85e61b5fcbc787abaacc44995f368545c1c59eec7.mp3
+- s: A
+  c: 对，也可以和已经在那边的朋友问问情况。
+  p: Duì, yě kěyǐ hé yǐjīng zài nàbiān de péngyou wèn wèn qíngkuàng.
+  t: Right, we can also ask friends who are already there about the situation.
+  a: 6ea1dcadede132105fbbc24f15cb819b832d63b0eb31c398add43891bd96815d.mp3
+- s: B
+  c: 好主意，我们要收集更多信息才能做决定。
+  p: Hǎo zhǔyi, wǒmen yào shōují gèng duō xìnxī cái néng zuò juédìng.
+  t: Good idea, we need to gather more information before making a decision.
+  a: f830357cdb6322836c156c47fc01df9bc5f3f1301a2e1398e6707306113ed0cf.mp3
+51 - Restaurant Business:
+- s: A
+  c: 最近生意不太好，你有什么建议吗？
+  p: Zuìjìn shēngyi bù tài hǎo, nǐ yǒu shénme jiànyì ma?
+  t: Business hasn't been good lately, do you have any suggestions?
+  a: 700f6834ec370b2440177196ce0860614c48eb77b68dc49a3b788b946985b306.mp3
+- s: B
+  c: 我觉得我们需要改变一些东西。
+  p: Wǒ juéde wǒmen xūyào gǎibiàn yìxiē dōngxi.
+  t: I think we need to change some things.
+  a: aa282e10929ad9c81a1f3515d396f531b7895f6efbada61ab4a3dbccc8a3559f.mp3
+- s: A
+  c: 比如说呢？
+  p: Bǐrú shuō ne?
+  t: Such as?
+  a: 024861d4599da0bdbf06eca57c518a3ef806dd448b2027e95cfe91a01e5fc1c4.mp3
+- s: B
+  c: 首先，菜单可以换一下，加一些新的菜。
+  p: Shǒuxiān, càidān kěyǐ huàn yíxià, jiā yìxiē xīn de cài.
+  t: First, we can change the menu, add some new dishes.
+  a: 7734ffbad37cff39729fe53b7f33e6b9cb3e726ce14f9d84e58a9ad5c9a66115.mp3
+- s: A
+  c: 这个想法不错，还有什么？
+  p: Zhège xiǎngfǎ bùcuò, hái yǒu shénme?
+  t: That's a good idea, what else?
+  a: f5f697a66eacc6eae7cf676f6fac0ff7b5c06ee569009371323ca1dcc55cb911.mp3
+- s: B
+  c: 我们也可以在网上多做广告，让更多人知道。
+  p: Wǒmen yě kěyǐ zài wǎngshàng duō zuò guǎnggào, ràng gèng duō rén zhīdào.
+  t: We can also do more advertising online, let more people know about us.
+  a: 5a815acb0c84245475286d83b4dabdedbaa7f00cf9b5065c210a60b38b826aee.mp3
+- s: A
+  c: 对，现在的年轻人都喜欢在网上看东西。
+  p: Duì, xiànzài de niánqīng rén dōu xǐhuan zài wǎngshàng kàn dōngxi.
+  t: Right, young people nowadays all like to look at things online.
+  a: f945d9a71d77fd0745cc08df34eb7370e07638e38011fe63ef7e22c0593c411a.mp3
+- s: B
+  c: 而且我们可以考虑送外卖服务。
+  p: Érqiě wǒmen kěyǐ kǎolǜ sòng wàimài fúwù.
+  t: And we can consider delivery service.
+  a: 26bcf733a11f2fab7e62fd90575fb5b99b4f3d60f584da6d68e8de01ee384b4a.mp3
+- s: A
+  c: 这些都是很好的建议，我们马上开始做。
+  p: Zhèxiē dōu shì hěn hǎo de jiànyì, wǒmen mǎshàng kāishǐ zuò.
+  t: These are all very good suggestions, let's start right away.
+  a: 04cb9c47cb42985024c935940c2f35f504367f528aa49e0d5a25ce97ffa7304a.mp3
+52 - Home Renovation:
+- s: A
+  c: 房子太旧了，我们需要重新装修一下。
+  p: Fángzi tài jiù le, wǒmen xūyào chóngxīn zhuāngxiū yíxià.
+  t: The house is too old, we need to renovate it.
+  a: a642889f65bf683f720ec0e2e284314419abfab96c3c1716814de88ffeb09073.mp3
+- s: B
+  c: 是啊，但是装修很麻烦，要花很多时间。
+  p: Shì a, dànshì zhuāngxiū hěn máfan, yào huā hěn duō shíjiān.
+  t: Yes, but renovation is troublesome and takes a lot of time.
+  a: da16a5310a799275dd8c45a8b84834302bdac2090fd2d4d3b922e12b88b6395b.mp3
+- s: A
+  c: 我觉得厨房和卫生间最需要改变。
+  p: Wǒ juéde chúfáng hé wèishēngjiān zuì xūyào gǎibiàn.
+  t: I think the kitchen and bathroom need changes the most.
+  a: 98f6de4c4e6806c400c2e9e63861761766d49db58db2b392469faa748502254b.mp3
+- s: B
+  c: 对，还有客厅的地板也需要换。
+  p: Duì, hái yǒu kètīng de dìbǎn yě xūyào huàn.
+  t: Right, and the living room floor needs to be replaced too.
+  a: 91ef8edec357d73c226e1792d494aef5fd543adc9715f0b158b7bbbe8bb8d662.mp3
+- s: A
+  c: 我们要找一个好的装修公司。你认识吗？
+  p: Wǒmen yào zhǎo yí ge hǎo de zhuāngxiū gōngsī. Nǐ rènshi ma?
+  t: We need to find a good renovation company. Do you know any?
+  a: 2cee8d7e1fedb4953be7ee72993ba6c043e533dc238881f0442d22b679d4cff3.mp3
+- s: B
+  c: 我朋友上个月刚装修完，我可以问问他。
+  p: Wǒ péngyou shàng ge yuè gāng zhuāngxiū wán, wǒ kěyǐ wèn wèn tā.
+  t: My friend just finished renovating last month, I can ask him.
+  a: c832196d1cda5b9c2b776ea1f16414df507560795eb60189c92dd342177ed878.mp3
+- s: A
+  c: 好，最重要的是要找可靠的人。
+  p: Hǎo, zuì zhòngyào de shì yào zhǎo kěkào de rén.
+  t: Good, the most important thing is to find reliable people.
+  a: b3d97b297a3ce58311e4b616fd8983a1dad75ec949652f073db24c4788772988.mp3
+- s: B
+  c: 我们也要考虑预算，不能花太多钱。
+  p: Wǒmen yě yào kǎolǜ yùsuàn, bù néng huā tài duō qián.
+  t: We also need to consider the budget, can't spend too much money.
+  a: 86af19a3cda8b83c83ae82eb639ae707e5149ec09dc6c6a6d45f2a7b57bcb5ab.mp3
+53 - Career Advice:
+- s: A
+  c: 老师，我对现在的工作不太满意。
+  p: Lǎoshī, wǒ duì xiànzài de gōngzuò bù tài mǎnyì.
+  t: Teacher, I'm not very satisfied with my current job.
+  a: 7a7249c58ef27aa4028912d2f9dc159b8f76ed7fdfe2698ae08b5fa3de08f202.mp3
+- s: B
+  c: 是工作太难了，还是不喜欢这个方向？
+  p: Shì gōngzuò tài nán le, háishi bù xǐhuan zhège fāngxiàng?
+  t: Is the work too difficult, or do you not like this direction?
+  a: 9d4ec719b1f87535922958cf344231aceecb7ba1042d934d3fa15b8e15a3e17f.mp3
+- s: A
+  c: 工作不难，但是感觉没有发展机会。
+  p: Gōngzuò bù nán, dànshì gǎnjué méiyǒu fāzhǎn jīhuì.
+  t: The work isn't difficult, but I feel there's no opportunity for development.
+  a: 8a5440789499d04b833ec819a68f27a56cf7bd1a4ca6ba94839615fe29fa70b8.mp3
+- s: B
+  c: 你有没有和你的经理谈过这个问题？
+  p: Nǐ yǒu méiyǒu hé nǐ de jīnglǐ tán guò zhège wèntí?
+  t: Have you discussed this issue with your manager?
+  a: 584088fafa0445f1ec4c5630407ab418dacf4404b555d79927d2d06cdf5b3442.mp3
+- s: A
+  c: 还没有，我不知道应该怎么说。
+  p: Hái méiyǒu, wǒ bù zhīdào yīnggāi zěnme shuō.
+  t: Not yet, I don't know how to say it.
+  a: c1e65e2653adfac08811c106333ce35a75044357b20da9386d4ad501856fb4bf.mp3
+- s: B
+  c: 我建议你先和经理好好谈谈。
+  p: Wǒ jiànyì nǐ xiān hé jīnglǐ hǎohao tántán.
+  t: I suggest you have a good talk with your manager first.
+  a: 920d3142e5a621eb20395cba337e5931f75f674dd385e8145f95d389e3241418.mp3
+- s: A
+  c: 如果谈完还是没有改变呢？
+  p: Rúguǒ tán wán háishi méiyǒu gǎibiàn ne?
+  t: What if nothing changes after the talk?
+  a: 02abe74cf8235b0d358a50332138a9f5fc033052aa859ead782d81a1c132c840.mp3
+- s: B
+  c: 那时候再考虑换工作也不迟。
+  p: Nà shíhou zài kǎolǜ huàn gōngzuò yě bù chí.
+  t: It's not too late to consider changing jobs then.
+  a: b5271a12004dff364794ca6b1ab5bfbda1ce51fe655d1b8a9ea3c780c2f0f08b.mp3
+- s: A
+  c: 您说得对，我应该先把话说清楚。
+  p: Nín shuō de duì, wǒ yīnggāi xiān bǎ huà shuō qīngchu.
+  t: You're right, I should communicate clearly first.
+  a: 31c34a53b2999644bb6cd3ce3354a7695ee0310a90fe3c2804f87cb9734377ac.mp3
+54 - Lost Pet:
+- s: A
+  c: 你看起来很着急，发生什么事了？
+  p: Nǐ kàn qǐlái hěn zháojí, fāshēng shénme shì le?
+  t: You look anxious, what happened?
+  a: 1396aaeeba29dbcc621d1ab5c69e279966a983482e7af4658652397b1fc1a501.mp3
+- s: B
+  c: 我的狗跑出去了，找了一个早上都没找到。
+  p: Wǒ de gǒu pǎo chūqù le, zhǎo le yí ge zǎoshang dōu méi zhǎodào.
+  t: My dog ran out, I've been looking all morning but haven't found it.
+  a: 250f72a30db2e33a7ed2011da3750c1e3326d5e6a9bdf0ea46699bbab9909bdf.mp3
+- s: A
+  c: 太糟糕了！需要我帮忙找吗？
+  p: Tài zāogāo le! Xūyào wǒ bāngmáng zhǎo ma?
+  t: That's terrible! Do you need help looking?
+  a: e036be368332826fe789df6201e51f51108fe6d3e4aa355b8aaae5c3efa56869.mp3
+- s: B
+  c: 太谢谢了。它是一只黑色的小狗。
+  p: Tài xièxie le. Tā shì yì zhī hēisè de xiǎo gǒu.
+  t: Thank you so much. It's a small black dog.
+  a: 72a200ff3ab2a6b129bd1c0f5a5ab7466e86d25f6781cc02dcc7c20260000640.mp3
+- s: A
+  c: 你有它的照片吗？我可以发到网上帮你找。
+  p: Nǐ yǒu tā de zhàopiàn ma? Wǒ kěyǐ fā dào wǎngshàng bāng nǐ zhǎo.
+  t: Do you have its photo? I can post it online to help you search.
+  a: bdcfed517832906024f5df343125ef6c3c98cc0d61f099c14dd2893162edfd07.mp3
+- s: B
+  c: 有，我这就把照片发给你。
+  p: Yǒu, wǒ zhè jiù bǎ zhàopiàn fā gěi nǐ.
+  t: Yes, I'll send you the photo right now.
+  a: 227d1fc308ae137946c6ecec9c69ede7acc08caa3b1169bda9de2062e34097d3.mp3
+- s: A
+  c: 好，我们分头找，有消息马上联系。
+  p: Hǎo, wǒmen fēntóu zhǎo, yǒu xiāoxi mǎshàng liánxì.
+  t: Good, let's search separately and contact each other immediately if there's news.
+  a: 44d1e6ac78deba3e1b8b883b276cbb409e582fe4fe5d2d05d91cd1ac00c84211.mp3
+- s: B
+  c: 真的很感谢你，我太担心它了。
+  p: Zhēn de hěn gǎnxiè nǐ, wǒ tài dānxīn tā le.
+  t: Really thank you, I'm so worried about it.
+  a: a637d7c1d1b9e4b21e6a1dc8c3e00179db615fff9f6e2231cd6fb82fc7b9deff.mp3
+55 - Planning a Trip:
+- s: A
+  c: 听说你要去北京旅游，准备得怎么样了？
+  p: Tīngshuō nǐ yào qù Běijīng lǚyóu, zhǔnbèi de zěnmeyàng le?
+  t: I heard you're going to travel to Beijing, how are the preparations?
+  a: f9b5967063163faf8cf339d973b311227635f46dba1bd2eb9824a58422894c85.mp3
+- s: B
+  c: 机票和酒店都订好了，但是还有很多不清楚的。
+  p: Jīpiào hé jiǔdiàn dōu dìng hǎo le, dànshì hái yǒu hěn duō bù qīngchu de.
+  t: Flights and hotel are booked, but there's still a lot I'm unclear about.
+  a: b18e4fcd7fe18f8b6e9dd2759839598222a3667c3b9f9f0a7aaffaf4d0e3f255.mp3
+- s: A
+  c: 比如说什么？我去过好几次，可以给你建议。
+  p: Bǐrú shuō shénme? Wǒ qùguò hǎo jǐ cì, kěyǐ gěi nǐ jiànyì.
+  t: Like what? I've been there several times, I can give you advice.
+  a: a0c7ac496c8e68b21cca452510b1f4baee4c2fd8d705a9c30c76e80ba9ec968e.mp3
+- s: B
+  c: 我主要想知道应该带什么衣服，那边天气怎么样？
+  p: Wǒ zhǔyào xiǎng zhīdào yīnggāi dài shénme yīfu, nàbiān tiānqì zěnmeyàng?
+  t: I mainly want to know what clothes to bring, how's the weather there?
+  a: 87b4830d8a23d5853f8525fb6bdf264408c9395be81eec8aa0cb52899771f701.mp3
+- s: A
+  c: 现在那边很冷，要带厚衣服。你打算去哪些地方？
+  p: Xiànzài nàbiān hěn lěng, yào dài hòu yīfu. Nǐ dǎsuàn qù nǎxiē dìfang?
+  t: It's very cold there now, you need to bring thick clothes. Where do you plan
+    to go?
+  a: 3a308ea57b5242ca09bc8f8e7a20b817c94a2e31fb646e943c64db39d80a4106.mp3
+- s: B
+  c: 长城一定要去，其他的地方还没想好。
+  p: Chángchéng yídìng yào qù, qítā de dìfang hái méi xiǎng hǎo.
+  t: The Great Wall for sure, haven't decided on other places yet.
+  a: 5c22c254e379f1fb80b530ae681d762860ff52088fb615e1b3eba57bf550ccb9.mp3
+- s: A
+  c: 故宫也很值得一去，但是要早点去，人太多了。
+  p: Gùgōng yě hěn zhíde yì qù, dànshì yào zǎo diǎn qù, rén tài duō le.
+  t: The Forbidden City is also worth visiting, but go early, there are too many people.
+  a: 6329a2565f9a21e8c472eb5f4f5043b83a41da19296849d865e2a9a18dc72476.mp3
+- s: B
+  c: 那我应该在哪里吃饭比较好？
+  p: Nà wǒ yīnggāi zài nǎlǐ chīfàn bǐjiào hǎo?
+  t: Then where should I eat?
+  a: 5d1db2612b66f5abf8ffab5161d132d7d9150bb4d2b0995fe37aeafdccc45313.mp3
+- s: A
+  c: 我给你写个好餐厅的清单，都是本地人爱去的。
+  p: Wǒ gěi nǐ xiě ge hǎo cāntīng de qīngdān, dōu shì běndì rén ài qù de.
+  t: I'll write you a list of good restaurants, all local favorites.
+  a: 4b82f6f9f920e556cb8903cc232d7135e271a89fbffa745b9a780a59ecf1e005.mp3
+56 - Project Crisis:
+- s: A
+  c: 老板，我们的项目遇到了很大的问题。
+  p: Lǎobǎn, wǒmen de xiàngmù yùdào le hěn dà de wèntí.
+  t: Boss, our project has encountered a big problem.
+  a: 733e3bad1a1968e267084288f878a222ecfc004bc8f98ae81d8ba19882dd92b1.mp3
+- s: B
+  c: 怎么了？不是上周才说一切都很顺利吗？
+  p: Zěnme le? Bùshì shàng zhōu cái shuō yíqiè dōu hěn shùnlì ma?
+  t: What happened? Didn't you say everything was going well last week?
+  a: e4ba49c7126404fdabbdba7b70231648e2d1bbcd60a7c5b4968674272b9013df.mp3
+- s: A
+  c: 是的，但是客户突然要求改变很多东西。
+  p: Shì de, dànshì kèhù tūrán yāoqiú gǎibiàn hěn duō dōngxi.
+  t: Yes, but the client suddenly asked to change many things.
+  a: 8854d916c5e0bebee77ef2a3661203b5e95454a83db58873bfe0a1ea1cce5f18.mp3
+- s: B
+  c: 具体是什么变化？会影响到完成时间吗？
+  p: Jùtǐ shì shénme biànhuà? Huì yǐngxiǎng dào wánchéng shíjiān ma?
+  t: What specific changes? Will it affect the completion time?
+  a: 7de10b60ce6bc0c81cbe24a8fe082978de3c1bed5fcf4fe9c7d923780ed6ec1b.mp3
+- s: A
+  c: 他们想要完全不同的设计，时间肯定会延长。
+  p: Tāmen xiǎng yào wánquán bùtóng de shèjì, shíjiān kěndìng huì yánchāng.
+  t: They want a completely different design, the time will definitely be extended.
+  a: 8028e31c4e79bce6ba5b4fa6fecf7f96004044fede045858fea9db689ac273f1.mp3
+- s: B
+  c: 这个确实是个问题。预算够用吗？
+  p: Zhège quèshí shì ge wèntí. Yùsuàn gòu yòng ma?
+  t: This is indeed a problem. Is the budget enough?
+  a: 0b984317fead4cd5cf7e8bed2216aaed7e689393154e050d4d606c6ec499363e.mp3
+- s: A
+  c: 如果按照新的要求，预算可能要增加百分之三十。
+  p: Rúguǒ ànzhào xīn de yāoqiú, yùsuàn kěnéng yào zēngjiā bǎi fēn zhī sānshí.
+  t: If we follow the new requirements, the budget might need to increase by 30%.
+  a: 06aae0d0d3d906dc014f9933d5442e51fb3c9b39617de55c40313b9170bf0c9e.mp3
+- s: B
+  c: 我们需要马上和客户开个会，把这些问题说清楚。
+  p: Wǒmen xūyào mǎshàng hé kèhù kāi ge huì, bǎ zhèxiē wèntí shuō qīngchu.
+  t: We need to have a meeting with the client immediately to clarify these issues.
+  a: 3d82126bc96203f3d939705f09d975a8d5b7c0662b2876bf9439894a802e30fe.mp3
+- s: A
+  c: 好的，我现在就去安排。
+  p: Hǎo de, wǒ xiànzài jiù qù ānpái.
+  t: Okay, I'll arrange it right now.
+  a: b459d7c915c3b031b770ced45a3623ae1af97eea6b49bfcbf0d688725275136d.mp3
+57 - Hospital Visit:
+- s: A
+  c: 医生，我父亲最近身体不太好。
+  p: Yīshēng, wǒ fùqīn zuìjìn shēntǐ bù tài hǎo.
+  t: Doctor, my father hasn't been feeling well recently.
+  a: 99f9ee4c4db729e2231c6a5c5d5b40e52b066c5776b858518f61cfa8c22c1b73.mp3
+- s: B
+  c: 具体有什么症状？什么时候开始的？
+  p: Jùtǐ yǒu shénme zhèngzhuàng? Shénme shíhou kāishǐ de?
+  t: What are the specific symptoms? When did it start?
+  a: 12ab29d119e5e82b13edde4417e689657dd2b626236bed2143699755b4335725.mp3
+- s: A
+  c: 他说最近总是觉得头晕，吃不下饭。
+  p: Tā shuō zuìjìn zǒngshì juéde tóuyūn, chī bù xià fàn.
+  t: He says he's been feeling dizzy lately and has no appetite.
+  a: 6e719245644d8b95e382c5bdc778ba63e3c7fbd0dfaf374a682095c77ded7dcf.mp3
+- s: B
+  c: 睡眠情况怎么样？有没有做过检查？
+  p: Shuìmián qíngkuàng zěnmeyàng? Yǒu méiyǒu zuò guò jiǎnchá?
+  t: How's his sleep? Has he had any examinations?
+  a: 9253c83c9cbd6b89505915587e9af7e39b0d995004f994be3a367190da44daae.mp3
+- s: A
+  c: 睡眠还可以，但是没做过检查。
+  p: Shuìmián hái kěyǐ, dànshì méi zuò guò jiǎnchá.
+  t: Sleep is okay, but hasn't had any examinations.
+  a: 87ffb4f905749f5ef3eb9097b0d2e5de37b80fa199151f9fba3be09b6df9fb55.mp3
+- s: B
+  c: 我建议先做一个全面的检查。
+  p: Wǒ jiànyì xiān zuò yí ge quánmiàn de jiǎnchá.
+  t: I suggest doing a comprehensive examination first.
+  a: 941c876bd1a8d1461890ca94329d5d559789ec422c118fcb488961c85d537a66.mp3
+- s: A
+  c: 好的。检查要多长时间？
+  p: Hǎo de. Jiǎnchá yào duō cháng shíjiān?
+  t: Okay. How long will the examination take?
+  a: 4d174d56a015d0a50945dba6b76d37929d5a6b9305065c1a4da23abccef8870b.mp3
+- s: B
+  c: 大概需要两个小时。检查完我们再详细谈。
+  p: Dàgài xūyào liǎng ge xiǎoshí. Jiǎnchá wán wǒmen zài xiángxì tán.
+  t: About two hours. We'll talk in detail after the examination.
+  a: 4e7c220cf80c9ae98e0561ec77e8123167992bf1cc01288283422507cb76d4a0.mp3
+- s: A
+  c: 明白了。那我现在去帮他挂号。
+  p: Míngbai le. Nà wǒ xiànzài qù bāng tā guàhào.
+  t: Understood. Then I'll go register for him now.
+  a: cba7b88596b78837e8df61d47471d3bc0c94c4f7acb4ca449e7d6c1a63696859.mp3
+58 - Company Meeting:
+- s: A
+  c: 各位同事，今天我们讨论一下公司的新计划。
+  p: Gèwèi tóngshì, jīntiān wǒmen tǎolùn yíxià gōngsī de xīn jìhuà.
+  t: Colleagues, today we'll discuss the company's new plan.
+  a: 8021ea4cb13c8f1ead99d500b28f315d1fcb38e3967dea15e44c383ea37e5cce.mp3
+- s: B
+  c: 是关于下个季度的发展计划吗？
+  p: Shì guānyú xià ge jìdù de fāzhǎn jìhuà ma?
+  t: Is it about next quarter's development plan?
+  a: 7ca45caa8764a7b3afd4f1f43a10f09aef3c1daea78c64c9216f39fc86a32a8f.mp3
+- s: A
+  c: 对，我们需要调整一些目标。
+  p: Duì, wǒmen xūyào tiáozhěng yìxiē mùbiāo.
+  t: Yes, we need to adjust some targets.
+  a: 72f2a081d9b8d106bfca8b6d92aa65cd3c00c73a68a8c10f28b3aefa04e6168f.mp3
+- s: C
+  c: 是因为市场变化太大吗？
+  p: Shì yīnwèi shìchǎng biànhuà tài dà ma?
+  t: Is it because of big market changes?
+  a: 72c3ec6d927ba939a842170e5b91e4802d7afb92a85be653c065320c1a97515e.mp3
+- s: A
+  c: 没错，而且我们要开发新的产品。
+  p: Méicuò, érqiě wǒmen yào kāifā xīn de chǎnpǐn.
+  t: Correct, and we need to develop new products.
+  a: 28a13c032be561f7e906833e38d0372bcfd6879a3ad0dc7889662d3823b76539.mp3
+- s: B
+  c: 这需要增加多少预算？
+  p: Zhè xūyào zēngjiā duōshao yùsuàn?
+  t: How much budget increase will this require?
+  a: cea16c8b92c2c1ca9b3cecb568993df5ce7f8ff1843671d934b7dd240efef4aa.mp3
+- s: A
+  c: 具体数字下周才能确定。
+  p: Jùtǐ shùzì xià zhōu cái néng quèdìng.
+  t: The specific numbers can only be determined next week.
+  a: d616f254175d910240d5879ca11ca50e50be045fb952eeeb46b9265089b06084.mp3
+- s: C
+  c: 我们现在的团队够用吗？
+  p: Wǒmen xiànzài de tuánduì gòu yòng ma?
+  t: Is our current team sufficient?
+  a: e56fee2adbac53415c9e3f1d644abe35ab0d4ffc1febb32507f31f3a9a336c14.mp3
+- s: A
+  c: 可能需要招聘几个新人。
+  p: Kěnéng xūyào zhāopìn jǐ ge xīnrén.
+  t: We might need to hire some new people.
+  a: 67fc6d21c363f2795cb42149761dbb50838bed548d0f9bf535623e61379a7a2e.mp3
+- s: B
+  c: 那培训时间也要考虑进去。
+  p: Nà péixùn shíjiān yě yào kǎolǜ jìnqù.
+  t: Then training time needs to be considered too.
+  a: eb7badf5994fca56aa0976f1b33c86df89a191af5187fb86fbe649f9270b454e.mp3
+59 - Apartment Conflict:
+- s: A
+  c: 王经理，我要投诉楼上的邻居。
+  p: Wáng jīnglǐ, wǒ yào tóusù lóu shàng de línjū.
+  t: Manager Wang, I want to complain about the upstairs neighbor.
+  a: 5316c01fe368bb24b5b6c20ee0b8dda7664dfc21774605f7c9ad4ea5c3e4af56.mp3
+- s: B
+  c: 发生什么事了？看你很生气的样子。
+  p: Fāshēng shénme shì le? Kàn nǐ hěn shēngqì de yàngzi.
+  t: What happened? You look very angry.
+  a: ac4651af12db1191da255180f6f15c76c5e77876a2444dcefde344b1513f3ec1.mp3
+- s: A
+  c: 他们每天晚上都很吵，我都睡不好觉。
+  p: Tāmen měitiān wǎnshang dōu hěn chǎo, wǒ dōu shuì bù hǎo jiào.
+  t: They're very noisy every night, I can't sleep well.
+  a: e772a7a910ff7256a8b6e8b0c88bda4d1ec1290d8c7c928bd55c0013cbcabb17.mp3
+- s: B
+  c: 你和他们沟通过吗？
+  p: Nǐ hé tāmen gōutōng guò ma?
+  t: Have you communicated with them?
+  a: 51ed4ed0c7a6744b4b6d92099ca33066ab9b4b706e8d463158ca6a2dce900bde.mp3
+- s: A
+  c: 说过好几次了，但是没有任何改变。
+  p: Shuō guò hǎo jǐ cì le, dànshì méiyǒu rènhé gǎibiàn.
+  t: Talked to them several times, but there's been no change.
+  a: 6ad3e12d2c5523b38031771b22fcf5653a83f4764f7da4e7ffef4bdd0c1ced98.mp3
+- s: B
+  c: 他们具体是什么时候制造噪音？
+  p: Tāmen jùtǐ shì shénme shíhou zhìzào zàoyīn?
+  t: When specifically do they make noise?
+  a: ffd522458ba685f51d87fe3deac4eec8db366bb70fa3717416a45169f9a2508c.mp3
+- s: A
+  c: 通常是晚上十点以后，有时候到半夜。
+  p: Tōngcháng shì wǎnshang shí diǎn yǐhòu, yǒushíhou dào bànyè.
+  t: Usually after 10 PM, sometimes until midnight.
+  a: aa6e86dc0f3dff63fa5b7c7c2c7544b3d54e260460581fff5eeac6bc8502512f.mp3
+- s: B
+  c: 好，我今天就去找他们谈谈。
+  p: Hǎo, wǒ jīntiān jiù qù zhǎo tāmen tántán.
+  t: Okay, I'll go talk to them today.
+  a: 5df4324df1489bb8c226d2735746e2f9d59fb8aec706391f51333aac24eaaeea.mp3
+- s: A
+  c: 如果再这样的话，我可能要搬家了。
+  p: Rúguǒ zài zhèyàng de huà, wǒ kěnéng yào bānjiā le.
+  t: If this continues, I might have to move.
+  a: 8980bc0d34f531bc08fe587ad5726b76cf981000bfa37c010d7e162c0e0ef320.mp3
+- s: B
+  c: 别着急，我们一定会解决这个问题。
+  p: Bié zháojí, wǒmen yídìng huì jiějué zhège wèntí.
+  t: Don't worry, we'll definitely solve this problem.
+  a: bb2b602dd2efd44ca832c5ef830ecc6c4600ded212e4bb7b5eb0e1c5302d7828.mp3
+60 - Restaurant Review:
+- s: A
+  c: 听说你们餐厅最近有很多顾客投诉？
+  p: Tīngshuō nǐmen cāntīng zuìjìn yǒu hěn duō gùkè tóusù?
+  t: I heard your restaurant has received many customer complaints recently?
+  a: 621439327878cc35adf880fe4493edde84e5eda7f8a8137d0dc8381800c8f735.mp3
+- s: B
+  c: 是的，主要是等待时间太长了。
+  p: Shì de, zhǔyào shì děngdài shíjiān tài cháng le.
+  t: Yes, mainly about the long waiting times.
+  a: 98984132573b113606716fc68710778435345085ace0ee67803c42dce295a534.mp3
+- s: A
+  c: 你们有什么解决方案吗？
+  p: Nǐmen yǒu shénme jiějué fāng'àn ma?
+  t: Do you have any solutions?
+  a: e5797650a3cc46f7d039b44087c651cc104a8837e47bf7b97daef829f79b5626.mp3
+- s: B
+  c: 我们正在考虑增加服务员和厨师。
+  p: Wǒmen zhèngzài kǎolǜ zēngjiā fúwùyuán hé chúshī.
+  t: We're considering adding more servers and cooks.
+  a: cd404cf7dfcb80d0044980b78d077065cb06ad6a1d8f0ad92f0c25cae700a9ca.mp3
+- s: A
+  c: 光增加人手可能解决不了根本问题。
+  p: Guāng zēngjiā rénshǒu kěnéng jiějué bù liǎo gēnběn wèntí.
+  t: Just adding staff might not solve the fundamental problem.
+  a: 78e0196b7f98e0eb4b20f58f71f77847a0deb0fd7662f557da174c2d229f6fc8.mp3
+- s: B
+  c: 你有什么建议吗？
+  p: Nǐ yǒu shénme jiànyì ma?
+  t: Do you have any suggestions?
+  a: 47b3bc241b2d15c6903e1a6864995791254f8f5603666740c2bb8a671fd54730.mp3
+- s: A
+  c: 我觉得应该先看看工作流程哪里出了问题。
+  p: Wǒ juéde yīnggāi xiān kànkan gōngzuò liúchéng nǎlǐ chū le wèntí.
+  t: I think we should first look at where the workflow has problems.
+  a: 053dc4b90386a7fbba3f319a3a6bcbab1aaa6f230a10f44346ad39cba0f39418.mp3
+- s: B
+  c: 说得对，可能是我们的安排不够合理。
+  p: Shuō de duì, kěnéng shì wǒmen de ānpái bú gòu hélǐ.
+  t: You're right, maybe our arrangements aren't reasonable enough.
+  a: bcc377ea225134a1d6d76c3bca19884b1981ae3b9663906603a916f76ca18b1a.mp3
+- s: A
+  c: 要不要请专业人士来帮忙分析？
+  p: Yào bú yào qǐng zhuānyè rénshì lái bāngmáng fēnxī?
+  t: Should we invite professionals to help analyze?
+  a: 0f7de842d432671d76b8d63801f357b9a4a78d4a562ac77b747b074c0fd1b36d.mp3
+- s: B
+  c: 这是个好主意，我这就去联系。
+  p: Zhè shì ge hǎo zhǔyi, wǒ zhè jiù qù liánxì.
+  t: That's a good idea, I'll contact them right away.
+  a: e8de4b46436c96d38b244c2b42bf123eb0fb882061da3258d22c5836d22e6b5f.mp3
+61 - Tech Support:
+- s: A
+  c: 您好，我是技术部的小张。听说您的电脑有问题？
+  p: Nín hǎo, wǒ shì jìshù bù de Xiǎo Zhāng. Tīngshuō nín de diànnǎo yǒu wèntí?
+  t: Hello, I'm Xiao Zhang from IT. I heard your computer has problems?
+  a: d57db7bc27c462ce2be100b0364d435eebdc7d427d563f7f45abdc06aee83d30.mp3
+- s: B
+  c: 是的，我的文件都打不开了，很着急。
+  p: Shì de, wǒ de wénjiàn dōu dǎ bù kāi le, hěn zháojí.
+  t: Yes, I can't open any of my files, I'm very anxious.
+  a: e38f6c47510c385bdab37518fe2a2c9281815649f9795921437643b1d5df0834.mp3
+- s: A
+  c: 您先别着急。是什么时候开始的？
+  p: Nín xiān bié zháojí. Shì shénme shíhou kāishǐ de?
+  t: Don't worry first. When did it start?
+  a: fdfde7cb6ad0a8763dee5499703b299f10cc2fa330ef3ce33b23d442bc4ff4ad.mp3
+- s: B
+  c: 今天早上来上班就这样了。
+  p: Jīntiān zǎoshang lái shàngbān jiù zhèyàng le.
+  t: It was like this when I came to work this morning.
+  a: 7bcebe5181c0113be7b69587a590ee805bd05131c02043825ac5db65488c7dec.mp3
+- s: A
+  c: 昨天下班前电脑还正常吗？
+  p: Zuótiān xiàbān qián diànnǎo hái zhèngcháng ma?
+  t: Was the computer still normal before leaving work yesterday?
+  a: 2da1cddeee363434f861e73e4c8eb4505d708cdaef77a2f98479b6b8f165914f.mp3
+- s: B
+  c: 对，昨天都很好。我什么都没改变。
+  p: Duì, zuótiān dōu hěn hǎo. Wǒ shénme dōu méi gǎibiàn.
+  t: Yes, everything was fine yesterday. I didn't change anything.
+  a: 55bd0284985d89610e1d116f507096b305c5ebda3578d5388b5e725a1c4118f5.mp3
+- s: A
+  c: 我先看看是不是系统更新的问题。
+  p: Wǒ xiān kànkan shì bú shì xìtǒng gēngxīn de wèntí.
+  t: Let me first check if it's a system update issue.
+  a: 3a6659a2c7b54b8649c9a7adc7787aeae263f73043cf013b91918f5d5d8ef7cd.mp3
+- s: B
+  c: 好的。这些文件对我工作很重要。
+  p: Hǎo de. Zhèxiē wénjiàn duì wǒ gōngzuò hěn zhòngyào.
+  t: Okay. These files are very important for my work.
+  a: d3ef487af535d03fe34f0a120da574aa97ddae004587b50ea64e31421cd2e155.mp3
+- s: A
+  c: 放心，我们一定能找回您的文件。
+  p: Fàngxīn, wǒmen yídìng néng zhǎo huí nín de wénjiàn.
+  t: Don't worry, we'll definitely be able to recover your files.
+  a: c9f77d2104e60200495f94092699b3eaec63fbbc18d49cccbbfd0db2287c3464.mp3
+62 - Parent-Teacher Conference:
+- s: A
+  c: 王老师，我儿子最近在学校怎么样？
+  p: Wáng lǎoshī, wǒ érzi zuìjìn zài xuéxiào zěnmeyàng?
+  t: Teacher Wang, how's my son doing at school recently?
+  a: a371feb87ba1261239bf5826ad85d0293e1681c03a423aeec29eb989b533d1f6.mp3
+- s: B
+  c: 小明是个很聪明的孩子，但是有点调皮。
+  p: Xiǎo Míng shì ge hěn cōngming de háizi, dànshì yǒudiǎn tiáopí.
+  t: Xiao Ming is a very smart child, but a bit mischievous.
+  a: 657ffad96792033aefcc93f90a800f98e751be09a174666de64643d1403edf86.mp3
+- s: A
+  c: 他在课堂上不专心吗？
+  p: Tā zài kètáng shàng bù zhuānxīn ma?
+  t: Is he not paying attention in class?
+  a: a3cb16bc53c85c03d5effa622049cf3a6e24cda16e90eb8d5b28e54162d3c15a.mp3
+- s: B
+  c: 不是这个问题。他很快就能学会，但总是说话。
+  p: Bùshì zhège wèntí. Tā hěn kuài jiù néng xuéhuì, dànshì zǒngshì shuōhuà.
+  t: That's not the issue. He learns quickly, but always talks.
+  a: 652f46bad0336c84f792cb43a3b14a9b6b80ed553bf35ef48b0c5fc2f181302b.mp3
+- s: A
+  c: 在家里也是这样。您有什么建议吗？
+  p: Zài jiāli yě shì zhèyàng. Nín yǒu shénme jiànyì ma?
+  t: He's the same at home. Do you have any suggestions?
+  a: 604c62a52fa9f62c2f25fc3d8357d83f4cd0ed3980ff44acda54e1a4cb511352.mp3
+- s: B
+  c: 我建议给他一些额外的作业，让他更忙一点。
+  p: Wǒ jiànyì gěi tā yìxiē éwài de zuòyè, ràng tā gèng máng yìdiǎn.
+  t: I suggest giving him some extra homework, to keep him busier.
+  a: 9416fc97a91fdd92f507e8e1dc55c17b6304a75fd7a426c889cfd00364eb5fcc.mp3
+- s: A
+  c: 会不会太累了？他现在就已经很累了。
+  p: Huì bú huì tài lèi le? Tā xiànzài jiù yǐjīng hěn lèi le.
+  t: Won't that be too tiring? He's already very tired now.
+  a: f795fe2f5a150b3e641e3ca7c243ab03a6efbfdfe014cc6b887e91e11808b663.mp3
+- s: B
+  c: 不是增加难度，是换种方式学习。
+  p: Búshì zēngjiā nándù, shì huàn zhǒng fāngshì xuéxí.
+  t: Not increasing difficulty, but changing the learning method.
+  a: c64bfd87a7c662c644e38da8b26c19e20fd02d10fa817f568d1f0e33bb34aa86.mp3
+- s: A
+  c: 明白了，那我们在家也试试这个方法。
+  p: Míngbai le, nà wǒmen zài jiā yě shìshi zhège fāngfǎ.
+  t: I understand, then we'll try this method at home too.
+  a: 4a49840bf5a3f840987755324caddab0a35f39adf5b8d9ad17c9a615edd6457a.mp3
+
+63 - Business Negotiation:
+- s: A
+  c: 李总，我们来谈谈合作的具体细节吧。
+  p: Lǐ zǒng, wǒmen lái tántán hézuò de jùtǐ xìjié ba.
+  t: President Li, let's discuss the specific details of our cooperation.
+  
+- s: B
+  c: 好的。你们的条件我们已经看过了。
+  p: Hǎo de. Nǐmen de tiáojiàn wǒmen yǐjīng kàn guò le.
+  t: Okay. We've already looked at your conditions.
+  
+- s: A
+  c: 对价格这方面，您觉得如何？
+  p: Duì jiàgé zhè fāngmiàn, nín juéde rúhé?
+  t: Regarding the price aspect, what do you think?
+  d: Using 您 (nín) instead of 你 (nǐ) shows respect in business settings
+  
+- s: B
+  c: 说实话，我觉得有点高。能商量吗？
+  p: Shuō shíhuà, wǒ juéde yǒudiǎn gāo. Néng shāngliáng ma?
+  t: To be honest, I think it's a bit high. Is it negotiable?
+  
+- s: A
+  c: 这个价格已经是考虑到长期合作才定的。
+  p: Zhège jiàgé yǐjīng shì kǎolǜ dào chángqī hézuò cái dìng de.
+  t: This price was set considering long-term cooperation.
+  
+- s: B
+  c: 如果我们能签三年的合同，可以再优惠吗？
+  p: Rúguǒ wǒmen néng qiān sān nián de hétong, kěyǐ zài yōuhuì ma?
+  t: If we can sign a three-year contract, can there be more of a discount?
+  
+- s: A
+  c: 这个条件很有意思，让我考虑一下。
+  p: Zhège tiáojiàn hěn yǒu yìsi, ràng wǒ kǎolǜ yíxià.
+  t: This condition is interesting, let me think about it.
+  d: 有意思 (yǒu yìsi) here means "interesting/worth considering" rather than literally "interesting"
+  
+- s: B
+  c: 好的，您看完了告诉我。
+  p: Hǎo de, nín kàn wán le gàosu wǒ.
+  t: Okay, let me know after you've considered it.
+
+64 - Doctor's Consultation:
+- s: A
+  c: 张医生，我最近总是感觉很疲劳。
+  p: Zhāng yīshēng, wǒ zuìjìn zǒngshì gǎnjué hěn píláo.
+  t: Doctor Zhang, I've been feeling very tired lately.
+  
+- s: B
+  c: 工作压力大吗？睡眠质量怎么样？
+  p: Gōngzuò yālì dà ma? Shuìmián zhìliàng zěnmeyàng?
+  t: Is work pressure high? How's your sleep quality?
+  
+- s: A
+  c: 工作是挺忙的，但晚上也睡不好。
+  p: Gōngzuò shì tǐng máng de, dàn wǎnshang yě shuì bù hǎo.
+  t: Work is quite busy, and I can't sleep well at night.
+  d: 挺 (tǐng) is commonly used to mean "quite/very" in informal speech
+  
+- s: B
+  c: 每天大概几点睡？早上几点起？
+  p: Měitiān dàgài jǐ diǎn shuì? Zǎoshang jǐ diǎn qǐ?
+  t: What time do you usually sleep? What time do you wake up?
+  
+- s: A
+  c: 常常工作到半夜，早上七点就要起。
+  p: Chángcháng gōngzuò dào bànyè, zǎoshang qī diǎn jiù yào qǐ.
+  t: Often work until midnight, have to wake up at 7 AM.
+  
+- s: B
+  c: 这样不行，睡眠时间太少了。
+  p: Zhèyàng bù xíng, shuìmián shíjiān tài shǎo le.
+  t: This won't do, your sleep time is too little.
+  d: 不行 (bù xíng) is stronger than just saying "no", implying "this absolutely won't work"
+  
+- s: A
+  c: 但是工作必须要完成啊。
+  p: Dànshì gōngzuò bìxū yào wánchéng a.
+  t: But the work must be completed.
+  
+- s: B
+  c: 健康更重要。我给您开些药，但您必须调整作息。
+  p: Jiànkāng gèng zhòngyào. Wǒ gěi nín kāi xiē yào, dàn nín bìxū tiáozhěng zuòxí.
+  t: Health is more important. I'll prescribe some medicine, but you must adjust your schedule.
+  d: 作息 (zuòxí) specifically refers to one's daily schedule of work and rest
+
+  65 - Job Interview:
+- s: A
+  c: 请问您为什么想离开现在的公司？
+  p: Qǐngwèn nín wèishéme xiǎng líkāi xiànzài de gōngsī?
+  t: May I ask why you want to leave your current company?
+  d: In interviews, questions about leaving are commonly phrased indirectly like this
+  
+- s: B
+  c: 我觉得现在的工作没有发展空间。
+  p: Wǒ juéde xiànzài de gōngzuò méiyǒu fāzhǎn kōngjiān.
+  t: I feel my current job lacks room for development.
+  d: 发展空间 (fāzhǎn kōngjiān) is a polite way to say "career growth opportunities"
+  
+- s: A
+  c: 那您对我们公司了解多少？
+  p: Nà nín duì wǒmen gōngsī liǎojiě duōshao?
+  t: How much do you know about our company?
+  
+- s: B
+  c: 我知道你们是行业的领导者，而且非常重视创新。
+  p: Wǒ zhīdào nǐmen shì hángyè de lǐngdǎozhě, érqiě fēicháng zhòngshì chuàngxīn.
+  t: I know you're an industry leader and place great emphasis on innovation.
+  
+- s: A
+  c: 如果加入我们，您期望的薪资是多少？
+  p: Rúguǒ jiārù wǒmen, nín qīwàng de xīnzī shì duōshao?
+  t: If you join us, what are your salary expectations?
+  
+- s: B
+  c: 根据我的经验和能力，希望在税前一万五左右。
+  p: Gēnjù wǒ de jīngyàn hé nénglì, xīwàng zài shuì qián yī wàn wǔ zuǒyòu.
+  t: Based on my experience and abilities, I hope for around 15,000 before tax.
+  d: Chinese usually discuss salary in monthly terms, not annual
+
+66 - House Viewing:
+- s: A
+  c: 这套房子建筑面积多大？
+  p: Zhè tào fángzi jiànzhú miànjī duō dà?
+  t: What's the construction area of this apartment?
+  d: 套 (tào) is the measure word commonly used for apartments/houses
+  
+- s: B
+  c: 九十平方米，两室一厅，朝南。
+  p: Jiǔshí píngfāng mǐ, liǎng shì yī tīng, cháo nán.
+  t: 90 square meters, two bedrooms one living room, south-facing.
+  
+- s: A
+  c: 采光怎么样？冬天会不会太暗？
+  p: Cǎiguāng zěnmeyàng? Dōngtiān huì bú huì tài àn?
+  t: How's the natural lighting? Will it be too dark in winter?
+  
+- s: B
+  c: 您可以看看，现在就是最暗的时候。
+  p: Nín kěyǐ kànkan, xiànzài jiù shì zuì àn de shíhou.
+  t: You can see for yourself, this is the darkest time now.
+  
+- s: A
+  c: 周边有什么公共设施吗？
+  p: Zhōubiān yǒu shénme gōnggòng shèshī ma?
+  t: What public facilities are in the surrounding area?
+  
+- s: B
+  c: 小区对面就是超市，学校也在步行范围内。
+  p: Xiǎoqū duìmiàn jiù shì chāoshì, xuéxiào yě zài bùxíng fànwéi nèi.
+  t: There's a supermarket opposite the complex, and schools within walking distance.
+  d: 步行范围 (bùxíng fànwéi) literally "walking range" is commonly used in real estate
+
+67 - Restaurant Complaint:
+- s: A
+  c: 服务员，这个菜和菜单上的完全不一样。
+  p: Fúwùyuán, zhège cài hé càidān shàng de wánquán bù yíyàng.
+  t: Waiter, this dish is completely different from what's on the menu.
+  d: 完全不一样 is stronger than just saying 不一样, emphasizing complete difference
+  
+- s: B
+  c: 对不起，您具体觉得哪里不一样？
+  p: Duìbuqǐ, nín jùtǐ juéde nǎlǐ bù yíyàng?
+  t: Sorry, specifically where do you feel it's different?
+  
+- s: A
+  c: 菜单上写的是大虾，这些虾都很小。
+  p: Càidān shàng xiě de shì dà xiā, zhèxiē xiā dōu hěn xiǎo.
+  t: The menu says large shrimp, but these shrimp are all very small.
+  
+- s: B
+  c: 真是非常抱歉，我马上叫经理来处理。
+  p: Zhēnshi fēicháng bàoqiàn, wǒ mǎshàng jiào jīnglǐ lái chǔlǐ.
+  t: I'm really very sorry, I'll call the manager right away.
+  d: 处理 (chǔlǐ) is formal way of saying "handle/deal with"
+  
+- s: C
+  c: 您好，我是经理。这道菜我们重做，可以吗？
+  p: Nín hǎo, wǒ shì jīnglǐ. Zhè dào cài wǒmen chóng zuò, kěyǐ ma?
+  t: Hello, I'm the manager. We can remake this dish, is that okay?
+  
+- s: A
+  c: 好吧，但是希望这次能做对。
+  p: Hǎo ba, dànshì xīwàng zhè cì néng zuò duì.
+  t: Alright, but I hope it can be done correctly this time.
+
+68 - Salary Discussion:
+- s: A
+  c: 王总，关于我的加薪申请，您考虑得怎么样？
+  p: Wáng zǒng, guānyú wǒ de jiāxīn shēnqǐng, nín kǎolǜ de zěnmeyàng?
+  t: President Wang, regarding my salary increase request, what do you think?
+  d: This kind of indirect approach is typical in Chinese workplace discussions
+  
+- s: B
+  c: 我看了你的工作表现，确实很优秀。
+  p: Wǒ kàn le nǐ de gōngzuò biǎoxiàn, quèshí hěn yōuxiù.
+  t: I've looked at your work performance, it's indeed excellent.
+  
+- s: A
+  c: 谢谢。我这两年也一直在努力提高自己。
+  p: Xièxie. Wǒ zhè liǎng nián yě yìzhí zài nǔlì tígāo zìjǐ.
+  t: Thank you. I've been working hard to improve myself these two years.
+  
+- s: B
+  c: 公司决定给你加百分之十五的薪资。
+  p: Gōngsī juédìng gěi nǐ jiā bǎi fēn zhī shíwǔ de xīnzī.
+  t: The company has decided to give you a 15% salary increase.
+  
+- s: A
+  c: 这个幅度...比我期望的要低一些。
+  p: Zhège fúdù... bǐ wǒ qīwàng de yào dī yìxiē.
+  t: This range... is a bit lower than I expected.
+  d: Using pauses (...) is a polite way to express disappointment
+  
+- s: B
+  c: 除了工资，我们还会给你更多的项目责任。
+  p: Chúle gōngzī, wǒmen hái huì gěi nǐ gèng duō de xiàngmù zérèn.
+  t: Besides salary, we'll also give you more project responsibilities.
+  
+- s: A
+  c: 明白了，那我好好考虑一下。
+  p: Míngbai le, nà wǒ hǎohāo kǎolǜ yíxià.
+  t: I understand, then I'll think about it carefully.
+  d: This is a typical Chinese way to politely indicate dissatisfaction
+
+# Continuing with more complex workplace and social scenarios...
+
+69 - Wedding Planning:
+- s: A
+  c: 亲爱的，我们定好婚礼的日期了吗？
+  p: Qīn'ài de, wǒmen dìng hǎo hūnlǐ de rìqī le ma?
+  t: Dear, have we set the wedding date?
+  
+- s: B
+  c: 我觉得十月份天气最合适。
+  p: Wǒ juéde shí yuèfèn tiānqì zuì héshì.
+  t: I think October has the best weather.
+  
+- s: A
+  c: 但是要考虑双方父母的意见。
+  p: Dànshì yào kǎolǜ shuāngfāng fùmǔ de yìjiàn.
+  t: But we need to consider both sets of parents' opinions.
+  d: 双方 (shuāngfāng) "both sides" is formal and commonly used in family contexts
+  
+- s: B
+  c: 对，还要看看酒店那时候有没有空位。
+  p: Duì, hái yào kànkan jiǔdiàn nà shíhou yǒu méiyǒu kōngwèi.
+  t: Yes, and we need to check if the hotel has availability then.
+  
+- s: A
+  c: 要不要先列个预算清单？
+  p: Yào bú yào xiān liè ge yùsuàn qīngdān?
+  t: Should we make a budget list first?
+  
+- s: B
+  c: 好主意。婚纱照也要提前预约。
+  p: Hǎo zhǔyi. Hūnshā zhào yě yào tíqián yùyuē.
+  t: Good idea. We also need to book the wedding photos in advance.
+  d: 提前 (tíqián) is commonly used for advance planning/booking
+
+70 - Car Repair:
+- s: A
+  c: 师傅，我的车最近转弯时有声音。
+  p: Shīfu, wǒ de chē zuìjìn zhuǎnwān shí yǒu shēngyīn.
+  t: Master, my car makes noise when turning recently.
+  d: 师傅 (shīfu) is respectfully used for skilled workers like mechanics
+  
+- s: B
+  c: 让我听听看。您开车的时候声音大吗？
+  p: Ràng wǒ tīngting kàn. Nín kāichē de shíhou shēngyīn dà ma?
+  t: Let me listen. Is the noise loud when you're driving?
+  
+- s: A
+  c: 不是很大，但是感觉不太正常。
+  p: Bùshì hěn dà, dànshì gǎnjué bù tài zhèngcháng.
+  t: Not very loud, but it doesn't feel normal.
+  
+- s: B
+  c: 可能是方向盘的问题。要检查一下。
+  p: Kěnéng shì fāngxiàngpán de wèntí. Yào jiǎnchá yíxià.
+  t: Might be a steering wheel problem. Need to check it.
+  
+- s: A
+  c: 要多长时间才能修好？
+  p: Yào duō cháng shíjiān cái néng xiū hǎo?
+  t: How long will it take to fix?
+  
+- s: B
+  c: 大概需要两个小时。您要等还是待会儿来？
+  p: Dàgài xūyào liǎng ge xiǎoshí. Nín yào děng háishi dāihuìr lái?
+  t: About two hours. Would you like to wait or come back later?
+
+71 - Airport Meeting:
+- s: A
+  c: 您好，我是来接王教授的。他的航班到了吗？
+  p: Nín hǎo, wǒ shì lái jiē Wáng jiàoshòu de. Tā de hángbān dào le ma?
+  t: Hello, I'm here to pick up Professor Wang. Has his flight arrived?
+  
+- s: B
+  c: 让我查一下。是从北京来的航班吗？
+  p: Ràng wǒ chá yíxià. Shì cóng Běijīng lái de hángbān ma?
+  t: Let me check. Is it the flight from Beijing?
+  
+- s: A
+  c: 对，应该是下午三点到。
+  p: Duì, yīnggāi shì xiàwǔ sān diǎn dào.
+  t: Yes, should arrive at 3 PM.
+  
+- s: B
+  c: 航班延误了一个小时。
+  p: Hángbān yánwù le yí ge xiǎoshí.
+  t: The flight is delayed by one hour.
+  d: 延误 (yánwù) is specifically used for travel delays
+  
+- s: A
+  c: 那我去咖啡厅等吧。能帮我广播通知他吗？
+  p: Nà wǒ qù kāfēi tīng děng ba. Néng bāng wǒ guǎngbō tōngzhī tā ma?
+  t: Then I'll wait at the café. Can you help broadcast a message to him?
+  
+- s: B
+  c: 没问题，请告诉我您的名字。
+  p: Méi wèntí, qǐng gàosu wǒ nín de míngzi.
+  t: No problem, please tell me your name.
+
+72 - Home Purchase:
+- s: A
+  c: 这套房子的采光真不错。
+  p: Zhè tào fángzi de cǎiguāng zhēn bùcuò.
+  t: The natural lighting in this apartment is really good.
+  
+- s: B
+  c: 是的，而且小区环境很安静。
+  p: Shì de, érqiě xiǎoqū huánjìng hěn ānjìng.
+  t: Yes, and the community environment is very quiet.
+  d: 小区 (xiǎoqū) specifically refers to a residential community
+  
+- s: A
+  c: 房子总价多少？首付要多少？
+  p: Fángzi zǒngjià duōshao? Shǒufù yào duōshao?
+  t: What's the total price? How much is the down payment?
+  
+- s: B
+  c: 总价三百万，首付最少百分之三十。
+  p: Zǒngjià sān bǎi wàn, shǒufù zuì shǎo bǎi fēn zhī sānshí.
+  t: Total price is 3 million, minimum down payment is 30%.
+  
+- s: A
+  c: 能不能再降一点？这个价格有点高。
+  p: Néng bù néng zài jiàng yìdiǎn? Zhège jiàgé yǒudiǎn gāo.
+  t: Can it be reduced a bit? This price is a bit high.
+  
+- s: B
+  c: 这个位置这个价格已经很合理了。
+  p: Zhège wèizhi zhège jiàgé yǐjīng hěn hélǐ le.
+  t: For this location, this price is already very reasonable.
+
+73 - Health Check Results:
+- s: A
+  c: 医生，我的体检结果怎么样？
+  p: Yīshēng, wǒ de tǐjiǎn jiéguǒ zěnmeyàng?
+  t: Doctor, how are my physical examination results?
+  
+- s: B
+  c: 整体来说还不错，但是有几个指标需要注意。
+  p: Zhěntǐ lái shuō hái bùcuò, dànshì yǒu jǐ ge zhǐbiāo xūyào zhùyì.
+  t: Overall it's fine, but there are several indicators that need attention.
+  d: 指标 (zhǐbiāo) is commonly used in medical contexts for health indicators
+  
+- s: A
+  c: 是哪些方面？严重吗？
+  p: Shì nǎxiē fāngmiàn? Yánzhòng ma?
+  t: Which aspects? Is it serious?
+  
+- s: B
+  c: 血压有点偏高，要控制饮食，多运动。
+  p: Xuèyā yǒudiǎn piān gāo, yào kòngzhì yǐnshí, duō yùndòng.
+  t: Blood pressure is a bit high, need to control diet and exercise more.
+  
+- s: A
+  c: 需要吃药吗？
+  p: Xūyào chī yào ma?
+  t: Do I need to take medicine?
+  
+- s: B
+  c: 现在还不需要，但要定期来复查。
+  p: Xiànzài hái bù xūyào, dàn yào dìngqī lái fùchá.
+  t: Not needed now, but need regular follow-up checks.
+  d: 复查 (fùchá) is specifically used for medical follow-up examinations
+
+74 - School Meeting:
+- s: A
+  c: 王老师，我们来谈谈小明的情况吧。
+  p: Wáng lǎoshī, wǒmen lái tántán Xiǎo Míng de qíngkuàng ba.
+  t: Teacher Wang, let's talk about Xiao Ming's situation.
+  d: 情况 (qíngkuàng) is a formal way to discuss someone's circumstances
+  
+- s: B
+  c: 好的。最近他的表现有很大进步。
+  p: Hǎo de. Zuìjìn tā de biǎoxiàn yǒu hěn dà jìnbù.
+  t: Okay. His performance has shown great improvement recently.
+  
+- s: A
+  c: 真的吗？在家里还是很调皮。
+  p: Zhēn de ma? Zài jiāli háishi hěn tiáopí.
+  t: Really? He's still quite naughty at home.
+  
+- s: B
+  c: 上课比以前认真多了，作业也按时交。
+  p: Shàngkè bǐ yǐqián rènzhēn duō le, zuòyè yě ànshí jiāo.
+  t: He's much more attentive in class than before, and submits homework on time.
+  d: 按时 (ànshí) emphasizes doing things punctually
+  
+- s: A
+  c: 那您觉得我们在家该怎么配合？
+  p: Nà nín juéde wǒmen zài jiā gāi zěnme pèihé?
+  t: Then how do you think we should cooperate at home?
+  
+- s: B
+  c: 建议给他更多的鼓励，少一点批评。
+  p: Jiànyì gěi tā gèng duō de gǔlì, shǎo yìdiǎn pīpíng.
+  t: I suggest giving him more encouragement and less criticism.
+
+75 - Investment Discussion:
+- s: A
+  c: 李总，这个投资计划您看完了吗？
+  p: Lǐ zǒng, zhège tóuzī jìhuà nín kàn wán le ma?
+  t: President Li, have you finished reviewing the investment plan?
+  
+- s: B
+  c: 看完了，整体规划不错，但风险分析不够。
+  p: Kàn wán le, zhěntǐ guīhuà bùcuò, dàn fēngxiǎn fēnxī bù gòu.
+  t: Yes, the overall planning is good, but risk analysis is insufficient.
+  d: 风险分析 (fēngxiǎn fēnxī) is a formal business term for risk analysis
+  
+- s: A
+  c: 您觉得哪些方面需要补充？
+  p: Nín juéde nǎxiē fāngmiàn xūyào bǔchōng?
+  t: Which aspects do you think need supplementing?
+  
+- s: B
+  c: 市场竞争的分析要更详细一些。
+  p: Shìchǎng jìngzhēng de fēnxī yào gèng xiángxì yìxiē.
+  t: The market competition analysis needs to be more detailed.
+  
+- s: A
+  c: 明白了，我们会尽快修改方案。
+  p: Míngbai le, wǒmen huì jǐnkuài xiūgǎi fāng'àn.
+  t: Understood, we'll revise the plan as soon as possible.
+  
+- s: B
+  c: 好，改完后我们再开会讨论。
+  p: Hǎo, gǎi wán hòu wǒmen zài kāihuì tǎolùn.
+  t: Good, let's have another meeting to discuss after the revision.
+
+76 - Moving Day:
+- s: A
+  c: 这个箱子要小心，里面都是易碎品。
+  p: Zhège xiāngzi yào xiǎoxīn, lǐmiàn dōu shì yìsuì pǐn.
+  t: Be careful with this box, it contains fragile items.
+  d: 易碎品 (yìsuì pǐn) is specifically used for fragile items
+  
+- s: B
+  c: 放心吧，我们是专业的搬家公司。
+  p: Fàngxīn ba, wǒmen shì zhuānyè de bānjiā gōngsī.
+  t: Don't worry, we're a professional moving company.
+  
+- s: A
+  c: 冰箱要不要先清空？
+  p: Bīngxiāng yào bú yào xiān qīngkōng?
+  t: Should we empty the refrigerator first?
+  
+- s: B
+  c: 对，搬运前要把食物拿出来。
+  p: Duì, bānyùn qián yào bǎ shíwù ná chūlai.
+  t: Yes, food needs to be taken out before moving.
+  
+- s: A
+  c: 你们觉得搬完大概要多久？
+  p: Nǐmen juéde bān wán dàgài yào duōjiǔ?
+  t: How long do you think the move will take?
+  
+- s: B
+  c: 按这个数量，大概需要三个小时。
+  p: Àn zhège shùliàng, dàgài xūyào sān ge xiǎoshí.
+  t: With this amount, probably needs about three hours.
+
+77 - Hotel Check-in:
+- s: A
+  c: 您好，我预订了一间房间。
+  p: Nín hǎo, wǒ yùdìng le yì jiān fángjiān.
+  t: Hello, I have a room reservation.
+  
+- s: B
+  c: 请问您的姓名是？预订号码有吗？
+  p: Qǐngwèn nín de xìngmíng shì? Yùdìng hàomǎ yǒu ma?
+  t: May I have your name? Do you have a reservation number?
+  
+- s: A
+  c: 我姓李，这是预订确认邮件。
+  p: Wǒ xìng Lǐ, zhè shì yùdìng quèrèn yóujiàn.
+  t: My surname is Li, here's the reservation confirmation email.
+  
+- s: B
+  c: 好的，您订的是豪华双人间，是吗？
+  p: Hǎo de, nín dìng de shì háohuá shuāngrén jiān, shì ma?
+  t: Okay, you booked a deluxe double room, correct?
+  
+- s: A
+  c: 对，请问能安排一个安静点的房间吗？
+  p: Duì, qǐngwèn néng ānpái yí ge ānjìng diǎn de fángjiān ma?
+  t: Yes, could I have a quieter room please?
+  
+- s: B
+  c: 没问题，我给您安排个高层的房间。
+  p: Méi wèntí, wǒ gěi nín ānpái ge gāocéng de fángjiān.
+  t: No problem, I'll arrange a room on a higher floor for you.
+  d: 高层 (gāocéng) implies both "higher floor" and better quality in hotels
+
+78 - Gym Membership:
+- s: A
+  c: 想办一张健身卡，有什么套餐？
+  p: Xiǎng bàn yì zhāng jiànshēn kǎ, yǒu shénme tàocān?
+  t: I want to get a gym membership, what packages do you have?
+  
+- s: B
+  c: 我们有月卡、季卡和年卡，年卡最划算。
+  p: Wǒmen yǒu yuèkǎ, jìkǎ hé niánkǎ, niánkǎ zuì huásuàn.
+  t: We have monthly, quarterly and annual cards, annual is most cost-effective.
+  d: 划算 (huásuàn) specifically implies good value for money
+  
+- s: A
+  c: 年卡包括什么服务？
+  p: Niánkǎ bāokuò shénme fúwù?
+  t: What services are included in the annual membership?
+  
+- s: B
+  c: 包括所有器械使用和团体课程。
+  p: Bāokuò suǒyǒu qìxiè shǐyòng hé tuántǐ kèchéng.
+  t: Includes use of all equipment and group classes.
+  
+- s: A
+  c: 有私教课程吗？
+  p: Yǒu sījiāo kèchéng ma?
+  t: Do you have personal training sessions?
+  
+- s: B
+  c: 有，但是要另外收费。您要试试看吗？
+  p: Yǒu, dànshì yào lìngwài shōufèi. Nín yào shìshi kàn ma?
+  t: Yes, but that's charged separately. Would you like to try?
+
+79 - Visa Application:
+- s: A
+  c: 您好，我想申请商务签证。
+  p: Nín hǎo, wǒ xiǎng shēnqǐng shāngwù qiānzhèng.
+  t: Hello, I'd like to apply for a business visa.
+  d: 签证 (qiānzhèng) is the formal term for visa
+  
+- s: B
+  c: 好的，请问您准备好所有材料了吗？
+  p: Hǎo de, qǐngwèn nín zhǔnbèi hǎo suǒyǒu cáiliào le ma?
+  t: Okay, have you prepared all the documents?
+  
+- s: A
+  c: 这是我的护照和邀请函。
+  p: Zhè shì wǒ de hùzhào hé yāoqǐng hán.
+  t: Here's my passport and invitation letter.
+  
+- s: B
+  c: 还需要提供工作证明和银行存款证明。
+  p: Hái xūyào tígōng gōngzuò zhèngmíng hé yínháng cúnkuǎn zhèngmíng.
+  t: You also need to provide employment proof and bank statement.
+  
+- s: A
+  c: 处理需要多长时间？
+  p: Chǔlǐ xūyào duō cháng shíjiān?
+  t: How long will processing take?
+  
+- s: B
+  c: 正常情况下七个工作日。
+  p: Zhèngcháng qíngkuàng xià qī ge gōngzuò rì.
+  t: Under normal circumstances, seven working days.
+
+80 - Bank Transaction:
+- s: A
+  c: 我想办理一张信用卡。
+  p: Wǒ xiǎng bànlǐ yì zhāng xìnyòng kǎ.
+  t: I'd like to apply for a credit card.
+  
+- s: B
+  c: 好的，您有什么特别的要求吗？
+  p: Hǎo de, nín yǒu shénme tèbié de yāoqiú ma?
+  t: Okay, do you have any specific requirements?
+  
+- s: A
+  c: 主要用于出差和网上购物。
+  p: Zhǔyào yòngyú chūchāi hé wǎngshàng gòuwù.
+  t: Mainly for business trips and online shopping.
+  d: 出差 (chūchāi) specifically refers to business trips
+  
+- s: B
+  c: 那我建议这张商务卡，积分优惠多。
+  p: Nà wǒ jiànyì zhè zhāng shāngwù kǎ, jīfēn yōuhuì duō.
+  t: Then I recommend this business card, it has more point benefits.
+  
+- s: A
+  c: 年费是多少？
+  p: Niánfèi shì duōshao?
+  t: What's the annual fee?
+  
+- s: B
+  c: 第一年免年费，之后看消费情况。
+  p: Dì yī nián miǎn niánfèi, zhīhòu kàn xiāofèi qíngkuàng.
+  t: First year fee is waived, after that it depends on spending.
+
+81 - Computer Repair:
+- s: A
+  c: 我的电脑最近特别慢，而且经常死机。
+  p: Wǒ de diànnǎo zuìjìn tèbié màn, érqiě jīngcháng sǐjī.
+  t: My computer has been very slow lately and often crashes.
+  d: 死机 (sǐjī) is the common term for computer crash
+  
+- s: B
+  c: 让我检查一下。您最后一次清理是什么时候？
+  p: Ràng wǒ jiǎnchá yíxià. Nín zuìhòu yí cì qīnglǐ shì shénme shíhou?
+  t: Let me check. When was your last cleanup?
+  
+- s: A
+  c: 从来没清理过...这很重要吗？
+  p: Cónglái méi qīnglǐ guò... zhè hěn zhòngyào ma?
+  t: Never cleaned it... is that important?
+  
+- s: B
+  c: 当然重要。系统需要定期维护。
+  p: Dāngrán zhòngyào. Xìtǒng xūyào dìngqī wéihù.
+  t: Of course it's important. The system needs regular maintenance.
+  
+- s: A
+  c: 要多久才能修好？
+  p: Yào duōjiǔ cái néng xiū hǎo?
+  t: How long will it take to fix?
+  
+- s: B
+  c: 大概两个小时，建议您也备份数据。
+  p: Dàgài liǎng ge xiǎoshí, jiànyì nín yě bèifèn shùjù.
+  t: About two hours, I suggest you also backup your data.
+
+82 - Book Store:
+- s: A
+  c: 请问儿童读物在哪个区？
+  p: Qǐngwèn értóng dúwù zài nǎ ge qū?
+  t: Where is the children's book section?
+  
+- s: B
+  c: 二楼右边，您要找什么年龄段的？
+  p: Èr lóu yòubiān, nín yào zhǎo shénme niánlíng duàn de?
+  t: Second floor on the right, what age group are you looking for?
+  
+- s: A
+  c: 六岁左右的，最好有拼音。
+  p: Liù suì zuǒyòu de, zuì hǎo yǒu pīnyīn.
+  t: Around six years old, preferably with pinyin.
+  
+- s: B
+  c: 这套绘本很受欢迎，适合启蒙。
+  p: Zhè tào huìběn hěn shòu huānyíng, shìhé qǐméng.
+  t: This picture book series is very popular, good for early education.
+  d: 启蒙 (qǐméng) specifically refers to enlightening early education
+  
+- s: A
+  c: 内容不会太难吧？
+  p: Nèiróng bú huì tài nán ba?
+  t: The content won't be too difficult?
+  
+- s: B
+  c: 不会，都是基础的故事和词汇。
+  p: Bú huì, dōu shì jīchǔ de gùshi hé cíhuì.
+  t: No, they're all basic stories and vocabulary.
+
+83 - Insurance Claim:
+- s: A
+  c: 我想咨询一下理赔的事。
+  p: Wǒ xiǎng zīxún yíxià lípéi de shì.
+  t: I'd like to inquire about making an insurance claim.
+  d: 理赔 (lípéi) is the formal term for insurance claim
+  
+- s: B
+  c: 好的，请问是什么类型的保险？
+  p: Hǎo de, qǐngwèn shì shénme lèixíng de bǎoxiǎn?
+  t: Okay, what type of insurance is it?
+  
+- s: A
+  c: 车险，上周发生了小事故。
+  p: Chē xiǎn, shàng zhōu fāshēng le xiǎo shìgù.
+  t: Car insurance, had a minor accident last week.
+  
+- s: B
+  c: 您有事故报告和照片吗？
+  p: Nín yǒu shìgù bàogào hé zhàopiàn ma?
+  t: Do you have the accident report and photos?
+  
+- s: A
+  c: 有，警察都记录了。
+  p: Yǒu, jǐngchá dōu jìlù le.
+  t: Yes, the police recorded everything.
+  
+- s: B
+  c: 好，请填写这份表格，我们会尽快处理。
+  p: Hǎo, qǐng tiánxiě zhè fèn biǎogé, wǒmen huì jǐnkuài chǔlǐ.
+  t: Good, please fill out this form, we'll process it as soon as possible.
+
+84 - Life Review Meeting:
+ - s: A
+   c: 最近生活怎么样？听说你换工作了？
+   p: Zuìjìn shēnghuó zěnmeyàng? Tīngshuō nǐ huàn gōngzuò le?
+   t: How's life lately? I heard you changed jobs?
+   d: This combines vocabulary from our career and daily life dialogues
+   
+ - s: B
+   c: 对，上个月刚换的。工作压力小多了。
+   p: Duì, shàng ge yuè gāng huàn de. Gōngzuò yālì xiǎo duō le.
+   t: Yes, just changed last month. Work pressure is much less.
+   
+ - s: A
+   c: 那工资和以前比怎么样？
+   p: Nà gōngzī hé yǐqián bǐ zěnmeyàng?
+   t: How's the salary compared to before?
+   
+ - s: B
+   c: 虽然少了一点，但是生活质量好多了。
+   p: Suīrán shǎo le yìdiǎn, dànshì shēnghuó zhìliàng hǎo duō le.
+   t: Although it's a bit less, quality of life is much better.
+   
+ - s: A
+   c: 身体觉得怎么样？去体检了吗？
+   p: Shēntǐ juéde zěnmeyàng? Qù tǐjiǎn le ma?
+   t: How do you feel physically? Did you get a health check?
+   
+ - s: B
+   c: 上周刚检查过，医生说要多运动。
+   p: Shàng zhōu gāng jiǎnchá guò, yīshēng shuō yào duō yùndòng.
+   t: Just had a check-up last week, doctor said I need more exercise.
+
+85 - Combined Services:
+ - s: A
+   c: 我需要办几件事，不知道今天来得及吗？
+   p: Wǒ xūyào bàn jǐ jiàn shì, bù zhīdào jīntiān lái de jí ma?
+   t: I need to handle several things, not sure if there's enough time today?
+   
+ - s: B
+   c: 您说说看，我帮您安排。
+   p: Nín shuō shuō kàn, wǒ bāng nín ānpái.
+   t: Please tell me, I'll help you arrange.
+   
+ - s: A
+   c: 要去银行办信用卡，还要去看房子。
+   p: Yào qù yínháng bàn xìnyòng kǎ, hái yào qù kàn fángzi.
+   t: Need to go to the bank for a credit card, and also view an apartment.
+   
+ - s: B
+   c: 这个位置很方便，银行就在楼下。
+   p: Zhège wèizhi hěn fāngbiàn, yínháng jiù zài lóu xià.
+   t: This location is convenient, the bank is downstairs.
+   
+ - s: A
+   c: 那房子在哪个位置？离这里远吗？
+   p: Nà fángzi zài nǎge wèizhi? Lí zhèli yuǎn ma?
+   t: Then where is the apartment? Is it far from here?
+   
+ - s: B
+   c: 开车大概二十分钟，我给您写个地址。
+   p: Kāichē dàgài èrshí fēnzhōng, wǒ gěi nín xiě ge dìzhǐ.
+   t: About 20 minutes by car, I'll write down the address for you.
+
+86 - Multi-Service Center:
+ - s: A
+   c: 请问这里能办护照和签证吗？
+   p: Qǐngwèn zhèli néng bàn hùzhào hé qiānzhèng ma?
+   t: Can I process passport and visa here?
+   d: Combines vocabulary from travel and official documents dialogues
+   
+ - s: B
+   c: 护照可以，签证要去使馆办理。
+   p: Hùzhào kěyǐ, qiānzhèng yào qù shǐguǎn bànlǐ.
+   t: Passport yes, but visa needs to be done at the embassy.
+   
+ - s: A
+   c: 那我先办护照。需要什么材料？
+   p: Nà wǒ xiān bàn hùzhào. Xūyào shénme cáiliào?
+   t: Then I'll do the passport first. What materials do I need?
+   
+ - s: B
+   c: 身份证、照片和居住证明。
+   p: Shēnfèn zhèng, zhàopiàn hé jūzhù zhèngmíng.
+   t: ID card, photos and proof of residence.
+   
+ - s: A
+   c: 照片我还没有，这里能拍吗？
+   p: Zhàopiàn wǒ hái méiyǒu, zhèli néng pāi ma?
+   t: I don't have photos yet, can I take them here?
+   
+ - s: B
+   c: 可以，一楼左边就是照相室。
+   p: Kěyǐ, yī lóu zuǒbian jiù shì zhàoxiàngshì.
+   t: Yes, the photo studio is on the left of first floor.
+
+87 - Home and Work Problems:
+ - s: A
+   c: 最近好像很多事情都出问题。
+   p: Zuìjìn hǎoxiàng hěn duō shìqing dōu chū wèntí.
+   t: Lately it seems many things are having problems.
+   
+ - s: B
+   c: 怎么了？说来听听。
+   p: Zěnme le? Shuō lái tīng tīng.
+   t: What's wrong? Tell me about it.
+   
+ - s: A
+   c: 家里电脑坏了，车子也需要修理。
+   p: Jiāli diànnǎo huài le, chēzi yě xūyào xiūlǐ.
+   t: Home computer is broken, car also needs repair.
+   
+ - s: B
+   c: 我认识一个很好的修理师傅。
+   p: Wǒ rènshi yí ge hěn hǎo de xiūlǐ shīfu.
+   t: I know a very good repair technician.
+   
+ - s: A
+   c: 真的？能不能帮我联系一下？
+   p: Zhēn de? Néng bù néng bāng wǒ liánxì yíxià?
+   t: Really? Could you help me contact them?
+   
+ - s: B
+   c: 没问题，我现在就给你他的电话。
+   p: Méi wèntí, wǒ xiànzài jiù gěi nǐ tā de diànhuà.
+   t: No problem, I'll give you their phone number now.
+
+88 - Mixed Services Questions:
+ - s: A
+   c: 您好，请问健身房和游泳池怎么走？
+   p: Nín hǎo, qǐngwèn jiànshēnfáng hé yóuyǒngchí zěnme zǒu?
+   t: Hello, how do I get to the gym and swimming pool?
+   
+ - s: B
+   c: 您是新住客吗？需要办会员卡吗？
+   p: Nín shì xīn zhùkè ma? Xūyào bàn huìyuán kǎ ma?
+   t: Are you a new resident? Do you need a membership card?
+   
+ - s: A
+   c: 是的，昨天刚搬来。想了解一下价格。
+   p: Shì de, zuótiān gāng bān lái. Xiǎng liǎojiě yíxià jiàgé.
+   t: Yes, just moved in yesterday. Want to know about the prices.
+   
+ - s: B
+   c: 现在办年卡有优惠，包括所有设施。
+   p: Xiànzài bàn niánkǎ yǒu yōuhuì, bāokuò suǒyǒu shèshī.
+   t: There's a discount for annual membership now, includes all facilities.
+   
+ - s: A
+   c: 那很好。请问营业时间是怎么安排的？
+   p: Nà hěn hǎo. Qǐngwèn yíngyè shíjiān shì zěnme ānpái de?
+   t: That's good. What are the operating hours?
+   
+ - s: B
+   c: 早上六点到晚上十点，周末也开放。
+   p: Zǎoshang liù diǎn dào wǎnshang shí diǎn, zhōumò yě kāifàng.
+   t: 6 AM to 10 PM, also open on weekends.
+
+89 - Life Changes Discussion:
+ - s: A
+   c: 听说你最近买房子了？在哪个区？
+   p: Tīngshuō nǐ zuìjìn mǎi fángzi le? Zài nǎ ge qū?
+   t: Heard you bought a house recently? In which district?
+   
+ - s: B
+   c: 对，在西边。离公司近，周围设施也好。
+   p: Duì, zài xībiān. Lí gōngsī jìn, zhōuwéi shèshī yě hǎo.
+   t: Yes, in the west. Close to company, good facilities around.
+   
+ - s: A
+   c: 孩子的学校也安排好了吗？
+   p: Háizi de xuéxiào yě ānpái hǎo le ma?
+   t: Have you arranged the children's school too?
+   
+ - s: B
+   c: 还在看，想找个好一点的私立学校。
+   p: Hái zài kàn, xiǎng zhǎo ge hǎo yìdiǎn de sīlì xuéxiào.
+   t: Still looking, want to find a better private school.
+   
+ - s: A
+   c: 我认识一个很好的教育顾问，要介绍给你吗？
+   p: Wǒ rènshi yí ge hěn hǎo de jiàoyù gùwèn, yào jièshào gěi nǐ ma?
+   t: I know a good education consultant, want me to introduce you?
+   
+ - s: B
+   c: 太好了，这正是我需要的。
+   p: Tài hǎo le, zhè zhèng shì wǒ xūyào de.
+   t: Great, this is exactly what I need.
+
+90 - Weekend Activities Review:
+ - s: A
+   c: 这个周末有什么安排？要不要一起吃饭？
+   p: Zhège zhōumò yǒu shénme ānpái? Yào bú yào yìqǐ chīfàn?
+   t: Any plans this weekend? Want to have a meal together?
+   
+ - s: B
+   c: 周六要带孩子去看医生，周日可以。
+   p: Zhōuliù yào dài háizi qù kàn yīshēng, zhōurì kěyǐ.
+   t: Taking kids to see doctor on Saturday, Sunday is fine.
+   
+ - s: A
+   c: 孩子怎么了？严重吗？
+   p: Háizi zěnme le? Yánzhòng ma?
+   t: What's wrong with the kids? Is it serious?
+   
+ - s: B
+   c: 没什么，就是普通感冒。例行检查。
+   p: Méi shénme, jiùshì pǔtōng gǎnmào. Lìxíng jiǎnchá.
+   t: Nothing much, just a common cold. Routine check-up.
+   
+ - s: A
+   c: 那周日中午去我推荐的那家新餐厅？
+   p: Nà zhōurì zhōngwǔ qù wǒ tuījiàn de nà jiā xīn cāntīng?
+   t: Then shall we go to that new restaurant I recommended on Sunday noon?
+   
+ - s: B
+   c: 好啊，听说那里的菜很有特色。
+   p: Hǎo a, tīngshuō nàli de cài hěn yǒu tèsè.
+   t: Sure, heard their dishes are very special.
+
+91 - Lost in Translation:
+- s: A
+  c: 我昨天去买咖啡，把"ice coffee"说成了"冰咖啡"。
+  p: Wǒ zuótiān qù mǎi kāfēi, bǎ "ice coffee" shuō chéng le "bīng kāfēi".
+  t: Yesterday I went to buy coffee and translated "ice coffee" as "frozen coffee".
+  
+- s: B
+  c: 然后呢？他们给你什么了？
+  p: Ránhòu ne? Tāmen gěi nǐ shénme le?
+  t: Then what? What did they give you?
+  
+- s: A
+  c: 真的给了我一块冰冻的咖啡块！
+  p: Zhēn de gěi le wǒ yí kuài bīngdòng de kāfēi kuài!
+  t: They really gave me a frozen block of coffee!
+  
+- s: B
+  c: 哈哈，下次要说"冰美式"。
+  p: Hāhā, xià cì yào shuō "bīng měishì".
+  t: Haha, next time say "iced americano".
+  d: A common amusing situation for language learners
+
+92 - Technology Troubles:
+- s: A
+  c: 我奶奶说她的手机坏了，让我去看看。
+  p: Wǒ nǎinai shuō tā de shǒujī huài le, ràng wǒ qù kànkan.
+  t: My grandma said her phone was broken and asked me to check.
+  
+- s: B
+  c: 是什么问题？
+  p: Shì shénme wèntí?
+  t: What was the problem?
+  
+- s: A
+  c: 原来只是没电了...她以为手机死了。
+  p: Yuánlái zhǐshì méi diàn le... tā yǐwéi shǒujī sǐ le.
+  t: Turns out it just ran out of battery... she thought the phone had died.
+  
+- s: B
+  c: 太可爱了！我妈妈也这样，有次还把手机放冰箱里制冷。
+  p: Tài kě'ài le! Wǒ māma yě zhèyàng, yǒu cì hái bǎ shǒujī fàng bīngxiāng lǐ zhìlěng.
+  t: So cute! My mom's the same, once she even put her phone in the fridge to cool it down.
+
+93 - Restaurant Mix-up:
+- s: A
+  c: 服务员，这个汤怎么是甜的？
+  p: Fúwùyuán, zhège tāng zěnme shì tián de?
+  t: Waiter, why is this soup sweet?
+  
+- s: B
+  c: 对不起，您点的是什么汤？
+  p: Duìbuqǐ, nín diǎn de shì shénme tāng?
+  t: Sorry, what soup did you order?
+  
+- s: A
+  c: 我说"酸辣汤"，但是好像给我甜品汤了。
+  p: Wǒ shuō "suānlà tāng", dànshì hǎoxiàng gěi wǒ tiánpǐn tāng le.
+  t: I said "hot and sour soup", but seems I got dessert soup.
+  
+- s: B
+  c: 啊，服务员听成"双皮奶"了！
+  p: A, fúwùyuán tīng chéng "shuāngpínǎi" le!
+  t: Ah, the waiter heard it as "double skin milk dessert"!
+  d: A play on similar-sounding words in Chinese
+
+94 - Gym Confusion:
+- s: A
+  c: 今天健身房好安静啊，人呢？
+  p: Jīntiān jiànshēnfáng hǎo ānjìng a, rén ne?
+  t: The gym is so quiet today, where is everyone?
+  
+- s: B
+  c: 你看看时间...现在才早上五点。
+  p: Nǐ kànkan shíjiān... xiànzài cái zǎoshang wǔ diǎn.
+  t: Check the time... it's only 5 AM.
+  
+- s: A
+  c: 啊？我以为是下午五点！难怪天这么黑。
+  p: A? Wǒ yǐwéi shì xiàwǔ wǔ diǎn! Nánguài tiān zhème hēi.
+  t: What? I thought it was 5 PM! No wonder it's so dark.
+  
+- s: B
+  c: 要不要去吃早餐？反正都起来了。
+  p: Yào bú yào qù chī zǎocān? Fǎnzhèng dōu qǐlái le.
+  t: Want to get breakfast? Since we're already up.
+  d: A common mistake with 24-hour time format
+
+95 - Shopping Mistake:
+- s: A
+  c: 你的新裤子怎么这么长？
+  p: Nǐ de xīn kùzi zěnme zhème cháng?
+  t: Why are your new pants so long?
+  
+- s: B
+  c: 网上买的，我填身高的时候...
+  p: Wǎngshàng mǎi de, wǒ tián shēngāo de shíhou...
+  t: Bought online, when I filled in my height...
+  
+- s: A
+  c: 然后呢？
+  p: Ránhòu ne?
+  t: And then?
+  
+- s: B
+  c: 把厘米当成英寸填了。
+  p: Bǎ límǐ dāngchéng yīngcùn tián le.
+  t: I put centimeters instead of inches.
+  
+- s: A
+  c: 哈哈，那不是差了三倍多？
+  p: Hāhā, nà búshì chà le sān bèi duō?
+  t: Haha, isn't that off by more than three times?
+  d: A humorous mix-up with measurement units
+
+91 - Office Chat:
+- s: A
+  c: 听说你昨天把老板当成保安了？
+  p: Tīngshuō nǐ zuótiān bǎ lǎobǎn dāng chéng bǎo'ān le?
+  t: I heard you mistook the boss for a security guard yesterday?
+  d: 当成 (dāng chéng) is commonly used for mistaking one thing/person for another
+  
+- s: B
+  c: 别提了，我还跟他说"大哥辛苦了"。
+  p: Bié tí le, wǒ hái gēn tā shuō "dàgē xīnkǔ le".
+  t: Don't mention it, I even said "thanks for your hard work, brother".
+  d: 大哥 (dàgē) is informal and friendly but inappropriate for a boss
+  
+- s: A
+  c: 哈哈，他没生气吧？
+  p: Hāhā, tā méi shēngqì ba?
+  t: Haha, he wasn't angry?
+  
+- s: B
+  c: 还好他觉得挺有意思的。
+  p: Hái hǎo tā juéde tǐng yǒu yìsi de.
+  t: Fortunately he found it quite amusing.
+  d: 还好 (hái hǎo) expresses relief that something wasn't as bad as feared
+
+92 - Language Mix-up:
+- s: A
+  c: 我刚才在饭店闹了个大笑话。
+  p: Wǒ gāngcái zài fàndiàn nào le ge dà xiàohua.
+  t: I just made a big joke of myself at the restaurant.
+  d: 闹笑话 (nào xiàohua) specifically means to make yourself look foolish
+  
+- s: B
+  c: 又说错中文了？说来听听。
+  p: Yòu shuō cuò zhōngwén le? Shuō lái tīng tīng.
+  t: Messed up Chinese again? Let's hear it.
+  d: 说来听听 is a casual way to say "tell me about it"
+  
+- s: A
+  c: 我想说"我要一碗面"，结果说成"我要你的面"。
+  p: Wǒ xiǎng shuō "wǒ yào yì wǎn miàn", jiéguǒ shuō chéng "wǒ yào nǐ de miàn".
+  t: I wanted to say "I want a bowl of noodles" but said "I want your face".
+  d: The measure word 碗 (wǎn) is crucial here - without it, 面 (miàn) could mean "face"
+  
+- s: B
+  c: 服务员一定吓坏了吧！
+  p: Fúwùyuán yídìng xiàhuài le ba!
+  t: The server must have been shocked!
+  d: 吓坏了 (xiàhuài le) literally means "scared badly" but often used humorously
+
+93 - WeChat Confusion:
+- s: A
+  c: 我把"在开会"打成"在开火"了。
+  p: Wǒ bǎ "zài kāihuì" dǎ chéng "zài kāihuǒ" le.
+  t: I typed "having a meeting" as "starting a fire".
+  d: 打成 (dǎ chéng) specifically refers to typing wrong characters
+  
+- s: B
+  c: 领导怎么回的？
+  p: Lǐngdǎo zěnme huí de?
+  t: How did the boss reply?
+  d: 领导 (lǐngdǎo) is more formal than 老板 (lǎobǎn) for "boss"
+  
+- s: A
+  c: 他说："注意安全，别烧到自己。"
+  p: >
+    Tā shuō: "Zhùyì ānquán, bié shāo dào zìjǐ."
+  t: >
+    He said: "Be careful, don't burn yourself."
+  d: This response uses wordplay with 烧 (shāo) meaning "burn"
+
+94 - Time Confusion:
+- s: A
+  c: 我把"下午"看成"上午"了。
+  p: Wǒ bǎ "xiàwǔ" kàn chéng "shàngwǔ" le.
+  t: I read "afternoon" as "morning".
+  d: 看成 (kàn chéng) is similar to 当成 but specifically for misreading
+  
+- s: B
+  c: 所以呢？闯祸了？
+  p: Suǒyǐ ne? Chuǎng huò le?
+  t: So? Got into trouble?
+  d: 闯祸 (chuǎng huò) literally means "create disaster" but often used playfully
+  
+- s: A
+  c: 整整早到了四个小时。
+  p: Zhěngzhěng zǎo dào le sì ge xiǎoshí.
+  t: Arrived exactly four hours early.
+  d: 整整 (zhěngzhěng) emphasizes the exactness, often used for emphasis in amusing situations
+
+
+95 - Name Confusion:
+- s: A
+  c: 今天在公司特别尴尬。
+  p: Jīntiān zài gōngsī tèbié gāngà.
+  t: Had a really embarrassing moment at the company today.
+  d: 特别 (tèbié) before an adjective intensifies it
+  
+- s: B
+  c: 怎么啦？说错话了？
+  p: Zěnme la? Shuō cuò huà le?
+  t: What happened? Said something wrong?
+  d: 了 (le) becomes 啦 (la) in casual speech
+  
+- s: A
+  c: 把王总叫成王老师，还说错了他的名字。
+  p: Bǎ Wáng zǒng jiào chéng Wáng lǎoshī, hái shuō cuò le tā de míngzi.
+  t: Called Director Wang "Teacher Wang" and got his name wrong too.
+  d: Titles are very important in Chinese business culture, mixing them up is a faux pas
+
+96 - Technology Generation Gap:
+ - s: A
+   c: 昨天教我妈妈用智能手机，笑死我了。
+   p: Zuótiān jiāo wǒ māma yòng zhìnéng shǒujī, xiào sǐ wǒ le.
+   t: Teaching my mom to use a smartphone yesterday, it was hilarious.
+   d: 笑死我了 (xiào sǐ wǒ le) is casual slang similar to "I died laughing"
+   
+ - s: B
+   c: 她又干什么了？
+   p: Tā yòu gàn shénme le?
+   t: What did she do this time?
+   d: 又 (yòu) implies this is a recurring type of situation
+   
+ - s: A
+   c: 她说手机没声音了，让我帮她修。
+   p: Tā shuō shǒujī méi shēngyīn le, ràng wǒ bāng tā xiū.
+   t: She said her phone had no sound and asked me to fix it.
+   
+ - s: B
+   c: 然后呢？是不是静音了？
+   p: Ránhòu ne? Shì bú shì jìngyīn le?
+   t: And then? Was it on mute?
+   
+ - s: A
+   c: 不是，她把手机包在围巾里，说这样保暖手机就不会感冒了。
+   p: Bùshì, tā bǎ shǒujī bāo zài wéijīn lǐ, shuō zhèyàng bǎonuǎn shǒujī jiù bú huì gǎnmào le.
+   t: No, she wrapped the phone in a scarf, saying this way the phone wouldn't catch a cold.
+   d: 感冒 (gǎnmào) is for humans/animals, using it for phones is humorous
+   
+ - s: B
+   c: 哈哈，她还真把手机当成活的了！
+   p: Hāhā, tā hái zhēn bǎ shǒujī dāngchéng huó de le!
+   t: Haha, she really treated the phone as a living thing!
+   
+ - s: A
+   c: 最好笑的是，她还给手机定了闹钟，说要提醒它睡觉。
+   p: Zuì hǎoxiào de shì, tā hái gěi shǒujī dìng le nàozhōng, shuō yào tíxǐng tā shuìjiào.
+   t: The funniest part is, she set an alarm for the phone, saying it needed to be reminded to sleep.
+   d: 最好笑的是 (zuì hǎoxiào de shì) is a common way to introduce the punchline
+
+97 - Restaurant Ordering Disaster:
+ - s: A
+   c: 你知道吗？王经理昨天在外国客户面前出大糗了。
+   p: Nǐ zhīdao ma? Wáng jīnglǐ zuótiān zài wàiguó kèhù miànqián chū dà qiǔ le.
+   t: You know what? Manager Wang really embarrassed himself in front of foreign clients yesterday.
+   d: 出糗 (chū qiǔ) specifically means to embarrass oneself
+   
+ - s: B
+   c: 怎么回事？不是说他英语很好吗？
+   p: Zěnme huí shì? Bùshì shuō tā yīngyǔ hěn hǎo ma?
+   t: What happened? Wasn't his English supposed to be good?
+   
+ - s: A
+   c: 他想显摆自己的英语，结果把"soup"说成了"soap"。
+   p: Tā xiǎng xiǎnbai zìjǐ de yīngyǔ, jiéguǒ bǎ "soup" shuō chéng le "soap".
+   t: He wanted to show off his English, but said "soap" instead of "soup".
+   d: 显摆 (xiǎnbai) means "show off" with a slightly negative connotation
+   
+ - s: B
+   c: 完了，服务员真的端来肥皂了？
+   p: Wánle, fúwùyuán zhēn de duān lái féizào le?
+   t: Oh no, did the waiter really bring soap?
+   
+ - s: A
+   c: 对啊！还是一整盘的香皂。客户都笑疯了。
+   p: Duì a! Hái shì yì zhěng pán de xiāngzào. Kèhù dōu xiào fēng le.
+   t: Yes! A whole plate of soap bars. The clients were dying of laughter.
+   
+ - s: B
+   c: 那他怎么圆过去的？
+   p: Nà tā zěnme yuán guòqù de?
+   t: How did he smooth it over?
+   d: 圆过去 (yuán guòqù) means to smooth over an awkward situation
+   
+ - s: A
+   c: 他说这是中国特色的"餐前洗手服务"。
+   p: Tā shuō zhè shì Zhōngguó tèsè de "cānqián xǐshǒu fúwù".
+   t: He said it was a special Chinese "pre-meal hand washing service".
+   
+ - s: B
+   c: 还挺机智的嘛！
+   p: Hái tǐng jīzhì de ma!
+   t: That's quite clever actually!
+   d: 机智 (jīzhì) is often used sarcastically for quick-thinking solutions
+

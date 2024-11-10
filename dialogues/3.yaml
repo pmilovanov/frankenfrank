@@ -1,0 +1,2553 @@
+1 - Garden sharing:
+- s: A
+  c: 你看，这是我自己种的菜！
+  p: Nǐ kàn, zhè shì wǒ zìjǐ zhòng de cài!
+  t: Look, these are vegetables I grew myself!
+  d: 种 (zhòng) "to grow/plant" extends from core 做 (zuò)
+  a: 295ec249fe8b738121e572b1945afa54998704e7c752bfaa5fe7b4debc13b94b.mp3
+- s: B
+  c: 真好！你是怎么学会的？
+  p: Zhēn hǎo! Nǐ shì zěnme xuéhuì de?
+  t: That's great! How did you learn to do it?
+  a: 0c9b07ebbd883f51af4756b6b64ea394b506dc326caa9387891ebb99828cc79a.mp3
+- s: A
+  c: 我跟老王学的。他教了我很多。
+  p: Wǒ gēn Lǎo Wáng xué de. Tā jiāo le wǒ hěn duō.
+  t: I learned from Lao Wang. He taught me a lot.
+  a: 8b377ff9d2550af7fe84ad1892ee42a00b1a1975e1d8e88dfe15af11635dada1.mp3
+- s: B
+  c: 我也想学，可以教我吗？
+  p: Wǒ yě xiǎng xué, kěyǐ jiāo wǒ ma?
+  t: I want to learn too, can you teach me?
+  a: bb3af9d59e5f011767ba8488b3c33fe36ec4cfd42e0fb5a872dcc4a5c969bdc3.mp3
+2 - Market shopping:
+- s: A
+  c: 这个菜看起来很新鲜。
+  p: Zhège cài kàn qǐlái hěn xīnxiān.
+  t: These vegetables look very fresh.
+  d: 新鲜 (xīnxiān) "fresh" - common food descriptor
+  a: 5db4f1a06327060f0afaee986cd9a89cad744a19d5d9b8a4c1868997658969b4.mp3
+- s: B
+  c: 对，刚来的。你要买多少？
+  p: Duì, gāng lái de. Nǐ yào mǎi duōshao?
+  t: Yes, just arrived. How much do you want to buy?
+  a: 85f799566354e00e082aa982f9d3543c97937785f32da13eff5dfd9753de8510.mp3
+- s: A
+  c: 给我一点就好。你觉得这些够吗？
+  p: Gěi wǒ yìdiǎn jiù hǎo. Nǐ juéde zhèxiē gòu ma?
+  t: Just a bit is fine. Do you think this is enough?
+  a: af760f823f5c20a9f9b036198ce318957def87807a89235339872dc7df5e46a4.mp3
+- s: B
+  c: 够了。你自己做饭吗？
+  p: Gòu le. Nǐ zìjǐ zuò fàn ma?
+  t: That's enough. Do you cook for yourself?
+  a: cb1a4852beffd217aa636d60d7947ebb49cad133c946cfd3b14e3362cec32aa6.mp3
+3 - Morning routine:
+- s: A
+  c: 每天都看见你在这里走路。
+  p: Měitiān dōu kànjiàn nǐ zài zhèlǐ zǒulù.
+  t: I see you walking here every day.
+  a: 99ed6f9999d1489eacbbaf64c2447e57f0d5b500b57f71b51af4283fe2f3f1b7.mp3
+- s: B
+  c: 对，我喜欢早上在这里运动。
+  p: Duì, wǒ xǐhuan zǎoshang zài zhèlǐ yùndòng.
+  t: Yes, I like exercising here in the morning.
+  d: 运动 (yùndòng) "exercise" - extends from core 走 (zǒu)
+  a: 31ebafae545095e56c02685e9d13da8b64448abcdd965bf7117d016a9b6b6263.mp3
+- s: A
+  c: 你已经做了多久了？
+  p: Nǐ yǐjīng zuò le duōjiǔ le?
+  t: How long have you been doing this?
+  a: a5952348eb78403ded716a738ba7bae9d56addc3a819ccca7152cf0c21d162b7.mp3
+- s: B
+  c: 三个月了。你要不要也来？
+  p: Sān ge yuè le. Nǐ yào bú yào yě lái?
+  t: Three months. Would you like to join?
+  a: 32723b7ec7589ade418fb572decdabea0a9d65dce3cdaf65995641673664e780.mp3
+4 - Weather chat:
+- s: A
+  c: 今天天气真好，不冷不热。
+  p: Jīntiān tiānqì zhēn hǎo, bù lěng bù rè.
+  t: The weather is really nice today, not cold not hot.
+  d: 冷/热 (lěng/rè) "cold/hot" - basic weather words
+  a: e2c32f9fc291891a1d2076da57d84ace9484a11b9c3bdbab06198f27d8cc94e3.mp3
+- s: B
+  c: 对，很适合出去走走。
+  p: Duì, hěn shìhé chūqù zǒu zou.
+  t: Yes, very suitable for going out for a walk.
+  d: 适合 (shìhé) "suitable" - useful descriptive word
+  a: f0e6dbb4e766620532f62d9622e01f8b2003d418d4f432c2a064bba5a5c6d675.mp3
+- s: A
+  c: 你想去公园看看吗？
+  p: Nǐ xiǎng qù gōngyuán kànkan ma?
+  t: Would you like to go to the park and have a look?
+  a: d171e1515ee5a32f63bca670ff3884233d801d06f5df8e3b7d33b54fc5437332.mp3
+- s: B
+  c: 好啊，现在就去吧。
+  p: Hǎo a, xiànzài jiù qù ba.
+  t: Sure, let's go now.
+  a: 1b8e60f4fef6488cca4130fd8485a23551da857d0a177ba694604dbad2584ca5.mp3
+5 - Meeting the neighbors:
+- s: A
+  c: 你是不是刚搬来的？我经常看见你。
+  p: Nǐ shì bú shì gāng bānlái de? Wǒ jīngcháng kànjiàn nǐ.
+  t: Did you just move here? I often see you.
+  d: 搬来 (bānlái) "move in" - common residential term
+  a: e30fd94954806518eb5afda9d404d6f9f5eb9300590b0ffda20e0ba5b825458d.mp3
+- s: B
+  c: 对，上个月搬来的。你在这住很久了吗？
+  p: Duì, shàng ge yuè bānlái de. Nǐ zài zhè zhù hěn jiǔ le ma?
+  t: Yes, moved in last month. Have you lived here long?
+  a: acad52b82bd27e828449714af55aea25cface9d288c363cb97f9132b514303be.mp3
+- s: A
+  c: 已经住了三年了。这里的人都很好。
+  p: Yǐjīng zhù le sān nián le. Zhèlǐ de rén dōu hěn hǎo.
+  t: Have lived here for three years. People here are all very nice.
+  a: b14d4679db9adb22307be766a60d4d5a7aff38d45091e5027236f228105f9aa9.mp3
+- s: B
+  c: 是啊，觉得大家都很热情。
+  p: Shì a, juédé dàjiā dōu hěn rèqíng.
+  t: Yes, everyone seems very warm and friendly.
+  d: 热情 (rèqíng) "warm/friendly" - useful for describing people
+  a: e5c24afc25d7b802d4452ad8e986d58636f0d6cc750c6adaf2920693a694df19.mp3
+6 - Homework help:
+- s: A
+  c: 这个题我不太会做，你能帮我看看吗？
+  p: Zhège tí wǒ bù tài huì zuò, nǐ néng bāng wǒ kànkan ma?
+  t: I'm not sure how to do this problem, can you help me look at it?
+  d: 题 (tí) "problem/question" - basic academic word
+  a: 1662ac93e8eee5975bce07686840a63e9ffd5640b5016f5f49cc12905064e7a1.mp3
+- s: B
+  c: 好啊。你已经做了多少了？
+  p: Hǎo a. Nǐ yǐjīng zuò le duōshao le?
+  t: Sure. How much have you done?
+  a: f63a8b42087224a859b8fea20fe730f33ab721e67f4af7a08d777cd0de2ae2b1.mp3
+- s: A
+  c: 做了一半，但是觉得不太对。
+  p: Zuò le yíbàn, dànshì juédé bù tài duì.
+  t: Did half, but don't think it's quite right.
+  a: 299d6b68b1766edbd10337c71719a0373517891ad8e9b8443dd89ba4fa8d4282.mp3
+- s: B
+  c: 让我看看。啊，我知道问题在哪里了。
+  p: Ràng wǒ kànkan. A, wǒ zhīdao wèntí zài nǎlǐ le.
+  t: Let me see. Ah, I know where the problem is.
+  a: 674e3c97d4b6c306ff835b8591f622ebc48ab8dccd1fb99fcf255381f45fb885.mp3
+7 - Learning to cook:
+- s: A
+  c: 你做的饭真好吃！是自己学的吗？
+  p: Nǐ zuò de fàn zhēn hǎochī! Shì zìjǐ xué de ma?
+  t: The food you cook is really delicious! Did you learn by yourself?
+  d: 好吃 (hǎochī) "delicious" - essential food word
+  a: 02b9442c3ded29cd4fced97a5dcbcb06ea50e1a41815289204df0e56b2596460.mp3
+- s: B
+  c: 是跟我妈学的。她教了我很多。
+  p: Shì gēn wǒ mā xué de. Tā jiāo le wǒ hěn duō.
+  t: Learned from my mom. She taught me a lot.
+  a: 6cbfc72580a5ceffff3d04e69b5a231deb9e7427ba72be01022c106d2a2e64d8.mp3
+- s: A
+  c: 可以教我做这个菜吗？
+  p: Kěyǐ jiāo wǒ zuò zhège cài ma?
+  t: Can you teach me how to make this dish?
+  a: bbc7ba17e1cc3a5c7962de3de46370d2f176b4135d18961e0bbc5cc510c2fe43.mp3
+- s: B
+  c: 好啊，很简单的，看着我做就行。
+  p: Hǎo a, hěn jiǎndān de, kàn zhe wǒ zuò jiù xíng.
+  t: Sure, it's very simple, just watch how I do it.
+  a: 895716b8147ac982597883964ffac24b79074f64ddb288e084dc5bcbed984aa2.mp3
+8 - Weekend activities:
+- s: A
+  c: 听说你喜欢画画，画得好吗？
+  p: Tīngshuō nǐ xǐhuan huàhuà, huà de hǎo ma?
+  t: Heard you like to draw, are you good at it?
+  d: 画画 (huàhuà) "to draw/paint" - common hobby
+  a: 1968df88897d6535a68fb5b975bdc47df7e1d1e8eb1f1541da52f6d0d1b0ff74.mp3
+- s: B
+  c: 还可以。你要看看我的画吗？
+  p: Hái kěyǐ. Nǐ yào kànkan wǒ de huà ma?
+  t: It's okay. Want to see my drawings?
+  a: 9149c156742f4eabe51a284acdba4ef104546af639a986d1189b21af63c8cd76.mp3
+- s: A
+  c: 好啊！你都画什么？
+  p: Hǎo a! Nǐ dōu huà shénme?
+  t: Sure! What do you usually draw?
+  a: d5f2cbf0da7ccfdf9d0747a07ef074f7827c2fffc53aceb6abad4839b96c6659.mp3
+- s: B
+  c: 我最喜欢画风景。你也想学吗？
+  p: Wǒ zuì xǐhuan huà fēngjǐng. Nǐ yě xiǣng xué ma?
+  t: I like drawing landscapes the most. Want to learn too?
+  d: 风景 (fēngjǐng) "landscape/scenery" - art-related term
+  a: f440282cd7a3f1a1ac1264a8d0077b95294aa29af7eae2047bc2c94853ba625e.mp3
+11 - Bus stop chat:
+- s: A
+  c: 等了多久了？公交车还没来。
+  p: Děng le duōjiǔ le? Gōngjiāo chē hái méi lái.
+  t: How long have you been waiting? Bus hasn't come yet.
+  d: 公交车 (gōngjiāo chē) "bus" - essential transport word
+  a: 7adaaff63cb387eb3068eb2b82a56288c3fbf5e706b691ab4f44877980c790d4.mp3
+- s: B
+  c: 已经二十分钟了。你也去市中心吗？
+  p: Yǐjīng èrshí fēnzhōng le. Nǐ yě qù shìzhōngxīn ma?
+  t: Already twenty minutes. Are you also going downtown?
+  a: aceb5d062225284646ed25d6921bf7b5801ad0f0d5d9da4a99fe3077d7313efc.mp3
+- s: A
+  c: 对，去看医生。你呢？
+  p: Duì, qù kàn yīshēng. Nǐ ne?
+  t: Yes, going to see the doctor. And you?
+  a: 4cd401dda4966a27435118dba950a3f332817d783b7959e2b69bc143fbe35acb.mp3
+- s: B
+  c: 我去上班。啊，来了！
+  p: Wǒ qù shàngbān. A, lái le!
+  t: I'm going to work. Ah, it's here!
+  a: 91460fb3975ca63a56423a7a99d43bf05f2732dc3171b74d0d3dcbb1bdef5133.mp3
+12 - Fruit stand:
+- s: A
+  c: 这个苹果多少钱一斤？
+  p: Zhège píngguǒ duōshao qián yì jīn?
+  t: How much is this apple per jin?
+  d: 苹果 (píngguǒ) "apple",  斤 (jīn) weight measure
+  a: 4ca53c372234455592b703897b3bdf2fe5dfcc3d5731f71936db8f2b73dfa8f6.mp3
+- s: B
+  c: 三块。你要多少？
+  p: Sān kuài. Nǐ yào duōshao?
+  t: Three yuan. How many do you want?
+  a: 014f890a2021b1674559c5d95f19090b0063efcbca3111d8aa7fcd8636a23763.mp3
+- s: A
+  c: 给我两斤。这些看起来很新鲜。
+  p: Gěi wǒ liǎng jīn. Zhèxiē kàn qǐlái hěn xīnxiān.
+  t: Give me two jin. These look very fresh.
+  a: caa5416f80c5c0524280578574ad9041dbbdd41ec9657822d45e9bf695e18244.mp3
+- s: B
+  c: 对，今天刚来的。
+  p: Duì, jīntiān gāng lái de.
+  t: Yes, just arrived today.
+  a: 97e984c85e91ea3f64a35f6241e4a63fffc6871f4189e3293a54f87afcaabdc0.mp3
+13 - Talking about photos:
+- s: A
+  c: 这是你小时候的照片吗？
+  p: Zhè shì nǐ xiǎoshíhou de zhàopiàn ma?
+  t: Is this your childhood photo?
+  d: 照片 (zhàopiàn) "photo" - common noun
+  a: 9a11bf38ceb8eb397fe1ad4b88a24b76e184b08e3a488f8cd744ada12789f919.mp3
+- s: B
+  c: 对，那时候才五岁。
+  p: Duì, nà shíhou cái wǔ suì.
+  t: Yes, was only five years old then.
+  a: 994e2cb21da84dd739af82295593bd04e11365ca3747944262fa22ed3cde5f2a.mp3
+- s: A
+  c: 看起来很可爱！这是在哪里？
+  p: Kàn qǐlái hěn kě'ài! Zhè shì zài nǎlǐ?
+  t: Looks so cute! Where was this?
+  a: 86fe71c620fd83824bba44dbf7e5281d058f1536ead8e4f1b358b31a865a286b.mp3
+- s: B
+  c: 在我家门前。那棵树现在还在。
+  p: Zài wǒ jiā ménqián. Nà kē shù xiànzài hái zài.
+  t: In front of my house. That tree is still there.
+  a: 5fdb4a91ce66a5aea51e063377f4d092f2c8a551eb38d07aeea5ee7abec44357.mp3
+14 - Phone help:
+- s: A
+  c: 你能教我用这个新手机吗？
+  p: Nǐ néng jiāo wǒ yòng zhège xīn shǒujī ma?
+  t: Can you teach me how to use this new phone?
+  d: 手机 (shǒujī) "mobile phone"
+  a: c55a1cdc6b34822660f90ee536e0302dc05c896ef76ff52432bfb1da4ac4a7d2.mp3
+- s: B
+  c: 好啊，很简单的。你想学什么？
+  p: Hǎo a, hěn jiǎndān de. Nǐ xiǎng xué shénme?
+  t: Sure, it's very simple. What do you want to learn?
+  a: d1abc51ce657b39b6c1c8ad3cf29a05374ee72be6f82d7ad5a603016abac9649.mp3
+- s: A
+  c: 我不知道怎么发照片。
+  p: Wǒ bù zhīdào zěnme fā zhàopiàn.
+  t: I don't know how to send photos.
+  a: 86db8b862cbbcb2fa18b6ed3176012d9b6bdf750586c33d03e1b62ea1361b89b.mp3
+- s: B
+  c: 你看，这样点就可以了。
+  p: Nǐ kàn, zhèyàng diǎn jiù kěyǐ le.
+  t: Look, just click like this.
+  a: 3a5addd4480f101df9db4326244a671d0514c1d114addc3c334981962914edc1.mp3
+15 - Early morning:
+- s: A
+  c: 你每天都这么早起来啊？
+  p: Nǐ měitiān dōu zhème zǎo qǐlái a?
+  t: Do you get up this early every day?
+  d: 起来 (qǐlái) "get up"
+  a: 606a17f820f5f926ddc8c8985c7e3c5ab6eb502336b8395ccac88dfc90ba0722.mp3
+- s: B
+  c: 对，喜欢早上安安静静的。
+  p: Duì, xǐhuan zǎoshang ān'ānjìngjìng de.
+  t: Yes, I like how quiet it is in the morning.
+  a: 03cb0574a5f72c1a972e22dcc169280038c599e1420394226a539a8a02d4491e.mp3
+- s: A
+  c: 我也想早起，但总是起不来。
+  p: Wǒ yě xiǎng zǎo qǐ, dàn zǒngshì qǐ bù lái.
+  t: I want to get up early too, but can never manage it.
+  a: 7dd2adad163acaeb9e73f8f4f890c5a3d73353e69df5aa618ad9fd90f19d128f.mp3
+- s: B
+  c: 慢慢来，要养成习惯。
+  p: Màn màn lái, yào yǎngchéng xíguàn.
+  t: Take it slowly, need to form a habit.
+  a: 9ac4f9f6cbfd460756511cb068157869d95a951c07235ef9bf290b4f7401dc40.mp3
+16 - Dinner time:
+- s: A
+  c: 饭好了吗？闻起来很香。
+  p: Fàn hǎo le ma? Wén qǐlái hěn xiāng.
+  t: Is the food ready? Smells good.
+  d: 香 (xiāng) "fragrant/delicious smell"
+  a: 7b8c88e908862226878c427b7281790a686d6d3f47c91d8472deba52e2125d22.mp3
+- s: B
+  c: 快好了，再等五分钟。
+  p: Kuài hǎo le, zài děng wǔ fēnzhōng.
+  t: Almost done, wait five more minutes.
+  a: fd2937cee10caa2cb35cdda561a676e500f24687794a0545283ee219dc51cba1.mp3
+- s: A
+  c: 需要我帮忙吗？
+  p: Xūyào wǒ bāngmáng ma?
+  t: Do you need help?
+  a: fae7a035be38c2cda1b3d5b15bf835d6d3c204ecfa3d463774865418bf277082.mp3
+- s: B
+  c: 不用，你去叫他们来吃就好。
+  p: Bú yòng, nǐ qù jiào tāmen lái chī jiù hǎo.
+  t: No need, just go call them to eat.
+  a: fde66a442c95432bf75ad17e2ea8dcf142a21853d827264d9afce613eacda6fc.mp3
+17 - Office chat:
+- s: A
+  c: 这个工作做完了吗？
+  p: Zhège gōngzuò zuò wán le ma?
+  t: Is this work finished?
+  d: 完 (wán) "finished/complete"
+  a: b065528926166a635740a1e797e3543cc7f9e3c2a6314ec86c63332aba846e27.mp3
+- s: B
+  c: 还没，但是快了。
+  p: Hái méi, dànshì kuài le.
+  t: Not yet, but almost.
+  a: b01bcb655e7b0fe022003e28109747a2b2ed4f405cdf53e822f08e33cc5963fe.mp3
+- s: A
+  c: 需要帮忙吗？我现在有时间。
+  p: Xūyào bāngmáng ma? Wǒ xiànzài yǒu shíjiān.
+  t: Need help? I have time now.
+  a: 86ab35ec5a78613856116f383745dd36721e3dc8f9c4dfb557c068f73e7c2de8.mp3
+- s: B
+  c: 好啊，那我们一起做吧。
+  p: Hǎo a, nà wǒmen yìqǐ zuò ba.
+  t: Sure, let's do it together.
+  a: efcf34842aadf8b077fee40b05c82df6feb926bb5a888011f1c0e17091f1fc08.mp3
+18 - Health advice:
+- s: A
+  c: 你最近看起来很有精神。
+  p: Nǐ zuìjìn kàn qǐlái hěn yǒu jīngshén.
+  t: You look very energetic lately.
+  d: 精神 (jīngshén) "energy/spirit"
+  a: b3e9c6a84c6c3a7155edda244cf4627cc8a2f76854ab1c31fdd9d2de798d6b36.mp3
+- s: B
+  c: 是吗？可能因为我开始运动了。
+  p: Shì ma? Kěnéng yīnwèi wǒ kāishǐ yùndòng le.
+  t: Really? Maybe because I started exercising.
+  a: 837001af1c5e8aa3636e0a54790ab441dc4f8efa1cc186a05b3946a1fe3007bd.mp3
+- s: A
+  c: 你都做什么运动？
+  p: Nǐ dōu zuò shénme yùndòng?
+  t: What kind of exercise do you do?
+  a: 5e7c31c7182c276d76f5d0dcc46370b3a3770c0ee282924a2ae2bd1393758e62.mp3
+- s: B
+  c: 就走走路，跑跑步。很简单的。
+  p: Jiù zǒu zōu lù, pǎo pǎo bù. Hěn jiǎndān de.
+  t: Just walking and running. Very simple.
+  a: eac68ec1252bc5876398d6a48496d2aae9b53349c64df0a7d3b13345d402e70f.mp3
+19 - Looking at the sky:
+- s: A
+  c: 你看天上的云，好像要下雨。
+  p: Nǐ kàn tiānshàng de yún, hǎoxiàng yào xià yǔ.
+  t: Look at the clouds in the sky, looks like it might rain.
+  d: 云 (yún) "cloud"
+  a: 8acf142fb88a55944972553d19b95636ff91341955fb144e9713f71ad0a86f42.mp3
+- s: B
+  c: 是啊，我们快点走吧。
+  p: Shì a, wǒmen kuài diǎn zǒu ba.
+  t: Yes, let's walk faster.
+  a: 5501eb870e51734f55ff4867876e6f2f1056d0b65cbc2ed8a25f1ca201a146bc.mp3
+- s: A
+  c: 你带伞了吗？
+  p: Nǐ dài sǎn le ma?
+  t: Did you bring an umbrella?
+  a: 42b63ef50982677aebe00afb8c0539ad86367c384833b910a4c28138a93e458b.mp3
+- s: B
+  c: 带了，我们一起打伞吧。
+  p: Dài le, wǒmen yìqǐ dǎ sǎn ba.
+  t: Yes, let's share the umbrella.
+  a: c25151cb531dff62d5d1287606f08df72d8e02ad7cab5af3df762afe0d2b06e7.mp3
+20 - Finding something:
+- s: A
+  c: 这是不是你的钥匙？在门前找到的。
+  p: Zhè shì bú shì nǐ de yàoshi? Zài ménqián zhǎo dào de.
+  t: Is this your key? Found it in front of the door.
+  d: 钥匙 (yàoshi) "key"
+  a: bf9ea33e42323107d7a25929c73c934360d8ed228abb048e85b518a928840fc4.mp3
+- s: B
+  c: 是我的！我刚才一直在找。
+  p: Shì wǒ de! Wǒ gāngcái yìzhí zài zhǎo.
+  t: It's mine! I've been looking for it.
+  a: 9eb82cd7f55ede18bc3e430c14f0f2069364f7f9cc9a634630218f92a535ee26.mp3
+- s: A
+  c: 那就好。要小心一点。
+  p: Nà jiù hǎo. Yào xiǎoxīn yìdiǎn.
+  t: That's good. Need to be more careful.
+  a: 2b823c1ed0f6776745009bbcea22db7a7717dbcafda8ce4cea9f727261f0a757.mp3
+- s: B
+  c: 谢谢你。真是太好了。
+  p: Xièxie nǐ. Zhēnshi tài hǎo le.
+  t: Thank you. This is really great.
+  a: b83b10a07b90472ee5a8e81fefdf08e9b8486c703f6ceb93d5a23b08611defda.mp3
+21 - Getting medicine:
+- s: A
+  c: 我感觉不太舒服，头很疼。
+  p: Wǒ gǎnjué bù tài shūfu, tóu hěn téng.
+  t: I don't feel well, my head hurts.
+  d: 舒服 (shūfu) "comfortable",  疼 (téng) "hurt/pain"
+  a: 133cd15cade3580c14a81123ac9be5b52ed46ab2534cec9dd4e7cc3fd1508241.mp3
+- s: B
+  c: 去医院了吗？要不要买药？
+  p: Qù yīyuān le ma? Yào bú yào mǎi yào?
+  t: Have you been to hospital? Want to buy medicine?
+  d: 药 (yào) "medicine"
+  a: 80b4ca6fb869adb9d0336d534defd34eb899fdd5e32a554d2a7f564a0f98d004.mp3
+- s: A
+  c: 我不知道买什么药好。
+  p: Wǒ bù zhīdào mǎi shénme yào hǎo.
+  t: I don't know which medicine to buy.
+  a: 5c13504352000ad99030e18b7e052e1cb568954613984d4ac996c1e0cd0d1c8b.mp3
+- s: B
+  c: 我带你去，我认识一个好医生。
+  p: Wǒ dài nǐ qù, wǒ rènshi yí ge hǎo yīshēng.
+  t: I'll take you, I know a good doctor.
+  a: eebebc8a051dd800261d60d5872897769892ef7c73a342eb4cc18edfa9e113e8.mp3
+22 - Hair salon:
+- s: A
+  c: 你的头发看起来很好看。
+  p: Nǐ de tóufa kàn qǐlái hěn hǎokàn.
+  t: Your hair looks very nice.
+  d: 头发 (tóufa) "hair"
+  a: f2e7f7931a4b6ba6595ec9ce78d73fd460ad854e9d9b7c3f4dfd1faeafadbe8e.mp3
+- s: B
+  c: 谢谢，是昨天刚剪的。
+  p: Xièxie, shì zuótiān gāng jiǎn de.
+  t: Thanks, just got it cut yesterday.
+  a: 75b7a61388f0b40e5bb1223a63f0f2e47c275ab4b049172028da1931ada2f72b.mp3
+- s: A
+  c: 在哪里剪的？我也想去。
+  p: Zài nǎlǐ jiǎn de? Wǒ yě xiǎng qù.
+  t: Where did you get it cut? I want to go too.
+  a: 31b42e4e66c5c6f88834746308f8e837f0ab9e85d8d9e3a957b34012e0f7f99c.mp3
+- s: B
+  c: 我带你去吧，她剪得很好。
+  p: Wǒ dài nǐ qù ba, tā jiǎn de hěn hǎo.
+  t: I'll take you there, she cuts very well.
+  a: 1e0ca56153047577af08891868cbf4d884c0550380d275dfae9d7552d66e22a0.mp3
+23 - Coffee break:
+- s: A
+  c: 工作累了，想喝点东西。
+  p: Gōngzuò lèi le, xiǎng hē diǎn dōngxi.
+  t: Tired from work, want to drink something.
+  a: 20a48483ceba1466ed57205b133b8b47aba56e90ed18bbd82a5e8a0389c221a9.mp3
+- s: B
+  c: 这里的咖啡很好喝。
+  p: Zhèlǐ de kāfēi hěn hǎohē.
+  t: The coffee here is very good.
+  d: 咖啡 (kāfēi) "coffee"
+  a: 74550c0f01e3f0deebcf355f3714b8d3da0b47e693ec92f65eefec792fbb0af8.mp3
+- s: A
+  c: 是吗？你常来这里吗？
+  p: Shì ma? Nǐ cháng lái zhèlǐ ma?
+  t: Really? Do you come here often?
+  a: d0d4434b370c584738813d41cde7698a1da2638164f988d1a1d6c739f6155f99.mp3
+- s: B
+  c: 对，这里安静，可以看书。
+  p: Duì, zhèlǐ ānjìng, kěyǐ kàn shū.
+  t: Yes, it's quiet here, can read books.
+  a: b319e96712505dd1ddb542deaf97da85085c583deb1a371c9c618c94a492f94d.mp3
+24 - Lending books:
+- s: A
+  c: 这本书看完了吗？
+  p: Zhè běn shū kàn wán le ma?
+  t: Have you finished this book?
+  d: 本 (běn) measure word for books
+  a: a32fe7c9b0001f9b630de10804b778839dc24d8e4d941c844e991a63e5a897e8.mp3
+- s: B
+  c: 看完了，很有意思。
+  p: Kàn wán le, hěn yǒu yìsi.
+  t: Finished it, it's very interesting.
+  d: 意思 (yìsi) "interesting/meaning"
+  a: f252d2c6f76da00d0ff9adaf4316c77f323b8cbb0487349ac44a81f82d5b21db.mp3
+- s: A
+  c: 可以借给我看吗？
+  p: Kěyǐ jiè gěi wǒ kàn ma?
+  t: Can you lend it to me?
+  a: 25395a35bfc2244713466a293c2da1a302166bf63c33088f949ff897df7dd33b.mp3
+- s: B
+  c: 当然可以，你什么时候还？
+  p: Dāngrán kěyǐ, nǐ shénme shíhou huán?
+  t: Of course, when will you return it?
+  a: 4f5c7461980a30e990d7e22fbc8fe928a54315be8f6280de8966f9678ec5ca24.mp3
+25 - Morning market:
+- s: A
+  c: 你每天都这么早来买菜吗？
+  p: Nǐ měitiān dōu zhème zǎo lái mǎi cài ma?
+  t: Do you come this early to buy vegetables every day?
+  a: ddd33ef99fcab485f802256565a93bd9538d265a4689d83db8acfe26f14e5fb0.mp3
+- s: B
+  c: 对，早上的菜最新鲜。
+  p: Duì, zǎoshang de cài zuì xīnxiān.
+  t: Yes, morning vegetables are the freshest.
+  a: c4817de1cdb99eec2f4edf9fa0f511e8ce441275446d87a9f1d7fcf08c3b0459.mp3
+- s: A
+  c: 你教我看怎么挑菜吧。
+  p: Nǐ jiāo wǒ kàn zěnme tiāo cài ba.
+  t: Teach me how to pick vegetables.
+  d: 挑 (tiāo) "to select/pick"
+  a: cfbefa8da648c3ad69b502d07607f6698e1019ab73bb558e129729051cae0702.mp3
+- s: B
+  c: 好，跟我来，我告诉你。
+  p: Hǎo, gēn wǒ lái, wǒ gàosu nǐ.
+  t: Okay, follow me, I'll tell you.
+  a: e0cf0cf32174fdc8d2e222c7d2599f2f906fe8c5d76fbe02994b7049d3ecccfe.mp3
+26 - Lost child:
+- s: A
+  c: 小朋友，你怎么自己在这里？
+  p: Xiǎopéngyou, nǐ zěnme zìjǐ zài zhèlǐ?
+  t: Child, why are you here alone?
+  d: 小朋友 (xiǎopéngyou) "child"
+  a: eb044ff0cc83cdffafe77fd72f418b4fd4b9573d1da8f37c2b0187f954f57074.mp3
+- s: B
+  c: 我找不到妈妈了。
+  p: Wǒ zhǎo bú dào māma le.
+  t: I can't find my mom.
+  a: 9a7a7ca682b796b7035787e26bb6db0e4428987101d0911159316b9ec93f9370.mp3
+- s: A
+  c: 别怕，我们一起找。她穿什么衣服？
+  p: Bié pà, wǒmen yìqǐ zhǎo. Tā chuān shénme yīfu?
+  t: Don't be afraid, let's look together. What is she wearing?
+  a: 4fa516932188e2d413643cd8370dd66b22af92320de572724e0fdb3a2ddcb3f4.mp3
+- s: B
+  c: 红色的，她在那边！
+  p: Hóngsè de, tā zài nàbiān!
+  t: Red ones, she's over there!
+  a: 4c535e1f820865b700f3f2be0d821771cf6cd403abbc5b56796312afc726833c.mp3
+27 - Package delivery:
+- s: A
+  c: 你好，有一个包裹。
+  p: Nǐ hǎo, yǒu yí ge bāoguǒ.
+  t: Hello, there's a package.
+  d: 包裹 (bāoguǒ) "package"
+  a: 45b122f7653e4dd2640489486a499f59326f9892cf990010faaa2ee544a3a2c5.mp3
+- s: B
+  c: 是给谁的？在哪里签字？
+  p: Shì gěi shéi de? Zài nǎlǐ qiānzì?
+  t: Who is it for? Where do I sign?
+  d: 签字 (qiānzì) "to sign"
+  a: fe71a9ce6a2b637c35a8aeac576e879960c6e02016752bf1729c4d5757bc10e7.mp3
+- s: A
+  c: 在这里签，写上日期。
+  p: Zài zhèlǐ qiān, xiě shàng rìqī.
+  t: Sign here, write the date.
+  a: 59cb569d116206c57a6581299cecbc9f8d646ddbd140a8a2b69533dc505458a7.mp3
+- s: B
+  c: 好的，谢谢你送来。
+  p: Hǎo de, xièxie nǐ sòng lái.
+  t: Okay, thanks for delivering.
+  a: bdd258a3b3d0fc1771d99f80bd5ca6478bae9aee992ccdccc28fd6eaae1d4f43.mp3
+28 - Garden chat:
+- s: A
+  c: 你家的花真漂亮，怎么养的？
+  p: Nǐ jiā de huā zhēn piàoliang, zěnme yǎng de?
+  t: Your flowers are beautiful, how do you grow them?
+  d: 养 (yǎng) "to grow/raise"
+  a: 033b26985812169555132839c29e488b98d4ab84ca7ba11bb94b82252a5603b3.mp3
+- s: B
+  c: 很简单，每天浇水就好。
+  p: Hěn jiǎndān, měitiān jiāoshuǐ jiù hǎo.
+  t: Very simple, just water them every day.
+  a: ee0944832ff31d172a5e51618913763d5500c2948cd2dbf71ed7c04a08c8bd9d.mp3
+- s: A
+  c: 要放在太阳下面吗？
+  p: Yào fàng zài tàiyáng xiàmian ma?
+  t: Should they be placed in the sun?
+  a: 7954032f6f1a53381c93a1f866f7ef6a1d165bbf6e73bdc2ed07123ed766ebb2.mp3
+- s: B
+  c: 对，但不要太热。
+  p: Duì, dàn bú yào tài rè.
+  t: Yes, but not too hot.
+  a: 1efc6e01a719351cdb2849cef16586e1bb0817886067a671c80fc631f3fcb4c7.mp3
+29 - Exercise buddy:
+- s: A
+  c: 听说你最近在跑步？
+  p: Tīngshuō nǐ zuìjìn zài pǎobù?
+  t: Heard you've been running recently?
+  d: 跑步 (pǎobù) "to run/jog"
+  a: 26034716c4d3d6515a688a26d966b3ddd2eae8c768fdf31352b62aa8f2ab1b2d.mp3
+- s: B
+  c: 对，想身体好一点。
+  p: Duì, xiǎng shēntǐ hǎo yìdiǎn.
+  t: Yes, want to be healthier.
+  a: 4551d8d14ba95ad412356def29f2194349f32a582303f45e87103903b13bcc4a.mp3
+- s: A
+  c: 我可以跟你一起跑吗？
+  p: Wǒ kěyǐ gēn nǐ yìqǐ pǎo ma?
+  t: Can I run with you?
+  a: 8529377a0975c38af0ea3c5cc30f15ffdb6aa14190896d48f066b61f7b8d5ceb.mp3
+- s: B
+  c: 好啊，明天早上见。
+  p: Hǎo a, míngtiān zǎoshang jiàn.
+  t: Sure, see you tomorrow morning.
+  a: 6f7a82259dfe8dcb008cc1f7a2164af95153ba95dfa1b8ed863024461a01fd1e.mp3
+30 - Music practice:
+- s: A
+  c: 你在学什么乐器？
+  p: Nǐ zài xué shénme yuèqì?
+  t: What instrument are you learning?
+  d: 乐器 (yuèqì) "musical instrument"
+  a: ae5175b963fde38fb45c1cca237b0ab2f608cfa39c12343385c75b44849af8a5.mp3
+- s: B
+  c: 我在学钢琴，但不太会。
+  p: Wǒ zài xué gāngqín, dàn bù tài huì.
+  t: I'm learning piano, but not very good.
+  d: 钢琴 (gāngqín) "piano"
+  a: ccdcb4bd3980d8d241c2a2fbd8dccafc682e93e3465a6dbb2b56fa3bcd31fc09.mp3
+- s: A
+  c: 要多练习就会好的。
+  p: Yào duō liànxí jiù huì hǎo de.
+  t: Need to practice more and it'll get better.
+  a: d23625a87ea42ec9216e481d4056a9990f83ed35a8d192c9a525450b8391c7ae.mp3
+- s: B
+  c: 对，我每天都在学。
+  p: Duì, wǒ měitiān dōu zài xué.
+  t: Yes, I'm learning every day.
+  31 - Lunch break: null
+  a: f4516cda842631b6216e66b8474198b0f32d36e68c4253dfed379242fed6a99e.mp3
+- s: A
+  c: 到吃午饭的时间了。
+  p: Dào chī wǔfàn de shíjiān le.
+  t: It's lunch time.
+  d: 午饭 (wǔfàn) "lunch"
+  a: e82183d26d8aacd37bc87cec6949cc23881463b8e38163351ffb456a2d8e19ca.mp3
+- s: B
+  c: 你带饭了吗？还是要出去吃？
+  p: Nǐ dài fàn le ma? Háishi yào chūqù chī?
+  t: Did you bring lunch? Or want to eat out?
+  a: e519b869b24e27d42f65a2261d83a0932d1c411ef52e399e9765d9d8347a2d07.mp3
+- s: A
+  c: 我带了，但不太够。
+  p: Wǒ dài le, dàn bù tài gòu.
+  t: I brought some, but not enough.
+  a: 1e556c90798b79bd484d14adc5144412a5275d43d15a96b069d0d49ea317d62f.mp3
+- s: B
+  c: 那一起出去吃吧，我请你。
+  p: Nà yìqǐ chūqù chī ba, wǒ qǐng nǐ.
+  t: Then let's eat out, my treat.
+  d: 请 (qǐng) here means "to treat someone"
+  a: 21b3d2ef79f92ae3d1b86ec024257ee5231537928a68ead4f67967cc500a076a.mp3
+32 - Plant care:
+- s: A
+  c: 这盆花看起来不太好。
+  p: Zhè pén huā kàn qǐlái bù tài hǎo.
+  t: This potted plant doesn't look good.
+  d: 盆 (pén) measure word for potted plants
+  a: d54f1cdcb16cb23292a860c3265e2c72eb1a2fbfac09bb249f0f2905732d33f5.mp3
+- s: B
+  c: 可能水给多了。
+  p: Kěnéng shuǐ gěi duō le.
+  t: Maybe gave it too much water.
+  a: ac529e199dd4efac6b10c5ff13817853501390a43042d075e7c88e554d976b98.mp3
+- s: A
+  c: 那现在怎么办？会死吗？
+  p: Nà xiànzài zěnme bàn? Huì sǐ ma?
+  t: What should we do now? Will it die?
+  a: b8ad054c9a1705f18bf49b6a08b322f0533116601840384ace861636bb38d1f7.mp3
+- s: B
+  c: 别担心，让它晒晒太阳就好了。
+  p: Bié dānxīn, ràng tā shài shài tàiyáng jiù hǎo le.
+  t: Don't worry, just let it get some sun.
+  d: 晒 (shài) "to be exposed to sun"
+  a: c29822e876d283b5f96e053ebbf048be3c7779e9e67f9c6610630be23bef9599.mp3
+33 - Winter clothes:
+- s: A
+  c: 天气越来越冷了。
+  p: Tiānqì yuè lái yuè lěng le.
+  t: The weather is getting colder and colder.
+  d: 越来越 (yuè lái yuè) "more and more"
+  a: 2131052b0706fb8bfc034181f27f4dc54021439b9c23d4c7729a7f045fc98de3.mp3
+- s: B
+  c: 是啊，你买冬天的衣服了吗？
+  p: Shì a, nǐ mǎi dōngtiān de yīfu le ma?
+  t: Yes, have you bought winter clothes?
+  a: c397c37508a7a0c9adb57bad79f2952b68a86f7b8d7b78a196c6c9890e0cfde1.mp3
+- s: A
+  c: 还没有，你知道哪里的便宜吗？
+  p: Hái méiyǒu, nǐ zhīdào nǎlǐ de piányí ma?
+  t: Not yet, do you know where's cheap?
+  a: a3bd976a27b4fb804bba5884a2a98962a27cc53ce98f8b2458f38f291c748941.mp3
+- s: B
+  c: 我知道一个好地方，要不要一起去？
+  p: Wǒ zhīdào yí ge hǎo dìfang, yào bú yào yìqǐ qù?
+  t: I know a good place, want to go together?
+  a: dc6a491cd8d9a7b8569722f264b6aae73aa422c204f7448d5072905b866d2020.mp3
+34 - Lost glasses:
+- s: A
+  c: 你看见我的眼镜了吗？
+  p: Nǐ kànjiàn wǒ de yǎnjìng le ma?
+  t: Have you seen my glasses?
+  d: 眼镜 (yǎnjìng) "glasses"
+  a: 9e50bf7da75d3aa700f5a7313461bdd6bdf3a707b6451f445cfa62518636ed27.mp3
+- s: B
+  c: 不是在你头上吗？
+  p: Bùshì zài nǐ tóushang ma?
+  t: Aren't they on your head?
+  a: 8f6f93c527fdb07cf49b34c9bd3f22f7a7329020ee9b8792686573ed67fbf2e3.mp3
+- s: A
+  c: 啊，真是的。我找了好久。
+  p: A, zhēnshi de. Wǒ zhǎo le hǎojiǔ.
+  t: Ah, really. I've been looking for so long.
+  a: eef68a99e7a109dcd51dd435f1cffcb4c21389ed2234e09ad4a458849c436057.mp3
+- s: B
+  c: 没事，我也经常这样。
+  p: Méishì, wǒ yě jīngcháng zhèyàng.
+  t: It's okay, I often do this too.
+  a: 598c1b0ee3fd691b9894a3127899bd0632a65f329b9ffe9bc7dc3522ffd8faef.mp3
+35 - Travel plans:
+- s: A
+  c: 听说你要去旅游？
+  p: Tīngshuō nǐ yào qù lǚyóu?
+  t: Heard you're going traveling?
+  d: 旅游 (lǚyóu) "to travel"
+  a: dba555427a85c1122b41e43b399b781765e0c58f054f0927f6491b8c76909dca.mp3
+- s: B
+  c: 对，下个月去北京。
+  p: Duì, xià ge yuè qù Běijīng.
+  t: Yes, going to Beijing next month.
+  a: 98964540ade1b966a870cb123a03a3f258a4d182ca2252cf5113b83c5bb46596.mp3
+- s: A
+  c: 去几天？一个人去吗？
+  p: Qù jǐ tiān? Yí ge rén qù ma?
+  t: How many days? Going alone?
+  a: f68a78d7143c513770345b47b961730602fc758e8da8cd12034ec58712ab9fb4.mp3
+- s: B
+  c: 五天，跟朋友一起去。
+  p: Wǔ tiān, gēn péngyou yìqǐ qù.
+  t: Five days, going with friends.
+  a: 06e8b1c3bd057638e50c425ad78bf5f7753ee0991047c44f62e0dbad30099835.mp3
+36 - Bus stop:
+- s: A
+  c: 这是去图书馆的车站吗？
+  p: Zhè shì qù túshūguǎn de chēzhàn ma?
+  t: Is this the bus stop for the library?
+  d: 车站 (chēzhàn) "bus/train stop"
+  a: 150c5113c87a55b64ea22ae85964f3a8c9495c0556dea7a8f885d1e02160ebd3.mp3
+- s: B
+  c: 不是，图书馆的在前面。
+  p: Bùshì, túshūguǎn de zài qiánmiàn.
+  t: No, the library's stop is ahead.
+  a: f3c25921666d83478887aedbd6635a642a4a29bc08851a3be80d92ae6e908cb1.mp3
+- s: A
+  c: 要走多远？
+  p: Yào zǒu duō yuǎn?
+  t: How far to walk?
+  a: 792a849b71297ce0fe72034e49d2e6358a71b0b3a9a38793e147fd89cbeb93ba.mp3
+- s: B
+  c: 走五分钟就到了，我也要去，一起吧。
+  p: Zǒu wǔ fēnzhōng jiù dào le, wǒ yě yào qù, yìqǐ ba.
+  t: Five minutes' walk, I'm going too, let's go together.
+  a: 1d0145a41f75a27f9a140e6a863a1463a2e5f604a1904e1e4236e8405c190a84.mp3
+37 - Helping elderly:
+- s: A
+  c: 老人家，我帮您拿东西吧。
+  p: Lǎorénjiā, wǒ bāng nín ná dōngxi ba.
+  t: Let me help you carry your things, elderly.
+  d: 老人家 (lǎorénjiā) respectful term for elderly
+  a: 41330e900c465aed55ceeff73fa0b00a3d9616592894e66706312eb76588e0a9.mp3
+- s: B
+  c: 谢谢你，这么重，我一个人拿不动。
+  p: Xièxie nǐ, zhème zhòng, wǒ yí ge rén ná bú dòng.
+  t: Thank you, it's so heavy, I can't carry it alone.
+  a: 668ef74dda1d5adabbcef632a18f44e2e89727c62e82891f7482aa0a40b7073a.mp3
+- s: A
+  c: 您要去哪里？我送您过去。
+  p: Nín yào qù nǎlǐ? Wǒ sòng nín guòqù.
+  t: Where are you going? I'll take you there.
+  a: d10c9bc00855ffa6f134e665b9d28a418e1be82fb0c5f3652bce4502cd5ee7d2.mp3
+- s: B
+  c: 真是太谢谢你了。
+  p: Zhēnshi tài xièxie nǐ le.
+  t: Thank you so much.
+  a: c1ee4ec458f513c28e6cb1d6fdf1711e3c196f041701fe04830a0aa2448283dd.mp3
+38 - Late night study:
+- s: A
+  c: 这么晚还在学习？
+  p: Zhème wǎn hái zài xuéxí?
+  t: Still studying this late?
+  a: 57f9fda90ab7b254de87bf75eefa424d7aef6104ae654bb214b53b77315307ec.mp3
+- s: B
+  c: 对，明天有考试。
+  p: Duì, míngtiān yǒu kǎoshì.
+  t: Yes, have an exam tomorrow.
+  d: 考试 (kǎoshì) "exam"
+  a: b60fb83f23e5ef7fafd3d8058f13d1aa0d34f9721f809b8d83f4d044b0f0921e.mp3
+- s: A
+  c: 要不要喝点咖啡？
+  p: Yào bú yào hē diǎn kāfēi?
+  t: Want some coffee?
+  a: 8a6ad8930ac7234cf94253a1b3a6b8d79c4b7d411b44440f447bb00f436808e5.mp3
+- s: B
+  c: 好啊，我快睡着了。
+  p: Hǎo a, wǒ kuài shuìzháo le.
+  t: Yes please, I'm about to fall asleep.
+  d: 睡着 (shuìzháo) "fall asleep"
+  a: 9f160d96f7effbcc76a8606bb9dbc95ee28933519ec94e32eeab50d478d12d40.mp3
+39 - Phone repair:
+- s: A
+  c: 你的手机还能用吗？
+  p: Nǐ de shǒujī hái néng yòng ma?
+  t: Can your phone still be used?
+  a: ec56366e20966e73f90cf441007a642386836a82f3aaed751c63adc9ca30d76a.mp3
+- s: B
+  c: 不能了，屏幕坏了。
+  p: Bù néng le, píngmù huài le.
+  t: No, the screen is broken.
+  d: 屏幕 (píngmù) "screen"
+  a: 9cd41a92fad5cd159c9bf27bb2e1e78ecced2905513920284e7e8089d751004a.mp3
+- s: A
+  c: 我知道一个修手机的地方。
+  p: Wǒ zhīdào yí ge xiū shǒujī de dìfang.
+  t: I know a place that repairs phones.
+  a: 79b439e5f11111ffc832129a0aa8b34783fb3c06dad6e5296cecfe897c251932.mp3
+- s: B
+  c: 在哪里？要多少钱？
+  p: Zài nǎlǐ? Yào duōshao qián?
+  t: Where? How much does it cost?
+  a: 4a25528446693681dc4c940fc927bd13d202df183d5c7376048dea3a6115a752.mp3
+40 - Basketball:
+- s: A
+  c: 你会打篮球吗？
+  p: Nǐ huì dǎ lánqiú ma?
+  t: Do you know how to play basketball?
+  d: 篮球 (lánqiú) "basketball"
+  a: f844b07677b821dc32678dee421a16790dc6068ffc303d17d79885d5bd61eae7.mp3
+- s: B
+  c: 会一点，但打得不太好。
+  p: Huì yìdiǎn, dàn dǎ de bù tài hǎo.
+  t: A little, but not very good.
+  a: 784a948e1c34b8d3be257360a802086259788b71e2747e989f84e60fad9e736b.mp3
+- s: A
+  c: 我们周末去打球吧？
+  p: Wǒmen zhōumò qù dǎ qiú ba?
+  t: Shall we go play ball on weekend?
+  a: f4971662191e63868a9189da21d101ff2ec095c91d41e8dccf6f8df66f436699.mp3
+- s: B
+  c: 好啊，在哪里打？
+  p: Hǎo a, zài nǎlǐ dǎ?
+  t: Sure, where should we play?
+  41 - Borrowing an umbrella: null
+  a: e0d3966692c082c3e28517a259670350c44a243f6dbf3dd8375a859c666fb982.mp3
+- s: A
+  c: 外面下大雨了，你有多余的伞吗？
+  p: Wàimiàn xià dà yǔ le, nǐ yǒu duōyú de sǎn ma?
+  t: It's raining heavily outside, do you have an extra umbrella?
+  d: 多余 (duōyú) "extra/spare"
+  a: 33216279d051fa3cba15c5ea11e7b55decb41654f2aa9b5738e61b690fd639d0.mp3
+- s: B
+  c: 有，给你。明天带来还我就行。
+  p: Yǒu, gěi nǐ. Míngtiān dài lái huán wǒ jiù xíng.
+  t: Yes, here you are. Just bring it back tomorrow.
+  a: f16bf87aa5de67b1881747d58d1d7a776beee88d30f11f34b3e7c18c81d5b92e.mp3
+- s: A
+  c: 太谢谢了，我明天一定早点还你。
+  p: Tài xièxie le, wǒ míngtiān yídìng zǎo diǎn huán nǐ.
+  t: Thanks so much, I'll definitely return it early tomorrow.
+  a: 28087f5f0dee827a171c3df31ad4553c1f1d67211be145e765850f07f8646b39.mp3
+- s: B
+  c: 不着急，你路上小心。
+  p: Bù zháojí, nǐ lùshang xiǎoxīn.
+  t: No rush, be careful on your way.
+  a: bb50c8e1bccbd66a6d763a3aabac7604872c083b3ff765e390bbcb341ff5d2bc.mp3
+42 - Lost weight:
+- s: A
+  c: 你最近瘦了很多啊！
+  p: Nǐ zuìjìn shòu le hěn duō a!
+  t: You've lost a lot of weight recently!
+  d: 瘦 (shòu) "thin/to lose weight"
+  a: 63ec8a57e76574db2628ec6335aa36d6fc8278dd7880b7986cbe3d3fdab80888.mp3
+- s: B
+  c: 是吗？我现在每天都运动。
+  p: Shì ma? Wǒ xiànzài měitiān dōu yùndòng.
+  t: Really? I exercise every day now.
+  a: 58db01153cdb210195ded20aa118f328c8349cbb7d5ea8e42f3dd20b2da7d53c.mp3
+- s: A
+  c: 你都做什么运动？告诉我吧。
+  p: Nǐ dōu zuò shénme yùndòng? Gàosu wǒ ba.
+  t: What exercises do you do? Tell me.
+  a: d880f495d1ca8cf27a8979d3a0b668c5a5d6a0d4a5c0f370c88fc90629d7ced2.mp3
+- s: B
+  c: 很简单，就是多走路，少吃点。
+  p: Hěn jiǎndān, jiùshì duō zǒulù, shǎo chī diǎn.
+  t: Very simple, just walk more and eat less.
+  a: d3ecf04be4c7d4043e05c568f2f398b7728b3bc6da294c043bc2bc80609cfb2c.mp3
+43 - New neighbor:
+- s: A
+  c: 听说你们楼上搬来新邻居了？
+  p: Tīngshuō nǐmen lóushàng bān lái xīn línjū le?
+  t: Heard there's a new neighbor upstairs?
+  d: 邻居 (línjū) "neighbor"
+  a: 8f3a472947511087568d3ac146caca1792b822a6bedaa6812b996a751836d16e.mp3
+- s: B
+  c: 对，是一家三口。
+  p: Duì, shì yì jiā sān kǒu.
+  t: Yes, a family of three.
+  d: 一家 (yì jiā) "whole family"
+  a: 2a929dea15ca47f39947f5dfbd728dd5a51fd1f7104fed283a97a75f2ab5f48f.mp3
+- s: A
+  c: 孩子多大了？
+  p: Háizi duō dà le?
+  t: How old is the child?
+  a: b282c63cc4578f723e1677d14feb0bc2f5f78f92380fc78547dc2541105f89d3.mp3
+- s: B
+  c: 好像五岁，很可爱的小女孩。
+  p: Hǎoxiàng wǔ suì, hěn kě'ài de xiǎo nǚhái.
+  t: Seems five years old, a very cute little girl.
+  a: de5a84aca0fb6c5c64f9f79c8b6b5f7839d30841b7125efe871302075f961343.mp3
+44 - Broken chair:
+- s: A
+  c: 这把椅子坏了，不能坐。
+  p: Zhè bǎ yǐzi huài le, bù néng zuò.
+  t: This chair is broken, can't sit on it.
+  d: 椅子 (yǐzi) "chair"
+  a: 62c3772769863e17c6b206b41b75fe986243f155ba2e9b88845230e81944a2bf.mp3
+- s: B
+  c: 要不要我帮你修？
+  p: Yào bú yào wǒ bāng nǐ xiū?
+  t: Want me to help you fix it?
+  a: 6e3c402fff035dac07101d15ec2031a6eb2d40b9a52005b9fad090b034a451b8.mp3
+- s: A
+  c: 你会修这个吗？
+  p: Nǐ huì xiū zhège ma?
+  t: Do you know how to fix this?
+  a: a619ec12cfdab390c636d9bb9d6f94586ffebc6521b349df2d94e04900879b3b.mp3
+- s: B
+  c: 会一点，给我看看。
+  p: Huì yìdiǎn, gěi wǒ kànkan.
+  t: A little bit, let me take a look.
+  a: 767b54b961a2389c42e6828e18c008e9f8c159edf9ce027092872769476e88a9.mp3
+45 - Morning sickness:
+- s: A
+  c: 今天早上起来觉得头晕。
+  p: Jīntiān zǎoshang qǐlái juéde tóuyūn.
+  t: Felt dizzy when I got up this morning.
+  d: 头晕 (tóuyūn) "dizzy"
+  a: e211012c53c150954cd8b5b676d5523c06eaad0cd83b04f027f38b90fda2f743.mp3
+- s: B
+  c: 昨天晚上睡得好吗？
+  p: Zuótiān wǎnshang shuì de hǎo ma?
+  t: Did you sleep well last night?
+  a: d50ae1ecfba2290d0be01eb837cbe992e3aa1a2d6e0af648f25712f7936be140.mp3
+- s: A
+  c: 睡得不太好，可能因为太累了。
+  p: Shuì de bù tài hǎo, kěnéng yīnwèi tài lèi le.
+  t: Didn't sleep well, maybe because too tired.
+  a: 1d5af939c575cf06f0af2a27bb4a30dcbf541acc4ff52ca5c2bb9d0f7273419c.mp3
+- s: B
+  c: 要不要去看医生？
+  p: Yào bú yào qù kàn yīshēng?
+  t: Want to go see a doctor?
+  a: 72b65a3ed67b03942cc919d321eaf037a2ab9486275192b3c73ab528acccb1e7.mp3
+46 - Street food:
+- s: A
+  c: 这家的煎饼真好吃！
+  p: Zhè jiā de jiānbing zhēn hǎochī!
+  t: This shop's pancakes are really delicious!
+  d: 煎饼 (jiānbing) "Chinese pancake"
+  a: 7c0eec448aaec4d96c12e46d0a54d95fa379007a10550b318f5f74616e31712c.mp3
+- s: B
+  c: 是吧？我每天早上都来买。
+  p: Shì ba? Wǒ měitiān zǎoshang dōu lái mǎi.
+  t: Right? I come to buy every morning.
+  a: 3b74b9a2ebb1e531387527816f320a53d9499dbd61292b1d98134d144aaa9818.mp3
+- s: A
+  c: 多少钱一个？
+  p: Duōshao qián yí ge?
+  t: How much is one?
+  a: cdeb1ac8934f1a2bc1977c54a5c534b4c05350ab4dffb4465ce728161a18eb4c.mp3
+- s: B
+  c: 五块，不贵，很值得。
+  p: Wǔ kuài, bù guì, hěn zhíde.
+  t: Five yuan, not expensive, worth it.
+  a: f2e102ecd583dacef2e401b73ab96ee898db5f4871f5b12c9edb6e3dd1604a9d.mp3
+47 - Bicycle issue:
+- s: A
+  c: 你的自行车怎么了？
+  p: Nǐ de zìxíngchē zěnme le?
+  t: What's wrong with your bicycle?
+  d: 自行车 (zìxíngchē) "bicycle"
+  a: deea7c9434aa09275a6852d97df2b9c6ee6b5f34fa81e6139f194b0595f002ff.mp3
+- s: B
+  c: 车胎没气了。
+  p: Chētāi méi qì le.
+  t: The tire is flat.
+  d: 车胎 (chētāi) "tire"
+  a: 8efc4c7959fdd48108d8eebe07d6c4278b373bd36a47d2314fe22609a8d28ae1.mp3
+- s: A
+  c: 前面有个修车的地方。
+  p: Qiánmiàn yǒu ge xiū chē de dìfang.
+  t: There's a repair shop ahead.
+  a: 96ba645a4bda81c9f9b288e68e6e413a4b5966e8df80535d65076c8ee4b0ccb3.mp3
+- s: B
+  c: 好，我们一起推过去吧。
+  p: Hǎo, wǒmen yìqǐ tuī guòqù ba.
+  t: Okay, let's push it over together.
+  a: 9d3850b61cbe0a710633580731fb0d7895554da839583d43a2178e7c273b5dcc.mp3
+48 - Window shopping:
+- s: A
+  c: 这件衣服真漂亮，但是太贵了。
+  p: Zhè jiàn yīfu zhēn piàoliang, dànshì tài guì le.
+  t: This piece of clothing is beautiful, but too expensive.
+  a: ef1652097b807e95ece454894f8c34f14599cdf418257c847fcc8d6512288ba3.mp3
+- s: B
+  c: 等下个月打折的时候再来看看吧。
+  p: Děng xià ge yuè dǎzhé de shíhou zài lái kànkan ba.
+  t: Let's come back when there's a sale next month.
+  d: 打折 (dǎzhé) "discount/sale"
+  a: ee0ccd43b54b607211ef8cba1fdf104648b0da866b871acd3bb946b0c5bca1b2.mp3
+- s: A
+  c: 好主意，现在只能看看。
+  p: Hǎo zhǔyi, xiànzài zhǐ néng kànkan.
+  t: Good idea, can only look for now.
+  a: df1547868b8dbfad07a61e6abfd59ef990672fd45aad3e11acfbe776caa78748.mp3
+- s: B
+  c: 我们去别的地方看看吧。
+  p: Wǒmen qù biéde dìfang kànkan ba.
+  t: Let's go look somewhere else.
+  a: 22efd9f97b6adc5a8a538c0c747423f6af54151b8be360755c8cc33b4e74c069.mp3
+49 - Gardening time:
+- s: A
+  c: 你种的花开了！
+  p: Nǐ zhòng de huā kāi le!
+  t: The flowers you planted have bloomed!
+  d: 开 (kāi) when used with flowers means "bloom"
+  a: c24d5aeb8baafc84475bffdcfeeb3b1fd55e7a50b03014abd92654829e8c78a8.mp3
+- s: B
+  c: 是啊，等了好久终于开了。
+  p: Shì a, děng le hǎojiǔ zhōngyú kāi le.
+  t: Yes, finally bloomed after waiting so long.
+  a: d4f3f457d8bd9d2e4397e85d41258ba1d802a8ebdc191cb919db5f794ab7940f.mp3
+- s: A
+  c: 颜色真好看，我可以拍照吗？
+  p: Yánsè zhēn hǎokàn, wǒ kěyǐ pāizhào ma?
+  t: The color is beautiful, can I take a photo?
+  a: 049dc5eb0667422a361a6eed39d620d33fbfb47b8f96aa31ec3a0e012085a48f.mp3
+- s: B
+  c: 当然可以，你也想种吗？
+  p: Dāngrán kěyǐ, nǐ yě xiǎng zhòng ma?
+  t: Of course, do you want to plant some too?
+  a: 495b33efaeda1248bc4e395064292378edea634c96441c738f1a037bea1f2581.mp3
+50 - Wake up call:
+- s: A
+  c: 明天早上你能叫我起床吗？
+  p: Míngtiān zǎoshang nǐ néng jiào wǒ qǐchuáng ma?
+  t: Can you wake me up tomorrow morning?
+  d: 起床 (qǐchuáng) "to get up from bed"
+  a: b45adde0f6fcb223485bce30a4976f1f4814f4219f77efa5e3d7083ac978cf5a.mp3
+- s: B
+  c: 几点？你要去哪里？
+  p: Jǐ diǎn? Nǐ yào qù nǎlǐ?
+  t: What time? Where are you going?
+  a: 9ba623613b9132372623d13c63886d1fa43f241b49f153183a0fb4ea14e80e3d.mp3
+- s: A
+  c: 六点，我要赶早班车。
+  p: Liù diǎn, wǒ yào gǎn zǎo bān chē.
+  t: Six o'clock, need to catch the early bus.
+  a: 5fcee9099d1c4125de85231304a1e3d698a76ce4616e743005a631e85b391a54.mp3
+- s: B
+  c: 好，我一定准时叫你。
+  p: Hǎo, wǒ yídìng zhǔnshí jiào nǐ.
+  t: Okay, I'll definitely wake you up on time.
+  a: bbf50e636185e9e9c524f2bc9592d5b559130bf318f60c0eaa23eaa0cb79007e.mp3
+51 - Internet cafe:
+- s: A
+  c: 这里的网速快不快？
+  p: Zhèlǐ de wǎngsù kuài bu kuài?
+  t: Is the internet speed fast here?
+  d: 网速 (wǎngsù) "internet speed"
+  a: d910149ad6c748c89d33253cb580f5843e371bc648ccfc73cc39fed5cc4ddd46.mp3
+- s: B
+  c: 很快，你要上网吗？
+  p: Hěn kuài, nǐ yào shàngwǎng ma?
+  t: Very fast, do you want to use the internet?
+  a: 50d4382ec6a599cb18c824dbeb9c9320b4c2216d79c27255c00f48d4441fa256.mp3
+- s: A
+  c: 对，我的电脑坏了。
+  p: Duì, wǒ de diànnǎo huài le.
+  t: Yes, my computer is broken.
+  a: d019590c801048a7d3638f2326abab0a0570557d66b5175393462971255b2fa9.mp3
+- s: B
+  c: 坐这里吧，一个小时十块钱。
+  p: Zuò zhèlǐ ba, yí ge xiǎoshí shí kuài qián.
+  t: Sit here, ten yuan per hour.
+  a: 2b7cb82476ce59ae44d90efc4ae25a1051adfa63c0c3d6d545427ea5c222ef55.mp3
+52 - Lost wallet:
+- s: A
+  c: 糟糕，我的钱包不见了！
+  p: Zāogāo, wǒ de qiánbāo bú jiàn le!
+  t: Oh no, my wallet is missing!
+  d: 钱包 (qiánbāo) "wallet",  糟糕 (zāogāo) "terrible"
+  a: 3de02eb3a6850614da51dbce3bb79dc23959c44e94448b1502cedbc7f594e9d3.mp3
+- s: B
+  c: 你最后在哪里用过？
+  p: Nǐ zuìhòu zài nǎlǐ yòng guò?
+  t: Where did you last use it?
+  a: f2bf8b8775a72728f82fa6fae0364e06af00810a1d0054ec39596eb8808debf4.mp3
+- s: A
+  c: 好像是在超市。
+  p: Hǎoxiàng shì zài chāoshì.
+  t: Seems like at the supermarket.
+  a: 1b06dd8d2932bc49d78dd60f116c022cee91f93a05bae3bcc39dc25288526ed2.mp3
+- s: B
+  c: 快回去看看，可能还在那里。
+  p: Kuài huíqù kànkan, kěnéng hái zài nàlǐ.
+  t: Quick, go back and check, might still be there.
+  a: 4f97e7dd750ed93a4a97db0d646d0f576a1a97ad3a359f532fa45190e871d71a.mp3
+53 - New shoes:
+- s: A
+  c: 这双鞋子漂亮吗？
+  p: Zhè shuāng xiézi piàoliang ma?
+  t: Are these shoes pretty?
+  d: 鞋子 (xiézi) "shoes"
+  a: f51af62106424372c0e5165b48531d20fdf891f3f92e922d88cb9b7c2b2bd45c.mp3
+- s: B
+  c: 很好看，但是看起来有点小。
+  p: Hěn hǎokàn, dànshì kàn qǐlái yǒudiǎn xiǎo.
+  t: Very nice, but looks a bit small.
+  a: fe2d1065ce50122c5fb5d9c542c7da01a030b4cdba9f2650be0c8487b80801a4.mp3
+- s: A
+  c: 能试穿一下吗？
+  p: Néng shì chuān yíxià ma?
+  t: Can I try them on?
+  d: 试穿 (shì chuān) "try on clothes"
+  a: a008adb2d8ea33c5924c24e7efdb43b6d40f142c50d2c3d9e91d03da4c7bfc4e.mp3
+- s: B
+  c: 当然可以，要大一号的吗？
+  p: Dāngrán kěyǐ, yào dà yì hào de ma?
+  t: Of course, want one size bigger?
+  a: 265e4c230e12183ce6675c2a4c1be8d7667682ab16d9d95eecde4090df750087.mp3
+54 - Ice cream:
+- s: A
+  c: 天气这么热，我想吃冰淇淋。
+  p: Tiānqì zhème rè, wǒ xiǎng chī bīngqílín.
+  t: Weather is so hot, I want ice cream.
+  d: 冰淇淋 (bīngqílín) "ice cream"
+  a: f77344b9b41fa4aa6992e588a8cbfc29a05f44d85019449563e8b2bd8125c2d3.mp3
+- s: B
+  c: 前面有一家很有名的店。
+  p: Qiánmiàn yǒu yì jiā hěn yǒumíng de diàn.
+  t: There's a famous shop ahead.
+  a: 5c0e20ae5331c0b2a31c5e0216c9ba4d222c6296b5ea375d0d098b17048c9538.mp3
+- s: A
+  c: 你去过吗？好吃吗？
+  p: Nǐ qù guò ma? Hǎochī ma?
+  t: Have you been? Is it good?
+  a: 900872bc812184a25539a64790b931fb2ad010b69e92dbf5d79a65fe730ec4ff.mp3
+- s: B
+  c: 去过很多次，他们的巧克力味道最好。
+  p: Qù guò hěn duō cì, tāmen de qiǎokèlì wèidao zuì hǎo.
+  t: Been many times, their chocolate flavor is the best.
+  a: 8a49da53f798d7f62ac3f70d51438a7333ccaced46ff5d89890184c70eb07e5f.mp3
+55 - Birthday gift:
+- s: A
+  c: 下周是妈妈生日，你准备好礼物了吗？
+  p: Xià zhōu shì māma shēngrì, nǐ zhǔnbèi hǎo lǐwù le ma?
+  t: Next week is mom's birthday, have you prepared a gift?
+  d: 礼物 (lǐwù) "gift"
+  a: d3530a6ddb4b3b6b8e1619c6affb72749df17c33cb4f8f7e4e650e677e2271eb.mp3
+- s: B
+  c: 还没有，你有什么好主意吗？
+  p: Hái méiyǒu, nǐ yǒu shénme hǎo zhǔyi ma?
+  t: Not yet, do you have any good ideas?
+  a: d2ffde83dc738b72a89d6359aa8afd05e9cf22e0936a4ddf96d188e2f563bbe4.mp3
+- s: A
+  c: 要不买条围巾？天快冷了。
+  p: Yào bù mǎi tiáo wéijīn? Tiān kuài lěng le.
+  t: How about buying a scarf? It's getting cold.
+  a: e45eb8eb5bab9440c613655ab84b9908cd7aa273c5346f4577b333cbb30cf42a.mp3
+- s: B
+  c: 好主意，我们一起去买吧。
+  p: Hǎo zhǔyi, wǒmen yìqǐ qù mǎi ba.
+  t: Good idea, let's go buy together.
+  a: f0a7116fc97cd37e6e615fcda4be2e889c63ce09c4e090ada3f4986bd65606d3.mp3
+56 - Tooth pain:
+- s: A
+  c: 我牙疼，吃什么都疼。
+  p: Wǒ yá téng, chī shénme dōu téng.
+  t: My tooth hurts, hurts when eating anything.
+  d: 牙 (yá) "tooth"
+  a: d0e7440e1d1972b1033dd034274ea30f81a53106b72b01dc6942f62ad6f56263.mp3
+- s: B
+  c: 去看牙医了吗？
+  p: Qù kàn yáyī le ma?
+  t: Have you seen a dentist?
+  d: 牙医 (yáyī) "dentist"
+  a: 92e6b768da53d0d8640fe308ecde1e5ad1dd751d8acf3287ad01925697ed629b.mp3
+- s: A
+  c: 还没，你知道哪里有好的牙医吗？
+  p: Hái méi, nǐ zhīdao nǎlǐ yǒu hǎo de yáyī ma?
+  t: Not yet, do you know where there's a good dentist?
+  a: 370ec7b7b61f801136333b51ceed48f1888253a9402d03ba4fe0d3a673fa0784.mp3
+- s: B
+  c: 我认识一个，就在前面的医院。
+  p: Wǒ rènshi yí ge, jiù zài qiánmiàn de yīyuàn.
+  t: I know one, at the hospital ahead.
+  a: c23e9c829bc49fe7454e600fa6dbbb9031fc8723d999f716906904dc71c69eb4.mp3
+57 - Finding glasses:
+- s: A
+  c: 你的眼镜是不是掉在这里了？
+  p: Nǐ de yǎnjìng shì bú shì diào zài zhèlǐ le?
+  t: Did your glasses fall here?
+  a: 3b682ac723e74ee7e0be2ba9dc49907103a5f347eabbce0604dbb49b5ca5fae9.mp3
+- s: B
+  c: 是的！我找了好久。在哪里？
+  p: Shì de! Wǒ zhǎo le hǎojiǔ. Zài nǎlǐ?
+  t: Yes! I've been looking for so long. Where?
+  a: e53d5e93f13dd4c1d299fa0d5eff3ce866f27dd72496a93247b5debc70de33be.mp3
+- s: A
+  c: 在沙发底下，我帮你拿出来。
+  p: Zài shāfā dǐxia, wǒ bāng nǐ ná chūlái.
+  t: Under the sofa, I'll help you get them.
+  d: 底下 (dǐxia) "underneath"
+  a: 1b2118423955c06fb3284e77e7947c6fd7bdf783b33caa40bcd92642fa3a3615.mp3
+- s: B
+  c: 太谢谢了，我没有它们就看不清。
+  p: Tài xièxie le, wǒ méiyǒu tāmen jiù kàn bù qīng.
+  t: Thank you so much, I can't see clearly without them.
+  a: 01553dc3b7651f6b10d2711f883726397485b3d36841160b06466ccf569f6ed8.mp3
+58 - Train ticket:
+- s: A
+  c: 请问去北京的火车票还有吗？
+  p: Qǐngwèn qù Běijīng de huǒchē piào hái yǒu ma?
+  t: Excuse me, are there still train tickets to Beijing?
+  a: 495c5c1825cb92a59c9cf5e44fc8ffdafb949e6693950bfc64d051bc4473b6f9.mp3
+- s: B
+  c: 今天的没有了，明天的还有。
+  p: Jīntiān de méiyǒu le, míngtiān de hái yǒu.
+  t: Today's are sold out, tomorrow's are still available.
+  a: ce0177ba0bcead373ccd9d522b8a23e71d62dabe7b31f823fc2f27438824c302.mp3
+- s: A
+  c: 明天几点的？
+  p: Míngtiān jǐ diǎn de?
+  t: What time tomorrow?
+  a: 972f8a5265e75a7a93008ac31056eb34b9408e90c24752b035a042d7b311bb3c.mp3
+- s: B
+  c: 早上八点，要买吗？
+  p: Zǎoshang bā diǎn, yào mǎi ma?
+  t: Eight in the morning, want to buy?
+  a: 0564a8174b498d7aec161922c2626eff8abc33a1791855a91de9a800ae4088b5.mp3
+59 - Sneezing:
+- s: A
+  c: 阿嚏！对不起，我可能感冒了。
+  p: Ātì! Duìbuqǐ, wǒ kěnéng gǎnmào le.
+  t: Achoo! Sorry, I might have a cold.
+  d: 阿嚏 (ātì) "achoo",  感冒 (gǎnmào) "have a cold"
+  a: a5320bc198086fe58044eb3ced0e907b0ba9176de5b219c62d624e1677ba72ea.mp3
+- s: B
+  c: 要不要喝点热水？
+  p: Yào bú yào hē diǎn rèshuǐ?
+  t: Want to drink some hot water?
+  a: a46a9cf82102ed6574b816e927b00b6e051708ef241c460fa1143fc9466c4a77.mp3
+- s: A
+  c: 好，谢谢。你这里有药吗？
+  p: Hǎo, xièxie. Nǐ zhèlǐ yǒu yào ma?
+  t: Yes, thanks. Do you have any medicine?
+  a: 3993b1641a5991e68bb5df6b6a3613c8a5e5455245644ed2ca6519d8963fd235.mp3
+- s: B
+  c: 有，我给你拿感冒药。
+  p: Yǒu, wǒ gěi nǐ ná gǎnmào yào.
+  t: Yes, I'll get you some cold medicine.
+  a: e6fbbb32599b3b0debc9c572e3b5e1f9be1ec28db57c08a58185efe968ad8075.mp3
+60 - Missing pet:
+- s: A
+  c: 你见到我的小猫了吗？它跑出去了。
+  p: Nǐ jiàndào wǒ de xiǎomāo le ma? Tā pǎo chūqù le.
+  t: Have you seen my kitten? It ran out.
+  d: 小猫 (xiǎomāo) "kitten"
+  a: 854ff6bb169565960747fa8719b84a093cf1c2ae421e1f05cde0e576b0ed64e2.mp3
+- s: B
+  c: 什么时候的事？什么样子的？
+  p: Shénme shíhou de shì? Shénme yàngzi de?
+  t: When did it happen? What does it look like?
+  a: ffa29f83494f325c7343039eff864dc0dad51c0e690512f15001a6089acc27ce.mp3
+- s: A
+  c: 刚才，是只白色的小猫。
+  p: Gāngcái, shì zhī báisè de xiǎomāo.
+  t: Just now, it's a white kitten.
+  a: 318b0bc4cb7d9189a87f529d49f82d44cd090a630564f9f828db6fe19d57c9b3.mp3
+- s: B
+  c: 我好像在楼下看到了，我带你去找。
+  p: Wǒ hǎoxiàng zài lóuxià kàndào le, wǒ dài nǐ qù zhǎo.
+  t: I think I saw it downstairs, I'll take you to look.
+  61 - Trying spicy food: null
+  a: 1e7d3f8d9ffa47e794a49d0e3ac5174dda69106a1419c3e7c61cb529f9f55e19.mp3
+- s: A
+  c: 这个菜很辣，你吃得了吗？
+  p: Zhège cài hěn là, nǐ chī de liǎo ma?
+  t: This dish is very spicy, can you handle it?
+  d: 辣 (là) "spicy"
+  a: 1800a9960db72de520885d09f8d212124a7ff42588b4561db12c2b28850902e1.mp3
+- s: B
+  c: 我不太能吃辣，有不辣的吗？
+  p: Wǒ bù tài néng chī là, yǒu bù là de ma?
+  t: I can't really eat spicy food, is there non-spicy?
+  a: df914f4b2be2d2da875cea79ff079ae140510d54ce93439716456905b929188d.mp3
+- s: A
+  c: 要不点这个青菜？很清淡。
+  p: Yào bù diǎn zhège qīngcài? Hěn qīngdàn.
+  t: How about this vegetable dish? Very mild.
+  a: 246b8590a82ba2e86af300d56776b875eb9e642ff33ec94be95c9e66f04e66e4.mp3
+- s: B
+  c: 好，那就这个吧。
+  p: Hǎo, nà jiù zhège ba.
+  t: Good, let's get this then.
+  a: fc823c5f9845beca4abcecce0afa682c713460333ffa6f342894c0875755cc63.mp3
+62 - Taking photos:
+- s: A
+  c: 笑一笑，我给你拍张照片。
+  p: Xiào yī xiào, wǒ gěi nǐ pāi zhāng zhàopiàn.
+  t: Smile, I'll take a photo for you.
+  d: 笑 (xiào) "to smile"
+  a: 290362077735fb968c38b00560edbce175335c2227431b67de11747a882f134b.mp3
+- s: B
+  c: 等一下，我还没准备好。
+  p: Děng yíxià, wǒ hái méi zhǔnbèi hǎo.
+  t: Wait a moment, I'm not ready yet.
+  a: 1f9507a2aa2709021157a14225f57fe398ce31ca1627ae66edd995e2e211a99a.mp3
+- s: A
+  c: 没关系，很自然就好。
+  p: Méiguānxi, hěn zìrán jiù hǎo.
+  t: It's okay, just be natural.
+  a: 259c9d536b1a4e954455f100f3ede59c91301f8c92de623551bc08e5ea567f2e.mp3
+- s: B
+  c: 好，我准备好了。
+  p: Hǎo, wǒ zhǔnbèi hǎo le.
+  t: Okay, I'm ready now.
+  a: 72eecb0920c58ab57635048abcaa5c15aa88a0be253b3089ef79c60b6b3785fc.mp3
+63 - Getting lost:
+- s: A
+  c: 对不起，我好像迷路了。
+  p: Duìbuqǐ, wǒ hǎoxiàng mílù le.
+  t: Sorry, I think I'm lost.
+  d: 迷路 (mílù) "to get lost"
+  a: 013a1794bd1561c6d30d645d36b1504c7c337d3f6c647f05d57b24f3d1de8b1e.mp3
+- s: B
+  c: 你要去哪里？我可以帮你看地图。
+  p: Nǐ yào qù nǎlǐ? Wǒ kěyǐ bāng nǐ kàn dìtú.
+  t: Where are you going? I can help you check the map.
+  d: 地图 (dìtú) "map"
+  a: b77fcb00684036c5ba5f3777920597602b9f40bbd3086794d6aabfe593359a49.mp3
+- s: A
+  c: 我找不到火车站。
+  p: Wǒ zhǎo bú dào huǒchēzhàn.
+  t: I can't find the train station.
+  a: e28ffb228871a296af67be92902ed5bfc81bcc2de3282b234e2823f2da212c5a.mp3
+- s: B
+  c: 你走反了，应该往那边走。
+  p: Nǐ zǒu fǎn le, yīnggāi wǎng nàbiān zǒu.
+  t: You went the wrong way, should go that direction.
+  a: 26da935c8af530cc8f5ca4a0c0f8e96fb51dc143811afdb0e164d7082024b0c0.mp3
+64 - Plant growth:
+- s: A
+  c: 你的小葱长得真快！
+  p: Nǐ de xiǎocōng zhǎng de zhēn kuài!
+  t: Your green onions are growing so fast!
+  d: 小葱 (xiǎocōng) "green onion"
+  a: f307eaeea943074fbe2187f8378df8668407145cbd0b7f2b457070697fe503f4.mp3
+- s: B
+  c: 是啊，每天都浇水。
+  p: Shì a, měitiān dōu jiāoshuǐ.
+  t: Yes, I water them every day.
+  a: 83c717cb711f71d91e013c191067cdceed56fd95b393c9b68f9956b70ea799ec.mp3
+- s: A
+  c: 教教我怎么种，我也想试试。
+  p: Jiāo jiāo wǒ zěnme zhòng, wǒ yě xiǎng shìshi.
+  t: Teach me how to grow them, I want to try too.
+  a: 9d32897381c90792278660edc3a7fee8d92e06a1a8ea775ba2f492d446567c93.mp3
+- s: B
+  c: 很简单，我给你一些种子。
+  p: Hěn jiǎndān, wǒ gěi nǐ yìxiē zhǒngzi.
+  t: Very simple, I'll give you some seeds.
+  a: f8c926baa88b7d7997f543a1da6ce8ff695852dd43dfdd1751d6b11de5c4d20c.mp3
+65 - New glasses:
+- s: A
+  c: 这副眼镜好看吗？
+  p: Zhè fù yǎnjìng hǎokàn ma?
+  t: Do these glasses look good?
+  d: 副 (fù) measure word for glasses/pairs
+  a: 3657220e412316c9b0cb5ebfff97b1488a276e3165300ced4cfa2e6fab93fe48.mp3
+- s: B
+  c: 很适合你，看起来很精神。
+  p: Hěn shìhé nǐ, kàn qǐlái hěn jīngshén.
+  t: Suits you well, looks very smart.
+  a: 1d41db05dfe23850f0cc3c2ae2a7f98f7b6c6745d52bfefe83449fb8842064ed.mp3
+- s: A
+  c: 价格有点贵，但是质量很好。
+  p: Jiàgé yǒudiǎn guì, dànshì zhìliàng hěn hǎo.
+  t: Price is a bit high, but quality is good.
+  d: 质量 (zhìliàng) "quality"
+  a: 8c39d4b3f5f3df8f85a42ca8114cfebfb7c29480782d738562a3df5663a5da47.mp3
+- s: B
+  c: 眼镜要买好的，不能省钱。
+  p: Yǎnjìng yào mǎi hǎo de, bù néng shěng qián.
+  t: Should buy good glasses, can't save money here.
+  a: 9a07e02791867871b5fb4d25a1d520e12ccc2b906c8a28e90c7b0008211184b6.mp3
+66 - Making dumplings:
+- s: A
+  c: 你会包饺子吗？
+  p: Nǐ huì bāo jiǎozi ma?
+  t: Do you know how to make dumplings?
+  d: 饺子 (jiǎozi) "dumplings",  包 (bāo) "to wrap"
+  a: 4e041c12a23704fffb64d61d8e869541e75bbb179cefdb844d782efcf401cee7.mp3
+- s: B
+  c: 会一点，但包得不太好看。
+  p: Huì yìdiǎn, dàn bāo de bù tài hǎokàn.
+  t: A little bit, but they don't look very good.
+  a: 19a83f9e96f407a2b10b0d5a00d07a4371c8bd326f575b6d811b50808ab28b2e.mp3
+- s: A
+  c: 没关系，好吃就行。
+  p: Méiguānxi, hǎochī jiù xíng.
+  t: It's okay, as long as they taste good.
+  a: a31a03a2b0153d55b5fc4c0481f54a7d4af15425359871a8e7ccb50ae0f9a256.mp3
+- s: B
+  c: 那我教你怎么包。
+  p: Nà wǒ jiāo nǐ zěnme bāo.
+  t: Then I'll teach you how to make them.
+  a: 2429b74f1c901b83923f4c2ffa2f591841c7905ee4743e155cb794124c46bf4f.mp3
+67 - Cleaning house:
+- s: A
+  c: 你家总是这么干净。
+  p: Nǐ jiā zǒng shì zhème gānjìng.
+  t: Your home is always so clean.
+  d: 干净 (gānjìng) "clean"
+  a: 7196cd50e8f646ccfc6e7bbf777d1f12792de2b042b4dbee6586efaf1d5ce9ee.mp3
+- s: B
+  c: 我每天都打扫一下。
+  p: Wǒ měitiān dōu dǎsǎo yíxià.
+  t: I clean a bit every day.
+  d: 打扫 (dǎsǎo) "to clean"
+  a: c8e90d134b5d4efa986ce896a1e8c6fc64e3b794ba90bc281434058681c60515.mp3
+- s: A
+  c: 我都没时间打扫。
+  p: Wǒ dōu méi shíjiān dǎsǎo.
+  t: I never have time to clean.
+  a: 1db73d775ab45d778183655f7c765ac249cab1ff204aff4de44a6455ad3744c9.mp3
+- s: B
+  c: 周末来帮你打扫吧。
+  p: Zhōumò lái bāng nǐ dǎsǎo ba.
+  t: I'll come help you clean on weekend.
+  a: cbaf7398464000c7577143adca897244d2b5909d782fded62db7a1d67071614a.mp3
+68 - Buying fruit:
+- s: A
+  c: 这些水果都很新鲜。
+  p: Zhèxiē shuǐguǒ dōu hěn xīnxiān.
+  t: All these fruits are very fresh.
+  d: 水果 (shuǐguǒ) "fruit"
+  a: a4e2cf083e40b056ed15cc9f906e9f12128eeb405f68cb5e40c515d80bcc1c8a.mp3
+- s: B
+  c: 对，刚到的。要尝尝吗？
+  p: Duì, gāng dào de. Yào chángchang ma?
+  t: Yes, just arrived. Want to try some?
+  d: 尝 (cháng) "to taste"
+  a: 03c4bbc5fcba5a48edbc21c9e57b9e1771f3f547b36469ea2f9fd4d438c53525.mp3
+- s: A
+  c: 好啊，这个甜不甜？
+  p: Hǎo a, zhège tián bu tián?
+  t: Sure, is this sweet?
+  a: 95bca4ff7e4c131997c9fc1624b947d81e6d32127d26afc0c4801f75fbdfca0b.mp3
+- s: B
+  c: 很甜，你尝尝看。
+  p: Hěn tián, nǐ cháng cháng kàn.
+  t: Very sweet, try it and see.
+  a: 6609609d4662d14c78938cb75a5c28d3bb024e794ff6ef2732f2095245773525.mp3
+69 - Finding a seat:
+- s: A
+  c: 这里有人坐吗？
+  p: Zhèlǐ yǒu rén zuò ma?
+  t: Is someone sitting here?
+  a: 8fa34e2808f1c5ec60bb70a033105176f78661133963c60dd39e23c6b7818ddc.mp3
+- s: B
+  c: 没有，但我的包在那里。
+  p: Méiyǒu, dàn wǒ de bāo zài nàlǐ.
+  t: No, but my bag is there.
+  a: 5374e25a0c0abb647725af40cd247a79f9dacff21b571fbe36a562e1fafed7f7.mp3
+- s: A
+  c: 可以帮我拿一下吗？
+  p: Kěyǐ bāng wǒ ná yíxià ma?
+  t: Can you move it for me?
+  a: 5b4ab140fa050857e43c27cd21e8fca175f4091a455c1bbba34af5ea1826664a.mp3
+- s: B
+  c: 当然可以，给你。
+  p: Dāngrán kěyǐ, gěi nǐ.
+  t: Of course, here you go.
+  a: 168610bf19c16269c533538efc0ef6e1be537e34d4480a0e8b30a1c974c12f39.mp3
+70 - Tea time:
+- s: A
+  c: 要喝点茶吗？刚泡的。
+  p: Yào hē diǎn chá ma? Gāng pào de.
+  t: Want some tea? Just made it.
+  d: 泡 (pào) "to brew/steep"
+  a: 3bc5e6f30a16d79184826eb445dfcd14afa0dc69a0d1c5080176e563f6853feb.mp3
+- s: B
+  c: 好啊，什么茶？
+  p: Hǎo a, shénme chá?
+  t: Sure, what kind of tea?
+  a: cb4471d0b50a5bf02616100185ee638a765c863fdb8a9d955cf68e1aaf532cea.mp3
+- s: A
+  c: 绿茶，不太浓。
+  p: Lǜchá, bù tài nóng.
+  t: Green tea, not too strong.
+  d: 浓 (nóng) "strong (of tea)"
+  a: 7d670e37a340ddc2ae42479e728fd87a76d8d3b3be5e8e319fcc6a8a9f4f209b.mp3
+- s: B
+  c: 那太好了，我就喜欢淡一点的。
+  p: Nà tài hǎo le, wǒ jiù xǐhuan dàn yìdiǎn de.
+  t: That's perfect, I like it lighter.
+  a: 6d9d45d486c413949a65968ece838d8282e9782ed6a996f0ec70ea1b13899698.mp3
+71 - Finding parking:
+- s: A
+  c: 这附近有停车的地方吗？
+  p: Zhè fùjìn yǒu tíngchē de dìfang ma?
+  t: Is there parking nearby?
+  d: 停车 (tíngchē) "to park",  附近 (fùjìn) "nearby"
+  a: 6240f3631466bfa052974970abaec76bfb058ff11f7297a724c2a36eff18e148.mp3
+- s: B
+  c: 有，但是要收费。
+  p: Yǒu, dànshì yào shōufèi.
+  t: Yes, but there's a fee.
+  d: 收费 (shōufèi) "to charge a fee"
+  a: 95a625b179b00ada23869fd62314ac8229edffdeb4747e0b5792d4b48df968e8.mp3
+- s: A
+  c: 一小时多少钱？
+  p: Yì xiǎoshí duōshao qián?
+  t: How much per hour?
+  a: 2c909d9d50eaadc151b2ac820f733b54856d4450413a8e2501d7ec338a35dbe1.mp3
+- s: B
+  c: 十块钱，不算贵。
+  p: Shí kuài qián, bù suàn guì.
+  t: Ten yuan, not too expensive.
+  a: 76baee23ca63896067e2a8630a2721e3b72ebfe438740b1e6a8e67d2b12dc086.mp3
+72 - Phone battery:
+- s: A
+  c: 你的手机有电吗？
+  p: Nǐ de shǒujī yǒu diàn ma?
+  t: Does your phone have battery?
+  d: 电 (diàn) "electricity/battery"
+  a: cf2eeec3bd7a165cc5cad85374c72affd0c0b942d200185768b486753af8dd79.mp3
+- s: B
+  c: 快没电了，能借充电器吗？
+  p: Kuài méi diàn le, néng jiè chōngdiànqì ma?
+  t: Almost out, can I borrow a charger?
+  d: 充电器 (chōngdiànqì) "charger"
+  a: ad1243ba28c9769ad45e589d619e21d3531fa3b5e920a78743336e53e03a7771.mp3
+- s: A
+  c: 给你，要充多久？
+  p: Gěi nǐ, yào chōng duōjiǔ?
+  t: Here you go, how long do you need to charge?
+  a: 5edf236a82701f2051f9004d20398d5cad8f095f8880473d8b76b9601042f032.mp3
+- s: B
+  c: 半个小时就够了。
+  p: Bàn ge xiǎoshí jiù gòu le.
+  t: Half an hour should be enough.
+  a: 9c0bc27275a8700ebe9d8256cc5d5fdc66609cbb869a8b3c678ba6391d7d5892.mp3
+73 - Buying tickets:
+- s: A
+  c: 我想买两张演唱会的票。
+  p: Wǒ xiǎng mǎi liǎng zhāng yǎnchànghuì de piào.
+  t: I want to buy two concert tickets.
+  d: 演唱会 (yǎnchànghuì) "concert"
+  a: 432aa3f8be2a210babe194bc812c7b7f7786742a2eab12219f748e7d0f73292b.mp3
+- s: B
+  c: 对不起，好位置都卖完了。
+  p: Duìbuqǐ, hǎo wèizhi dōu mài wán le.
+  t: Sorry, all the good seats are sold out.
+  a: 13d5cc051b8eaa847ac9567c9291b87c3072429d4bc68328092f37a58d48f142.mp3
+- s: A
+  c: 那还有什么位置？
+  p: Nà hái yǒu shénme wèizhi?
+  t: Then what seats are left?
+  a: baa0c337dc68b436fca97281205b204b9e1d0a3a0edcb0be6640ca303340fd34.mp3
+- s: B
+  c: 只剩后面的了，要吗？
+  p: Zhǐ shèng hòumiàn de le, yào ma?
+  t: Only back seats left, want them?
+  a: 9d99646439246f6babe36634604d17fdcdcc4f83cbd727c9bc1c57c5460d0253.mp3
+74 - Getting a package:
+- s: A
+  c: 你的快递到了。
+  p: Nǐ de kuàidì dào le.
+  t: Your express delivery is here.
+  d: 快递 (kuàidì) "express delivery"
+  a: a6721cb095030f177722e6ff6e7538222b0d26560bb915608720193c4b72ee2e.mp3
+- s: B
+  c: 在哪里？我下去拿。
+  p: Zài nǎlǐ? Wǒ xiàqù ná.
+  t: Where? I'll go down to get it.
+  a: e2f19f3e7ae22d60f78a0b467cb6d4ddbb2f879927ef5846fd92ebac5d31e2bd.mp3
+- s: A
+  c: 在门口，要签名。
+  p: Zài ménkǒu, yào qiānmíng.
+  t: At the entrance, need to sign.
+  d: 签名 (qiānmíng) "signature"
+  a: 088468eae998382f23f5a8d085a5d741165efde325a74c09747df42eade2cfff.mp3
+- s: B
+  c: 好的，我马上去。
+  p: Hǎo de, wǒ mǎshàng qù.
+  t: Okay, I'll go right away.
+  a: 75923554799f86106367360d72c1af48af8727250a032a85e3b319cb9255890d.mp3
+75 - Library quiet:
+- s: A
+  c: 请小声说话，这是图书馆。
+  p: Qǐng xiǎoshēng shuōhuà, zhè shì túshūguǎn.
+  t: Please speak quietly, this is a library.
+  d: 小声 (xiǎoshēng) "quiet voice"
+  a: 24de911a6a78b4b411271a278af34d2c196aa49abe6d1292ebe50e51c5ef2a66.mp3
+- s: B
+  c: 对不起，我不知道。
+  p: Duìbuqǐ, wǒ bù zhīdao.
+  t: Sorry, I didn't know.
+  a: 85504ed669e60390c03aeda157bdb11e3791c27590ee76cc401c26b17b2ebf90.mp3
+- s: A
+  c: 没关系，很多人都不知道。
+  p: Méiguānxi, hěn duō rén dōu bù zhīdao.
+  t: It's okay, many people don't know.
+  a: f49b97917966c583b1dfd0bedeca4747e0cc4a966ad2a6c3bdedb63a6148cdb4.mp3
+- s: B
+  c: 我们去外面说吧。
+  p: Wǒmen qù wàimiàn shuō ba.
+  t: Let's go outside to talk.
+  a: f62eb28125037f43d41dc17611d88652ded4761521c8df1b9a626102642d17d0.mp3
+76 - Broken sink:
+- s: A
+  c: 水龙头坏了，一直在滴水。
+  p: Shuǐlóngtóu huài le, yìzhí zài dī shuǐ.
+  t: The faucet is broken, keeps dripping.
+  d: 水龙头 (shuǐlóngtóu) "faucet",  滴水 (dī shuǐ) "to drip"
+  a: e40a6b8d06be44ee41fac493192acbea235ef3df2c98e98a928370dca9e333e6.mp3
+- s: B
+  c: 要叫修理工来看看。
+  p: Yào jiào xiūlǐgōng lái kànkan.
+  t: Need to call a repairman to check.
+  d: 修理工 (xiūlǐgōng) "repairman"
+  a: 81930f1a9a5594f526f0f3c2570e6683d843d723975f3165c03bec686ae45a5f.mp3
+- s: A
+  c: 你认识好的修理工吗？
+  p: Nǐ rènshi hǎo de xiūlǐgōng ma?
+  t: Do you know a good repairman?
+  a: e8ff7bf08ac1c6a589d22c5a4b98689cb3f5bb60fc876db1245a1839459ba005.mp3
+- s: B
+  c: 认识，我给你电话号码。
+  p: Rènshi, wǒ gěi nǐ diànhuà hàomǎ.
+  t: Yes, I'll give you the phone number.
+  a: 5e5a579053cde338dbb64a8def2b42ec6e12911a7c66b8f64afc91435b9a3e67.mp3
+77 - Late sleep:
+- s: A
+  c: 你昨天晚上几点睡的？
+  p: Nǐ zuótiān wǎnshang jǐ diǎn shuì de?
+  t: What time did you go to bed last night?
+  a: f83644ad7bb96333efd640d5416861867d6adf234610e7d837adf55988df7ef2.mp3
+- s: B
+  c: 很晚，看电视看到十二点。
+  p: Hěn wǎn, kàn diànshì kàn dào shí'èr diǎn.
+  t: Very late, watched TV until midnight.
+  a: 76fce3682902c2da15d3bda5860e7460dc05b89a7e2152b33f66f4e74f1e9b6a.mp3
+- s: A
+  c: 难怪你今天看起来这么累。
+  p: Nánguài nǐ jīntiān kàn qǐlái zhème lèi.
+  t: No wonder you look so tired today.
+  d: 难怪 (nánguài) "no wonder"
+  a: 46178ba3c2b7e23dfaac78337f35acb06be4fcaea9452c0bdfd91c1a0f4ffbd8.mp3
+- s: B
+  c: 是啊，今天晚上要早点睡。
+  p: Shì a, jīntiān wǎnshang yào zǎo diǎn shuì.
+  t: Yeah, need to sleep earlier tonight.
+  a: be9de5dd6ed7d397a93b03039692184685f4886ab5dde58b1648bddf19295894.mp3
+78 - Shopping help:
+- s: A
+  c: 请问这件衣服有大一点的吗？
+  p: Qǐngwèn zhè jiàn yīfu yǒu dà yìdiǎn de ma?
+  t: Excuse me, do you have this clothing in a larger size?
+  a: 94c211a64379865fad3004c78f152be204f315d15fbdbf51a355e31275c914e7.mp3
+- s: B
+  c: 让我查一下库存。
+  p: Ràng wǒ chá yíxià kùcún.
+  t: Let me check the inventory.
+  d: 库存 (kùcún) "inventory"
+  a: a2983ba415f078e19a084255a2deff24c4f629e038539f6ee464ff6adf81ad80.mp3
+- s: A
+  c: 谢谢，我等一下。
+  p: Xièxie, wǒ děng yíxià.
+  t: Thanks, I'll wait.
+  a: 90a007e1de3ffe6d9de7cb8af49021d5fcd843931ff58fe97dadbcb2a45c3547.mp3
+- s: B
+  c: 有的，我去拿给你。
+  p: Yǒu de, wǒ qù ná gěi nǐ.
+  t: Yes we do, I'll go get it for you.
+  a: 5eaa9a521054a13b7ee861fb962c24f14d8c17cc77390234814e3379e394b39a.mp3
+79 - Hot pot:
+- s: A
+  c: 想吃火锅吗？我知道一家很好的。
+  p: Xiǎng chī huǒguō ma? Wǒ zhīdao yì jiā hěn hǎo de.
+  t: Want to eat hot pot? I know a good place.
+  d: 火锅 (huǒguō) "hot pot"
+  a: 7787cfa0500ea28410ac279080a017aba748b6bc8e9ff3152d36cfcd0726ef2b.mp3
+- s: B
+  c: 好啊，是不是很辣？
+  p: Hǎo a, shì bú shì hěn là?
+  t: Sure, is it very spicy?
+  a: 323ad0d31b1d52ede671c770c2f6e23b1b76e143ada12ce131335d610e9a11f7.mp3
+- s: A
+  c: 可以选不辣的汤底。
+  p: Kěyǐ xuǎn bù là de tāngdǐ.
+  t: You can choose non-spicy soup base.
+  d: 汤底 (tāngdǐ) "soup base"
+  a: 9ff542a997652dca3a463fda7862f4931dca04c0c5b83946ea5f31f070417411.mp3
+- s: B
+  c: 那太好了，我们什么时候去？
+  p: Nà tài hǎo le, wǒmen shénme shíhou qù?
+  t: That's great, when shall we go?
+  a: 625ba277c6b71df1bcfdc9cbed517ebd5a12525b790c200a4c30c8a8db7a039c.mp3
+80 - Morning exercise:
+- s: A
+  c: 你每天都这么早起来锻炼啊？
+  p: Nǐ měitiān dōu zhème zǎo qǐlái duànliàn a?
+  t: You get up this early to exercise every day?
+  d: 锻炼 (duànliàn) "to exercise"
+  a: c9c3aaabafc0a8f13053c914e6417fe5c4e1b63164f086380a0fa3acef721094.mp3
+- s: B
+  c: 对，已经坚持了三个月了。
+  p: Duì, yǐjīng jiānchí le sān ge yuè le.
+  t: Yes, been keeping at it for three months.
+  d: 坚持 (jiānchí) "to persist/keep at"
+  a: e03a488ab2d3ee487f8f97f05c9d38e75cb64e66f42ee078d9e352e689d12723.mp3
+- s: A
+  c: 好厉害，我都坚持不下来。
+  p: Hǎo lìhai, wǒ dōu jiānchí bù xiàlái.
+  t: Amazing, I can't stick to it.
+  a: 68d18174958d4a3a13c54d539a2dddee267e4652110a49bccb9269430877770f.mp3
+- s: B
+  c: 慢慢来，一起运动吧？
+  p: Màn màn lái, yìqǐ yùndòng ba?
+  t: Take it slow, want to exercise together?
+  81 - Street food stand: null
+  a: 928350b3d349dce15947bf144a544a737ad36a74f9f396e4c0ecfe7ab7fdc9a0.mp3
+- s: A
+  c: 这个煎饼闻起来真香！
+  p: Zhège jiānbing wén qǐlái zhēn xiāng!
+  t: This crepe smells so good!
+  d: 闻 (wén) "to smell"
+  a: 51c310827970537de31aba4f5ee880b58715d59ad538ad8483d7427dd874885d.mp3
+- s: B
+  c: 要加鸡蛋吗？
+  p: Yào jiā jīdàn ma?
+  t: Want to add an egg?
+  d: 鸡蛋 (jīdàn) "egg"
+  a: fb76ce79417fd8f1e676f680384fb18e2f652819fabe7de6c3d1307b570cc4ad.mp3
+- s: A
+  c: 要，都加上，不要太辣。
+  p: Yào, dōu jiā shàng, bú yào tài là.
+  t: Yes, add everything, but not too spicy.
+  a: 311751d2a3913a6e1286120ab7c19a7b79536532ff03f1b41630f9d512fa26a6.mp3
+- s: B
+  c: 好，两分钟就好。
+  p: Hǎo, liǎng fēnzhōng jiù hǎo.
+  t: Okay, will be ready in two minutes.
+  a: e7f4b142ad316b5a507564f2576f33fec2f8d696423c7e0270c24031b1af436f.mp3
+82 - Broken air conditioner:
+- s: A
+  c: 空调怎么不凉快？
+  p: Kōngtiáo zěnme bù liángkuai?
+  t: Why isn't the AC cooling?
+  d: 空调 (kōngtiáo) "air conditioner"
+  a: 8621041113dece06011af9af694b3e0a2cb2f1ff24fecf75cc738d080fe0de95.mp3
+- s: B
+  c: 可能需要加制冷剂了。
+  p: Kěnéng xūyào jiā zhìlěngjì le.
+  t: Might need to add refrigerant.
+  d: 制冷剂 (zhìlěngjì) "refrigerant"
+  a: fed98e2252bb1e86a12e04336809fb8617abc59c83ad18d5ef027e78630f67df.mp3
+- s: A
+  c: 很贵吗？要等多久？
+  p: Hěn guì ma? Yào děng duōjiǔ?
+  t: Is it expensive? How long to wait?
+  a: c446e5d43fb91b6767d5746ca6a73c575985494341ae8cf232c94ce1ca50df7a.mp3
+- s: B
+  c: 不贵，今天就能修好。
+  p: Bù guì, jīntiān jiù néng xiū hǎo.
+  t: Not expensive, can fix it today.
+  a: fe7e5616f155b9e7a15c7bb7392b4ac4b0d51664cf14b8cb67ebdf11d7321465.mp3
+83 - Buying vegetables:
+- s: A
+  c: 这个菜叶子有点黄。
+  p: Zhège cài yèzi yǒudiǎn huáng.
+  t: These vegetable leaves are a bit yellow.
+  d: 叶子 (yèzi) "leaves"
+  a: 9977f0aab678884cb8706f73bec3f9f181287d104161fadd4dab442a642c7076.mp3
+- s: B
+  c: 给你换一个新鲜的。
+  p: Gěi nǐ huàn yí ge xīnxiān de.
+  t: Let me exchange it for a fresh one.
+  a: 2eb7c4d5f900db96c604606d54d03c3e1d7848b81814ec5833dfdf7e358b2359.mp3
+- s: A
+  c: 这个看起来好多了。
+  p: Zhège kàn qǐlái hǎo duō le.
+  t: This one looks much better.
+  a: ce0fd20b4f607ed11be80a2863010838b4cfafdbcf75e1e1f03efdbc0054f296.mp3
+- s: B
+  c: 要不要称一下？
+  p: Yào bú yào chēng yíxià?
+  t: Want me to weigh it?
+  d: 称 (chēng) "to weigh"
+  a: 2a8e521ce84b2244bab7a33a4e2245969406650c4d7c287d0a41a3d5bd27904a.mp3
+84 - Noisy neighbors:
+- s: A
+  c: 楼上最近总是很吵。
+  p: Lóushàng zuìjìn zǒngshì hěn chǎo.
+  t: Upstairs has been very noisy lately.
+  d: 吵 (chǎo) "noisy"
+  a: 427362b55ca18c9d8a56cd48dafb86520f39c0f83b44676bbd64acf948d3a972.mp3
+- s: B
+  c: 是啊，好像在装修。
+  p: Shì a, hǎoxiàng zài zhuāngxiū.
+  t: Yes, seems they're renovating.
+  d: 装修 (zhuāngxiū) "to renovate"
+  a: d5395f2232a1d4a95ccdd22e6b2790fbb26d0ad1b8e8afe0cdacac5dbb2b0f17.mp3
+- s: A
+  c: 知道要装修多久吗？
+  p: Zhīdao yào zhuāngxiū duōjiǔ ma?
+  t: Know how long the renovation will take?
+  a: 359b2bf9e6faf84fd64591a2c8a36bf367bfa56fb20f1bac0087cf2251fa9ebf.mp3
+- s: B
+  c: 听说要一个月。
+  p: Tīngshuō yào yí ge yuè.
+  t: Heard it'll take a month.
+  a: 7484a7ff159f9d1a7045dc1bdd7165402afa0c7caa418059f500725b63c52928.mp3
+85 - Lending an umbrella:
+- s: A
+  c: 突然下雨了，你带伞了吗？
+  p: Túrán xià yǔ le, nǐ dài sǎn le ma?
+  t: It's suddenly raining, did you bring an umbrella?
+  d: 突然 (túrán) "suddenly"
+  a: 77931fc62d14269a1804c1afb5d43d0e1cdd6b54586e3d0230aec4b2abfa8e84.mp3
+- s: B
+  c: 带了，我们一起打伞吧。
+  p: Dài le, wǒmen yìqǐ dǎ sǎn ba.
+  t: Yes, let's share the umbrella.
+  a: c25151cb531dff62d5d1287606f08df72d8e02ad7cab5af3df762afe0d2b06e7.mp3
+- s: A
+  c: 不会太挤吗？
+  p: Bú huì tài jǐ ma?
+  t: Won't it be too crowded?
+  d: 挤 (jǐ) "crowded"
+  a: e0ed01af3bd65676f0f1a0c3a90a36ff5ad07e170db3ba300b3c5930b2ee626d.mp3
+- s: B
+  c: 没事，这把伞够大。
+  p: Méishì, zhè bǎ sǎn gòu dà.
+  t: It's fine, this umbrella is big enough.
+  a: 1b9c9cbb476c44dbd0477f40f9f4e71939e493e854a513730c141810d648446e.mp3
+86 - Plant watering:
+- s: A
+  c: 我明天要出差，能帮我照顾花吗？
+  p: Wǒ míngtiān yào chūchāi, néng bāng wǒ zhàogu huā ma?
+  t: I'm going on a business trip tomorrow, can you help take care of my plants?
+  d: 出差 (chūchāi) "business trip"
+  a: ae275d1178c7e2bc20d5c9f1a734235af275267a401128108c32157937baa36b.mp3
+- s: B
+  c: 没问题，要浇几次水？
+  p: Méi wèntí, yào jiāo jǐ cì shuǐ?
+  t: No problem, how many times should I water them?
+  a: 63e49603f3c93efbcbe6e5d4bb08ebc46e21150746cff3f8007a610f88e628ea.mp3
+- s: A
+  c: 三天浇一次就可以。
+  p: Sān tiān jiāo yí cì jiù kěyǐ.
+  t: Once every three days is fine.
+  a: b19351cc712f9471acaf1f3b55d390e3ef42b1bda7f24abdddf215dad8380138.mp3
+- s: B
+  c: 好，我记住了。
+  p: Hǎo, wǒ jìzhù le.
+  t: Okay, I'll remember that.
+  a: 999deb50f5a1cee4b7626d231d988d01f36c43eedb967ae22d8d5231cf800ea3.mp3
+87 - Haircut style:
+- s: A
+  c: 想剪成什么样子？
+  p: Xiǎng jiǎn chéng shénme yàngzi?
+  t: How would you like your hair cut?
+  a: be726397d4db17d91a2e5dc9f9693c39a44a0cf35d5e7ab8be653c113e4476ba.mp3
+- s: B
+  c: 两边短一点，上面长一点。
+  p: Liǎngbiān duǎn yìdiǎn, shàngmiàn cháng yìdiǎn.
+  t: Shorter on the sides, longer on top.
+  a: 7190f5895d8bf6d0bc53d32ce4d0dcd6ff88e63c55b73d3dbc003802e6ab5e17.mp3
+- s: A
+  c: 要不要剪刘海？
+  p: Yào bú yào jiǎn liúhái?
+  t: Want to cut the bangs?
+  d: 刘海 (liúhái) "bangs"
+  a: 90447daf0aa4a8bc8fd7fd3a8a3519399e87392f1d506d038f9ab4311f3103e1.mp3
+- s: B
+  c: 好，但不要太短。
+  p: Hǎo, dàn bú yào tài duǎn.
+  t: Yes, but not too short.
+  a: ec9c9cfc31ab55bdc3a9c7a8b8e4eb6d0a364921a2208f065fffbad1361729c4.mp3
+88 - Lost phone:
+- s: A
+  c: 你的手机找到了吗？
+  p: Nǐ de shǒujī zhǎodào le ma?
+  t: Did you find your phone?
+  a: ee7490c22ea50c363dc03649e3e8bd678dbe09ace7c4baef948550b6bcd713ec.mp3
+- s: B
+  c: 找到了，在沙发缝里。
+  p: Zhǎodào le, zài shāfā fèng lǐ.
+  t: Yes, it was in the gap of the sofa.
+  d: 缝 (fèng) "gap/crack"
+  a: c619b3843919f2d47053fc6a022fdd9d9cc649404ea9b8f955929d11f446380d.mp3
+- s: A
+  c: 太好了，我帮你找了好久。
+  p: Tài hǎo le, wǒ bāng nǐ zhǎo le hǎojiǔ.
+  t: Great, I spent a long time helping you look.
+  a: e9803ae4ad536ce7c620087f478fd66f141dd1cd9e22112a6c91ef5ca24b2282.mp3
+- s: B
+  c: 谢谢你，下次我一定放好。
+  p: Xièxie nǐ, xià cì wǒ yídìng fàng hǎo.
+  t: Thank you, I'll keep it safe next time.
+  a: 748a099c0ba47614fb4747e3377d33cdd0fe2bf88b08dfe3ff187ce77ebd8e67.mp3
+89 - Grocery shopping:
+- s: A
+  c: 今天超市有特价。
+  p: Jīntiān chāoshì yǒu tèjià.
+  t: The supermarket has special offers today.
+  d: 特价 (tèjià) "special price"
+  a: 58056ebc9d7c62f79f527e0ef7e699d2d485b19def853c6cdebf6581ac1efd89.mp3
+- s: B
+  c: 什么东西便宜？
+  p: Shénme dōngxi piányí?
+  t: What's cheap?
+  a: 1653f9883d3e8fab5a4d9960525e264dcfd3c27a7db5ecf97d6f92d51ff5e61a.mp3
+- s: A
+  c: 水果和蔬菜都很便宜。
+  p: Shuǐguǒ hé shūcài dōu hěn piányí.
+  t: Fruits and vegetables are all cheap.
+  d: 蔬菜 (shūcài) "vegetables"
+  a: 80dd5ba2e9f7e4e766cc2f3b00381797428fb997d6acb8560b001f969786dd08.mp3
+- s: B
+  c: 那我们多买一点吧。
+  p: Nà wǒmen duō mǎi yìdiǎn ba.
+  t: Then let's buy more.
+  a: 958ddd017a15fafa68e3a61945e33dd8e403be98f9fbf64407a07bdeb621bc22.mp3
+90 - Weekend plans:
+- s: A
+  c: 周末要不要去郊游？
+  p: Zhōumò yào bú yào qù jiāoyóu?
+  t: Want to go for an outing this weekend?
+  d: 郊游 (jiāoyóu) "outing/excursion"
+  a: d1e9962d911c56523c98e405311fb4353fd09d91c699b698c73892f884adc4f5.mp3
+- s: B
+  c: 好啊，去哪里玩？
+  p: Hǎo a, qù nǎlǐ wán?
+  t: Sure, where should we go?
+  a: ab276a2e2168363d3ea288a2d1d00cad8b5868426956b7e467dc1af271d22be9.mp3
+- s: A
+  c: 听说附近有个新公园。
+  p: Tīngshuō fùjìn yǒu ge xīn gōngyuán.
+  t: Heard there's a new park nearby.
+  a: 50516f9278567586b3dab4a35c3eaf397442065481886d314cf19403b2ca36da.mp3
+- s: B
+  c: 那就去那里吧，带些吃的。
+  p: Nà jiù qù nàli ba, dài xiē chī de.
+  t: Let's go there then, bring some food.
+  a: 7f3a2590c26ab73edced2e59f3988f56ea4ad9926b6bf8187f8b032a9f79f101.mp3
+91 - Swimming pool:
+- s: A
+  c: 你会游泳吗？水深不深？
+  p: Nǐ huì yóuyǒng ma? Shuǐ shēn bu shēn?
+  t: Can you swim? Is the water deep?
+  d: 游泳 (yóuyǒng) "to swim",  深 (shēn) "deep"
+  a: 477622138b2384f0affab685a37b6368ea8a6df3f37c0f646445f849b16b47fd.mp3
+- s: B
+  c: 这边不深，适合初学者。
+  p: Zhè biān bù shēn, shìhé chūxuézhě.
+  t: It's not deep here, suitable for beginners.
+  d: 初学者 (chūxuézhě) "beginner"
+  a: 070bd1f654d8c7a9b6642a487a5c70d6b0e2b2dd17cfd6e35e5099a42c892761.mp3
+- s: A
+  c: 那太好了，我想学游泳。
+  p: Nà tài hǎo le, wǒ xiǎng xué yóuyǒng.
+  t: That's great, I want to learn swimming.
+  a: 25e660a0f4a457a9fabe5d2ebd2deea64b8d07fa8b92a2f3f5a7dbcf83a2928f.mp3
+- s: B
+  c: 我可以教你基本动作。
+  p: Wǒ kěyǐ jiāo nǐ jīběn dòngzuò.
+  t: I can teach you basic movements.
+  a: f2e2ce5bc7c03609b64b66195d35b24cde0909398d768f3a27588089d29e3092.mp3
+92 - Lost wallet:
+- s: A
+  c: 我好像把钱包落在出租车上了。
+  p: Wǒ hǎoxiàng bǎ qiánbāo luò zài chūzūchē shàng le.
+  t: I think I left my wallet in the taxi.
+  d: 出租车 (chūzūchē) "taxi"
+  a: 19e6901c36ea1ce129a4f76777e03f9bdf79a327b7c754c54d3c57e98f4dfbf0.mp3
+- s: B
+  c: 记得车牌号码吗？
+  p: Jìde chēpái hàomǎ ma?
+  t: Do you remember the license plate number?
+  d: 车牌号码 (chēpái hàomǎ) "license plate number"
+  a: 9f4874218fec4f1f6250bf2b649b063347f326f5972f84755e380cf0b579a9b6.mp3
+- s: A
+  c: 忘了，但我有发票。
+  p: Wàng le, dàn wǒ yǒu fāpiào.
+  t: Forgot, but I have the receipt.
+  d: 发票 (fāpiào) "receipt"
+  a: 1c024f3a7d9e043b0fdbe662d034cc0e054780a543cdb228d544b87e1a36228d.mp3
+- s: B
+  c: 那好，我帮你打电话问问。
+  p: Nà hǎo, wǒ bāng nǐ dǎ diànhuà wènwen.
+  t: Good, I'll help you call and ask.
+  a: 9afefdc1ab947ac0d35be0bff112ce8a56655f10ec637d997c97aadac10dfc83.mp3
+93 - Noodle shop:
+- s: A
+  c: 这家的面条很有名。
+  p: Zhè jiā de miàntiáo hěn yǒumíng.
+  t: This place's noodles are famous.
+  d: 面条 (miàntiáo) "noodles"
+  a: 696622ae5ba6679332ba593d68ca3b824212e982a12d2cdda1de722ed35da990.mp3
+- s: B
+  c: 汤看起来很浓。
+  p: Tāng kàn qǐlái hěn nóng.
+  t: The soup looks very rich.
+  a: 4fb7f4cb3ada2aa7e5fefe8a9811c5261355c950782edafec35e3d15dffd438b.mp3
+- s: A
+  c: 要加个卤蛋吗？
+  p: Yào jiā ge lǔdàn ma?
+  t: Want to add a marinated egg?
+  d: 卤蛋 (lǔdàn) "marinated egg"
+  a: 109f81f874b8f7b1667f5aa69d6e875612d46a29f2173072f4952963d4dd25fe.mp3
+- s: B
+  c: 好，再加点青菜。
+  p: Hǎo, zài jiā diǎn qīngcài.
+  t: Yes, and add some vegetables too.
+  a: f5407a654aac484141d893e387248dbe21c614c7e815182baa3341780d459695.mp3
+94 - Birthday cake:
+- s: A
+  c: 要订什么口味的蛋糕？
+  p: Yào dìng shénme kǒuwèi de dàngāo?
+  t: What flavor cake should we order?
+  d: 蛋糕 (dàngāo) "cake",  口味 (kǒuwèi) "flavor"
+  a: 9ea12753a4b1a0267f51fd09b122ea40c2167caac683bddf908108ec451f3f65.mp3
+- s: B
+  c: 巧克力吧，大家都喜欢。
+  p: Qiǎokèlì ba, dàjiā dōu xǐhuan.
+  t: Chocolate, everyone likes it.
+  a: c03963b7332eed904f46d6f3dc6f86e689426ac67447b70a932ebcd92a935dae.mp3
+- s: A
+  c: 要写什么字？
+  p: Yào xiě shénme zì?
+  t: What should we write on it?
+  a: 91939746a9fff50628775b4fc10aeb25a34c3c632f96b2022c3a973b6d8088e0.mp3
+- s: B
+  c: 生日快乐就可以了。
+  p: Shēngrì kuàilè jiù kěyǐ le.
+  t: \"Happy Birthday\" is fine.
+  a: dc95a5cfa3ac4684257ccc467447732fe9895be22647586c7b46814dce382798.mp3
+95 - Street directions:
+- s: A
+  c: 银行在十字路口哪边？
+  p: Yínháng zài shízìlùkǒu nǎ biān?
+  t: Which side of the intersection is the bank on?
+  d: 十字路口 (shízìlùkǒu) "intersection"
+  a: 343f2f4bdc20d401a84a304d6883b67c027120b0042198bfe5c6d7137ba43def.mp3
+- s: B
+  c: 在右转第二个路口。
+  p: Zài yòu zhuǎn dì èr ge lùkǒu.
+  t: At the second corner after turning right.
+  a: 9ff1ff048ec6d58e2a57300e61a87e5b6570100a5ee15c357eb26a094a373005.mp3
+- s: A
+  c: 走路要多久？
+  p: Zǒulù yào duōjiǔ?
+  t: How long to walk there?
+  a: 3af3fddc2242627b02622f1a57ed85834209dc8ea4880832db2b4feb73db7bd6.mp3
+- s: B
+  c: 大概十分钟就到了。
+  p: Dàgài shí fēnzhōng jiù dào le.
+  t: About ten minutes to get there.
+  a: 93f2e9b82c823449d5d1538ce88b597e81ad4015a026b1d55cc6716d56e80279.mp3
+96 - Morning market:
+- s: A
+  c: 早市的菜最新鲜。
+  p: Zǎoshì de cài zuì xīnxiān.
+  t: The morning market vegetables are freshest.
+  d: 早市 (zǎoshì) "morning market"
+  a: 023a41f297d8d08e3f7f69b5c1b9a8d983e95b25da8640574b18ec95a2552cd5.mp3
+- s: B
+  c: 是啊，但要早点来。
+  p: Shì a, dàn yào zǎo diǎn lái.
+  t: Yes, but need to come early.
+  a: c31db3dad785a03f062d6386fc93597ae487b1dce0417c95ec2a1c0d45db5191.mp3
+- s: A
+  c: 几点开始卖？
+  p: Jǐ diǎn kāishǐ mài?
+  t: What time do they start selling?
+  a: 0eb20bbb4619c25c915bb68357e1ad564f260545890f9d20b96dcd2e15b769c9.mp3
+- s: B
+  c: 天亮就开始了。
+  p: Tiān liàng jiù kāishǐ le.
+  t: They start at dawn.
+  d: 天亮 (tiān liàng) "dawn"
+  a: 87bcef93b86d018adbad747b18e603e195be6ec00e4690ef44060a2464519c6c.mp3
+97 - Pet store:
+- s: A
+  c: 这只小狗多大了？
+  p: Zhè zhī xiǎogǒu duō dà le?
+  t: How old is this puppy?
+  a: 87d355a9f1382b3b6761f7ed2a16512654834553341d71ee044359c5b4834fc0.mp3
+- s: B
+  c: 两个月，已经打过疫苗了。
+  p: Liǎng ge yuè, yǐjīng dǎ guò yìmiáo le.
+  t: Two months, already vaccinated.
+  d: 疫苗 (yìmiáo) "vaccine"
+  a: 0ffaa6e0abc133420f4fcc96089216111cc73ecee69d61c1897ac3781cd35d64.mp3
+- s: A
+  c: 会咬人吗？
+  p: Huì yǎo rén ma?
+  t: Does it bite?
+  d: 咬 (yǎo) "to bite"
+  a: 6a0d2ee6e550ba3682f92cd8b9fcc3f6751324968960c68b1b2ce157db48bd4c.mp3
+- s: B
+  c: 不会，很温顺的。
+  p: Bú huì, hěn wēnshùn de.
+  t: No, it's very gentle.
+  d: 温顺 (wēnshùn) "gentle"
+  a: 7ac5f9fea6c14b299ad4334d10d2ec8ef4e0d51d55e260849040bb76e6d2e474.mp3
+98 - Power outage:
+- s: A
+  c: 怎么突然停电了？
+  p: Zěnme túrán tíngdiàn le?
+  t: Why is there suddenly a power outage?
+  d: 停电 (tíngdiàn) "power outage"
+  a: 5bc2d5f2817acdcac86ba19aa1133234a86b15fab0dd6c90ae638406b216c63c.mp3
+- s: B
+  c: 可能是在修电路。
+  p: Kěnéng shì zài xiū diànlù.
+  t: Maybe they're repairing the power lines.
+  d: 电路 (diànlù) "power lines"
+  a: 34bd11073ebd93c2acf804ce14bf6bc62ce601f35652927d5ebca8d8c178b8da.mp3
+- s: A
+  c: 知道要多久吗？
+  p: Zhīdao yào duōjiǔ ma?
+  t: Know how long it will take?
+  a: 22d1fc3278a72aa9b87d2de3623985cd3a2fe0917880b1f90fa2a7e0c0677fd4.mp3
+- s: B
+  c: 听说要两个小时。
+  p: Tīngshuō yào liǎng ge xiǎoshí.
+  t: Heard it'll take two hours.
+  a: 8120f2d5124e5ff95ddc5bd2ab30704eb0ede3acde3b87e047a5fc3c227beb5c.mp3
+99 - Trying on shoes:
+- s: A
+  c: 这双鞋太紧了。
+  p: Zhè shuāng xié tài jǐn le.
+  t: These shoes are too tight.
+  d: 紧 (jǐn) "tight"
+  a: a43e6a4c45d1a2b599f279ecb3b847c3e5d464853bbb3f3564862661bdc1ed49.mp3
+- s: B
+  c: 要不要试大半号的？
+  p: Yào bú yào shì dà bàn hào de?
+  t: Want to try half a size bigger?
+  a: 741ccdac0cedb5092498d49d4c363949ff51e24bbc4aed8021a8e65ba44ad518.mp3
+- s: A
+  c: 好，走路时候会不会掉？
+  p: Hǎo, zǒulù shíhou huì bú huì diào?
+  t: Okay, will they fall off when walking?
+  a: 2a26e64d434b055e4d4168e9e6de7da317ba7facc1daa937f79bb033a822f496.mp3
+- s: B
+  c: 不会，你走走看。
+  p: Bú huì, nǐ zǒu zǒu kàn.
+  t: No, try walking around.
+  a: f7194f0aed0d2a7b0453af9a432d7a3984d0ca4659c6afe53762c0c1c68df6be.mp3
+100 - Kitchen help:
+- s: A
+  c: 需要我帮忙切菜吗？
+  p: Xūyào wǒ bāngmáng qiē cài ma?
+  t: Need help cutting vegetables?
+  d: 切 (qiē) "to cut"
+  a: eaf45967ecf533bccf275246b2d1fc86ee15af24fce115100edb086d2025f058.mp3
+- s: B
+  c: 好啊，这些胡萝卜要切块。
+  p: Hǎo a, zhèxiē húluóbo yào qiē kuài.
+  t: Sure, these carrots need to be cubed.
+  d: 胡萝卜 (húluóbo) "carrot",  块 (kuài) "chunk"
+  a: 1bd8aac314ced13c0bbc93f67f8301f593ed484066c269d51d563e3ed67c2643.mp3
+- s: A
+  c: 切大块还是小块？
+  p: Qiē dà kuài háishi xiǎo kuài?
+  t: Cut into big pieces or small pieces?
+  a: 75413588149e1c2cd01e897b9281af368d8371b972c7713249b4bf6056565c23.mp3
+- s: B
+  c: 小块，一口大小就行。
+  p: Xiǎo kuài, yì kǒu dàxiāo jiù xíng.
+  t: Small pieces, bite-sized is fine.
+  a: 1bd174a59cb51f39c3ae0b0b2807ee5e5b11867ea2b2ed85a6fb3ec41dae8b08.mp3
+101 - At the bakery:
+- s: A
+  c: 这个面包是刚烤的吗？
+  p: Zhège miànbāo shì gāng kǎo de ma?
+  t: Is this bread freshly baked?
+  d: 烤 (kǎo) "to bake"
+  a: b3910bae2ac08d0d168e31699524249a1a1b35eef7ca9082709d0b6472781be6.mp3
+- s: B
+  c: 是的，还是热的，要尝尝吗？
+  p: Shì de, hái shì rè de, yào cháng chang ma?
+  t: Yes, still warm, want to try?
+  a: a60d1b78d86c5a9c7b96782d7ecb65fbaef97b023e6317c02e159424cd035c01.mp3
+- s: A
+  c: 好啊，闻起来好香。有全麦的吗？
+  p: Hǎo a, wén qǐlái hǎo xiāng. Yǒu quánmài de ma?
+  t: Sure, smells great. Do you have whole wheat?
+  d: 全麦 (quánmài) "whole wheat"
+  a: 0c99a0ba621b8f03e26d39d62e3870cb1c13e9603916890609afbb8b8bc61d78.mp3
+- s: B
+  c: 有，但要等十分钟，正在烤。
+  p: Yǒu, dàn yào děng shí fēnzhōng, zhèngzài kǎo.
+  t: Yes, but need to wait ten minutes, still baking.
+  a: f1ea9b291b1cc5d4d2ae1eb96e2c939aa0b55ef7f66347df4ca6ffcdd0fe9dfe.mp3
+102 - Electronics store:
+- s: A
+  c: 这个充电器支持快充吗？
+  p: Zhège chōngdiànqì zhīchí kuàichōng ma?
+  t: Does this charger support fast charging?
+  d: 快充 (kuàichōng) "fast charging"
+  a: 1f4010bffe05efe6b8d44844a278df8edf3751f54d0c84e216e3a8d23335df4a.mp3
+- s: B
+  c: 支持，但要配合相应的手机。
+  p: Zhīchí, dàn yào pèihé xiāngyìng de shǒujī.
+  t: Yes, but needs a compatible phone.
+  d: 配合 (pèihé) "to match/be compatible"
+  a: 6d0fa50993e4f5b9a4c0ed1e335854efd0945b029f4d8e7a1902acf85bc29e5b.mp3
+- s: A
+  c: 我的手机是新款的，应该可以吧？
+  p: Wǒ de shǒujī shì xīnkuǎn de, yīnggāi kěyǐ ba?
+  t: My phone is a new model, should work, right?
+  a: 3f95e617c440c11a05feae26472efc5d9576384c6329c3c20b1dc3a88f8f4b20.mp3
+- s: B
+  c: 让我查查兼容型号。
+  p: Ràng wǒ chá cha jiānróng xínghào.
+  t: Let me check compatible models.
+  d: 兼容 (jiānróng) "compatible"
+  a: 352895d62c8db7cbbdfe8b7e7381704314444d3b7ff0bff7e13c4885dbcd7fef.mp3
+103 - Rainy morning:
+- s: A
+  c: 今天雨好大，地铁会晚点吗？
+  p: Jīntiān yǔ hǎo dà, dìtiě huì wǎndiǎn ma?
+  t: Heavy rain today, will the subway be delayed?
+  d: 地铁 (dìtiě) "subway",  晚点 (wǎndiǎn) "to be delayed"
+  a: 306b447f1ab90d9373f3e390bc57ae9f97f631456971ba933839e31ffa4c05df.mp3
+- s: B
+  c: 应该不会，但地下可能积水。
+  p: Yīnggāi bú huì, dàn dìxià kěnéng jīshuǐ.
+  t: Probably not, but might be water pooling underground.
+  d: 积水 (jīshuǐ) "water accumulation"
+  a: 44237710ddfedc8343014b7a66d56cb77663b17c5282aad51d5bca0d00e0fecc.mp3
+- s: A
+  c: 那我们提前出门吧。
+  p: Nà wǒmen tíqián chūmén ba.
+  t: Then let's leave early.
+  a: c913bc3cc6f8f3a6fe69eaa6687ea1a6e542b2ef8360dd0aac2f611d54e03946.mp3
+- s: B
+  c: 好，记得带伞。
+  p: Hǎo, jìde dài sǎn.
+  t: Okay, remember to bring an umbrella.
+  a: 06c09963026aeaa986b0d46a7433cca8f877c7397885c644a3adb8eb905f0953.mp3
+104 - Hotel check-in:
+- s: A
+  c: 您好，我预订了一间房。
+  p: Nínhǎo, wǒ yùdìng le yì jiān fáng.
+  t: Hello, I have a room reservation.
+  d: 预订 (yùdìng) "to reserve"
+  a: bfcf99f4ba3011edcd61d37fab9bae39de9f6f9e52a4bb3d143b61a02d44b84d.mp3
+- s: B
+  c: 请出示您的身份证。
+  p: Qǐng chūshì nín de shēnfènzhèng.
+  t: Please show your ID card.
+  d: 出示 (chūshì) "to show/present",  身份证 (shēnfènzhèng) "ID card"
+  a: 05408b23c8b85ea43ddca097295f6153a54a463c66930ce3885e3b9aabd9113d.mp3
+- s: A
+  c: 我要一间安静的房间。
+  p: Wǒ yào yì jiān ānjìng de fángjiān.
+  t: I want a quiet room.
+  a: 43eb6ad7f15bade89c9b988bb2d010816ee3561291421f709bc2c550dcdeb541.mp3
+- s: B
+  c: 好的，给您安排高层的。
+  p: Hǎo de, gěi nín ānpái gāocéng de.
+  t: Okay, I'll arrange one on a higher floor.
+  d: 高层 (gāocéng) "high floor"
+  a: 888f0c86be9e6d106a433e090c617a1e17e2ad04cec58a30b90909a060144a32.mp3
+105 - Washing machine repair:
+- s: A
+  c: 洗衣机一直在响，很奇怪。
+  p: Xǐyījī yìzhí zài xiǎng, hěn qíguài.
+  t: The washing machine keeps making noise, very strange.
+  d: 洗衣机 (xǐyījī) "washing machine"
+  a: 8eb8ff440680818306c754c84b0316f41b19f601a3b7bf5f48c46eb1fc2b3734.mp3
+- s: B
+  c: 可能是里面有硬币。
+  p: Kěnéng shì lǐmiàn yǒu yìngbì.
+  t: Might be coins inside.
+  d: 硬币 (yìngbì) "coin"
+  a: c047c7e8c8209652991d6e3ec95676dc447a2cf3f466ea3bb9a2970ebd83cc01.mp3
+- s: A
+  c: 要拆开看看吗？
+  p: Yào chāikāi kànkan ma?
+  t: Should we open it up and look?
+  d: 拆开 (chāikāi) "to take apart"
+  a: 38afc66f003c926e488f00a57008eab81e963191833ea8cc7d5e744bfec797ae.mp3
+- s: B
+  c: 先检查滤网吧。
+  p: Xiān jiǎnchá lǜwǎng ba.
+  t: Let's check the filter first.
+  d: 滤网 (lǜwǎng) "filter"
+  a: 0ee9063020b4ce434fbfb309d9e7c6e27b41f94489e4a1f1018dc04069b3f8b5.mp3
+106 - Pharmacy visit:
+- s: A
+  c: 请问感冒药在哪个货架？
+  p: Qǐngwèn gǎnmào yào zài nǎ ge huòjià?
+  t: Excuse me, which shelf has cold medicine?
+  d: 货架 (huòjià) "shelf"
+  a: 65628474eab81987ebb8c4d997ff560a32c9b20647909a22a2b583281c7c87d0.mp3
+- s: B
+  c: 需要处方药还是非处方的？
+  p: Xūyào chǔfāng yào háishi fēi chǔfāng de?
+  t: Need prescription or over-the-counter medicine?
+  d: 处方药 (chǔfāng yào) "prescription medicine"
+  a: fc970c19570278fc0250e6c4aff4dde34272a03f6cb112e5b8e2edda655d4aae.mp3
+- s: A
+  c: 就要普通的感冒药。
+  p: Jiù yào pǔtōng de gǎnmào yào.
+  t: Just regular cold medicine.
+  a: 1798b398985cdb7225cdd52a5fe213122c49341d0be64dd7d2f721c4787a7d7f.mp3
+- s: B
+  c: 在那边，要带退烧的吗？
+  p: Zài nàbiān, yào dài tuìshāo de ma?
+  t: Over there, want fever reducer too?
+  d: 退烧 (tuìshāo) "reduce fever"
+  a: 379583fa273efa474a44301f3ae0d7436f45ca83fdb9b4c3ff18cabcc1b6e2fe.mp3
+107 - Coffee shop work:
+- s: A
+  c: 这里有插座可以用吗？
+  p: Zhèlǐ yǒu chāzuò kěyǐ yòng ma?
+  t: Is there a power outlet I can use here?
+  d: 插座 (chāzuò) "power outlet"
+  a: 0707bd4d4e82ad57aff5278281ff7251bacfd47e27fa650d40c7c76d7d2b89be.mp3
+- s: B
+  c: 有，靠窗的位置都有。
+  p: Yǒu, kào chuāng de wèizhi dōu yǒu.
+  t: Yes, all window seats have them.
+  a: eed1d82f3542fbbfb04a2e6f3d825affa751b0352ae1c97b096d2f844ff8c966.mp3
+- s: A
+  c: 网络密码是多少？
+  p: Wǎngluò mìmǎ shì duōshao?
+  t: What's the WiFi password?
+  d: 密码 (mìmǎ) "password"
+  a: 0302c8947c1fad86cd49ad520364de137fbf791f8ff0f7109d3e29ec0b31b6fc.mp3
+- s: B
+  c: 在收据底部，请查看。
+  p: Zài shōujù dǐbù, qǐng chákan.
+  t: It's at the bottom of the receipt, please check.
+  d: 收据 (shōujù) "receipt"
+  a: accf3de5a5ed7c68fda161ebe70c3bb40eb99f88dd599c1a2fe11f8e02124924.mp3
+108 - Moving day:
+- s: A
+  c: 这个纸箱要不要扔掉？
+  p: Zhège zhǐxiāng yào bú yào rēng diào?
+  t: Should we throw away this cardboard box?
+  d: 纸箱 (zhǐxiāng) "cardboard box"
+  a: f4446755892ba7e156b0515555fe28bb0913f21a728b45cae17f68de0f5a15f0.mp3
+- s: B
+  c: 先别扔，可能还要用。
+  p: Xiān bié rēng, kěnéng hái yào yòng.
+  t: Don't throw it yet, might still need it.
+  a: 92219ab56bb77c2fcb6bd33deffed7e1747c5054a9efa10a21e87fe7512c75cd.mp3
+- s: A
+  c: 那放在阳台可以吗？
+  p: Nà fàng zài yángtái kěyǐ ma?
+  t: Can we put it on the balcony?
+  a: a15e133b0f9d3c78c6d48f1de1f280bd05c9e09547bf0cae6a07d0cd57a7ac44.mp3
+- s: B
+  c: 小心别淋湿了。
+  p: Xiǎoxīn bié lín shī le.
+  t: Be careful not to let it get wet.
+  d: 淋湿 (lín shī) "get wet from rain"
+  a: 5b1427223c60ca9afbea859d038b43695dde5ba3a36a87d757dd68b6a7a8cba6.mp3
+109 - Train station:
+- s: A
+  c: 下一班列车几点发车？
+  p: Xià yī bān lièchē jǐ diǎn fāchē?
+  t: What time is the next train?
+  d: 列车 (lièchē) "train",  发车 (fāchē) "departure"
+  a: d7c08e94be455728c229154f8e8dec72d17e64b21d9443d1789ddbc84fb7d3d4.mp3
+- s: B
+  c: 还有二十分钟，要验票了。
+  p: Hái yǒu èrshí fēnzhōng, yào yàn piào le.
+  t: Twenty minutes, need to check tickets now.
+  d: 验票 (yàn piào) "check tickets"
+  a: 671a1388648a0685374e42eae05266f10f65c5760979cd3a0fbd9727c0737225.mp3
+- s: A
+  c: 在哪个站台？
+  p: Zài nǎ ge zhàntái?
+  t: Which platform?
+  d: 站台 (zhàntái) "platform"
+  a: 820f0281f498cc78b5040750c0da66020f02d7f7e2daba4130a681dab9a99df3.mp3
+- s: B
+  c: 三号站台，我带你去。
+  p: Sān hào zhàntái, wǒ dài nǐ qù.
+  t: Platform 3, I'll take you there.
+  a: ebcdf937cc9bdf363f4fdfb42bb369c71bc759af06c3609c4a6da5e440dd7c1e.mp3
+110 - Fruit shop:
+- s: A
+  c: 这个芒果熟了吗？
+  p: Zhège mángguǒ shú le ma?
+  t: Is this mango ripe?
+  d: 芒果 (mángguǒ) "mango",  熟 (shú) "ripe"
+  a: d2f551c9a58c6924a6e5cc8bed81d4c1bbe7baa9a53bcfc2f9cf6afd79365a49.mp3
+- s: B
+  c: 还要等两天才能吃。
+  p: Hái yào děng liǎng tiān cái néng chī.
+  t: Need to wait two more days to eat.
+  a: 915466f6a0b2d0f8a2a1a30668d9485152cb1ea7c55a9a0ceb5ba5ab02ca0788.mp3
+- s: A
+  c: 那给我挑几个软一点的。
+  p: Nà gěi wǒ tiāo jǐ ge ruǎn yìdiǎn de.
+  t: Then pick me some softer ones.
+  d: 挑 (tiāo) "to select/pick"
+  a: 59f6fc4c065f169d622c16196b27d9e76bdd7ae41cae8333cbb2a4e9580c19e2.mp3
+- s: B
+  c: 这些都是熟透的，可以直接吃。
+  p: Zhèxiē dōu shì shú tòu de, kěyǐ zhí jiē chī.
+  t: These are fully ripe, can eat right away.
+  a: 8c58b620cbba771145b7eef935e1bd7354494c638154894877e36c0833823e91.mp3
+111 - Gym membership:
+- s: A
+  c: 办健身卡有什么优惠吗？
+  p: Bàn jiànshēn kǎ yǒu shénme yōuhuì ma?
+  t: Are there any discounts for gym membership?
+  d: 健身卡 (jiànshēn kǎ) "gym membership card"
+  a: dc613ac7ea37ff19a49f800cd0d459d02dec82968085270adb62f41d6a0e7c12.mp3
+- s: B
+  c: 年卡现在打八折。
+  p: Niánkǎ xiànzài dǎ bā zhé.
+  t: Annual membership is 20% off now.
+  d: 打折 (dǎzhé) "discount"
+  a: 266e4b3aa1d1d3eed5792f2752ac21fcae5943c881358d53f0f2ce326b5bc1b1.mp3
+- s: A
+  c: 包括私教课程吗？
+  p: Bāokuò sījiāo kèchéng ma?
+  t: Does it include personal training?
+  d: 私教 (sījiāo) "personal trainer"
+  a: 768d4d450ea4b91dca11ac7a9c5bf53c248f6319d972b0699406e15603a7f984.mp3
+- s: B
+  c: 那要另外收费。
+  p: Nà yào lìngwài shōufèi.
+  t: That's charged separately.
+  a: 0d74cbc257f25c845ed95841e7c99a98589515b33bcf4366347e0dcc0fcece27.mp3
+112 - Computer problems:
+- s: A
+  c: 我的鼠标不能用了。
+  p: Wǒ de shǔbiāo bù néng yòng le.
+  t: My mouse stopped working.
+  d: 鼠标 (shǔbiāo) "computer mouse"
+  a: 1aa3ce47b1768c98d891c3bd48539700fabe3fa10ce8f55b4835b1a171b4eed4.mp3
+- s: B
+  c: 换过电池了吗？
+  p: Huàn guò diànchí le ma?
+  t: Have you changed the batteries?
+  d: 电池 (diànchí) "battery"
+  a: 7b17dc1725c88e7f0e6360191c2aa791cf3d9fe0cd7421063a1472d39a20bad7.mp3
+- s: A
+  c: 换过了，还是没反应。
+  p: Huàn guò le, hái shì méi fǎnyìng.
+  t: Yes, still no response.
+  d: 反应 (fǎnyìng) "response"
+  a: f79c0fe0af90e02d9a6a12e5427d889a77a9eb3d7a1c13268b67c57104e7ed06.mp3
+- s: B
+  c: 可能是驱动程序的问题。
+  p: Kěnéng shì qūdòng chéngxù de wèntí.
+  t: Might be a driver issue.
+  d: 驱动程序 (qūdòng chéngxù) "driver"
+  a: 7ccf521bd33ba7e35276cd99da9b51cbb328544be009173eebbd2c99f6afe0b1.mp3
+113 - Restaurant reservation:
+- s: A
+  c: 想订个包间，六个人。
+  p: Xiǎng dìng ge bāojiān, liù ge rén.
+  t: Want to book a private room for six people.
+  d: 包间 (bāojiān) "private room"
+  a: 0bafa94debec2b1a5b8810f407994abf292001c521102bd22794a36f3f41955e.mp3
+- s: B
+  c: 午餐还是晚餐？
+  p: Wǔcān háishi wǎncān?
+  t: Lunch or dinner?
+  d: 午餐 (wǔcān) "lunch",  晚餐 (wǎncān) "dinner"
+  a: 5a21d797a3cba6480c175bc9a0b0e8db996a7f58170d6496f631f1db7a14cde1.mp3
+- s: A
+  c: 晚餐，最好有榻榻米。
+  p: Wǎncān, zuì hǎo yǒu tàtami.
+  t: Dinner, preferably with tatami.
+  d: 榻榻米 (tàtami) "tatami"
+  a: a033293a75a661164815511fa4492804ea2f596b3311ade04473413bfc0f198b.mp3
+- s: B
+  c: 好的，需要预付定金吗？
+  p: Hǎo de, xūyào yùfù dìnjīn ma?
+  t: Okay, need to pay a deposit?
+  d: 定金 (dìnjīn) "deposit"
+  a: f2ddffcc0bd7ae55720b1a02635fe8599aef19238c29705842e94c366fd77a6c.mp3
+114 - Getting a haircut:
+- s: A
+  c: 想把刘海剪短一点。
+  p: Xiǎng bǎ liúhái jiǎn duǎn yìdiǎn.
+  t: Want to cut my bangs shorter.
+  d: 刘海 (liúhái) "bangs"
+  a: 9defa79a25b7d1478e52e1535dbda723f5c52dd899f00a7eb7fb1757774f1aab.mp3
+- s: B
+  c: 要斜刘海还是直的？
+  p: Yào xié liúhái háishi zhí de?
+  t: Want diagonal or straight bangs?
+  d: 斜 (xié) "diagonal/slanted"
+  a: db9ef738d8f9b9d599be84a7ea7031bccb1f581858034dad496f7ef7d0a91284.mp3
+- s: A
+  c: 直的，但不要太齐。
+  p: Zhí de, dàn bú yào tài qí.
+  t: Straight, but not too even.
+  d: 齐 (qí) "even/uniform"
+  a: a63b4c9bfffda5b364457a9a6ce951ac1702c1179b56a7854e41fda3a3ffc491.mp3
+- s: B
+  c: 好，先喷点水。
+  p: Hǎo, xiān pēn diǎn shuǐ.
+  t: Okay, let me spray some water first.
+  d: 喷 (pēn) "to spray"
+  a: 8a954791e07c7d6fee3d0dcfe949790c583d64d70a5d2df1e752cb1bd548742a.mp3
+115 - Lost glasses:
+- s: A
+  c: 我把眼镜放哪儿了？
+  p: Wǒ bǎ yǎnjìng fàng nǎr le?
+  t: Where did I put my glasses?
+  a: df0393ec972bf8e65c5fe555b06ee2bc64461cfc158a6b11ba24caecdbd8993d.mp3
+- s: B
+  c: 刚才好像在茶几上。
+  p: Gāngcái hǎoxiàng zài chájī shàng.
+  t: Seemed to be on the coffee table earlier.
+  d: 茶几 (chájī) "coffee table"
+  a: 6489c7366df29b0d71a1fa3b0d4d79b5712aff0df379495bdcd003bd1a9e049a.mp3
+- s: A
+  c: 找到了，在书底下。
+  p: Zhǎodào le, zài shū dǐxia.
+  t: Found them, under the book.
+  a: 5e0bc3c57846aaf88f47c265aece97656311e757c2987479cc50bcd442fb465f.mp3
+- s: B
+  c: 下次记得放眼镜盒里。
+  p: Xià cì jìde fàng yǎnjìng hé lǐ.
+  t: Remember to put them in the case next time.
+  d: 眼镜盒 (yǎnjìng hé) "glasses case"
+  a: 50b30c0017d0f9183eb11a7d6163cef37cb20733f071ac9f4f6e337fe995bd5d.mp3
