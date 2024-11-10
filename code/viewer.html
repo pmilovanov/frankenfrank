@@ -19,6 +19,8 @@
             --panel-padding: 20px;
             --mobile-threshold: 768px;
             --mobile-header-height: 50px;
+            --highlight-bg: #e8f5e9;
+            --highlight-border: #2e7d32;
         }
 
         body {
@@ -91,6 +93,48 @@
             background-color: #45a049;
         }
 
+
+.dialogue-select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+        .dialogue-select:hover {
+            border-color: var(--primary-color);
+        }
+
+
+.file-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+		}
+
+		.custom-load-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-color);
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-load-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+		
         .file-control {
             margin: 0 0 16px 0;
         }
@@ -137,6 +181,12 @@
             border-radius: var(--border-radius);
             position: relative;
             box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .dialogue-line.playing {
+            background-color: var(--highlight-bg);
+            border-left-color: var(--highlight-border);
         }
 
         .speaker {
@@ -183,6 +233,10 @@
 
         .dialogue-line[data-speaker="B"] .speaker {
             background-color: var(--secondary-color);
+        }
+
+        .dialogue-line[data-speaker="B"].playing {
+            border-left-color: var(--highlight-border);
         }
 
         button.active:before {
@@ -288,11 +342,6 @@
             height: 24px;
         }
 
-		.dialogue-line.playing {
-           background-color: #e8f5e9;
-           border-left-color: #2e7d32; 
-        }
-
         @media (max-width: 768px) {
             .dialogue-title {
                 margin-top: 10px;
@@ -368,10 +417,13 @@
             </div>
 
             <div class="scrollable-content">
-                <div class="file-control">
-                    <input type="file" id="fileInput" accept=".yaml,.yml">
-                    <button onclick="document.getElementById('fileInput').click()">Load Dialogues</button>
-                </div>
+			  <div class="file-controls">
+				<select id="dialogueSelect" class="dialogue-select">
+				  <option value="">Loading dialogue files...</option>
+				</select>
+				<button onclick="document.getElementById('fileInput').click()" class="custom-load-btn" title="Load custom dialogue">...</button>
+				<input type="file" id="fileInput" accept=".yaml,.yml">
+			  </div>
 
                 <ul class="dialogue-list" id="dialogueList">
                     <li class="dialogue-item">Select a dialogue...</li>
@@ -386,12 +438,15 @@
 
     <script>
         let dialogues = {};
+        let dialogueIndex = [];
         let displayState = {
             pinyin: false,
             translation: false,
             commentary: false
         };
         let currentDialogue = null;
+        let currentDialogueFile = null;
+        let currentAudio = null;
         let isPlaying = false;
 
         function toggleMobilePanel() {
@@ -409,17 +464,42 @@
             document.getElementById(`${elementClass}Btn2`).classList.toggle('active', displayState[elementClass]);
         }
 
-        async function loadDefaultDialogues() {
+        async function loadIndex() {
             try {
-                const response = await fetch('dialogues.yaml');
+                const response = await fetch('index.yaml');
                 const text = await response.text();
-                processYamlContent(text);
+                dialogueIndex = jsyaml.load(text);
+                
+                const select = document.getElementById('dialogueSelect');
+                select.innerHTML = dialogueIndex.map(item => 
+                    `<option value="${item.path}">${item.title}</option>`
+                ).join('');
+                
+                if (dialogueIndex.length > 0) {
+                    await loadDialogueFile(dialogueIndex[0].path);
+                }
             } catch (error) {
-                console.error('Error loading default dialogues:', error);
+                console.error('Error loading index:', error);
+                document.getElementById('dialogueSelect').innerHTML = 
+                    '<option value="">Error loading dialogue files</option>';
             }
         }
 
+        async function loadDialogueFile(path) {
+            try {
+                currentDialogueFile = path;
+                const response = await fetch(path);
+                const text = await response.text();
+                processYamlContent(text);
+            } catch (error) {
+                console.error('Error loading dialogue file:', error);
+                alert(`Error loading dialogue file: ${path}`);
+            }
+        }
+
+        // Add cleanup when changing dialogues
         function processYamlContent(content) {
+            stopAudio(); // Stop any playing audio when loading new content
             try {
                 dialogues = jsyaml.load(content);
                 updateDialogueList();
@@ -442,7 +522,8 @@
                 item.textContent = dialogueId;
                 item.onclick = () => {
                     document.querySelectorAll('.dialogue-item').forEach(i => i.classList.remove('active'));
-                    item.classList.add('active');
+
+		item.classList.add('active');
                     displayDialogue(dialogueId);
                     if (window.innerWidth <= 768) {
                         toggleMobilePanel();
@@ -458,40 +539,104 @@
             }
         }
 
-async function playAudio(audioFile, lineElement = null) {
-    if (lineElement) {
-        lineElement.classList.add('playing');
-    }
-    const audio = new Audio(`audio/${audioFile}`);
-    await audio.play();
-    return new Promise(resolve => {
-        audio.onended = () => {
-            if (lineElement) {
-                lineElement.classList.remove('playing');
+
+        async function playAudio(audioFile, lineElement = null, isPartOfSequence = false) {
+            if (isPlaying && !isPartOfSequence) {
+                stopAudio();
+                return;
             }
-            resolve();
-        };
-    });
-}
 
-async function playAllAudio(dialogueId) {
-    if (isPlaying) return;
-    isPlaying = true;
+            if (lineElement) {
+                lineElement.classList.add('playing');
+            }
 
-    const dialogue = dialogues[dialogueId];
-    const lines = document.querySelectorAll('.dialogue-line');
-    
-    for (let i = 0; i < dialogue.length; i++) {
-        const line = dialogue[i];
-        if (line.a) {
-            await playAudio(line.a, lines[i]);
-            await new Promise(resolve => setTimeout(resolve, 300));
+            if (!isPartOfSequence) {
+                isPlaying = true;
+            }
+
+            currentAudio = new Audio(`audio/${audioFile}`);
+
+            try {
+                await currentAudio.play();
+                await new Promise((resolve, reject) => {
+                    currentAudio.onended = resolve;
+                    currentAudio.onerror = reject;
+                });
+            } catch (error) {
+                console.error('Error playing audio:', error);
+            } finally {
+                if (lineElement) {
+                    lineElement.classList.remove('playing');
+                }
+                if (!isPartOfSequence) {
+                    isPlaying = false;
+                    currentAudio = null;
+                }
+            }
         }
-    }
 
-    isPlaying = false;
-}
-		  
+        async function playAllAudio(dialogueId) {
+            if (isPlaying) {
+                stopAudio();
+                return;
+            }
+
+            isPlaying = true;
+            const playAllBtn = document.querySelector('.play-all-btn img');
+            playAllBtn.src = 'assets/stop32.png';
+
+            const dialogue = dialogues[dialogueId];
+            const lines = document.querySelectorAll('.dialogue-line');
+
+            try {
+                for (let i = 0; i < dialogue.length; i++) {
+                    const line = dialogue[i];
+                    if (!isPlaying) break;  // Check if we should stop
+
+                    if (line.a) {
+                        await playAudio(line.a, lines[i], true);
+                        if (isPlaying) {  // Only wait if we haven't stopped
+                            await new Promise(resolve => setTimeout(resolve, 300));
+                        }
+                    }
+                }
+            } finally {
+                // Reset play button icon
+                const playAllBtn = document.querySelector('.play-all-btn img');
+                if (playAllBtn) {
+                    playAllBtn.src = 'assets/play32.png';
+                }
+                isPlaying = false;
+                currentAudio = null;
+            }
+        }
+        
+        function stopAudio() {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Reset all playing states and icons
+            document.querySelectorAll('.dialogue-line.playing').forEach(line => {
+                line.classList.remove('playing');
+                const btn = line.querySelector('.audio-btn');
+                if (btn) {
+                    const img = btn.querySelector('img');
+                    img.src = 'assets/speaker32.png';
+                }
+            });
+
+            // Reset play all button
+            const playAllBtn = document.querySelector('.play-all-btn img');
+            if (playAllBtn) {
+                playAllBtn.src = 'assets/play32.png';
+            }
+
+            isPlaying = false;
+            currentAudio = null;
+        }
+
         function displayDialogue(dialogueId) {
             currentDialogue = dialogueId;
             const dialogue = dialogues[dialogueId];
@@ -510,11 +655,11 @@ async function playAllAudio(dialogueId) {
             const playAllBtn = document.createElement('button');
             playAllBtn.className = 'play-all-btn';
             playAllBtn.onclick = () => playAllAudio(dialogueId);
-            
+
             const playAllImg = document.createElement('img');
-            playAllImg.src = 'assets/play32.png';
-            playAllImg.alt = 'Play all';
-            
+            playAllImg.src = isPlaying ? 'assets/stop32.png' : 'assets/play32.png';
+            playAllImg.alt = isPlaying ? 'Stop' : 'Play all';
+
             playAllBtn.appendChild(playAllImg);
             titleContainer.appendChild(titleDiv);
             titleContainer.appendChild(playAllBtn);
@@ -533,20 +678,20 @@ async function playAllAudio(dialogueId) {
                 const chinese = document.createElement('div');
                 chinese.className = 'chinese';
                 chinese.textContent = line.c;
-                
+
                 if (line.a) {
                     const audioBtn = document.createElement('button');
-		            audioBtn.className = 'audio-btn';
-   				    audioBtn.onclick = () => playAudio(line.a, lineDiv); 
-                    
+                    audioBtn.className = 'audio-btn';
+                    audioBtn.onclick = () => playAudio(line.a, lineDiv);
+
                     const audioImg = document.createElement('img');
                     audioImg.src = 'assets/speaker32.png';
                     audioImg.alt = 'Play audio';
-                    
+
                     audioBtn.appendChild(audioImg);
                     chinese.appendChild(audioBtn);
                 }
-                
+
                 lineDiv.appendChild(chinese);
 
                 const pinyin = document.createElement('div');
@@ -570,23 +715,34 @@ async function playAllAudio(dialogueId) {
             });
 
             Object.entries(displayState).forEach(([key, value]) => {
-                document.querySelectorAll(`.${key}`).forEach(el => 
+                document.querySelectorAll(`.${key}`).forEach(el =>
                     el.classList.toggle('hidden', !value));
                 document.getElementById(`${key}Btn`).classList.toggle('active', value);
                 document.getElementById(`${key}Btn2`).classList.toggle('active', value);
             });
         }
 
-        document.getElementById('fileInput').addEventListener('change', (event) => {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (e) => processYamlContent(e.target.result);
-                reader.readAsText(file);
-            }
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add event listener for dropdown
+            document.getElementById('dialogueSelect').addEventListener('change', (event) => {
+                if (event.target.value) {
+                    loadDialogueFile(event.target.value);
+                }
+            });
 
-        loadDefaultDialogues();
+            // Add event listener for file input
+            document.getElementById('fileInput').addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => processYamlContent(e.target.result);
+                    reader.readAsText(file);
+                }
+            });
+
+            // Load index instead of default dialogues
+            loadIndex();
+        });
     </script>
 </body>
 </html>
