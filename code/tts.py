@@ -5,7 +5,7 @@ from google.cloud import texttospeech_v1beta1
 from google.auth.exceptions import DefaultCredentialsError
 from pathlib import Path
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 import logging
 import argparse
 import shutil
@@ -35,7 +35,6 @@ class DialogueTTSGenerator:
         self.output_dir.mkdir(exist_ok=True, parents=True)
         self.batch_size = batch_size
         
-        # Define different voices for different speakers using Wavenet
         self.speaker_voices = {
             'A': texttospeech_v1beta1.VoiceSelectionParams(
                 language_code='cmn-CN',
@@ -44,6 +43,14 @@ class DialogueTTSGenerator:
             'B': texttospeech_v1beta1.VoiceSelectionParams(
                 language_code='cmn-CN',
                 name='cmn-CN-Wavenet-B',
+            ),
+            'C': texttospeech_v1beta1.VoiceSelectionParams(
+                language_code='cmn-CN',
+                name='cmn-CN-Wavenet-C',
+            ),
+            'D': texttospeech_v1beta1.VoiceSelectionParams(
+                language_code='cmn-CN',
+                name='cmn-CN-Wavenet-D',
             ),
         }
         
@@ -57,7 +64,12 @@ class DialogueTTSGenerator:
         """Generate a hash for the Chinese text to use as filename"""
         return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
-    async def generate_audio_for_line(self, text: str, speaker: str) -> tuple[str, bytes]:
+    def get_audio_path(self, text: str) -> Path:
+        """Get the expected audio file path for a given text"""
+        filename = f"{self.get_file_hash(text)}.mp3"
+        return self.output_dir / filename
+
+    async def generate_audio_for_line(self, text: str, speaker: str) -> Tuple[str, bytes]:
         """Generate audio for a single line of dialogue"""
         synthesis_input = texttospeech_v1beta1.SynthesisInput(text=text)
         voice = self.speaker_voices.get(speaker)
@@ -70,39 +82,40 @@ class DialogueTTSGenerator:
             audio_config=self.audio_config
         )
 
-        file_hash = self.get_file_hash(text)
-        filename = f"{file_hash}.mp3"
-        
+        filename = f"{self.get_file_hash(text)}.mp3"
         return filename, response.audio_content
+
+    async def process_line(self, line: Dict[str, Any]) -> Dict[str, Any]:
+        """Process a single dialogue line, checking for existing audio"""
+        if 'c' not in line:
+            return line
+        
+        # Calculate expected audio path
+        audio_path = self.get_audio_path(line['c'])
+        expected_filename = audio_path.name
+        
+        # If audio attribute exists and file exists, skip
+        if 'a' in line and audio_path.exists():
+            logger.debug(f"Skipping line with existing audio: {line['c'][:20]}...")
+            return line
+            
+        # If file exists but attribute is missing, add attribute
+        if audio_path.exists():
+            logger.info(f"Found existing audio file for: {line['c'][:20]}...")
+            line['a'] = expected_filename
+            return line
+            
+        # If neither exists, generate new audio
+        logger.info(f"Generating new audio for: {line['c'][:20]}...")
+        filename, audio_content = await self.generate_audio_for_line(line['c'], line['s'])
+        with open(audio_path, "wb") as out:
+            out.write(audio_content)
+        line['a'] = filename
+        return line
 
     async def process_batch(self, batch: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Process a batch of dialogue lines concurrently"""
-        tasks = [
-            self.generate_audio_for_line(line['c'], line['s'])
-            for line in batch
-            if 'c' in line and 'a' not in line  # Skip if already processed
-        ]
-        
-        if not tasks:
-            return batch
-
-        try:
-            results = await asyncio.gather(*tasks)
-            
-            # Update batch with audio filenames and save audio files
-            for line, (filename, audio_content) in zip(batch, results):
-                if 'c' in line and 'a' not in line:
-                    file_path = self.output_dir / filename
-                    with open(file_path, "wb") as out:
-                        out.write(audio_content)
-                    line['a'] = filename
-                    logger.info(f"Generated audio for: {line['c'][:20]}...")
-            
-        except Exception as e:
-            logger.error(f"Error processing batch: {e}")
-            raise
-
-        return batch
+        return await asyncio.gather(*[self.process_line(line) for line in batch])
 
     async def process_dialogues(self, yaml_content: str) -> Dict:
         """Process all dialogues in the YAML content with batching"""
@@ -129,9 +142,8 @@ class DialogueTTSGenerator:
             
             # Update the original data structure
             for j, line in enumerate(processed_batch):
-                if 'a' in line:
-                    dialogue_key, line_index = line_locations[i + j]
-                    data[dialogue_key][line_index]['a'] = line['a']
+                dialogue_key, line_index = line_locations[i + j]
+                data[dialogue_key][line_index] = line
 
         return data
 
@@ -166,7 +178,7 @@ async def main(args: argparse.Namespace):
         with open(input_path, 'w', encoding='utf-8') as f:
             yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
         
-        logger.info(f"Successfully generated audio files")
+        logger.info(f"Successfully processed all dialogue lines")
         logger.info(f"Original YAML backed up to: {backup_path}")
         logger.info(f"Updated YAML saved in-place at: {input_path}")
         
