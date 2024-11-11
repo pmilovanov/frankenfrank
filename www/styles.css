@@ -424,56 +424,56 @@ body {
     }
 }
 
-@media (min-width: 769px) {
-    [title] {
-        position: relative;
-    }
+/*@media (min-width: 769px) {*/
+/*    [title] {*/
+/*        position: relative;*/
+/*    }*/
 
-    .audio-btn[title]::before,
-    .play-all-btn[title]::before {
-        content: attr(title);
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 4px 8px;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        font-size: 12px;
-        border-radius: 4px;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.2s;
-        pointer-events: none;
-        z-index: 1000;
-    }
+/*    .audio-btn[title]::before,*/
+/*    .play-all-btn[title]::before {*/
+/*        content: attr(title);*/
+/*        position: absolute;*/
+/*        bottom: 100%;*/
+/*        left: 50%;*/
+/*        transform: translateX(-50%);*/
+/*        padding: 4px 8px;*/
+/*        background-color: rgba(0, 0, 0, 0.8);*/
+/*        color: white;*/
+/*        font-size: 12px;*/
+/*        border-radius: 4px;*/
+/*        white-space: nowrap;*/
+/*        opacity: 0;*/
+/*        visibility: hidden;*/
+/*        transition: opacity 0.2s;*/
+/*        pointer-events: none;*/
+/*        z-index: 1000;*/
+/*    }*/
 
-    .audio-btn[title]::after,
-    .play-all-btn[title]::after {
-        content: '';
-        position: absolute;
-        top: -6px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-width: 6px 6px 0 6px;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.2s;
-        pointer-events: none;
-    }
+/*    .audio-btn[title]::after,*/
+/*    .play-all-btn[title]::after {*/
+/*        content: '';*/
+/*        position: absolute;*/
+/*        top: -6px;*/
+/*        left: 50%;*/
+/*        transform: translateX(-50%);*/
+/*        border-width: 6px 6px 0 6px;*/
+/*        border-style: solid;*/
+/*        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;*/
+/*        opacity: 0;*/
+/*        visibility: hidden;*/
+/*        transition: opacity 0.2s;*/
+/*        pointer-events: none;*/
+/*    }*/
 
-    .audio-btn[title]:hover::before,
-    .play-all-btn[title]:hover::before,
-    .audio-btn[title]:hover::after,
-    .play-all-btn[title]:hover::after {
-        opacity: 1;
-        visibility: visible;
-        transition-delay: 500ms;
-    }
-}
+/*    .audio-btn[title]:hover::before,*/
+/*    .play-all-btn[title]:hover::before,*/
+/*    .audio-btn[title]:hover::after,*/
+/*    .play-all-btn[title]:hover::after {*/
+/*        opacity: 1;*/
+/*        visibility: visible;*/
+/*        transition-delay: 500ms;*/
+/*    }*/
+/*}*/
 
 .hamburger-icon {
     width: 18px;
