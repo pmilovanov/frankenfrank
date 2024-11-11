@@ -1,6 +1,7 @@
 let dialogues = {};
 let dialogueIndex = [];
 let displayState = {
+    characters: true,
     pinyin: false,
     translation: false,
     commentary: false
@@ -11,19 +12,92 @@ let currentAudio = null;
 let isPlaying = false;
 let isPlayingSlow = false;
 
+// Add this to your state management
+let lineStates = new Map(); // Store state for each line
+
+// Define the possible states
+const LINE_STATES = [
+    ['chinese'],
+    ['chinese', 'pinyin'],
+    ['chinese', 'pinyin', 'translation'],
+    ['chinese', 'pinyin', 'translation', 'commentary']
+];
+
 function toggleMobilePanel() {
     const panel = document.getElementById('sidePanel');
     panel.classList.toggle('open');
 }
 
 function toggleElement(elementClass) {
-    displayState[elementClass] = !displayState[elementClass];
+    lineStates.clear();  // Clear individual line states when using global controls
 
-    document.querySelectorAll(`.${elementClass}`).forEach(el =>
-        el.classList.toggle('hidden', !displayState[elementClass]));
+    if (elementClass === 'characters') {
+        // Show only characters
+        displayState = {
+            characters: true,
+            pinyin: false,
+            translation: false,
+            commentary: false
+        };
+    } else if (elementClass === 'pinyin') {
+        // Show characters + pinyin
+        displayState = {
+            characters: true,
+            pinyin: true,
+            translation: false,
+            commentary: false
+        };
+    } else if (elementClass === 'translation') {
+        // Show characters + pinyin + translation
+        displayState = {
+            characters: true,
+            pinyin: true,
+            translation: true,
+            commentary: false
+        };
+    } else if (elementClass === 'commentary') {
+        // Show all
+        displayState = {
+            characters: true,
+            pinyin: true,
+            translation: true,
+            commentary: true
+        };
+    }
 
-    document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
-    document.getElementById(`${elementClass}Btn2`).classList.toggle('active', displayState[elementClass]);
+    updateVisibility();
+    updateButtonStates();
+}
+
+function updateVisibility() {
+    document.querySelectorAll('.dialogue-line').forEach(line => {
+        const lineIndex = Array.from(line.parentElement.children).indexOf(line);
+
+        // If this line has been individually cycled, skip it
+        if (lineStates.has(lineIndex)) {
+            return;
+        }
+
+        // Otherwise, apply global state
+        line.querySelector('.chinese').classList.remove('hidden');
+        const pinyin = line.querySelector('.pinyin');
+        const translation = line.querySelector('.translation');
+        const commentary = line.querySelector('.commentary');
+
+        pinyin?.classList.toggle('hidden', !displayState.pinyin);
+        translation?.classList.toggle('hidden', !displayState.translation);
+        commentary?.classList?.toggle('hidden', !displayState.commentary);
+    });
+}
+
+function updateButtonStates() {
+    Object.keys(displayState).forEach(key => {
+        const btn = document.getElementById(`${key}Btn`);
+        const btn2 = document.getElementById(`${key}Btn2`);
+
+        if (btn) btn.classList.toggle('active', displayState[key]);
+        if (btn2) btn2.classList.toggle('active', displayState[key]);
+    });
 }
 
 async function loadIndex() {
@@ -59,7 +133,6 @@ async function loadDialogueFile(path) {
     }
 }
 
-// Add cleanup when changing dialogues
 function processYamlContent(content) {
     stopAudio(); // Stop any playing audio when loading new content
     try {
@@ -84,7 +157,6 @@ function updateDialogueList() {
         item.textContent = dialogueId;
         item.onclick = () => {
             document.querySelectorAll('.dialogue-item').forEach(i => i.classList.remove('active'));
-
             item.classList.add('active');
             displayDialogue(dialogueId);
             if (window.innerWidth <= 768) {
@@ -100,7 +172,6 @@ function updateDialogueList() {
         displayDialogue(firstDialogueId);
     }
 }
-
 
 async function playAudio(audioFile, lineElement = null, isPartOfSequence = false) {
     if (isPlaying && !isPartOfSequence) {
@@ -142,11 +213,9 @@ function updatePlayButtons(playing = false, slow = false) {
     playAllBtns.forEach((btn, index) => {
         const img = btn.querySelector('img');
         if (playing && ((slow && index === 1) || (!slow && index === 0))) {
-            // Show stop icon only for the active button
             img.src = 'assets/stop32.png';
             btn.title = 'Stop';
         } else {
-            // Show appropriate play icon for inactive button
             if (index === 0) {
                 img.src = 'assets/play32.png';
                 btn.title = 'Play dialogue';
@@ -157,7 +226,6 @@ function updatePlayButtons(playing = false, slow = false) {
         }
     });
 }
-
 async function playAllAudio(dialogueId, slow = false) {
     if (isPlaying) {
         stopAudio();
@@ -261,10 +329,38 @@ function createPlayAllButtons(dialogueId, hasSlowVersion) {
     return buttonsContainer;
 }
 
+function cycleLine(lineDiv) {
+    const lineIndex = Array.from(lineDiv.parentElement.children).indexOf(lineDiv);
+    const currentState = lineStates.get(lineIndex) || 0;
+    const nextState = (currentState + 1) % LINE_STATES.length;
+    lineStates.set(lineIndex, nextState);
+
+    // Update visibility of elements
+    const pinyin = lineDiv.querySelector('.pinyin');
+    const translation = lineDiv.querySelector('.translation');
+    const commentary = lineDiv.querySelector('.commentary');
+
+    pinyin?.classList.toggle('hidden', !LINE_STATES[nextState].includes('pinyin'));
+    translation?.classList.toggle('hidden', !LINE_STATES[nextState].includes('translation'));
+    commentary?.classList?.toggle('hidden', !LINE_STATES[nextState].includes('commentary'));
+}
+
 function createDialogueLine(line) {
     const lineDiv = document.createElement('div');
     lineDiv.className = 'dialogue-line';
     lineDiv.setAttribute('data-speaker', line.s);
+
+    // Add click handler for cycling
+    lineDiv.addEventListener('click', (e) => {
+        // Don't cycle if clicking on buttons or their containers
+        if (e.target.closest('.audio-btn') || e.target.closest('.audio-buttons')) {
+            return;
+        }
+        cycleLine(lineDiv);
+    });
+
+    // Make it look clickable
+    lineDiv.style.cursor = 'pointer';
 
     const speaker = document.createElement('div');
     speaker.className = 'speaker';
@@ -311,16 +407,9 @@ function createDialogueLine(line) {
     return lineDiv;
 }
 
-function updateDisplayState() {
-    Object.entries(displayState).forEach(([key, value]) => {
-        document.querySelectorAll(`.${key}`).forEach(el =>
-            el.classList.toggle('hidden', !value));
-        document.getElementById(`${key}Btn`).classList.toggle('active', value);
-        document.getElementById(`${key}Btn2`).classList.toggle('active', value);
-    });
-}
-
 function displayDialogue(dialogueId) {
+    lineStates.clear();
+
     currentDialogue = dialogueId;
     const dialogue = dialogues[dialogueId];
     if (!dialogue) return;
@@ -347,7 +436,8 @@ function displayDialogue(dialogueId) {
         content.appendChild(createDialogueLine(line));
     });
 
-    updateDisplayState();
+    updateVisibility();
+    updateButtonStates();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

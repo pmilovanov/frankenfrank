@@ -73,18 +73,22 @@ body {
     flex: 1;
     padding: 8px;
     font-size: 0.9em;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #e0e0e0;  /* Default light gray color */
+    color: #666;  /* Default darker gray text */
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .controls button:hover {
-    background-color: #45a049;
+    background-color: #d0d0d0;
 }
 
+.controls button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
 
 .dialogue-select {
     flex-grow: 1;
@@ -174,6 +178,8 @@ body {
     position: relative;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
 }
 
 .dialogue-line.playing {
@@ -232,11 +238,6 @@ body {
     border-left-color: var(--highlight-border);
 }
 
-button.active:before {
-    content: "✓";
-    margin-right: 5px;
-}
-
 #fileInput {
     display: none;
 }
@@ -271,6 +272,7 @@ button.active:before {
 .dialogues-btn {
     display: none;
     background-color: var(--accent-color) !important;
+    color: white !important;
 }
 
 .dialogues-btn:hover {
