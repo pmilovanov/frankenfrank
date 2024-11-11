@@ -10,7 +10,7 @@
     --side-panel-width: 300px;
     --panel-padding: 20px;
     --mobile-threshold: 768px;
-    --mobile-header-height: 50px;
+    --mobile-header-height: 44px;
     --highlight-bg: #e8f5e9;
     --highlight-border: #2e7d32;
 }
@@ -256,13 +256,14 @@ body {
     background: var(--panel-bg);
     box-shadow: var(--shadow);
     z-index: 1000;
-    padding: 8px;
+    padding: 6px;
 }
 
 .mobile-controls .controls {
     margin: 0;
     height: 100%;
     align-items: center;
+    gap: 6px;
 }
 
 .mobile-controls button {
@@ -273,7 +274,8 @@ body {
     display: none;
     background-color: var(--accent-color) !important;
     color: white !important;
-    width: 40px !important;  /* Fixed width for the icon button */
+    width: 44px !important;  /* Fixed width for the icon button */
+    height: 32px !important;  /* Fixed height for the icon button */
     flex: none !important;   /* Don't flex this button */
     padding: 0 !important;   /* Remove padding */
     display: flex;           /* Center the icon */
