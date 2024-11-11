@@ -296,6 +296,12 @@ button.active:before {
     margin: 0;
 }
 
+.dialogue-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .play-all-btn {
     background: none;
     border: none;
@@ -305,6 +311,9 @@ button.active:before {
     align-items: center;
 }
 
+.play-all-btn:not(:first-child) {
+    margin-left: 4px;
+}
 .play-all-btn:hover {
     opacity: 0.8;
 }

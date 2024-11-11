@@ -136,15 +136,17 @@ async function playAudio(audioFile, lineElement = null, isPartOfSequence = false
     }
 }
 
-async function playAllAudio(dialogueId) {
+async function playAllAudio(dialogueId, slow = false) {
     if (isPlaying) {
         stopAudio();
         return;
     }
 
     isPlaying = true;
-    const playAllBtn = document.querySelector('.play-all-btn img');
-    playAllBtn.src = 'assets/stop32.png';
+    const playAllBtns = document.querySelectorAll('.play-all-btn img');
+    playAllBtns.forEach(btn => {
+        btn.src = 'assets/stop32.png';
+    });
 
     const dialogue = dialogues[dialogueId];
     const lines = document.querySelectorAll('.dialogue-line');
@@ -155,18 +157,19 @@ async function playAllAudio(dialogueId) {
             if (!isPlaying) break;  // Check if we should stop
 
             if (line.a) {
-                await playAudio(line.a, lines[i], true);
+                // Use slow version if requested and available, otherwise use normal version
+                const audioFile = (slow && line.as) ? line.as : line.a;
+                await playAudio(audioFile, lines[i], true);
                 if (isPlaying) {  // Only wait if we haven't stopped
                     await new Promise(resolve => setTimeout(resolve, 300));
                 }
             }
         }
     } finally {
-        // Reset play button icon
-        const playAllBtn = document.querySelector('.play-all-btn img');
-        if (playAllBtn) {
-            playAllBtn.src = 'assets/play32.png';
-        }
+        // Reset play button icons
+        playAllBtns.forEach(btn => {
+            btn.src = btn.alt.includes('slow') ? 'assets/snail32.png' : 'assets/play32.png';
+        });
         isPlaying = false;
         currentAudio = null;
     }
@@ -206,6 +209,9 @@ function displayDialogue(dialogueId) {
     const content = document.getElementById('dialogueContent');
     content.innerHTML = '';
 
+    // Check if any line has slow speed version before creating the title
+    const hasAnySlowVersion = dialogue.some(line => line.as);
+
     const titleContainer = document.createElement('div');
     titleContainer.className = 'dialogue-title-container';
 
@@ -213,17 +219,36 @@ function displayDialogue(dialogueId) {
     titleDiv.className = 'dialogue-title';
     titleDiv.textContent = dialogueId;
 
+    const buttonsContainer = document.createElement('div');
+    buttonsContainer.className = 'dialogue-buttons';
+
     const playAllBtn = document.createElement('button');
     playAllBtn.className = 'play-all-btn';
-    playAllBtn.onclick = () => playAllAudio(dialogueId);
+    playAllBtn.onclick = () => playAllAudio(dialogueId, false);
 
     const playAllImg = document.createElement('img');
     playAllImg.src = isPlaying ? 'assets/stop32.png' : 'assets/play32.png';
     playAllImg.alt = isPlaying ? 'Stop' : 'Play all';
 
     playAllBtn.appendChild(playAllImg);
+    buttonsContainer.appendChild(playAllBtn);
+
+    // Add slow speed button if any line has slow version
+    if (hasAnySlowVersion) {
+        const playAllSlowBtn = document.createElement('button');
+        playAllSlowBtn.className = 'play-all-btn';
+        playAllSlowBtn.onclick = () => playAllAudio(dialogueId, true);
+
+        const playAllSlowImg = document.createElement('img');
+        playAllSlowImg.src = isPlaying ? 'assets/stop32.png' : 'assets/snail32.png';
+        playAllSlowImg.alt = isPlaying ? 'Stop' : 'Play all slow';
+
+        playAllSlowBtn.appendChild(playAllSlowImg);
+        buttonsContainer.appendChild(playAllSlowBtn);
+    }
+
     titleContainer.appendChild(titleDiv);
-    titleContainer.appendChild(playAllBtn);
+    titleContainer.appendChild(buttonsContainer);
     content.appendChild(titleContainer);
 
     dialogue.forEach(line => {
@@ -243,7 +268,7 @@ function displayDialogue(dialogueId) {
         if (line.a) {
             const audioBtn = document.createElement('button');
             audioBtn.className = 'audio-btn';
-            audioBtn.onclick = () => playAudio(line.a, lineDiv);
+            audioBtn.onclick = () => playAudio(line.a, lineDiv, false);
 
             const audioImg = document.createElement('img');
             audioImg.src = 'assets/speaker32.png';
@@ -251,6 +276,20 @@ function displayDialogue(dialogueId) {
 
             audioBtn.appendChild(audioImg);
             chinese.appendChild(audioBtn);
+
+            // Add slow speed button if available
+            if (line.as) {
+                const audioSlowBtn = document.createElement('button');
+                audioSlowBtn.className = 'audio-btn';
+                audioSlowBtn.onclick = () => playAudio(line.as, lineDiv, false);
+
+                const audioSlowImg = document.createElement('img');
+                audioSlowImg.src = 'assets/snail32.png';
+                audioSlowImg.alt = 'Play audio slow';
+
+                audioSlowBtn.appendChild(audioSlowImg);
+                chinese.appendChild(audioSlowBtn);
+            }
         }
 
         lineDiv.appendChild(chinese);
