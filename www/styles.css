@@ -273,6 +273,12 @@ body {
     display: none;
     background-color: var(--accent-color) !important;
     color: white !important;
+    width: 40px !important;  /* Fixed width for the icon button */
+    flex: none !important;   /* Don't flex this button */
+    padding: 0 !important;   /* Remove padding */
+    display: flex;           /* Center the icon */
+    align-items: center;
+    justify-content: center;
 }
 
 .dialogues-btn:hover {
@@ -453,4 +459,21 @@ body {
     opacity: 1;
     visibility: visible;
     transition-delay: 500ms;
+}
+
+.hamburger-icon {
+    width: 18px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
 }

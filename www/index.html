@@ -15,7 +15,13 @@
                 <button onclick="toggleElement('pinyin')" id="pinyinBtn">Pinyin</button>
                 <button onclick="toggleElement('translation')" id="translationBtn">Eng</button>
                 <button onclick="toggleElement('commentary')" id="commentaryBtn">Notes</button>
-                <button onclick="toggleMobilePanel()" class="dialogues-btn">Dialogues</button>
+                <button onclick="toggleMobilePanel()" class="dialogues-btn" aria-label="Menu">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
             </div>
         </div>
 
