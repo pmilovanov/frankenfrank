@@ -10,7 +10,7 @@
     --side-panel-width: 300px;
     --panel-padding: 20px;
     --mobile-threshold: 768px;
-    --mobile-header-height: 44px;
+    --mobile-header-height: 50px;
     --highlight-bg: #e8f5e9;
     --highlight-border: #2e7d32;
 }
@@ -31,7 +31,7 @@ body {
 
 .side-panel {
     background: var(--panel-bg);
-    padding: var(--panel-padding);
+    padding: 0 var(--panel-padding);
     width: var(--side-panel-width);
     box-shadow: var(--shadow);
     flex-shrink: 0;
@@ -39,7 +39,6 @@ body {
     position: sticky;
     top: 0;
     overflow-y: auto;
-    display: flex;
     flex-direction: column;
 }
 
@@ -49,6 +48,9 @@ body {
     background: var(--panel-bg);
     padding-bottom: 15px;
     z-index: 1;
+    border-bottom: 1px solid #eee;  /* Optional: add a subtle separator */
+    margin: -40px -20px 0 -20px;    /* Compensate for panel padding */
+    padding: 20px 20px 15px 20px;   /* Restore padding */
 }
 
 .scrollable-content {
@@ -251,31 +253,35 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     height: var(--mobile-header-height);
     background: var(--panel-bg);
     box-shadow: var(--shadow);
     z-index: 1000;
-    padding: 6px;
+    padding: 8px;
+    box-sizing: border-box;  /* Critical: include padding in width calculation */
 }
 
 .mobile-controls .controls {
     margin: 0;
     height: 100%;
     align-items: center;
+    display: flex;
     gap: 6px;
+    width: 100%;    /* Take full width */
+    box-sizing: border-box;
 }
 
-.mobile-controls button {
+.mobile-controls .controls button {
     height: 34px;
+    white-space: nowrap;
 }
 
 .dialogues-btn {
     display: none;
     background-color: var(--accent-color) !important;
     color: white !important;
-    width: 44px !important;  /* Fixed width for the icon button */
-    height: 32px !important;  /* Fixed height for the icon button */
+    width: 40px !important;  /* Fixed width for the icon button */
     flex: none !important;   /* Don't flex this button */
     padding: 0 !important;   /* Remove padding */
     display: flex;           /* Center the icon */
@@ -367,6 +373,10 @@ body {
     }
 
     .side-panel .controls {
+        display: none;
+    }
+
+    .controls-wrapper {
         display: none;
     }
 
