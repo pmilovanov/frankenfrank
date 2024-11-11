@@ -214,24 +214,21 @@ function stopAudio() {
     updatePlayButtons();
 }
 
-function displayDialogue(dialogueId) {
-    currentDialogue = dialogueId;
-    const dialogue = dialogues[dialogueId];
-    if (!dialogue) return;
+function createAudioButton(audioFile, lineDiv, isSlow = false) {
+    const audioBtn = document.createElement('button');
+    audioBtn.className = 'audio-btn';
+    audioBtn.onclick = () => playAudio(audioFile, lineDiv, false);
+    audioBtn.title = isSlow ? 'Play pronunciation slowly' : 'Play pronunciation';
 
-    const content = document.getElementById('dialogueContent');
-    content.innerHTML = '';
+    const audioImg = document.createElement('img');
+    audioImg.src = isSlow ? 'assets/speaker-slow32.png' : 'assets/speaker32.png';
+    audioImg.alt = isSlow ? 'Play audio slow' : 'Play audio';
 
-    // Check if any line has slow speed version before creating the title
-    const hasAnySlowVersion = dialogue.some(line => line.as);
+    audioBtn.appendChild(audioImg);
+    return audioBtn;
+}
 
-    const titleContainer = document.createElement('div');
-    titleContainer.className = 'dialogue-title-container';
-
-    const titleDiv = document.createElement('div');
-    titleDiv.className = 'dialogue-title';
-    titleDiv.textContent = dialogueId;
-
+function createPlayAllButtons(dialogueId, hasSlowVersion) {
     const buttonsContainer = document.createElement('div');
     buttonsContainer.className = 'dialogue-buttons';
 
@@ -247,8 +244,7 @@ function displayDialogue(dialogueId) {
     playAllBtn.appendChild(playAllImg);
     buttonsContainer.appendChild(playAllBtn);
 
-    // Add slow speed button if any line has slow version
-    if (hasAnySlowVersion) {
+    if (hasSlowVersion) {
         const playAllSlowBtn = document.createElement('button');
         playAllSlowBtn.className = 'play-all-btn';
         playAllSlowBtn.onclick = () => playAllAudio(dialogueId, true);
@@ -262,82 +258,60 @@ function displayDialogue(dialogueId) {
         buttonsContainer.appendChild(playAllSlowBtn);
     }
 
-    titleContainer.appendChild(titleDiv);
-    titleContainer.appendChild(buttonsContainer);
-    content.appendChild(titleContainer);
+    return buttonsContainer;
+}
 
-    dialogue.forEach(line => {
-        const lineDiv = document.createElement('div');
-        lineDiv.className = 'dialogue-line';
-        lineDiv.setAttribute('data-speaker', line.s);
+function createDialogueLine(line) {
+    const lineDiv = document.createElement('div');
+    lineDiv.className = 'dialogue-line';
+    lineDiv.setAttribute('data-speaker', line.s);
 
-        const speaker = document.createElement('div');
-        speaker.className = 'speaker';
-        speaker.textContent = line.s;
-        lineDiv.appendChild(speaker);
+    const speaker = document.createElement('div');
+    speaker.className = 'speaker';
+    speaker.textContent = line.s;
+    lineDiv.appendChild(speaker);
 
-        const chinese = document.createElement('div');
-        chinese.className = 'chinese';
-        const chineseText = document.createElement('span');
-        chineseText.textContent = line.c;
-        chinese.appendChild(chineseText);
+    const chinese = document.createElement('div');
+    chinese.className = 'chinese';
+    const chineseText = document.createElement('span');
+    chineseText.textContent = line.c;
+    chinese.appendChild(chineseText);
 
-        if (line.a) {
-            const audioButtonsContainer = document.createElement('div');
-            audioButtonsContainer.className = 'audio-buttons';
+    if (line.a) {
+        const audioButtonsContainer = document.createElement('div');
+        audioButtonsContainer.className = 'audio-buttons';
+        audioButtonsContainer.appendChild(createAudioButton(line.a, lineDiv));
 
-            const audioBtn = document.createElement('button');
-            audioBtn.className = 'audio-btn';
-            audioBtn.onclick = () => playAudio(line.a, lineDiv, false);
-            audioBtn.title = 'Play pronunciation';
-
-            const audioImg = document.createElement('img');
-            audioImg.src = 'assets/speaker32.png';
-            audioImg.alt = 'Play audio';
-
-            audioBtn.appendChild(audioImg);
-            audioButtonsContainer.appendChild(audioBtn);
-
-            // Add slow speed button if available
-            if (line.as) {
-                const audioSlowBtn = document.createElement('button');
-                audioSlowBtn.className = 'audio-btn';
-                audioSlowBtn.onclick = () => playAudio(line.as, lineDiv, false);
-                audioSlowBtn.title = 'Play pronunciation slowly';
-
-                const audioSlowImg = document.createElement('img');
-                audioSlowImg.src = 'assets/speaker-slow32.png';
-                audioSlowImg.alt = 'Play audio slow';
-
-                audioSlowBtn.appendChild(audioSlowImg);
-                audioButtonsContainer.appendChild(audioSlowBtn);
-            }
-
-            chinese.appendChild(audioButtonsContainer);
+        if (line.as) {
+            audioButtonsContainer.appendChild(createAudioButton(line.as, lineDiv, true));
         }
 
-        lineDiv.appendChild(chinese);
+        chinese.appendChild(audioButtonsContainer);
+    }
 
-        const pinyin = document.createElement('div');
-        pinyin.className = 'pinyin hidden';
-        pinyin.textContent = line.p;
-        lineDiv.appendChild(pinyin);
+    lineDiv.appendChild(chinese);
 
-        const translation = document.createElement('div');
-        translation.className = 'translation hidden';
-        translation.textContent = line.t;
-        lineDiv.appendChild(translation);
+    const pinyin = document.createElement('div');
+    pinyin.className = 'pinyin hidden';
+    pinyin.textContent = line.p;
+    lineDiv.appendChild(pinyin);
 
-        if (line.d) {
-            const commentary = document.createElement('div');
-            commentary.className = 'commentary hidden';
-            commentary.textContent = line.d;
-            lineDiv.appendChild(commentary);
-        }
+    const translation = document.createElement('div');
+    translation.className = 'translation hidden';
+    translation.textContent = line.t;
+    lineDiv.appendChild(translation);
 
-        content.appendChild(lineDiv);
-    });
+    if (line.d) {
+        const commentary = document.createElement('div');
+        commentary.className = 'commentary hidden';
+        commentary.textContent = line.d;
+        lineDiv.appendChild(commentary);
+    }
 
+    return lineDiv;
+}
+
+function updateDisplayState() {
     Object.entries(displayState).forEach(([key, value]) => {
         document.querySelectorAll(`.${key}`).forEach(el =>
             el.classList.toggle('hidden', !value));
@@ -346,6 +320,35 @@ function displayDialogue(dialogueId) {
     });
 }
 
+function displayDialogue(dialogueId) {
+    currentDialogue = dialogueId;
+    const dialogue = dialogues[dialogueId];
+    if (!dialogue) return;
+
+    const content = document.getElementById('dialogueContent');
+    content.innerHTML = '';
+
+    const hasAnySlowVersion = dialogue.some(line => line.as);
+
+    const titleContainer = document.createElement('div');
+    titleContainer.className = 'dialogue-title-container';
+
+    const titleDiv = document.createElement('div');
+    titleDiv.className = 'dialogue-title';
+    titleDiv.textContent = dialogueId;
+
+    const buttonsContainer = createPlayAllButtons(dialogueId, hasAnySlowVersion);
+
+    titleContainer.appendChild(titleDiv);
+    titleContainer.appendChild(buttonsContainer);
+    content.appendChild(titleContainer);
+
+    dialogue.forEach(line => {
+        content.appendChild(createDialogueLine(line));
+    });
+
+    updateDisplayState();
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // Add event listener for dropdown
