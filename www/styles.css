@@ -250,13 +250,16 @@ body {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);  /* Center the panel */
+    max-width: 400px;  /* Limit maximum width */
+    width: 95%;        /* Take up most but not all of the screen width */
     height: var(--mobile-header-height);
     background: var(--panel-bg);
     box-shadow: var(--shadow);
     z-index: 1000;
     padding: 6px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);  /* Round bottom corners */
 }
 
 .mobile-controls .controls {
@@ -267,8 +270,11 @@ body {
 }
 
 .mobile-controls button {
-    height: 34px;
+    height: 32px;
+    font-size: 0.85em;  /* Slightly smaller font */
+    padding: 0 12px;    /* Reduce horizontal padding */
 }
+
 
 .dialogues-btn {
     display: none;
