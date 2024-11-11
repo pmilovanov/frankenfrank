@@ -1,0 +1,388 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --accent-color: #FF9800;
+    --bg-color: #f5f5f5;
+    --panel-bg: white;
+    --text-color: #333;
+    --border-radius: 8px;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --side-panel-width: 300px;
+    --panel-padding: 20px;
+    --mobile-threshold: 768px;
+    --mobile-header-height: 50px;
+    --highlight-bg: #e8f5e9;
+    --highlight-border: #2e7d32;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.side-panel {
+    background: var(--panel-bg);
+    padding: var(--panel-padding);
+    width: var(--side-panel-width);
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls-wrapper {
+    position: sticky;
+    top: 0;
+    background: var(--panel-bg);
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+.scrollable-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.main-panel {
+    flex-grow: 1;
+    padding: var(--panel-padding);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.controls button {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.9em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+
+.dialogue-select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.dialogue-select:hover {
+    border-color: var(--primary-color);
+}
+
+
+.file-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.custom-load-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-color);
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-load-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.file-control {
+    margin: 0 0 16px 0;
+}
+
+.file-control button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.dialogue-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dialogue-item {
+    padding: 10px;
+    margin: 4px 0;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dialogue-item:hover {
+    background: #e8e8e8;
+}
+
+.dialogue-item.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dialogue-line {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.dialogue-line.playing {
+    background-color: var(--highlight-bg);
+    border-left-color: var(--highlight-border);
+}
+
+.speaker {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    box-shadow: var(--shadow);
+}
+
+.chinese {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pinyin {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.translation {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.commentary {
+    color: #666;
+    font-style: italic;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+    margin-top: 10px;
+}
+
+.dialogue-line[data-speaker="B"] {
+    border-left-color: var(--secondary-color);
+}
+
+.dialogue-line[data-speaker="B"] .speaker {
+    background-color: var(--secondary-color);
+}
+
+.dialogue-line[data-speaker="B"].playing {
+    border-left-color: var(--highlight-border);
+}
+
+button.active:before {
+    content: "✓";
+    margin-right: 5px;
+}
+
+#fileInput {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-controls {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--mobile-header-height);
+    background: var(--panel-bg);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    padding: 8px;
+}
+
+.mobile-controls .controls {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.mobile-controls button {
+    height: 34px;
+}
+
+.dialogues-btn {
+    display: none;
+    background-color: var(--accent-color) !important;
+}
+
+.dialogues-btn:hover {
+    background-color: #fb8c00 !important;
+}
+
+.dialogues-btn.active {
+    background-color: #f57c00 !important;
+}
+
+.dialogue-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.dialogue-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.play-all-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.play-all-btn:hover {
+    opacity: 0.8;
+}
+
+.play-all-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+.audio-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.audio-btn:hover {
+    opacity: 0.8;
+}
+
+.audio-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .dialogue-title {
+        margin-top: 10px;
+    }
+
+    .side-panel .controls {
+        display: none;
+    }
+
+    .mobile-controls {
+        display: block;
+        background-color: var(--panel-bg);
+    }
+
+    .dialogues-btn {
+        display: block;
+    }
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    .side-panel {
+        position: fixed;
+        top: var(--mobile-header-height);
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - var(--mobile-header-height));
+        z-index: 100;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        padding: 15px;
+    }
+
+    .side-panel.open {
+        transform: translateY(0);
+    }
+
+    .main-panel {
+        padding-top: calc(var(--mobile-header-height) + 20px);
+        margin-top: 0;
+    }
+
+    .main-panel #dialogueContent {
+        padding-top: 10px;
+    }
+
+    .dialogue-line:first-child {
+        margin-top: 10px;
+    }
+}
