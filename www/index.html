@@ -1,1 +1,748 @@
-../code/viewer.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Dialogue Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #2196F3;
+            --accent-color: #FF9800;
+            --bg-color: #f5f5f5;
+            --panel-bg: white;
+            --text-color: #333;
+            --border-radius: 8px;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --side-panel-width: 300px;
+            --panel-padding: 20px;
+            --mobile-threshold: 768px;
+            --mobile-header-height: 50px;
+            --highlight-bg: #e8f5e9;
+            --highlight-border: #2e7d32;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .side-panel {
+            background: var(--panel-bg);
+            padding: var(--panel-padding);
+            width: var(--side-panel-width);
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .controls-wrapper {
+            position: sticky;
+            top: 0;
+            background: var(--panel-bg);
+            padding-bottom: 15px;
+            z-index: 1;
+        }
+
+        .scrollable-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .main-panel {
+            flex-grow: 1;
+            padding: var(--panel-padding);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .controls {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 0;
+        }
+
+        .controls button {
+            flex: 1;
+            padding: 8px;
+            font-size: 0.9em;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .controls button:hover {
+            background-color: #45a049;
+        }
+
+
+.dialogue-select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+        .dialogue-select:hover {
+            border-color: var(--primary-color);
+        }
+
+
+.file-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+		}
+
+		.custom-load-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-color);
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-load-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+		
+        .file-control {
+            margin: 0 0 16px 0;
+        }
+
+        .file-control button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        .dialogue-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dialogue-item {
+            padding: 10px;
+            margin: 4px 0;
+            background: var(--bg-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .dialogue-item:hover {
+            background: #e8e8e8;
+        }
+
+        .dialogue-item.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .dialogue-line {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-left: 4px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            position: relative;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .dialogue-line.playing {
+            background-color: var(--highlight-bg);
+            border-left-color: var(--highlight-border);
+        }
+
+        .speaker {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            box-shadow: var(--shadow);
+        }
+
+        .chinese {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .pinyin {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .translation {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .commentary {
+            color: #666;
+            font-style: italic;
+            padding-left: 10px;
+            border-left: 2px solid #ddd;
+            margin-top: 10px;
+        }
+
+        .dialogue-line[data-speaker="B"] {
+            border-left-color: var(--secondary-color);
+        }
+
+        .dialogue-line[data-speaker="B"] .speaker {
+            background-color: var(--secondary-color);
+        }
+
+        .dialogue-line[data-speaker="B"].playing {
+            border-left-color: var(--highlight-border);
+        }
+
+        button.active:before {
+            content: "✓";
+            margin-right: 5px;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .mobile-controls {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--mobile-header-height);
+            background: var(--panel-bg);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            padding: 8px;
+        }
+
+        .mobile-controls .controls {
+            margin: 0;
+            height: 100%;
+            align-items: center;
+        }
+
+        .mobile-controls button {
+            height: 34px;
+        }
+
+        .dialogues-btn {
+            display: none;
+            background-color: var(--accent-color) !important;
+        }
+
+        .dialogues-btn:hover {
+            background-color: #fb8c00 !important;
+        }
+
+        .dialogues-btn.active {
+            background-color: #f57c00 !important;
+        }
+
+        .dialogue-title-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .dialogue-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .play-all-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .play-all-btn:hover {
+            opacity: 0.8;
+        }
+
+        .play-all-btn img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .audio-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .audio-btn:hover {
+            opacity: 0.8;
+        }
+
+        .audio-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .dialogue-title {
+                margin-top: 10px;
+            }
+        
+            .side-panel .controls {
+                display: none;
+            }
+
+            .mobile-controls {
+                display: block;
+                background-color: var(--panel-bg);
+            }
+
+            .dialogues-btn {
+                display: block;
+            }
+
+            .app-container {
+                flex-direction: column;
+            }
+
+            .side-panel {
+                position: fixed;
+                top: var(--mobile-header-height);
+                left: 0;
+                width: 100%;
+                height: auto;
+                max-height: calc(100vh - var(--mobile-header-height));
+                z-index: 100;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
+                padding: 15px;
+            }
+
+            .side-panel.open {
+                transform: translateY(0);
+            }
+
+            .main-panel {
+                padding-top: calc(var(--mobile-header-height) + 20px);
+                margin-top: 0;
+            }
+
+            .main-panel #dialogueContent {
+                padding-top: 10px;
+            }
+
+            .dialogue-line:first-child {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="mobile-controls">
+            <div class="controls">
+                <button onclick="toggleElement('pinyin')" id="pinyinBtn">Pinyin</button>
+                <button onclick="toggleElement('translation')" id="translationBtn">Translation</button>
+                <button onclick="toggleElement('commentary')" id="commentaryBtn">Commentary</button>
+                <button onclick="toggleMobilePanel()" class="dialogues-btn">Dialogues</button>
+            </div>
+        </div>
+
+        <aside class="side-panel" id="sidePanel">
+            <div class="controls-wrapper">
+                <div class="controls">
+                    <button onclick="toggleElement('pinyin')" id="pinyinBtn2">Pinyin</button>
+                    <button onclick="toggleElement('translation')" id="translationBtn2">Translation</button>
+                    <button onclick="toggleElement('commentary')" id="commentaryBtn2">Commentary</button>
+                </div>
+            </div>
+
+            <div class="scrollable-content">
+			  <div class="file-controls">
+				<select id="dialogueSelect" class="dialogue-select">
+				  <option value="">Loading dialogue files...</option>
+				</select>
+				<button onclick="document.getElementById('fileInput').click()" class="custom-load-btn" title="Load custom dialogue">...</button>
+				<input type="file" id="fileInput" accept=".yaml,.yml">
+			  </div>
+
+                <ul class="dialogue-list" id="dialogueList">
+                    <li class="dialogue-item">Select a dialogue...</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <div id="dialogueContent"></div>
+        </main>
+    </div>
+
+    <script>
+        let dialogues = {};
+        let dialogueIndex = [];
+        let displayState = {
+            pinyin: false,
+            translation: false,
+            commentary: false
+        };
+        let currentDialogue = null;
+        let currentDialogueFile = null;
+        let currentAudio = null;
+        let isPlaying = false;
+
+        function toggleMobilePanel() {
+            const panel = document.getElementById('sidePanel');
+            panel.classList.toggle('open');
+        }
+
+        function toggleElement(elementClass) {
+            displayState[elementClass] = !displayState[elementClass];
+            
+            document.querySelectorAll(`.${elementClass}`).forEach(el => 
+                el.classList.toggle('hidden', !displayState[elementClass]));
+            
+            document.getElementById(`${elementClass}Btn`).classList.toggle('active', displayState[elementClass]);
+            document.getElementById(`${elementClass}Btn2`).classList.toggle('active', displayState[elementClass]);
+        }
+
+        async function loadIndex() {
+            try {
+                const response = await fetch('index.yaml');
+                const text = await response.text();
+                dialogueIndex = jsyaml.load(text);
+                
+                const select = document.getElementById('dialogueSelect');
+                select.innerHTML = dialogueIndex.map(item => 
+                    `<option value="${item.path}">${item.title}</option>`
+                ).join('');
+                
+                if (dialogueIndex.length > 0) {
+                    await loadDialogueFile(dialogueIndex[0].path);
+                }
+            } catch (error) {
+                console.error('Error loading index:', error);
+                document.getElementById('dialogueSelect').innerHTML = 
+                    '<option value="">Error loading dialogue files</option>';
+            }
+        }
+
+        async function loadDialogueFile(path) {
+            try {
+                currentDialogueFile = path;
+                const response = await fetch(path);
+                const text = await response.text();
+                processYamlContent(text);
+            } catch (error) {
+                console.error('Error loading dialogue file:', error);
+                alert(`Error loading dialogue file: ${path}`);
+            }
+        }
+
+        // Add cleanup when changing dialogues
+        function processYamlContent(content) {
+            stopAudio(); // Stop any playing audio when loading new content
+            try {
+                dialogues = jsyaml.load(content);
+                updateDialogueList();
+            } catch (error) {
+                console.error('Error parsing YAML:', error);
+                alert('Error parsing YAML file');
+            }
+        }
+
+        function updateDialogueList() {
+            const list = document.getElementById('dialogueList');
+            list.innerHTML = '';
+            
+            let firstDialogueId = null;
+            for (const dialogueId in dialogues) {
+                if (!firstDialogueId) firstDialogueId = dialogueId;
+                
+                const item = document.createElement('li');
+                item.className = 'dialogue-item';
+                item.textContent = dialogueId;
+                item.onclick = () => {
+                    document.querySelectorAll('.dialogue-item').forEach(i => i.classList.remove('active'));
+
+		item.classList.add('active');
+                    displayDialogue(dialogueId);
+                    if (window.innerWidth <= 768) {
+                        toggleMobilePanel();
+                    }
+                };
+                list.appendChild(item);
+            }
+
+            if (firstDialogueId) {
+                const firstItem = list.firstElementChild;
+                firstItem.classList.add('active');
+                displayDialogue(firstDialogueId);
+            }
+        }
+
+
+        async function playAudio(audioFile, lineElement = null, isPartOfSequence = false) {
+            if (isPlaying && !isPartOfSequence) {
+                stopAudio();
+                return;
+            }
+
+            if (lineElement) {
+                lineElement.classList.add('playing');
+            }
+
+            if (!isPartOfSequence) {
+                isPlaying = true;
+            }
+
+            currentAudio = new Audio(`audio/${audioFile}`);
+
+            try {
+                await currentAudio.play();
+                await new Promise((resolve, reject) => {
+                    currentAudio.onended = resolve;
+                    currentAudio.onerror = reject;
+                });
+            } catch (error) {
+                console.error('Error playing audio:', error);
+            } finally {
+                if (lineElement) {
+                    lineElement.classList.remove('playing');
+                }
+                if (!isPartOfSequence) {
+                    isPlaying = false;
+                    currentAudio = null;
+                }
+            }
+        }
+
+        async function playAllAudio(dialogueId) {
+            if (isPlaying) {
+                stopAudio();
+                return;
+            }
+
+            isPlaying = true;
+            const playAllBtn = document.querySelector('.play-all-btn img');
+            playAllBtn.src = 'assets/stop32.png';
+
+            const dialogue = dialogues[dialogueId];
+            const lines = document.querySelectorAll('.dialogue-line');
+
+            try {
+                for (let i = 0; i < dialogue.length; i++) {
+                    const line = dialogue[i];
+                    if (!isPlaying) break;  // Check if we should stop
+
+                    if (line.a) {
+                        await playAudio(line.a, lines[i], true);
+                        if (isPlaying) {  // Only wait if we haven't stopped
+                            await new Promise(resolve => setTimeout(resolve, 300));
+                        }
+                    }
+                }
+            } finally {
+                // Reset play button icon
+                const playAllBtn = document.querySelector('.play-all-btn img');
+                if (playAllBtn) {
+                    playAllBtn.src = 'assets/play32.png';
+                }
+                isPlaying = false;
+                currentAudio = null;
+            }
+        }
+
+        function stopAudio() {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Reset all playing states and icons
+            document.querySelectorAll('.dialogue-line.playing').forEach(line => {
+                line.classList.remove('playing');
+                const btn = line.querySelector('.audio-btn');
+                if (btn) {
+                    const img = btn.querySelector('img');
+                    img.src = 'assets/speaker32.png';
+                }
+            });
+
+            // Reset play all button
+            const playAllBtn = document.querySelector('.play-all-btn img');
+            if (playAllBtn) {
+                playAllBtn.src = 'assets/play32.png';
+            }
+
+            isPlaying = false;
+            currentAudio = null;
+        }
+
+        function displayDialogue(dialogueId) {
+            currentDialogue = dialogueId;
+            const dialogue = dialogues[dialogueId];
+            if (!dialogue) return;
+
+            const content = document.getElementById('dialogueContent');
+            content.innerHTML = '';
+
+            const titleContainer = document.createElement('div');
+            titleContainer.className = 'dialogue-title-container';
+
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'dialogue-title';
+            titleDiv.textContent = dialogueId;
+
+            const playAllBtn = document.createElement('button');
+            playAllBtn.className = 'play-all-btn';
+            playAllBtn.onclick = () => playAllAudio(dialogueId);
+
+            const playAllImg = document.createElement('img');
+            playAllImg.src = isPlaying ? 'assets/stop32.png' : 'assets/play32.png';
+            playAllImg.alt = isPlaying ? 'Stop' : 'Play all';
+
+            playAllBtn.appendChild(playAllImg);
+            titleContainer.appendChild(titleDiv);
+            titleContainer.appendChild(playAllBtn);
+            content.appendChild(titleContainer);
+
+            dialogue.forEach(line => {
+                const lineDiv = document.createElement('div');
+                lineDiv.className = 'dialogue-line';
+                lineDiv.setAttribute('data-speaker', line.s);
+
+                const speaker = document.createElement('div');
+                speaker.className = 'speaker';
+                speaker.textContent = line.s;
+                lineDiv.appendChild(speaker);
+
+                const chinese = document.createElement('div');
+                chinese.className = 'chinese';
+                chinese.textContent = line.c;
+
+                if (line.a) {
+                    const audioBtn = document.createElement('button');
+                    audioBtn.className = 'audio-btn';
+                    audioBtn.onclick = () => playAudio(line.a, lineDiv);
+
+                    const audioImg = document.createElement('img');
+                    audioImg.src = 'assets/speaker32.png';
+                    audioImg.alt = 'Play audio';
+
+                    audioBtn.appendChild(audioImg);
+                    chinese.appendChild(audioBtn);
+                }
+
+                lineDiv.appendChild(chinese);
+
+                const pinyin = document.createElement('div');
+                pinyin.className = 'pinyin hidden';
+                pinyin.textContent = line.p;
+                lineDiv.appendChild(pinyin);
+
+                const translation = document.createElement('div');
+                translation.className = 'translation hidden';
+                translation.textContent = line.t;
+                lineDiv.appendChild(translation);
+
+                if (line.d) {
+                    const commentary = document.createElement('div');
+                    commentary.className = 'commentary hidden';
+                    commentary.textContent = line.d;
+                    lineDiv.appendChild(commentary);
+                }
+
+                content.appendChild(lineDiv);
+            });
+
+            Object.entries(displayState).forEach(([key, value]) => {
+                document.querySelectorAll(`.${key}`).forEach(el =>
+                    el.classList.toggle('hidden', !value));
+                document.getElementById(`${key}Btn`).classList.toggle('active', value);
+                document.getElementById(`${key}Btn2`).classList.toggle('active', value);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add event listener for dropdown
+            document.getElementById('dialogueSelect').addEventListener('change', (event) => {
+                if (event.target.value) {
+                    loadDialogueFile(event.target.value);
+                }
+            });
+
+            // Add event listener for file input
+            document.getElementById('fileInput').addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => processYamlContent(e.target.result);
+                    reader.readAsText(file);
+                }
+            });
+
+            // Load index instead of default dialogues
+            loadIndex();
+        });
+    </script>
+</body>
+</html>
