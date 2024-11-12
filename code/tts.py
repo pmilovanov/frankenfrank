@@ -5,22 +5,79 @@ from google.cloud import texttospeech_v1beta1
 from google.auth.exceptions import DefaultCredentialsError
 from pathlib import Path
 import os
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, NamedTuple
 import logging
 import argparse
 import shutil
+import time
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+class GenerationConfig(NamedTuple):
+    """Configuration for audio generation behavior"""
+    force_normal: bool
+    force_slow: bool
+    max_rps: int
+
+class RPSLimiter:
+    """Rate limiter for API calls"""
+    def __init__(self, max_rps: int):
+        self.max_rps = max_rps
+        self.semaphore = asyncio.Semaphore(max_rps)
+        self.last_release_time = {}  # Track last release time for each slot
+
+    async def acquire(self):
+        """Acquire a slot while maintaining the RPS limit"""
+        await self.semaphore.acquire()
+        current_time = time.monotonic()
+
+        # Find the oldest slot
+        slot = None
+        oldest_time = float('inf')
+        for i in range(self.max_rps):
+            last_time = self.last_release_time.get(i, 0)
+            if last_time < oldest_time:
+                oldest_time = last_time
+                slot = i
+
+        # If we need to wait to maintain RPS, do so
+        time_since_last = current_time - oldest_time
+        if time_since_last < 1.0:  # Less than a second has passed
+            await asyncio.sleep(1.0 - time_since_last)
+
+        self.last_release_time[slot] = time.monotonic()
+        return slot
+
+    def release(self):
+        """Release a slot"""
+        self.semaphore.release()
+
+class AsyncRateLimiter:
+    """Context manager for rate limiting"""
+    def __init__(self, limiter: RPSLimiter):
+        self.limiter = limiter
+        self.slot = None
+
+    async def __aenter__(self):
+        self.slot = await self.limiter.acquire()
+        return self
+
+    async def __aexit__(self, exc_type, exc, tb):
+        self.limiter.release()
+
 class DialogueTTSGenerator:
-    def __init__(self, output_dir: Path, batch_size: int = 10):
-        # Try to initialize client with application default credentials first
+    def __init__(self, output_dir: Path, batch_size: int = 10, config: GenerationConfig = None):
+        self.config = config or GenerationConfig(
+            force_normal=False,
+            force_slow=False,
+            max_rps=15
+        )
+
         try:
             self.client = texttospeech_v1beta1.TextToSpeechAsyncClient()
             logger.info("Using application default credentials")
         except DefaultCredentialsError as e:
-            # If explicit credentials path is set, use that
             creds_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
             if creds_path and os.path.exists(creds_path):
                 self.client = texttospeech_v1beta1.TextToSpeechAsyncClient()
@@ -34,6 +91,9 @@ class DialogueTTSGenerator:
         self.output_dir = output_dir
         self.output_dir.mkdir(exist_ok=True, parents=True)
         self.batch_size = batch_size
+        self.rate_limiter = RPSLimiter(self.config.max_rps)
+
+        logger.info(f"Rate limiting enabled: maximum {self.config.max_rps} requests per second")
 
         self.speaker_voices = {
             'A': texttospeech_v1beta1.VoiceSelectionParams(
@@ -54,16 +114,15 @@ class DialogueTTSGenerator:
             ),
         }
 
-        # Define audio configs for normal and slow speeds
         self.audio_configs = {
             'normal': texttospeech_v1beta1.AudioConfig(
                 audio_encoding=texttospeech_v1beta1.AudioEncoding.MP3,
-                speaking_rate=0.9,
+                speaking_rate=0.85,
                 pitch=0.0
             ),
             'slow': texttospeech_v1beta1.AudioConfig(
                 audio_encoding=texttospeech_v1beta1.AudioEncoding.MP3,
-                speaking_rate=0.75,
+                speaking_rate=0.55,
                 pitch=0.0
             )
         }
@@ -80,17 +139,18 @@ class DialogueTTSGenerator:
         return normal_path, slow_path
 
     async def generate_audio_for_line(self, text: str, speaker: str, speed: str = 'normal') -> Tuple[str, bytes]:
-        """Generate audio for a single line of dialogue"""
+        """Generate audio for a single line of dialogue with rate limiting"""
         synthesis_input = texttospeech_v1beta1.SynthesisInput(text=text)
         voice = self.speaker_voices.get(speaker)
         if not voice:
             raise ValueError(f"No voice defined for speaker {speaker}")
 
-        response = await self.client.synthesize_speech(
-            input=synthesis_input,
-            voice=voice,
-            audio_config=self.audio_configs[speed]
-        )
+        async with AsyncRateLimiter(self.rate_limiter):
+            response = await self.client.synthesize_speech(
+                input=synthesis_input,
+                voice=voice,
+                audio_config=self.audio_configs[speed]
+            )
 
         file_hash = self.get_file_hash(text)
         filename = f"{file_hash}_slow.mp3" if speed == 'slow' else f"{file_hash}.mp3"
@@ -101,34 +161,45 @@ class DialogueTTSGenerator:
         if 'c' not in line:
             return line
 
-        # Get paths for both versions
         normal_path, slow_path = self.get_audio_paths(line['c'])
 
         # Handle normal speed version
-        if 'a' in line and normal_path.exists():
-            logger.debug(f"Skipping normal speed audio for: {line['c'][:20]}...")
-        elif normal_path.exists():
-            logger.info(f"Found existing normal speed audio for: {line['c'][:20]}...")
-            line['a'] = normal_path.name
-        else:
-            logger.info(f"Generating normal speed audio for: {line['c'][:20]}...")
+        should_generate_normal = (
+                self.config.force_normal or
+                not normal_path.exists() or
+                'a' not in line
+        )
+
+        if should_generate_normal:
+            action = "Regenerating" if normal_path.exists() else "Generating"
+            logger.info(f"{action} normal speed audio for: {line['c'][:20]}...")
             filename, audio_content = await self.generate_audio_for_line(line['c'], line['s'], 'normal')
             with open(normal_path, "wb") as out:
                 out.write(audio_content)
             line['a'] = filename
+        else:
+            logger.debug(f"Skipping normal speed audio for: {line['c'][:20]}...")
+            if 'a' not in line:
+                line['a'] = normal_path.name
 
         # Handle slow speed version
-        if 'as' in line and slow_path.exists():
-            logger.debug(f"Skipping slow speed audio for: {line['c'][:20]}...")
-        elif slow_path.exists():
-            logger.info(f"Found existing slow speed audio for: {line['c'][:20]}...")
-            line['as'] = slow_path.name
-        else:
-            logger.info(f"Generating slow speed audio for: {line['c'][:20]}...")
+        should_generate_slow = (
+                self.config.force_slow or
+                not slow_path.exists() or
+                'as' not in line
+        )
+
+        if should_generate_slow:
+            action = "Regenerating" if slow_path.exists() else "Generating"
+            logger.info(f"{action} slow speed audio for: {line['c'][:20]}...")
             filename, audio_content = await self.generate_audio_for_line(line['c'], line['s'], 'slow')
             with open(slow_path, "wb") as out:
                 out.write(audio_content)
             line['as'] = filename
+        else:
+            logger.debug(f"Skipping slow speed audio for: {line['c'][:20]}...")
+            if 'as' not in line:
+                line['as'] = slow_path.name
 
         return line
 
@@ -142,7 +213,7 @@ class DialogueTTSGenerator:
 
         # Collect all dialogue lines that need processing
         all_lines = []
-        line_locations = []  # Keep track of where each line belongs
+        line_locations = []
 
         for dialogue_key, dialogue in data.items():
             for i, line in enumerate(dialogue):
@@ -150,9 +221,13 @@ class DialogueTTSGenerator:
                     all_lines.append(line)
                     line_locations.append((dialogue_key, i))
 
-        # Process in batches
         total_lines = len(all_lines)
         logger.info(f"Processing {total_lines} lines in batches of {self.batch_size}")
+
+        if self.config.force_normal:
+            logger.info("Force regeneration enabled for normal speed audio")
+        if self.config.force_slow:
+            logger.info("Force regeneration enabled for slow speed audio")
 
         for i in range(0, total_lines, self.batch_size):
             batch = all_lines[i:i + self.batch_size]
@@ -168,7 +243,6 @@ class DialogueTTSGenerator:
 
 async def main(args: argparse.Namespace):
     try:
-        # Convert paths to Path objects
         input_path = Path(args.input_yaml)
         output_dir = Path(args.audio_output_dir)
         backup_path = input_path.with_suffix('.bak.yaml')
@@ -177,26 +251,29 @@ async def main(args: argparse.Namespace):
         logger.info(f"Creating backup of original YAML at {backup_path}")
         shutil.copy2(input_path, backup_path)
 
-        # Initialize the generator
-        generator = DialogueTTSGenerator(
-            output_dir=output_dir,
-            batch_size=args.batch_size
+        config = GenerationConfig(
+            force_normal=args.force_normal,
+            force_slow=args.force_slow,
+            max_rps=args.max_rps
         )
 
-        # Read input YAML
+        generator = DialogueTTSGenerator(
+            output_dir=output_dir,
+            batch_size=args.batch_size,
+            config=config
+        )
+
         with open(input_path, 'r', encoding='utf-8') as f:
             yaml_content = f.read()
 
         logger.info(f"Starting audio generation from {input_path}")
         logger.info(f"Audio files will be saved to {output_dir}")
 
-        # Process dialogues
         updated_data = await generator.process_dialogues(yaml_content)
 
-        # Update the original YAML file in-place
         with open(input_path, 'w', encoding='utf-8') as f:
             yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
-        
+
         logger.info(f"Successfully processed all dialogue lines")
         logger.info(f"Original YAML backed up to: {backup_path}")
         logger.info(f"Updated YAML saved in-place at: {input_path}")
@@ -209,7 +286,9 @@ async def main(args: argparse.Namespace):
         raise
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description='Generate TTS audio for dialogue YAML files')
+    parser = argparse.ArgumentParser(
+        description='Generate normal and slow TTS audio for dialogue YAML files'
+    )
 
     parser.add_argument(
         '-i', '--input-yaml',
@@ -226,8 +305,27 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         '-b', '--batch-size',
         type=int,
-        default=30,
-        help='Number of audio files to generate concurrently (default: 30)'
+        default=10,
+        help='Number of audio files to generate concurrently (default: 10)'
+    )
+
+    parser.add_argument(
+        '--force-normal',
+        action='store_true',
+        help='Force regeneration of normal speed audio even if files exist'
+    )
+
+    parser.add_argument(
+        '--force-slow',
+        action='store_true',
+        help='Force regeneration of slow speed audio even if files exist'
+    )
+
+    parser.add_argument(
+        '--max-rps',
+        type=int,
+        default=18,
+        help='Maximum requests per second to the API (default: 18)'
     )
 
     return parser.parse_args()
