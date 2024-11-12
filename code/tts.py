@@ -117,12 +117,12 @@ class DialogueTTSGenerator:
         self.audio_configs = {
             'normal': texttospeech_v1beta1.AudioConfig(
                 audio_encoding=texttospeech_v1beta1.AudioEncoding.MP3,
-                speaking_rate=0.85,
+                speaking_rate=0.9,
                 pitch=0.0
             ),
             'slow': texttospeech_v1beta1.AudioConfig(
                 audio_encoding=texttospeech_v1beta1.AudioEncoding.MP3,
-                speaking_rate=0.55,
+                speaking_rate=0.65,
                 pitch=0.0
             )
         }
