@@ -305,8 +305,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         '-b', '--batch-size',
         type=int,
-        default=10,
-        help='Number of audio files to generate concurrently (default: 10)'
+        default=30,
+        help='Number of audio files to generate concurrently (default: 30)'
     )
 
     parser.add_argument(
