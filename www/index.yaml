@@ -1,3 +1,6 @@
+- title: Франк
+  path: dialogues/original-frank.yaml
+
 - title: Book 5
   path: dialogues/5.yaml
 
@@ -6,3 +9,4 @@
   
 - title: Book 4
   path: dialogues/4.yaml
+
