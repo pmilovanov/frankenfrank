@@ -1,11 +1,12 @@
 import yaml
+import json
 import hashlib
 import asyncio
 from google.cloud import texttospeech_v1beta1
 from google.auth.exceptions import DefaultCredentialsError
 from pathlib import Path
 import os
-from typing import List, Dict, Any, Optional, Tuple, NamedTuple
+from typing import List, Dict, Any, Optional, Tuple, NamedTuple, Union
 import logging
 import argparse
 import shutil
@@ -207,9 +208,12 @@ class DialogueTTSGenerator:
         """Process a batch of dialogue lines concurrently"""
         return await asyncio.gather(*[self.process_line(line) for line in batch])
 
-    async def process_dialogues(self, yaml_content: str) -> Dict:
-        """Process all dialogues in the YAML content with batching"""
-        data = yaml.safe_load(yaml_content)
+    async def process_dialogues(self, content: str, file_format: str) -> Dict:
+        """Process all dialogues in the content with batching"""
+        if file_format == 'json':
+            data = json.loads(content)
+        else:  # yaml
+            data = yaml.safe_load(content)
 
         # Collect all dialogue lines that need processing
         all_lines = []
@@ -241,14 +245,25 @@ class DialogueTTSGenerator:
 
         return data
 
+def get_file_format(file_path: str) -> str:
+    """Determine the file format based on the file extension"""
+    ext = Path(file_path).suffix.lower()
+    if ext == '.json':
+        return 'json'
+    elif ext in ('.yaml', '.yml'):
+        return 'yaml'
+    else:
+        raise ValueError(f"Unsupported file format: {ext}. Must be .json, .yaml, or .yml")
+
 async def main(args: argparse.Namespace):
     try:
-        input_path = Path(args.input_yaml)
+        input_path = Path(args.input_file)
         output_dir = Path(args.audio_output_dir)
-        backup_path = input_path.with_suffix('.bak.yaml')
+        file_format = get_file_format(args.input_file)
+        backup_path = input_path.with_suffix(f'.bak{input_path.suffix}')
 
         # Create backup of original file
-        logger.info(f"Creating backup of original YAML at {backup_path}")
+        logger.info(f"Creating backup of original {file_format.upper()} file at {backup_path}")
         shutil.copy2(input_path, backup_path)
 
         config = GenerationConfig(
@@ -264,19 +279,22 @@ async def main(args: argparse.Namespace):
         )
 
         with open(input_path, 'r', encoding='utf-8') as f:
-            yaml_content = f.read()
+            content = f.read()
 
         logger.info(f"Starting audio generation from {input_path}")
         logger.info(f"Audio files will be saved to {output_dir}")
 
-        updated_data = await generator.process_dialogues(yaml_content)
+        updated_data = await generator.process_dialogues(content, file_format)
 
         with open(input_path, 'w', encoding='utf-8') as f:
-            yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
+            if file_format == 'json':
+                json.dump(updated_data, f, ensure_ascii=False, indent=2)
+            else:  # yaml
+                yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
 
         logger.info(f"Successfully processed all dialogue lines")
-        logger.info(f"Original YAML backed up to: {backup_path}")
-        logger.info(f"Updated YAML saved in-place at: {input_path}")
+        logger.info(f"Original {file_format.upper()} backed up to: {backup_path}")
+        logger.info(f"Updated {file_format.upper()} saved in-place at: {input_path}")
 
     except DefaultCredentialsError as e:
         logger.error(f"Authentication error: {e}")
@@ -287,13 +305,13 @@ async def main(args: argparse.Namespace):
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description='Generate normal and slow TTS audio for dialogue YAML files'
+        description='Generate normal and slow TTS audio for dialogue files (YAML or JSON)'
     )
 
     parser.add_argument(
-        '-i', '--input-yaml',
+        '-i', '--input-file',
         required=True,
-        help='Input YAML file containing dialogues (will be updated in-place)'
+        help='Input file containing dialogues (YAML or JSON, will be updated in-place)'
     )
 
     parser.add_argument(
