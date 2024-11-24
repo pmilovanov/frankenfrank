@@ -123,7 +123,7 @@ class DialogueTTSGenerator:
             ),
             'slow': texttospeech_v1beta1.AudioConfig(
                 audio_encoding=texttospeech_v1beta1.AudioEncoding.MP3,
-                speaking_rate=0.65,
+                speaking_rate=0.75,
                 pitch=0.0
             )
         }
