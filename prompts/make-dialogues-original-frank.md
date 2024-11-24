@@ -1,3 +1,5 @@
+
+These are instructions for converting dialogues from a Russian-Chinese textbook into a JSON format that can be used for language learning.
 I am going to give you a few dialogues for Russian learners of Chinese, and I want you to output them in the format below. 
 
 
@@ -56,6 +58,15 @@ Example:
 
 When outputting JSON, pay attention to escaping characters, such as quotes, properly.
 
-Dialogues start below:
------
-
+Especially pay attention to escaping quotes around Chinese characters. You often make mistakes in cases like the below:
+```
+{
+ "c": "我去年开始看"红楼梦"！",
+ }
+```
+This is invalid JSON and instead should be
+```
+{
+ "c": "我去年开始看\"红楼梦\"！",
+ }
+```
