@@ -48,7 +48,7 @@ body {
     background: var(--panel-bg);
     z-index: 1;
     border-bottom: 1px solid #eee;  /* Optional: add a subtle separator */
-    margin: -40px -20px 0 -20px;    /* Compensate for panel padding */
+    margin: -40px -20px 40px -20px;    /* Compensate for panel padding */
     padding: 8px 20px 8px 20px;   /* Restore padding */
 }
 
@@ -110,7 +110,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 16px;
+    margin: 8px  0;
 }
 
 .custom-load-btn {
@@ -396,13 +396,14 @@ body {
         position: fixed;
         top: var(--mobile-header-height);
         left: 0;
-        width: 100%;
+        width: calc(100vw - 20px);
+        max-width: 100vw;
         height: auto;
         max-height: calc(100vh - var(--mobile-header-height));
         z-index: 100;
         transform: translateY(-100%);
         transition: transform 0.3s ease;
-        padding: 15px;
+        padding: 10px;
     }
 
     .side-panel.open {
