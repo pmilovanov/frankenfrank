@@ -1,68 +1,88 @@
 import yaml
 from dataclasses import dataclass
-from typing import Optional, Union, List
+from typing import Dict, List
+
+class DialogueParseError(Exception):
+    """Raised when there's an error parsing dialogues"""
+    pass
+
+@dataclass
+class DialogueLine:
+    chinese: str
+    speaker: str = None
+    pronunciation: str = None
+    translation: str = None
+    description: str = None
+    audio: str = None
+    audio_slow: str = None
 
 @dataclass
 class Dialogue:
-    chinese: str  # only required field
-    speaker: Optional[str] = None
-    pronunciation: Optional[str] = None
-    translation: Optional[str] = None
-    description: Optional[str] = None
-    audio: Optional[str] = None
-    audio_slow: Optional[str] = None
+    lines: List[DialogueLine]
 
-def parse_dialogue_from_dict(dialogue_dict: dict) -> Union[Dialogue, str]:
+def parse_dialogue_line_from_dict(line_dict: dict) -> DialogueLine:
     """
-    Parse a single dialogue from a dictionary.
-    Only 'chinese' field is required, all others are optional.
-    Returns either a Dialogue object or an error message string.
+    Parse a single dialogue line from a dictionary.
+    Raises DialogueParseError if the line is invalid.
     """
-    # Check for required 'chinese' field
-    if 'c' not in dialogue_dict:
-        return "Missing required field: chinese text"
+    if not isinstance(line_dict, dict):
+        raise DialogueParseError(f"Expected dict, got {type(line_dict)}")
 
-    try:
-        return Dialogue(
-            chinese=dialogue_dict['c'],
-            speaker=dialogue_dict.get('s'),
-            pronunciation=dialogue_dict.get('p'),
-            translation=dialogue_dict.get('t'),
-            description=dialogue_dict.get('d'),
-            audio=dialogue_dict.get('a'),
-            audio_slow=dialogue_dict.get('as')
-        )
-    except Exception as e:
-        return f"Error creating Dialogue object: {str(e)}"
+    if 'c' not in line_dict:
+        raise DialogueParseError("Missing required field: chinese text ('c')")
 
-def parse_dialogues(yaml_text: str) -> List[Union[Dialogue, str]]:
+    return DialogueLine(
+        chinese=line_dict['c'],
+        speaker=line_dict.get('s'),
+        pronunciation=line_dict.get('p'),
+        translation=line_dict.get('t'),
+        description=line_dict.get('d'),
+        audio=line_dict.get('a'),
+        audio_slow=line_dict.get('as')
+    )
+
+def parse_dialogue_from_dict(lines: List[dict]) -> Dialogue:
     """
-    Parse dialogues from YAML text. Returns a list of either Dialogue objects
-    or error message strings for failed parses.
+    Parse a list of dialogue lines into a Dialogue object.
+    Raises DialogueParseError if any line is invalid.
     """
-    try:
-        dialogues = yaml.safe_load(yaml_text)
-    except yaml.YAMLError as e:
-        return [f"Error parsing YAML: {str(e)}"]
+    if not isinstance(lines, list):
+        raise DialogueParseError(f"Expected list of dialogue lines, got {type(lines)}")
+
+    dialogue_lines = []
+    for i, line in enumerate(lines):
+        try:
+            dialogue_lines.append(parse_dialogue_line_from_dict(line))
+        except DialogueParseError as e:
+            raise DialogueParseError(f"Error in line {i}: {str(e)}")
+
+    return Dialogue(lines=dialogue_lines)
+
+def parse_dialogues(yaml_text: str) -> List[Dialogue]:
+    """
+    Parse dialogues from YAML text. Expects a dictionary where keys are dialogue titles
+    and values are lists of dialogue lines.
+
+    Raises:
+        yaml.YAMLError: If YAML parsing fails
+        DialogueParseError: If dialogue structure or content is invalid
+    """
+    content = yaml.safe_load(yaml_text)
 
     # Handle empty YAML case
-    if dialogues is None:
+    if content is None:
         return []
 
-    # Handle single dialogue case
-    if isinstance(dialogues, dict):
-        dialogues = [dialogues]
+    # Validate top-level structure is a dictionary
+    if not isinstance(content, dict):
+        raise DialogueParseError(f"Invalid YAML structure. Expected dict of dialogues, got {type(content)}")
 
-    # Handle non-list/non-dict case
-    if not isinstance(dialogues, list):
-        return [f"Invalid YAML structure. Expected list or dict, got {type(dialogues)}"]
-
-    # Parse each dialogue, collecting both successes and errors
+    # Parse all dialogues
     results = []
-    for dialogue in dialogues:
-        if not isinstance(dialogue, dict):
-            results.append(f"Invalid dialogue format: expected dict, got {type(dialogue)}")
-            continue
-        results.append(parse_dialogue_from_dict(dialogue))
+    for title, dialogue_lines in content.items():
+        try:
+            results.append(parse_dialogue_from_dict(dialogue_lines))
+        except DialogueParseError as e:
+            raise DialogueParseError(f"Error in dialogue '{title}': {str(e)}")
 
     return results

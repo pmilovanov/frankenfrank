@@ -1,119 +1,126 @@
 import unittest
 import yaml
-from typing import List
-from dataclasses import dataclass
-
-# Import the code under test
-from parse import Dialogue, parse_dialogue_from_dict, parse_dialogues
+from parse import (
+    DialogueLine,
+    Dialogue,
+    parse_dialogues,
+    parse_dialogue_from_dict,
+    parse_dialogue_line_from_dict,
+    DialogueParseError
+)
 
 class TestDialogueParsing(unittest.TestCase):
     def setUp(self):
-        # Sample valid dialogue data with all fields
-        self.valid_dialogue_full = {
-            "s": "A",
-            "c": "你好！",
-            "p": "Nǐ hǎo!",
-            "t": "Здравствуй!",
-            "d": "Буквально означает «ты хороший»",
-            "a": "audio.mp3",
-            "as": "audio_slow.mp3"
-        }
-
-        # Sample valid dialogue with only required field
-        self.valid_dialogue_minimal = {
-            "c": "你好！"
-        }
-
-        # Sample YAML with multiple dialogues
-        self.valid_yaml_multiple = """
-- c: "你好！"
-  s: "A"
-  p: "Nǐ hǎo!"
-- c: "再见"
-  t: "До свидания!"
-  d: "Description"
+        # Sample valid dialogue dictionary
+        self.valid_yaml = """
+dialogue1:
+    - s: "A"
+      c: "你好！"
+      p: "Nǐ hǎo!"
+      t: "Здравствуй!"
+      d: "Description 1"
+      a: "audio1.mp3"
+      as: "audio1_slow.mp3"
+    - s: "B"
+      c: "你好！"
+      p: "Nǐ hǎo!"
+      t: "Здравствуй!"
+dialogue2:
+    - s: "A"
+      c: "再见"
+      p: "Zàijiàn"
+      t: "До свидания!"
+"""
+        # Sample minimal dialogue
+        self.minimal_yaml = """
+minimal:
+    - c: "你好！"
+    - c: "再见"
 """
 
-    def test_dialogue_dataclass_creation(self):
-        """Test creating Dialogue instances with different field combinations"""
-        # Test with only required field
-        dialogue_min = Dialogue(chinese="你好！")
-        self.assertEqual(dialogue_min.chinese, "你好！")
-        self.assertIsNone(dialogue_min.speaker)
-        self.assertIsNone(dialogue_min.pronunciation)
-
-        # Test with all fields
-        dialogue_full = Dialogue(
-            chinese="你好！",
-            speaker="A",
-            pronunciation="Nǐ hǎo!",
-            translation="Hello!",
-            description="Test",
-            audio="test.mp3",
-            audio_slow="test_slow.mp3"
-        )
-        self.assertEqual(dialogue_full.chinese, "你好！")
-        self.assertEqual(dialogue_full.speaker, "A")
-
-    def test_parse_dialogue_minimal(self):
-        """Test parsing dialogue with only the required chinese field"""
-        result = parse_dialogue_from_dict(self.valid_dialogue_minimal)
-        self.assertIsInstance(result, Dialogue)
-        self.assertEqual(result.chinese, "你好！")
-        self.assertIsNone(result.speaker)
-        self.assertIsNone(result.pronunciation)
-        self.assertIsNone(result.translation)
-        self.assertIsNone(result.description)
-        self.assertIsNone(result.audio)
-        self.assertIsNone(result.audio_slow)
-
-    def test_parse_dialogue_full(self):
-        """Test parsing dialogue with all fields"""
-        result = parse_dialogue_from_dict(self.valid_dialogue_full)
-        self.assertIsInstance(result, Dialogue)
-        self.assertEqual(result.chinese, "你好！")
-        self.assertEqual(result.speaker, "A")
-        self.assertEqual(result.pronunciation, "Nǐ hǎo!")
-
-    def test_parse_dialogue_missing_required(self):
-        """Test handling dictionary without required chinese field"""
-        invalid_dialogue = {
+    def test_parse_dialogue_line(self):
+        """Test parsing a single dialogue line"""
+        line_dict = {
+            "c": "你好！",
             "s": "A",
-            "p": "Nǐ hǎo!"
+            "p": "Nǐ hǎo!",
+            "t": "Hello!",
+            "d": "Test description",
+            "a": "test.mp3",
+            "as": "test_slow.mp3"
         }
-        result = parse_dialogue_from_dict(invalid_dialogue)
-        self.assertIsInstance(result, str)
-        self.assertTrue("Missing required field: chinese" in result)
+        line = parse_dialogue_line_from_dict(line_dict)
+        self.assertEqual(line.chinese, "你好！")
+        self.assertEqual(line.speaker, "A")
 
-    def test_parse_dialogues_empty_yaml(self):
-        """Test handling empty YAML"""
-        empty_yaml = ""
-        dialogues = parse_dialogues(empty_yaml)
-        self.assertEqual(len(dialogues), 0)
+    def test_parse_dialogue_line_minimal(self):
+        """Test parsing dialogue line with only required field"""
+        line_dict = {"c": "你好！"}
+        line = parse_dialogue_line_from_dict(line_dict)
+        self.assertEqual(line.chinese, "你好！")
+        self.assertIsNone(line.speaker)
+        self.assertIsNone(line.pronunciation)
 
-    def test_parse_dialogues_mixed_content(self):
-        """Test handling mix of full and minimal dialogues"""
-        results = parse_dialogues(self.valid_yaml_multiple)
-        self.assertEqual(len(results), 2)
-        self.assertIsInstance(results[0], Dialogue)
-        self.assertIsInstance(results[1], Dialogue)
-        self.assertEqual(results[0].chinese, "你好！")
-        self.assertEqual(results[0].speaker, "A")
-        self.assertEqual(results[1].chinese, "再见")
-        self.assertIsNone(results[1].speaker)
+    def test_parse_dialogue(self):
+        """Test parsing a single dialogue with multiple lines"""
+        lines = [
+            {"c": "你好！", "s": "A"},
+            {"c": "再见", "s": "B"}
+        ]
+        dialogue = parse_dialogue_from_dict(lines)
+        self.assertEqual(len(dialogue.lines), 2)
+        self.assertEqual(dialogue.lines[0].chinese, "你好！")
+        self.assertEqual(dialogue.lines[1].chinese, "再见")
 
-    def test_unicode_handling(self):
-        """Test handling of Unicode characters"""
-        unicode_dialogue = {
-            "c": "你好！世界",
-            "p": "Nǐ hǎo! Shìjiè",
-            "t": "Здравствуй, мир!"
-        }
-        result = parse_dialogue_from_dict(unicode_dialogue)
-        self.assertIsInstance(result, Dialogue)
-        self.assertEqual(result.chinese, "你好！世界")
-        self.assertEqual(result.pronunciation, "Nǐ hǎo! Shìjiè")
-        self.assertEqual(result.translation, "Здравствуй, мир!")
+    def test_parse_dialogues_valid(self):
+        """Test parsing valid dialogues"""
+        dialogues = parse_dialogues(self.valid_yaml)
+        self.assertEqual(len(dialogues), 2)
+        self.assertEqual(len(dialogues[0].lines), 2)
+        self.assertEqual(len(dialogues[1].lines), 1)
+        self.assertEqual(dialogues[0].lines[0].chinese, "你好！")
+        self.assertEqual(dialogues[1].lines[0].chinese, "再见")
+
+    def test_parse_dialogues_minimal(self):
+        """Test parsing minimal dialogues"""
+        dialogues = parse_dialogues(self.minimal_yaml)
+        self.assertEqual(len(dialogues), 1)
+        self.assertEqual(len(dialogues[0].lines), 2)
+        self.assertEqual(dialogues[0].lines[0].chinese, "你好！")
+        self.assertEqual(dialogues[0].lines[1].chinese, "再见")
+
+    def test_parse_dialogues_empty(self):
+        """Test parsing empty YAML"""
+        dialogues = parse_dialogues("")
+        self.assertEqual(dialogues, [])
+
+    def test_parse_dialogues_invalid_structure(self):
+        """Test parsing YAML with invalid structure"""
+        invalid_yaml = "- not a dictionary"
+        with self.assertRaises(DialogueParseError) as context:
+            parse_dialogues(invalid_yaml)
+        self.assertTrue("Invalid YAML structure" in str(context.exception))
+
+    def test_parse_dialogues_invalid_lines(self):
+        """Test parsing dialogue with invalid lines structure"""
+        invalid_yaml = """
+dialogue1:
+    not_a_list: true
+"""
+        with self.assertRaises(DialogueParseError) as context:
+            parse_dialogues(invalid_yaml)
+        self.assertTrue("Expected list" in str(context.exception))
+
+    def test_parse_dialogues_invalid_line(self):
+        """Test parsing dialogue with invalid line"""
+        invalid_yaml = """
+dialogue1:
+    - s: "A"
+      p: "test"
+"""
+        with self.assertRaises(DialogueParseError) as context:
+            parse_dialogues(invalid_yaml)
+        self.assertTrue("Missing required field" in str(context.exception))
 
 if __name__ == '__main__':
     unittest.main()
