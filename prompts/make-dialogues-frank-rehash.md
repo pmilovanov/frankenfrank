@@ -1,4 +1,4 @@
-I will give you some dialogues in Chinese, and I want you to make new dialogues that contain ONLY the words that are in the original dialogues. You will output the new dialogues in the format below:
+I will give you some dialogues in Chinese, and I want you to make new dialogues that containing ONLY the words that are in the original dialogues. You will output the new dialogues in the format below:
 
 ```
 {
@@ -57,6 +57,17 @@ This is invalid JSON and instead should be
 ```
 
 Try to add however much variety and new scenarios you can into the new dialogues, while sticking ONLY to the words in the original dialogues. Be creative!
+
+Each dialogue must be 8-12 lines long.
+
+Try to make dialogues a bit more complicated while still using the same words:
+- Using longer descriptive phrases
+- Combining multiple actions in single sentences
+- Using more complex sentence structures
+- Creating more intricate scenarios with multiple characters and locations
+- Using longer explanations of situations
+
+Output ONLY the json and nothing else.
 
 The original dialogues start below:
 -------
