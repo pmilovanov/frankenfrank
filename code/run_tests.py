@@ -2,6 +2,7 @@
 import unittest
 import sys
 import argparse
+import yaml
 
 def run_tests(verbosity=2, pattern="test_*.py", failfast=False):
     """
