@@ -1,55 +1,11 @@
 #!/usr/bin/env python3
 import argparse
 import sys
-import unicodedata
-from typing import Set, List
-from parse import Dialogue, DialogueParseError, parse_dialogues
-from trie import Trie, build_trie_from_words
 import random
-
-def read_word_list(filename: str) -> List[str]:
-    """Read words from a file, one per line, skipping empty lines and removing punctuation/whitespace."""
-    try:
-        with open(filename, 'r', encoding='utf-8') as f:
-            # Read lines and filter out empty ones after stripping
-            lines = [line.strip() for line in f]
-            # Remove all whitespace and punctuation from each non-empty line
-            words = []
-            for line in lines:
-                # Skip completely empty lines
-                if not line:
-                    continue
-                # Remove all whitespace within the line
-                word = ''.join(line.split())
-                # Keep only characters that aren't punctuation or whitespace
-                word = ''.join(char for char in word if not char.isspace() and not (
-                    unicodedata.category(char).startswith('P')))
-                # Only add non-empty results
-                if word:
-                    words.append(word)
-            return words
-    except FileNotFoundError:
-        print(f"Word list file not found: {filename}", file=sys.stderr)
-        sys.exit(1)
-    except UnicodeDecodeError:
-        print(f"Error reading file {filename}: invalid UTF-8 encoding", file=sys.stderr)
-        sys.exit(1)
-
-def is_only_punctuation_or_whitespace(text: str) -> bool:
-    """Return True if string consists entirely of punctuation and/or whitespace."""
-    return all(char.isspace() or unicodedata.category(char).startswith('P')
-               for char in text)
-
-def extract_words(dialogues: List[Dialogue], word_trie: Trie) -> Set[str]:
-    """Extract all words from dialogues using the word trie, excluding pure punctuation/whitespace."""
-    words = set()
-    for dialogue in dialogues:
-        for line in dialogue.lines:
-            found_words = word_trie.find_longest_substrings(line.chinese)
-            # Filter out words that are only punctuation/whitespace
-            words.update(word for word in found_words
-                         if not is_only_punctuation_or_whitespace(word))
-    return words
+from typing import List
+from parse import Dialogue, DialogueParseError, parse_dialogues
+from trie import build_trie_from_words
+from text_utils import read_word_list, extract_dialogue_words_with_trie
 
 def main():
     parser = argparse.ArgumentParser(description='Extract words from dialogues using a word list')
@@ -127,14 +83,16 @@ def main():
                   file=sys.stderr)
     selected_dialogues = all_dialogues[args.first_dialogue:end_index]
 
-    # Extract and print words
-    found_words = extract_words(selected_dialogues, word_trie)
-    found_words = list(found_words)
+    # Extract and print words using the trie for proper word segmentation
+    found_words = extract_dialogue_words_with_trie(selected_dialogues, word_trie)
+    word_list = list(found_words)
+
     if args.random_order:
-        random.shuffle(found_words)
+        random.shuffle(word_list)
     else:
-        found_words.sort()
-    for word in found_words:
+        word_list.sort()
+
+    for word in word_list:
         print(word)
 
 if __name__ == '__main__':

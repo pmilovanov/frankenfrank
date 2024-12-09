@@ -15,10 +15,7 @@ class Trie:
         self._size = 0
 
     def insert(self, word: str) -> None:
-        """
-        Insert a word into the trie.
-        Each character, including CJK characters, is treated as a single node.
-        """
+        """Insert a word into the trie."""
         if not word:
             return
 
@@ -35,35 +32,25 @@ class Trie:
         node.is_end = True
 
     def search(self, word: str) -> bool:
-        """
-        Return True if the word is in the trie, False otherwise.
-        """
+        """Return True if the word is in the trie."""
         node = self._traverse(word)
         return node is not None and node.is_end
 
     def starts_with(self, prefix: str) -> bool:
-        """
-        Return True if there is any word in the trie that starts with the given prefix.
-        """
+        """Return True if any word starts with the given prefix."""
         return self._traverse(prefix) is not None
 
     def find_all_with_prefix(self, prefix: str) -> List[str]:
-        """
-        Find all words that start with the given prefix.
-        Returns them in sorted order.
-        """
+        """Find all words that start with the given prefix."""
         results: List[str] = []
         node = self._traverse(prefix)
 
         if node is None:
             return results
 
-        # Use DFS to find all words with the prefix
         def dfs(current_node: TrieNode, current_word: str) -> None:
             if current_node.is_end:
                 results.append(current_word)
-
-            # Sort children keys to ensure consistent ordering
             for char in sorted(current_node.children.keys()):
                 dfs(current_node.children[char], current_word + char)
 
@@ -71,10 +58,7 @@ class Trie:
         return results
 
     def remove(self, word: str) -> bool:
-        """
-        Remove a word from the trie.
-        Returns True if the word was found and removed, False otherwise.
-        """
+        """Remove a word from the trie."""
         def _remove_helper(node: TrieNode, word: str, depth: int) -> bool:
             if depth == len(word):
                 if not node.is_end:
@@ -88,22 +72,15 @@ class Trie:
                 return False
 
             should_delete_child = _remove_helper(node.children[char], word, depth + 1)
-
-            # If child should be deleted and it has no other children
             if should_delete_child and not node.children[char].children:
                 del node.children[char]
-
-            # Current node should be deleted if it's not end of another word and has no children
             return not node.is_end and not node.children
 
         _remove_helper(self.root, word, 0)
         return True
 
     def _traverse(self, prefix: str) -> Optional[TrieNode]:
-        """
-        Traverse the trie following the prefix.
-        Returns the last node if prefix exists, None otherwise.
-        """
+        """Traverse to the node representing the prefix."""
         node = self.root
         for char in prefix:
             if char not in node.children:
@@ -112,45 +89,31 @@ class Trie:
         return node
 
     def get_all_words(self) -> List[str]:
-        """
-        Return all words in the trie in sorted order.
-        """
+        """Return all words in sorted order."""
         return self.find_all_with_prefix("")
 
     def size(self) -> int:
-        """
-        Return the number of words in the trie.
-        """
+        """Return number of words in the trie."""
         return self._size
 
     def clear(self) -> None:
-        """
-        Remove all words from the trie.
-        """
+        """Remove all words."""
         self.root = TrieNode()
         self._size = 0
 
     def find_longest_substrings(self, text: str) -> Set[str]:
         """
-        Greedily extract longest possible substrings from text that exist in the trie.
-
-        For each position in text, finds the longest substring starting at that position
-        that exists in the trie. If no substring is found starting with that character,
-        the single character is added to the result set.
-
-        Args:
-            text: The input text to search for substrings
-
-        Returns:
-            A set of strings, where each string is either:
-            - The longest substring from some position that exists in the trie
-            - A single character from the input that wasn't present in the trie
+        Find longest possible substrings that exist in the trie.
+        Returns individual characters for parts not found in trie.
         """
+        if not text:
+            return set()
+
         results = set()
         pos = 0
+        text_len = len(text)
 
-        while pos < len(text):
-            # Start with the current character
+        while pos < text_len:
             current_char = text[pos]
 
             # If current character isn't in trie, add it and move on
@@ -159,42 +122,34 @@ class Trie:
                 pos += 1
                 continue
 
-            # Find longest possible match starting at current position
-            node = self.root.children[current_char]
-            last_found_pos = pos
-            current_pos = pos + 1
-            longest_match = current_char
+            # Try to find longest match starting at current position
+            node = self.root
+            current_pos = pos
+            longest_match = None
+            longest_match_pos = pos
 
-            # If single character is a word, track it
-            if node.is_end:
-                last_found_pos = current_pos
-                longest_match = text[pos:current_pos]
-
-            # Try to match longer substrings
-            while current_pos < len(text):
-                char = text[current_pos]
-                if char not in node.children:
-                    break
-
-                node = node.children[char]
+            # Look for matches while we have characters and valid trie nodes
+            while current_pos < text_len and text[current_pos] in node.children:
+                node = node.children[text[current_pos]]
                 current_pos += 1
-
+                # If this is a word, update our longest match
                 if node.is_end:
-                    last_found_pos = current_pos
                     longest_match = text[pos:current_pos]
+                    longest_match_pos = current_pos
 
-            # Add the longest match found
-            results.add(longest_match)
-
-            # Move position to after the last found match
-            pos = last_found_pos
+            # If we found a match, add it and update position
+            if longest_match:
+                results.add(longest_match)
+                pos = longest_match_pos
+            else:
+                # No match found, add single character and move on
+                results.add(text[pos])
+                pos += 1
 
         return results
 
 def build_trie_from_words(words: List[str]) -> Trie:
-    """
-    Build a trie from a list of words.
-    """
+    """Build a trie from a list of words."""
     trie = Trie()
     for word in words:
         trie.insert(word)
