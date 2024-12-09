@@ -5,6 +5,7 @@ import unicodedata
 from typing import Set, List
 from parse import Dialogue, DialogueParseError, parse_dialogues
 from trie import Trie, build_trie_from_words
+import random
 
 def read_word_list(filename: str) -> List[str]:
     """Read words from a file, one per line, skipping empty lines and removing punctuation/whitespace."""
@@ -62,6 +63,7 @@ def main():
                         help='Number of dialogues to process (default: process all remaining)')
     parser.add_argument('-p', '--prompt', type=str,
                         help='File containing prompt text to display before word list')
+    parser.add_argument('--random-order', action='store_true', help='Output words in random order')
     args = parser.parse_args()
 
     # Validate dialogue range arguments
@@ -127,7 +129,12 @@ def main():
 
     # Extract and print words
     found_words = extract_words(selected_dialogues, word_trie)
-    for word in sorted(found_words):
+    found_words = list(found_words)
+    if args.random_order:
+        random.shuffle(found_words)
+    else:
+        found_words.sort()
+    for word in found_words:
         print(word)
 
 if __name__ == '__main__':
