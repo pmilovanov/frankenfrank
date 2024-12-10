@@ -7,7 +7,7 @@ import os
 import shutil
 import time
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple, NamedTuple
+from typing import List, Optional, Tuple, NamedTuple
 from google.cloud import texttospeech_v1beta1
 from google.auth.exceptions import DefaultCredentialsError
 
@@ -129,13 +129,18 @@ class DialogueTTSGenerator:
             )
         }
 
-    def get_file_hash(self, text: str) -> str:
-        """Generate a hash for the Chinese text to use as filename"""
-        return hashlib.sha256(text.encode('utf-8')).hexdigest()
+    def get_file_hash(self, text: str, speaker: str) -> str:
+        """
+        Generate a hash for the text and speaker combination.
+        Different speakers will generate different hashes even for the same text.
+        """
+        # Combine speaker and text with a delimiter that can't appear in either
+        content = f"{speaker}\x00{text}"  # Using null byte as delimiter
+        return hashlib.sha256(content.encode('utf-8')).hexdigest()
 
-    def get_audio_paths(self, text: str) -> Tuple[Path, Path]:
+    def get_audio_paths(self, text: str, speaker: str) -> Tuple[Path, Path]:
         """Get the expected audio file paths for normal and slow versions"""
-        file_hash = self.get_file_hash(text)
+        file_hash = self.get_file_hash(text, speaker)
         normal_path = self.output_dir / f"{file_hash}.mp3"
         slow_path = self.output_dir / f"{file_hash}_slow.mp3"
         return normal_path, slow_path
@@ -154,7 +159,7 @@ class DialogueTTSGenerator:
                 audio_config=self.audio_configs[speed]
             )
 
-        file_hash = self.get_file_hash(text)
+        file_hash = self.get_file_hash(text, speaker)
         filename = f"{file_hash}_slow.mp3" if speed == 'slow' else f"{file_hash}.mp3"
         return filename, response.audio_content
 
@@ -163,7 +168,7 @@ class DialogueTTSGenerator:
         if not line.chinese or not line.speaker:
             return line
 
-        normal_path, slow_path = self.get_audio_paths(line.chinese)
+        normal_path, slow_path = self.get_audio_paths(line.chinese, line.speaker)
 
         # Handle normal speed version
         should_generate_normal = (
@@ -174,13 +179,13 @@ class DialogueTTSGenerator:
 
         if should_generate_normal:
             action = "Regenerating" if normal_path.exists() else "Generating"
-            logger.info(f"{action} normal speed audio for: {line.chinese[:20]}...")
+            logger.info(f"{action} normal speed audio for speaker {line.speaker}: {line.chinese[:20]}...")
             filename, audio_content = await self.generate_audio_for_line(line.chinese, line.speaker, 'normal')
             with open(normal_path, "wb") as out:
                 out.write(audio_content)
             line.audio = filename
         else:
-            logger.debug(f"Skipping normal speed audio for: {line.chinese[:20]}...")
+            logger.debug(f"Skipping normal speed audio for speaker {line.speaker}: {line.chinese[:20]}...")
             if not line.audio:
                 line.audio = normal_path.name
 
@@ -193,13 +198,13 @@ class DialogueTTSGenerator:
 
         if should_generate_slow:
             action = "Regenerating" if slow_path.exists() else "Generating"
-            logger.info(f"{action} slow speed audio for: {line.chinese[:20]}...")
+            logger.info(f"{action} slow speed audio for speaker {line.speaker}: {line.chinese[:20]}...")
             filename, audio_content = await self.generate_audio_for_line(line.chinese, line.speaker, 'slow')
             with open(slow_path, "wb") as out:
                 out.write(audio_content)
             line.audio_slow = filename
         else:
-            logger.debug(f"Skipping slow speed audio for: {line.chinese[:20]}...")
+            logger.debug(f"Skipping slow speed audio for speaker {line.speaker}: {line.chinese[:20]}...")
             if not line.audio_slow:
                 line.audio_slow = slow_path.name
 
@@ -317,7 +322,7 @@ async def main(args: argparse.Namespace):
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description='Generate normal and slow TTS audio for dialogues'
+        description='Generate normal and slow TTS audio for dialogue files'
     )
 
     parser.add_argument(
