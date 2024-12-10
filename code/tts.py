@@ -1,16 +1,17 @@
-import yaml
-import json
-import hashlib
-import asyncio
-from google.cloud import texttospeech_v1beta1
-from google.auth.exceptions import DefaultCredentialsError
-from pathlib import Path
-import os
-from typing import List, Dict, Any, Optional, Tuple, NamedTuple, Union
-import logging
+#!/usr/bin/env python3
 import argparse
+import asyncio
+import hashlib
+import logging
+import os
 import shutil
 import time
+from pathlib import Path
+from typing import List, Dict, Any, Optional, Tuple, NamedTuple
+from google.cloud import texttospeech_v1beta1
+from google.auth.exceptions import DefaultCredentialsError
+
+from parse import Dialogue, DialogueLine, parse_dialogues, save_dialogues, DialogueParseError
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -68,7 +69,7 @@ class AsyncRateLimiter:
         self.limiter.release()
 
 class DialogueTTSGenerator:
-    def __init__(self, output_dir: Path, batch_size: int = 10, config: GenerationConfig = None):
+    def __init__(self, output_dir: Path, batch_size: int = 10, config: Optional[GenerationConfig] = None):
         self.config = config or GenerationConfig(
             force_normal=False,
             force_slow=False,
@@ -157,113 +158,119 @@ class DialogueTTSGenerator:
         filename = f"{file_hash}_slow.mp3" if speed == 'slow' else f"{file_hash}.mp3"
         return filename, response.audio_content
 
-    async def process_line(self, line: Dict[str, Any]) -> Dict[str, Any]:
+    async def process_line(self, line: DialogueLine) -> DialogueLine:
         """Process a single dialogue line, generating both normal and slow versions"""
-        if 'c' not in line:
+        if not line.chinese or not line.speaker:
             return line
 
-        normal_path, slow_path = self.get_audio_paths(line['c'])
+        normal_path, slow_path = self.get_audio_paths(line.chinese)
 
         # Handle normal speed version
         should_generate_normal = (
                 self.config.force_normal or
                 not normal_path.exists() or
-                'a' not in line
+                not line.audio
         )
 
         if should_generate_normal:
             action = "Regenerating" if normal_path.exists() else "Generating"
-            logger.info(f"{action} normal speed audio for: {line['c'][:20]}...")
-            filename, audio_content = await self.generate_audio_for_line(line['c'], line['s'], 'normal')
+            logger.info(f"{action} normal speed audio for: {line.chinese[:20]}...")
+            filename, audio_content = await self.generate_audio_for_line(line.chinese, line.speaker, 'normal')
             with open(normal_path, "wb") as out:
                 out.write(audio_content)
-            line['a'] = filename
+            line.audio = filename
         else:
-            logger.debug(f"Skipping normal speed audio for: {line['c'][:20]}...")
-            if 'a' not in line:
-                line['a'] = normal_path.name
+            logger.debug(f"Skipping normal speed audio for: {line.chinese[:20]}...")
+            if not line.audio:
+                line.audio = normal_path.name
 
         # Handle slow speed version
         should_generate_slow = (
                 self.config.force_slow or
                 not slow_path.exists() or
-                'as' not in line
+                not line.audio_slow
         )
 
         if should_generate_slow:
             action = "Regenerating" if slow_path.exists() else "Generating"
-            logger.info(f"{action} slow speed audio for: {line['c'][:20]}...")
-            filename, audio_content = await self.generate_audio_for_line(line['c'], line['s'], 'slow')
+            logger.info(f"{action} slow speed audio for: {line.chinese[:20]}...")
+            filename, audio_content = await self.generate_audio_for_line(line.chinese, line.speaker, 'slow')
             with open(slow_path, "wb") as out:
                 out.write(audio_content)
-            line['as'] = filename
+            line.audio_slow = filename
         else:
-            logger.debug(f"Skipping slow speed audio for: {line['c'][:20]}...")
-            if 'as' not in line:
-                line['as'] = slow_path.name
+            logger.debug(f"Skipping slow speed audio for: {line.chinese[:20]}...")
+            if not line.audio_slow:
+                line.audio_slow = slow_path.name
 
         return line
 
-    async def process_batch(self, batch: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Process a batch of dialogue lines concurrently"""
-        return await asyncio.gather(*[self.process_line(line) for line in batch])
+    async def process_batch(self, dialogues: List[Dialogue]) -> List[Dialogue]:
+        """Process a batch of dialogues concurrently"""
+        tasks = []
+        for dialogue in dialogues:
+            for line in dialogue.lines:
+                tasks.append(self.process_line(line))
 
-    async def process_dialogues(self, content: str, file_format: str) -> Dict:
-        """Process all dialogues in the content with batching"""
-        if file_format == 'json':
-            data = json.loads(content)
-        else:  # yaml
-            data = yaml.safe_load(content)
+        processed_lines = await asyncio.gather(*tasks)
 
-        # Collect all dialogue lines that need processing
-        all_lines = []
-        line_locations = []
+        # Reconstruct dialogues with processed lines
+        line_index = 0
+        result_dialogues = []
+        for dialogue in dialogues:
+            processed_dialogue = Dialogue(
+                title=dialogue.title,
+                lines=processed_lines[line_index:line_index + len(dialogue.lines)]
+            )
+            result_dialogues.append(processed_dialogue)
+            line_index += len(dialogue.lines)
 
-        for dialogue_key, dialogue in data.items():
-            for i, line in enumerate(dialogue):
-                if 'c' in line:
-                    all_lines.append(line)
-                    line_locations.append((dialogue_key, i))
+        return result_dialogues
 
-        total_lines = len(all_lines)
-        logger.info(f"Processing {total_lines} lines in batches of {self.batch_size}")
+    async def process_dialogues(self, dialogues: List[Dialogue]) -> List[Dialogue]:
+        """Process all dialogues in batches"""
+        total_lines = sum(len(dialogue.lines) for dialogue in dialogues)
+        logger.info(f"Processing {total_lines} lines from {len(dialogues)} dialogues")
 
         if self.config.force_normal:
             logger.info("Force regeneration enabled for normal speed audio")
         if self.config.force_slow:
             logger.info("Force regeneration enabled for slow speed audio")
 
-        for i in range(0, total_lines, self.batch_size):
-            batch = all_lines[i:i + self.batch_size]
-            logger.info(f"Processing batch {i//self.batch_size + 1}")
-            processed_batch = await self.process_batch(batch)
+        # Process dialogues in batches based on total line count
+        result_dialogues = []
+        current_batch = []
+        current_line_count = 0
 
-            # Update the original data structure
-            for j, line in enumerate(processed_batch):
-                dialogue_key, line_index = line_locations[i + j]
-                data[dialogue_key][line_index] = line
+        for dialogue in dialogues:
+            dialogue_line_count = len(dialogue.lines)
 
-        return data
+            if current_line_count + dialogue_line_count > self.batch_size:
+                # Process current batch
+                if current_batch:
+                    result_dialogues.extend(await self.process_batch(current_batch))
+                # Start new batch with current dialogue
+                current_batch = [dialogue]
+                current_line_count = dialogue_line_count
+            else:
+                # Add to current batch
+                current_batch.append(dialogue)
+                current_line_count += dialogue_line_count
 
-def get_file_format(file_path: str) -> str:
-    """Determine the file format based on the file extension"""
-    ext = Path(file_path).suffix.lower()
-    if ext == '.json':
-        return 'json'
-    elif ext in ('.yaml', '.yml'):
-        return 'yaml'
-    else:
-        raise ValueError(f"Unsupported file format: {ext}. Must be .json, .yaml, or .yml")
+        # Process final batch
+        if current_batch:
+            result_dialogues.extend(await self.process_batch(current_batch))
+
+        return result_dialogues
 
 async def main(args: argparse.Namespace):
     try:
         input_path = Path(args.input_file)
         output_dir = Path(args.audio_output_dir)
-        file_format = get_file_format(args.input_file)
         backup_path = input_path.with_suffix(f'.bak{input_path.suffix}')
 
         # Create backup of original file
-        logger.info(f"Creating backup of original {file_format.upper()} file at {backup_path}")
+        logger.info(f"Creating backup of original file at {backup_path}")
         shutil.copy2(input_path, backup_path)
 
         config = GenerationConfig(
@@ -278,40 +285,45 @@ async def main(args: argparse.Namespace):
             config=config
         )
 
-        with open(input_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+        # Read and parse dialogues using the shared parsing code
+        try:
+            with open(input_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            dialogues = parse_dialogues(content)
+            if not dialogues:
+                logger.error("No dialogues found in file")
+                return
+        except (FileNotFoundError, DialogueParseError) as e:
+            logger.error(f"Error reading dialogues: {e}")
+            return
 
         logger.info(f"Starting audio generation from {input_path}")
         logger.info(f"Audio files will be saved to {output_dir}")
 
-        updated_data = await generator.process_dialogues(content, file_format)
+        # Process dialogues and generate audio
+        updated_dialogues = await generator.process_dialogues(dialogues)
 
-        with open(input_path, 'w', encoding='utf-8') as f:
-            if file_format == 'json':
-                json.dump(updated_data, f, ensure_ascii=False, indent=2)
-            else:  # yaml
-                yaml.dump(updated_data, f, allow_unicode=True, sort_keys=False)
+        # Save updated dialogues using shared saving code
+        logger.info("Saving updated dialogues...")
+        save_dialogues(updated_dialogues, input_path, format='json')
 
         logger.info(f"Successfully processed all dialogue lines")
-        logger.info(f"Original {file_format.upper()} backed up to: {backup_path}")
-        logger.info(f"Updated {file_format.upper()} saved in-place at: {input_path}")
+        logger.info(f"Original file backed up to: {backup_path}")
+        logger.info(f"Updated file saved in-place at: {input_path}")
 
-    except DefaultCredentialsError as e:
-        logger.error(f"Authentication error: {e}")
-        raise
     except Exception as e:
         logger.error(f"Error processing dialogues: {e}")
         raise
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description='Generate normal and slow TTS audio for dialogue files (YAML or JSON)'
+        description='Generate normal and slow TTS audio for dialogues'
     )
 
     parser.add_argument(
         '-i', '--input-file',
         required=True,
-        help='Input file containing dialogues (YAML or JSON, will be updated in-place)'
+        help='Input file containing dialogues'
     )
 
     parser.add_argument(
@@ -324,7 +336,7 @@ def parse_args() -> argparse.Namespace:
         '-b', '--batch-size',
         type=int,
         default=30,
-        help='Number of audio files to generate concurrently (default: 30)'
+        help='Number of lines to process concurrently (default: 30)'
     )
 
     parser.add_argument(

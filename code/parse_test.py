@@ -1,11 +1,14 @@
 import unittest
 import yaml
+import json
+from io import StringIO
 from parse import (
     DialogueLine,
     Dialogue,
     parse_dialogues,
     parse_dialogue_from_dict,
     parse_dialogue_line_from_dict,
+    save_dialogues,
     DialogueParseError
 )
 
@@ -168,6 +171,63 @@ class TestDialogueParsing(unittest.TestCase):
         with self.assertRaises(DialogueParseError) as context:
             parse_dialogues(invalid_yaml)
         self.assertTrue("Missing required field" in str(context.exception))
+
+    # New tests for serialization functionality
+    def test_save_dialogues_json(self):
+        """Test saving dialogues to JSON"""
+        dialogues = parse_dialogues(self.valid_yaml)
+        output = StringIO()
+        save_dialogues(dialogues, output, format='json')
+        output.seek(0)
+
+        # Parse the output and verify
+        saved_content = json.loads(output.getvalue())
+        self.assertEqual(len(saved_content), 2)
+        self.assertEqual(saved_content[0]["title"], "Что ты думаешь?")
+        self.assertEqual(saved_content[0]["lines"][0]["c"], "你觉得这个怎么样？")
+
+    def test_save_dialogues_yaml(self):
+        """Test saving dialogues to YAML"""
+        dialogues = parse_dialogues(self.valid_yaml)
+        output = StringIO()
+        save_dialogues(dialogues, output, format='yaml')
+        output.seek(0)
+
+        # Parse the output and verify
+        saved_content = yaml.safe_load(output.getvalue())
+        self.assertEqual(len(saved_content), 2)
+        self.assertEqual(saved_content[0]["title"], "Что ты думаешь?")
+        self.assertEqual(saved_content[0]["lines"][0]["c"], "你觉得这个怎么样？")
+
+    def test_save_dialogues_roundtrip(self):
+        """Test that saving and then loading dialogues preserves all information"""
+        original_dialogues = parse_dialogues(self.valid_yaml)
+
+        # Save to JSON and reload
+        output = StringIO()
+        save_dialogues(original_dialogues, output, format='json')
+        output.seek(0)
+        reloaded_dialogues = parse_dialogues(output.getvalue())
+
+        # Compare each dialogue
+        self.assertEqual(len(original_dialogues), len(reloaded_dialogues))
+        for orig, reloaded in zip(original_dialogues, reloaded_dialogues):
+            self.assertEqual(orig.title, reloaded.title)
+            self.assertEqual(len(orig.lines), len(reloaded.lines))
+            for orig_line, reloaded_line in zip(orig.lines, reloaded.lines):
+                self.assertEqual(orig_line.chinese, reloaded_line.chinese)
+                self.assertEqual(orig_line.speaker, reloaded_line.speaker)
+                self.assertEqual(orig_line.pronunciation, reloaded_line.pronunciation)
+                self.assertEqual(orig_line.translation, reloaded_line.translation)
+                self.assertEqual(orig_line.description, reloaded_line.description)
+                self.assertEqual(orig_line.audio, reloaded_line.audio)
+                self.assertEqual(orig_line.audio_slow, reloaded_line.audio_slow)
+
+    def test_save_dialogues_invalid_format(self):
+        """Test that saving with invalid format raises ValueError"""
+        dialogues = parse_dialogues(self.minimal_yaml)
+        with self.assertRaises(ValueError):
+            save_dialogues(dialogues, StringIO(), format='invalid')
 
 if __name__ == '__main__':
     unittest.main()

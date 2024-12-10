@@ -1,5 +1,4 @@
-let dialogues = {};
-let dialogueIndex = [];
+let dialogues = [];
 let displayState = {
     characters: true,
     pinyin: false,
@@ -11,11 +10,8 @@ let currentDialogueFile = null;
 let currentAudio = null;
 let isPlaying = false;
 let isPlayingSlow = false;
+let lineStates = new Map();
 
-// Add this to your state management
-let lineStates = new Map(); // Store state for each line
-
-// Define the possible states
 const LINE_STATES = [
     ['chinese'],
     ['chinese', 'pinyin'],
@@ -32,7 +28,6 @@ function toggleElement(elementClass) {
     lineStates.clear();  // Clear individual line states when using global controls
 
     if (elementClass === 'characters') {
-        // Show only characters
         displayState = {
             characters: true,
             pinyin: false,
@@ -40,7 +35,6 @@ function toggleElement(elementClass) {
             commentary: false
         };
     } else if (elementClass === 'pinyin') {
-        // Show characters + pinyin
         displayState = {
             characters: true,
             pinyin: true,
@@ -48,7 +42,6 @@ function toggleElement(elementClass) {
             commentary: false
         };
     } else if (elementClass === 'translation') {
-        // Show characters + pinyin + translation
         displayState = {
             characters: true,
             pinyin: true,
@@ -56,7 +49,6 @@ function toggleElement(elementClass) {
             commentary: false
         };
     } else if (elementClass === 'commentary') {
-        // Show all
         displayState = {
             characters: true,
             pinyin: true,
@@ -73,12 +65,10 @@ function updateVisibility() {
     document.querySelectorAll('.dialogue-line').forEach(line => {
         const lineIndex = Array.from(line.parentElement.children).indexOf(line);
 
-        // If this line has been individually cycled, skip it
         if (lineStates.has(lineIndex)) {
             return;
         }
 
-        // Otherwise, apply global state
         line.querySelector('.chinese').classList.remove('hidden');
         const pinyin = line.querySelector('.pinyin');
         const translation = line.querySelector('.translation');
@@ -104,15 +94,15 @@ async function loadIndex() {
     try {
         const response = await fetch('index.yaml');
         const text = await response.text();
-        dialogueIndex = jsyaml.load(text);
+        const indexData = jsyaml.load(text);
 
         const select = document.getElementById('dialogueSelect');
-        select.innerHTML = dialogueIndex.map(item =>
+        select.innerHTML = indexData.map(item =>
             `<option value="${item.path}">${item.title}</option>`
         ).join('');
 
-        if (dialogueIndex.length > 0) {
-            await loadDialogueFile(dialogueIndex[0].path);
+        if (indexData.length > 0) {
+            await loadDialogueFile(indexData[0].path);
         }
     } catch (error) {
         console.error('Error loading index:', error);
@@ -136,7 +126,11 @@ async function loadDialogueFile(path) {
 function processYamlContent(content) {
     stopAudio(); // Stop any playing audio when loading new content
     try {
-        dialogues = jsyaml.load(content);
+        const parsed = jsyaml.load(content);
+        if (!parsed || !Array.isArray(parsed)) {
+            throw new Error('Invalid dialogue format: expected array of dialogues');
+        }
+        dialogues = parsed;
         updateDialogueList();
     } catch (error) {
         console.error('Error parsing YAML:', error);
@@ -148,28 +142,25 @@ function updateDialogueList() {
     const list = document.getElementById('dialogueList');
     list.innerHTML = '';
 
-    let firstDialogueId = null;
-    for (const dialogueId in dialogues) {
-        if (!firstDialogueId) firstDialogueId = dialogueId;
-
+    dialogues.forEach((dialogue, index) => {
         const item = document.createElement('li');
         item.className = 'dialogue-item';
-        item.textContent = dialogueId;
+        item.textContent = dialogue.title || `Dialogue ${index + 1}`;
         item.onclick = () => {
             document.querySelectorAll('.dialogue-item').forEach(i => i.classList.remove('active'));
             item.classList.add('active');
-            displayDialogue(dialogueId);
+            displayDialogue(index);
             if (window.innerWidth <= 768) {
                 toggleMobilePanel();
             }
         };
         list.appendChild(item);
-    }
+    });
 
-    if (firstDialogueId) {
+    if (dialogues.length > 0) {
         const firstItem = list.firstElementChild;
         firstItem.classList.add('active');
-        displayDialogue(firstDialogueId);
+        displayDialogue(0);
     }
 }
 
@@ -191,12 +182,9 @@ async function playAudio(audioFile, lineElement = null, isPartOfSequence = false
 
     try {
         await currentAudio.play();
-        await new Promise((resolve, reject) => {
+        await new Promise((resolve) => {
             currentAudio.onended = resolve;
-            currentAudio.onerror = reject;
         });
-    } catch (error) {
-        console.error('Error playing audio:', error);
     } finally {
         if (lineElement) {
             lineElement.classList.remove('playing');
@@ -226,7 +214,8 @@ function updatePlayButtons(playing = false, slow = false) {
         }
     });
 }
-async function playAllAudio(dialogueId, slow = false) {
+
+async function playAllAudio(dialogueIndex, slow = false) {
     if (isPlaying) {
         stopAudio();
         return;
@@ -236,14 +225,14 @@ async function playAllAudio(dialogueId, slow = false) {
     isPlayingSlow = slow;
     updatePlayButtons(true, slow);
 
-    const dialogue = dialogues[dialogueId];
+    const dialogue = dialogues[dialogueIndex];
     const lines = document.querySelectorAll('.dialogue-line');
 
     try {
-        for (let i = 0; i < dialogue.length; i++) {
-            const line = dialogue[i];
+        for (let i = 0; i < dialogue.lines.length; i++) {
             if (!isPlaying) break;
 
+            const line = dialogue.lines[i];
             if (line.a) {
                 const audioFile = (slow && line.as) ? line.as : line.a;
                 await playAudio(audioFile, lines[i], true);
@@ -266,14 +255,8 @@ function stopAudio() {
         currentAudio.currentTime = 0;
     }
 
-    // Reset all playing states and icons
     document.querySelectorAll('.dialogue-line.playing').forEach(line => {
         line.classList.remove('playing');
-        const btn = line.querySelector('.audio-btn');
-        if (btn) {
-            const img = btn.querySelector('img');
-            img.src = 'assets/speaker32.png';
-        }
     });
 
     isPlaying = false;
@@ -296,13 +279,13 @@ function createAudioButton(audioFile, lineDiv, isSlow = false) {
     return audioBtn;
 }
 
-function createPlayAllButtons(dialogueId, hasSlowVersion) {
+function createPlayAllButtons(dialogueIndex, hasSlowVersion) {
     const buttonsContainer = document.createElement('div');
     buttonsContainer.className = 'dialogue-buttons';
 
     const playAllBtn = document.createElement('button');
     playAllBtn.className = 'play-all-btn';
-    playAllBtn.onclick = () => playAllAudio(dialogueId, false);
+    playAllBtn.onclick = () => playAllAudio(dialogueIndex, false);
     playAllBtn.title = 'Play dialogue';
 
     const playAllImg = document.createElement('img');
@@ -315,7 +298,7 @@ function createPlayAllButtons(dialogueId, hasSlowVersion) {
     if (hasSlowVersion) {
         const playAllSlowBtn = document.createElement('button');
         playAllSlowBtn.className = 'play-all-btn';
-        playAllSlowBtn.onclick = () => playAllAudio(dialogueId, true);
+        playAllSlowBtn.onclick = () => playAllAudio(dialogueIndex, true);
         playAllSlowBtn.title = 'Play dialogue slowly';
 
         const playAllSlowImg = document.createElement('img');
@@ -335,7 +318,6 @@ function cycleLine(lineDiv) {
     const nextState = (currentState + 1) % LINE_STATES.length;
     lineStates.set(lineIndex, nextState);
 
-    // Update visibility of elements
     const pinyin = lineDiv.querySelector('.pinyin');
     const translation = lineDiv.querySelector('.translation');
     const commentary = lineDiv.querySelector('.commentary');
@@ -345,21 +327,18 @@ function cycleLine(lineDiv) {
     commentary?.classList?.toggle('hidden', !LINE_STATES[nextState].includes('commentary'));
 }
 
-function createDialogueLine(line) {
+function createDialogueLine(line, index) {
     const lineDiv = document.createElement('div');
     lineDiv.className = 'dialogue-line';
     lineDiv.setAttribute('data-speaker', line.s);
 
-    // Add click handler for cycling
     lineDiv.addEventListener('click', (e) => {
-        // Don't cycle if clicking on buttons or their containers
         if (e.target.closest('.audio-btn') || e.target.closest('.audio-buttons')) {
             return;
         }
         cycleLine(lineDiv);
     });
 
-    // Make it look clickable
     lineDiv.style.cursor = 'pointer';
 
     const speaker = document.createElement('div');
@@ -387,15 +366,19 @@ function createDialogueLine(line) {
 
     lineDiv.appendChild(chinese);
 
-    const pinyin = document.createElement('div');
-    pinyin.className = 'pinyin hidden';
-    pinyin.textContent = line.p;
-    lineDiv.appendChild(pinyin);
+    if (line.p) {
+        const pinyin = document.createElement('div');
+        pinyin.className = 'pinyin hidden';
+        pinyin.textContent = line.p;
+        lineDiv.appendChild(pinyin);
+    }
 
-    const translation = document.createElement('div');
-    translation.className = 'translation hidden';
-    translation.textContent = line.t;
-    lineDiv.appendChild(translation);
+    if (line.t) {
+        const translation = document.createElement('div');
+        translation.className = 'translation hidden';
+        translation.textContent = line.t;
+        lineDiv.appendChild(translation);
+    }
 
     if (line.d) {
         const commentary = document.createElement('div');
@@ -407,33 +390,32 @@ function createDialogueLine(line) {
     return lineDiv;
 }
 
-function displayDialogue(dialogueId) {
-    lineStates.clear();
-
-    currentDialogue = dialogueId;
-    const dialogue = dialogues[dialogueId];
+function displayDialogue(index) {
+    currentDialogue = index;
+    const dialogue = dialogues[index];
     if (!dialogue) return;
+
+    lineStates.clear();
 
     const content = document.getElementById('dialogueContent');
     content.innerHTML = '';
-
-    const hasAnySlowVersion = dialogue.some(line => line.as);
 
     const titleContainer = document.createElement('div');
     titleContainer.className = 'dialogue-title-container';
 
     const titleDiv = document.createElement('div');
     titleDiv.className = 'dialogue-title';
-    titleDiv.textContent = dialogueId;
+    titleDiv.textContent = dialogue.title || `Dialogue ${index + 1}`;
 
-    const buttonsContainer = createPlayAllButtons(dialogueId, hasAnySlowVersion);
+    const hasSlowVersion = dialogue.lines.some(line => line.as);
+    const buttonsContainer = createPlayAllButtons(index, hasSlowVersion);
 
     titleContainer.appendChild(titleDiv);
     titleContainer.appendChild(buttonsContainer);
     content.appendChild(titleContainer);
 
-    dialogue.forEach(line => {
-        content.appendChild(createDialogueLine(line));
+    dialogue.lines.forEach((line, i) => {
+        content.appendChild(createDialogueLine(line, i));
     });
 
     updateVisibility();
@@ -441,14 +423,12 @@ function displayDialogue(dialogueId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Add event listener for dropdown
     document.getElementById('dialogueSelect').addEventListener('change', (event) => {
         if (event.target.value) {
             loadDialogueFile(event.target.value);
         }
     });
 
-    // Add event listener for file input
     document.getElementById('fileInput').addEventListener('change', (event) => {
         const file = event.target.files[0];
         if (file) {
@@ -458,6 +438,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Load index instead of default dialogues
     loadIndex();
 });
