@@ -1,12 +1,12 @@
 - title: Франк
-  path: dialogues/original-frank-new.json
+  path: dialogues/original-frank.json
 
-- title: Book 5
-  path: dialogues/5.yaml
+#- title: Book 5
+#  path: dialogues/5.yaml
 
-- title: Book 3
-  path: dialogues/3.yaml
+#- title: Book 3
+#  path: dialogues/3.yaml
   
-- title: Book 4
-  path: dialogues/4.yaml
+#- title: Book 4
+#  path: dialogues/4.yaml
 
