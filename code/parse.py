@@ -19,6 +19,7 @@ class DialogueLine:
 @dataclass
 class Dialogue:
     lines: List[DialogueLine]
+    title: str = None  # New field for the dialogue title
 
 def parse_dialogue_line_from_dict(line_dict: dict) -> DialogueLine:
     """
@@ -41,27 +42,50 @@ def parse_dialogue_line_from_dict(line_dict: dict) -> DialogueLine:
         audio_slow=line_dict.get('as')
     )
 
-def parse_dialogue_from_dict(lines: List[dict]) -> Dialogue:
+def parse_dialogue_from_dict(dialogue_dict: dict) -> Dialogue:
     """
-    Parse a list of dialogue lines into a Dialogue object.
-    Raises DialogueParseError if any line is invalid.
+    Parse a dialogue from a dictionary containing title and lines.
+
+    Args:
+        dialogue_dict: Dictionary with 'lines' (required) and 'title' (optional) fields
+
+    Returns:
+        Dialogue object with parsed lines and title
+
+    Raises:
+        DialogueParseError: If dialogue structure or content is invalid
     """
-    if not isinstance(lines, list):
-        raise DialogueParseError(f"Expected list of dialogue lines, got {type(lines)}")
+    if not isinstance(dialogue_dict, dict):
+        raise DialogueParseError(f"Expected dict, got {type(dialogue_dict)}")
+
+    if 'lines' not in dialogue_dict:
+        raise DialogueParseError("Missing required field: 'lines'")
+
+    if not isinstance(dialogue_dict['lines'], list):
+        raise DialogueParseError(f"Expected list of dialogue lines, got {type(dialogue_dict['lines'])}")
 
     dialogue_lines = []
-    for i, line in enumerate(lines):
+    for i, line in enumerate(dialogue_dict['lines']):
         try:
             dialogue_lines.append(parse_dialogue_line_from_dict(line))
         except DialogueParseError as e:
             raise DialogueParseError(f"Error in line {i}: {str(e)}")
 
-    return Dialogue(lines=dialogue_lines)
+    return Dialogue(
+        lines=dialogue_lines,
+        title=dialogue_dict.get('title')  # Optional title field
+    )
 
 def parse_dialogues(yaml_text: str) -> List[Dialogue]:
     """
-    Parse dialogues from YAML text. Expects a dictionary where keys are dialogue titles
-    and values are lists of dialogue lines.
+    Parse dialogues from YAML text. Expects a list of dialogue objects,
+    each containing a 'lines' list and optional 'title' field.
+
+    Args:
+        yaml_text: YAML formatted string containing dialogues
+
+    Returns:
+        List of Dialogue objects
 
     Raises:
         yaml.YAMLError: If YAML parsing fails
@@ -73,16 +97,16 @@ def parse_dialogues(yaml_text: str) -> List[Dialogue]:
     if content is None:
         return []
 
-    # Validate top-level structure is a dictionary
-    if not isinstance(content, dict):
-        raise DialogueParseError(f"Invalid YAML structure. Expected dict of dialogues, got {type(content)}")
+    # Validate top-level structure is a list
+    if not isinstance(content, list):
+        raise DialogueParseError(f"Invalid YAML structure. Expected list of dialogues, got {type(content)}")
 
     # Parse all dialogues
     results = []
-    for title, dialogue_lines in content.items():
+    for i, dialogue_dict in enumerate(content):
         try:
-            results.append(parse_dialogue_from_dict(dialogue_lines))
+            results.append(parse_dialogue_from_dict(dialogue_dict))
         except DialogueParseError as e:
-            raise DialogueParseError(f"Error in dialogue '{title}': {str(e)}")
+            raise DialogueParseError(f"Error in dialogue {i}: {str(e)}")
 
     return results

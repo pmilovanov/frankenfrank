@@ -11,32 +11,52 @@ from parse import (
 
 class TestDialogueParsing(unittest.TestCase):
     def setUp(self):
-        # Sample valid dialogue dictionary
-        self.valid_yaml = """
-dialogue1:
-    - s: "A"
-      c: "你好！"
-      p: "Nǐ hǎo!"
-      t: "Здравствуй!"
-      d: "Description 1"
-      a: "audio1.mp3"
-      as: "audio1_slow.mp3"
-    - s: "B"
-      c: "你好！"
-      p: "Nǐ hǎo!"
-      t: "Здравствуй!"
-dialogue2:
-    - s: "A"
-      c: "再见"
-      p: "Zàijiàn"
-      t: "До свидания!"
-"""
-        # Sample minimal dialogue
-        self.minimal_yaml = """
-minimal:
-    - c: "你好！"
-    - c: "再见"
-"""
+        # Sample valid dialogue in JSON format
+        self.valid_yaml = """[
+  {
+    "title": "Что ты думаешь?",
+    "lines": [
+      {
+        "s": "A",
+        "c": "你觉得这个怎么样？",
+        "p": "Nǐ juéde zhège zěnmeyàng?",
+        "t": "Что ты об этом думаешь?",
+        "d": "觉得 (juéde) \\"думать/чувствовать\\", часто используется, чтобы обозначить мнение"
+      },
+      {
+        "s": "B",
+        "c": "我觉得很好。",
+        "p": "Wǒ juéde hěn hǎo.",
+        "t": "Я думаю, что это хорошо."
+      }
+    ]
+  },
+  {
+    "title": "You look very happy!",
+    "lines": [
+      {
+        "s": "A",
+        "c": "你今天看起来很高兴。",
+        "p": "Nǐ jīntiān kàn qǐlái hěn gāoxìng.",
+        "t": "Сегодня ты выглядишь очень счастливым.",
+        "d": "看起来 (kàn qǐlái) значит \\"выглядеть\\", часто используется для описания внешнего вида"
+      }
+    ]
+  }
+]"""
+        # Sample minimal dialogue in JSON format
+        self.minimal_yaml = """[
+  {
+    "lines": [
+      {
+        "c": "你好！"
+      },
+      {
+        "c": "再见"
+      }
+    ]
+  }
+]"""
 
     def test_parse_dialogue_line(self):
         """Test parsing a single dialogue line"""
@@ -62,29 +82,36 @@ minimal:
         self.assertIsNone(line.pronunciation)
 
     def test_parse_dialogue(self):
-        """Test parsing a single dialogue with multiple lines"""
-        lines = [
-            {"c": "你好！", "s": "A"},
-            {"c": "再见", "s": "B"}
-        ]
-        dialogue = parse_dialogue_from_dict(lines)
+        """Test parsing a single dialogue with title and lines"""
+        dialogue_dict = {
+            "title": "Test Dialogue",
+            "lines": [
+                {"c": "你好！", "s": "A"},
+                {"c": "再见", "s": "B"}
+            ]
+        }
+        dialogue = parse_dialogue_from_dict(dialogue_dict)
+        self.assertEqual(dialogue.title, "Test Dialogue")
         self.assertEqual(len(dialogue.lines), 2)
         self.assertEqual(dialogue.lines[0].chinese, "你好！")
         self.assertEqual(dialogue.lines[1].chinese, "再见")
 
     def test_parse_dialogues_valid(self):
-        """Test parsing valid dialogues"""
+        """Test parsing valid dialogues in new format"""
         dialogues = parse_dialogues(self.valid_yaml)
         self.assertEqual(len(dialogues), 2)
+        self.assertEqual(dialogues[0].title, "Что ты думаешь?")
         self.assertEqual(len(dialogues[0].lines), 2)
+        self.assertEqual(dialogues[1].title, "You look very happy!")
         self.assertEqual(len(dialogues[1].lines), 1)
-        self.assertEqual(dialogues[0].lines[0].chinese, "你好！")
-        self.assertEqual(dialogues[1].lines[0].chinese, "再见")
+        self.assertEqual(dialogues[0].lines[0].chinese, "你觉得这个怎么样？")
+        self.assertEqual(dialogues[1].lines[0].chinese, "你今天看起来很高兴。")
 
     def test_parse_dialogues_minimal(self):
         """Test parsing minimal dialogues"""
         dialogues = parse_dialogues(self.minimal_yaml)
         self.assertEqual(len(dialogues), 1)
+        self.assertIsNone(dialogues[0].title)
         self.assertEqual(len(dialogues[0].lines), 2)
         self.assertEqual(dialogues[0].lines[0].chinese, "你好！")
         self.assertEqual(dialogues[0].lines[1].chinese, "再见")
@@ -95,29 +122,49 @@ minimal:
         self.assertEqual(dialogues, [])
 
     def test_parse_dialogues_invalid_structure(self):
-        """Test parsing YAML with invalid structure"""
-        invalid_yaml = "- not a dictionary"
+        """Test parsing invalid JSON structure"""
+        invalid_yaml = "[\"not an object\"]"
         with self.assertRaises(DialogueParseError) as context:
             parse_dialogues(invalid_yaml)
-        self.assertTrue("Invalid YAML structure" in str(context.exception))
+        self.assertTrue("Error in dialogue" in str(context.exception))
+
+    def test_parse_dialogues_missing_lines(self):
+        """Test parsing dialogue with missing lines field"""
+        invalid_yaml = """[
+  {
+    "title": "Test Dialogue",
+    "no_lines_field": []
+  }
+]"""
+        with self.assertRaises(DialogueParseError) as context:
+            parse_dialogues(invalid_yaml)
+        self.assertTrue("Missing required field: 'lines'" in str(context.exception))
 
     def test_parse_dialogues_invalid_lines(self):
         """Test parsing dialogue with invalid lines structure"""
-        invalid_yaml = """
-dialogue1:
-    not_a_list: true
-"""
+        invalid_yaml = """[
+  {
+    "title": "Test Dialogue",
+    "lines": "not a list"
+  }
+]"""
         with self.assertRaises(DialogueParseError) as context:
             parse_dialogues(invalid_yaml)
         self.assertTrue("Expected list" in str(context.exception))
 
     def test_parse_dialogues_invalid_line(self):
         """Test parsing dialogue with invalid line"""
-        invalid_yaml = """
-dialogue1:
-    - s: "A"
-      p: "test"
-"""
+        invalid_yaml = """[
+  {
+    "title": "Test Dialogue",
+    "lines": [
+      {
+        "s": "A",
+        "p": "test"
+      }
+    ]
+  }
+]"""
         with self.assertRaises(DialogueParseError) as context:
             parse_dialogues(invalid_yaml)
         self.assertTrue("Missing required field" in str(context.exception))
