@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import yaml
 import json
 from dataclasses import dataclass
@@ -134,13 +136,13 @@ def parse_dialogues(yaml_text: str) -> List[Dialogue]:
 
     return results
 
-def save_dialogues(dialogues: List[Dialogue], output: Union[str, TextIO], format: str = 'json', **kwargs) -> None:
+def save_dialogues(dialogues: List[Dialogue], output: Union[str, Path, TextIO], format: str = 'json', **kwargs) -> None:
     """
     Save dialogues to a file or file-like object in the specified format.
 
     Args:
         dialogues: List of Dialogue objects to save
-        output: Filename (str) or file-like object to write to
+        output: Filename (str or Path) or file-like object to write to
         format: Output format ('json' or 'yaml')
         **kwargs: Additional arguments passed to json.dumps or yaml.dump
 
@@ -165,8 +167,8 @@ def save_dialogues(dialogues: List[Dialogue], output: Union[str, TextIO], format
         kwargs.setdefault('sort_keys', False)
         output_text = yaml.dump(data, **kwargs)
 
-    # Handle string filename or file-like object
-    if isinstance(output, str):
+    # Handle string filename, Path object, or file-like object
+    if isinstance(output, (str, Path)):
         with open(output, 'w', encoding='utf-8') as f:
             f.write(output_text)
             if not output_text.endswith('\n'):
