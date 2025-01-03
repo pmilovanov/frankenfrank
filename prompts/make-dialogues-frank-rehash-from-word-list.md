@@ -78,8 +78,9 @@ Try to make dialogues a bit more complicated while still using the same words:
 - Creating more intricate scenarios with multiple characters and locations
 - Using longer explanations of situations
 
-Generate multiple dialogues at a time.
-Make the dialogues humorous and entertaining wherever possible.
+Generate 1 dialogue at a time.
+
+Make the dialogues humorous and entertaining.
 
 Give each dialogue a title in Russian, not in Chinese.
 
