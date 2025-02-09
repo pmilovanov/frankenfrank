@@ -1,0 +1,26 @@
+[project]
+name = "frankenfrank"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cachetools==5.5.0",
+    "certifi==2024.8.30",
+    "charset-normalizer==3.4.0",
+    "google-api-core==2.24.0",
+    "google-auth==2.36.0",
+    "google-cloud-texttospeech==2.21.1",
+    "googleapis-common-protos==1.66.0",
+    "grpcio==1.68.1",
+    "grpcio-status==1.68.1",
+    "idna==3.10",
+    "proto-plus==1.25.0",
+    "protobuf==5.29.1",
+    "pyasn1==0.6.1",
+    "pyasn1-modules==0.4.1",
+    "pyyaml==6.0.2",
+    "requests==2.32.3",
+    "rsa==4.9",
+    "urllib3==2.2.3",
+]
