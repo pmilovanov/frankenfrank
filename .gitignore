@@ -239,3 +239,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+/.idea/frankenfrank.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/dialogues/original-frank.bak.json
+/dialogues/original-frank-new.bak.json
+/.idea/codeStyles/Project.xml
+/.idea/vcs.xml
